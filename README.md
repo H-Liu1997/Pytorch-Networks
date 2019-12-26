@@ -1,6 +1,4 @@
-div align="center">
-
-![Logo](docs/images/cat.png)
+<div align=center><img width="300" height="150" src="docs/images/cat.jpg"/></div>
 
 # Pytorch Networks
 
