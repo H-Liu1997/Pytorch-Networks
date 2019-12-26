@@ -2,5 +2,7 @@
 
 # Pytorch Networks
 
-**The lightweight PyTorch wrapper for ML researchers. Scale your models. Write less boilerplate.**
+**The Pytorch implementation of famous basic networks. Unscheduled update.**
+
+[![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/williamFalcon/pytorch-lightning/blob/master/LICENSE)
 </div>
