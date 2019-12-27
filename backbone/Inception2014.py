@@ -346,6 +346,7 @@ if __name__ == "__main__":
 # mis calculation after nn.faltten()
 # no padding in inception stride = 2 module
 # TODO: still more 3M than original paper
+# TODO: check v3 init
 # ---------------------------------- end ------------------------------------ #
 
 
