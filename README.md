@@ -22,37 +22,37 @@ Some networks don't have offical pytorch version for several reasons(author didn
 ## Network list
 ### Backbone(chronological order)
 Common Type:
-- [x] AlexNet2012 
-- [x] VGG2014
-- [ ] Inception/GoogLeNet2014
-- [x] ResNet2015
-- [ ] ResNeXt2016
-- [x] DenseNet2016
-- [ ] NasNet2017
-- [ ] SeNet2017
-- [ ] EfficientNet2019
+- [x] AlexNet                 2012 
+- [x] VGG                     2014
+- [ ] Inception/GoogLeNet     2014
+- [x] ResNet                  2015
+- [ ] ResNeXt                 2016
+- [x] DenseNet                2016
+- [ ] NasNet                  2017
+- [ ] SeNet                   2017
+- [ ] EfficientNet            2019
 
 Light Type:
-- [ ] ShuffleNet2017
-- [ ] MobileNet2017
+- [ ] ShuffleNet              2017
+- [ ] MobileNet               2017
 
 Other:
 - [x] BasicGNN
 
 ### Pose Estimation(chronological order)
-- [x] OpenPose2015
-- [x] Hourglass2015
-- [x] GNNlikeCNN2015
-- [x] SimpleBaseline2017
-- [ ] CPN2017
-- [x] OpenPose2017
-- [x] FPNPoseNet2017
-- [ ] HRNet2018
-- [x] CPN+GNN2018
-- [ ] Multi-CPN2019
+- [x] OpenPose                2015
+- [x] Hourglass               2015
+- [x] GNNlikeCNN              2015
+- [x] SimpleBaseline          2017
+- [ ] CPN                     2017
+- [x] OpenPose                2017
+- [x] FPNPoseNet              2017
+- [ ] HRNet                   2018
+- [x] CPN+GNN                 2018
+- [ ] Multi-CPN               2019
 
 ### Segmentation(chronological order)
-- [x] FCN2015
+- [x] FCN                     2015
 
 ### Detection(chronological order)
 - [x] YOLO
@@ -64,8 +64,8 @@ Other:
 
 ## Future Work: Pytorch loss
 Will release a new repertory in the future
-- [ ] Centerloss2015
-- [x] Focusloss2016 
+- [ ] Centerloss              2015
+- [x] Focusloss               2016 
 - [x] labelsmooth
 ...
 
