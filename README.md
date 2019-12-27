@@ -24,7 +24,9 @@ Some networks don't have offical pytorch version for several reasons(author didn
 Common Type:
 - [x] AlexNet                 2012 
 - [x] VGG                     2014
-- [ ] Inception/GoogLeNet     2014
+- [x] Inception/GoogLeNet     2014
+- [x] InceptionV2/V3          2015
+- [ ] InceptionV4/Res         2016
 - [x] ResNet                  2015
 - [ ] ResNeXt                 2016
 - [x] DenseNet                2016
