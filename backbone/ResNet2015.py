@@ -4,96 +4,6 @@
 # --------------------------------------------------------------------------- #
 
 
-# ---------------------------------- notes ---------------------------------- #
-# main idea: short cut connection
-# parameters: 2.5M Res50, 6M Res152, 1.1M Res20, BN+ReLU
-# sgd+momentum 1e-1 0.9 divide 10 * 3 
-# batch size 256
-# weight decay 1e-4
-# input: resize and crop samll side to 256×256 then augment to 224
-# output: linear 1000 + softmax
-# TODO: Check details in training,testing. bn-relu-conv?
-# TODO: Training check: False
-# ---------------------------------- end ------------------------------------ #
-
-
-# ------------------------- resnet18 model summary -------------------------- #
-#         Layer (type)               Output Shape         Param #
-# ================================================================
-#             Conv2d-1         [-1, 64, 112, 112]           9,408
-#        BatchNorm2d-2         [-1, 64, 112, 112]             128
-#               ReLU-3         [-1, 64, 112, 112]               0
-#          MaxPool2d-4           [-1, 64, 56, 56]               0
-#             Conv2d-5           [-1, 64, 56, 56]          36,864
-#        BatchNorm2d-6           [-1, 64, 56, 56]             128
-#               ReLU-7           [-1, 64, 56, 56]               0
-#             Conv2d-8           [-1, 64, 56, 56]          36,864
-#        BatchNorm2d-9           [-1, 64, 56, 56]             128
-#        BasicBlock-10           [-1, 64, 56, 56]               0
-#            Conv2d-11           [-1, 64, 56, 56]          36,864
-#       BatchNorm2d-12           [-1, 64, 56, 56]             128
-#              ReLU-13           [-1, 64, 56, 56]               0
-#            Conv2d-14           [-1, 64, 56, 56]          36,864
-#       BatchNorm2d-15           [-1, 64, 56, 56]             128
-#        BasicBlock-16           [-1, 64, 56, 56]               0
-#            Conv2d-17          [-1, 128, 28, 28]          73,728
-#       BatchNorm2d-18          [-1, 128, 28, 28]             256
-#              ReLU-19          [-1, 128, 28, 28]               0
-#            Conv2d-20          [-1, 128, 28, 28]         147,456
-#       BatchNorm2d-21          [-1, 128, 28, 28]             256
-#            Conv2d-22          [-1, 128, 28, 28]           8,192
-#       BatchNorm2d-23          [-1, 128, 28, 28]             256
-#        BasicBlock-24          [-1, 128, 28, 28]               0
-#            Conv2d-25          [-1, 128, 28, 28]         147,456
-#       BatchNorm2d-26          [-1, 128, 28, 28]             256
-#              ReLU-27          [-1, 128, 28, 28]               0
-#            Conv2d-28          [-1, 128, 28, 28]         147,456
-#       BatchNorm2d-29          [-1, 128, 28, 28]             256
-#        BasicBlock-30          [-1, 128, 28, 28]               0
-#            Conv2d-31          [-1, 256, 14, 14]         294,912
-#       BatchNorm2d-32          [-1, 256, 14, 14]             512
-#              ReLU-33          [-1, 256, 14, 14]               0
-#            Conv2d-34          [-1, 256, 14, 14]         589,824
-#       BatchNorm2d-35          [-1, 256, 14, 14]             512
-#            Conv2d-36          [-1, 256, 14, 14]          32,768
-#       BatchNorm2d-37          [-1, 256, 14, 14]             512
-#        BasicBlock-38          [-1, 256, 14, 14]               0
-#            Conv2d-39          [-1, 256, 14, 14]         589,824
-#       BatchNorm2d-40          [-1, 256, 14, 14]             512
-#              ReLU-41          [-1, 256, 14, 14]               0
-#            Conv2d-42          [-1, 256, 14, 14]         589,824
-#       BatchNorm2d-43          [-1, 256, 14, 14]             512
-#        BasicBlock-44          [-1, 256, 14, 14]               0
-#            Conv2d-45            [-1, 512, 7, 7]       1,179,648
-#       BatchNorm2d-46            [-1, 512, 7, 7]           1,024
-#              ReLU-47            [-1, 512, 7, 7]               0
-#            Conv2d-48            [-1, 512, 7, 7]       2,359,296
-#       BatchNorm2d-49            [-1, 512, 7, 7]           1,024
-#            Conv2d-50            [-1, 512, 7, 7]         131,072
-#       BatchNorm2d-51            [-1, 512, 7, 7]           1,024
-#        BasicBlock-52            [-1, 512, 7, 7]               0
-#            Conv2d-53            [-1, 512, 7, 7]       2,359,296
-#       BatchNorm2d-54            [-1, 512, 7, 7]           1,024
-#              ReLU-55            [-1, 512, 7, 7]               0
-#            Conv2d-56            [-1, 512, 7, 7]       2,359,296
-#       BatchNorm2d-57            [-1, 512, 7, 7]           1,024
-#        BasicBlock-58            [-1, 512, 7, 7]               0
-# AdaptiveAvgPool2d-59            [-1, 512, 1, 1]               0
-#           Flatten-60                  [-1, 512]               0
-#            Linear-61                 [-1, 1000]         513,000
-#           Softmax-62                 [-1, 1000]               0
-# ================================================================
-# Total params: 11,689,512
-# Trainable params: 11,689,512
-# Non-trainable params: 0
-# ----------------------------------------------------------------
-# Input size (MB): 0.57
-# Forward/backward pass size (MB): 57.06
-# Params size (MB): 44.59
-# Estimated Total Size (MB): 102.23
-# ---------------------------------- end ------------------------------------ #
-
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -271,4 +181,50 @@ if __name__ == "__main__":
 # no bias for all conv layers
 # when using /, need add int()
 # usually we use fin_in for LeCun and he init, here we use fan_out
+# ---------------------------------- end ------------------------------------ #
+
+
+# ---------------------------------- notes ---------------------------------- #
+# main idea: short cut connection
+# parameters: 2.5M Res50, 6M Res152, 1.1M Res20, BN+ReLU
+# sgd+momentum 1e-1 0.9 divide 10 * 3 
+# batch size 256
+# weight decay 1e-4
+# input: resize and crop samll side to 256×256 then augment to 224
+# output: linear 1000 + softmax
+# TODO: Check details in training,testing. bn-relu-conv?
+# TODO: Training check: False
+# ---------------------------------- end ------------------------------------ #
+
+
+# ------------------------- resnet18 model summary -------------------------- #
+#         Layer (type)               Output Shape         Param #
+# ================================================================
+#             Conv2d-1         [-1, 64, 112, 112]           9,408
+#        BatchNorm2d-2         [-1, 64, 112, 112]             128
+#               ReLU-3         [-1, 64, 112, 112]               0
+#          MaxPool2d-4           [-1, 64, 56, 56]               0
+#             Conv2d-5           [-1, 64, 56, 56]          36,864
+#        BatchNorm2d-6           [-1, 64, 56, 56]             128
+#               ReLU-7           [-1, 64, 56, 56]               0
+#             Conv2d-8           [-1, 64, 56, 56]          36,864
+#                                 ...
+#       BatchNorm2d-54            [-1, 512, 7, 7]           1,024
+#              ReLU-55            [-1, 512, 7, 7]               0
+#            Conv2d-56            [-1, 512, 7, 7]       2,359,296
+#       BatchNorm2d-57            [-1, 512, 7, 7]           1,024
+#        BasicBlock-58            [-1, 512, 7, 7]               0
+# AdaptiveAvgPool2d-59            [-1, 512, 1, 1]               0
+#           Flatten-60                  [-1, 512]               0
+#            Linear-61                 [-1, 1000]         513,000
+#           Softmax-62                 [-1, 1000]               0
+# ================================================================
+# Total params: 11,689,512
+# Trainable params: 11,689,512
+# Non-trainable params: 0
+# ----------------------------------------------------------------
+# Input size (MB): 0.57
+# Forward/backward pass size (MB): 57.06
+# Params size (MB): 44.59
+# Estimated Total Size (MB): 102.23
 # ---------------------------------- end ------------------------------------ #
