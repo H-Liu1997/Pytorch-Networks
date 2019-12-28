@@ -22,16 +22,20 @@ Some networks don't have offical pytorch version for several reasons(author didn
 ## Network list
 ### Backbone(chronological order)
 Common Type:
-- [x] AlexNet                 2012 
+- [x] AlexNet                 2012
+- [ ] NIN                     2013
 - [x] VGG                     2014
 - [x] Inception/GoogLeNet     2014
 - [x] InceptionV2/V3          2015
-- [ ] InceptionV4/Res         2016
+- [x] InceptionV4/Res         2016
 - [x] ResNet                  2015
-- [ ] ResNeXt                 2016
+- [x] ResNetV2                2016
+- [x] ResNeXt                 2016
+- [ ] Res2Net                 2019
 - [x] DenseNet                2016
-- [ ] NasNet                  2017
-- [ ] SeNet                   2017
+- [ ] NASNet                  2017
+- [ ] AmoebaNet               2018
+- [x] SENet                   2017
 - [ ] EfficientNet            2019
 
 Light Type:
@@ -53,19 +57,9 @@ Other:
 - [x] CPN+GNN                 2018
 - [ ] Multi-CPN               2019
 
-### Segmentation(chronological order)
-- [x] FCN                     2015
-
-### Detection(chronological order)
-- [x] YOLO
-- [ ] RCNN 
-- [ ] Fast-RCNN
-- [ ] Faster-RCNN
-- [ ] Mask-RCNN
-- [ ] Mask-Score-RCNN
 
 ## Future Work: Pytorch loss
-Will release a new repertory in the future
+Will release a new repertory in the future(not in current repertory)
 - [ ] Centerloss              2015
 - [x] Focusloss               2016 
 - [x] labelsmooth
