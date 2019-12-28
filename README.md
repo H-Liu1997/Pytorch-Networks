@@ -23,7 +23,7 @@ Some networks don't have offical pytorch version for several reasons(author didn
 ### Backbone(chronological order)
 Common Type:
 - [x] AlexNet                 2012
-- [ ] NIN                     2013
+- [x] NIN                     2013
 - [x] VGG                     2014
 - [x] Inception/GoogLeNet     2014
 - [x] InceptionV2/V3          2015
