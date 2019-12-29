@@ -33,9 +33,10 @@ Common Type:
 - [x] ResNeXt                 2016
 - [ ] Res2Net                 2019
 - [x] DenseNet                2016
+- [x] SENet                   2017
 - [ ] NASNet                  2017
 - [ ] AmoebaNet               2018
-- [x] SENet                   2017
+- [ ] MnasNet                 2018
 - [ ] EfficientNet            2019
 
 Light Type:

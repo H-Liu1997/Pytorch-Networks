@@ -12,15 +12,19 @@ import torch.nn.functional as F
 __all__ = ['SElayer']
 
 
+
 class SElayer(nn.Module):
-    def __init__(self,in_dim):
+    def __init__(self,in_dim,ratio):
         super(SElayer,self).__init__()
         self.gap = nn.AdaptiveAvgPool2d((1,1))
+        reduced_dim = max(1, in_dim//ratio)
         self.fc1 = nn.Sequential(nn.Flatten(),
-                   nn.Linear(in_dim, in_dim//16),
+                   nn.Linear(in_dim, reduced_dim),
+                   #_Swish(),
                    nn.ReLU(inplace=True),
-                   nn.Linear(in_dim//16, in_dim),)
-  
+                   nn.Linear(reduced_dim, in_dim),
+                   nn.Softmax(dim=1),)
+
     def forward(self,input_):
         x_input = input_
 
@@ -35,11 +39,12 @@ class TestNet(nn.Sequential):
     def __init__(self):
         super(TestNet,self).__init__()
         self.conv1 = nn.Conv2d(3,64,3,1,1)
-        self.se = SElayer(64)
+        self.se = SElayer(64,16)
 
 def _test():
     from torchsummary import summary
     model = TestNet()
+    torch.cuda.set_device(1)
     model = model.cuda()
     summary(model,input_size=(3,224,224))
 
