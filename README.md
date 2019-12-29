@@ -58,6 +58,8 @@ Other:
 - [x] CPN+GNN                 2018
 - [ ] Multi-CPN               2019
 
+### Detection
+- [x] Darknet                 2016 
 
 ## Future Work: Pytorch loss
 Will release a new repertory in the future(not in current repertory)
