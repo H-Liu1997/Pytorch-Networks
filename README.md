@@ -36,8 +36,8 @@ Common Type:
 - [x] SENet                   2017
 - [ ] NASNet                  2017
 - [ ] AmoebaNet               2018
-- [ ] MnasNet                 2018
-- [ ] EfficientNet            2019
+- [x] MnasNet                 2018
+- [x] EfficientNet            2019
 
 Light Type:
 - [ ] ShuffleNet              2017
