@@ -28,6 +28,7 @@ Common Type:
 - [x] Inception/GoogLeNet     2014
 - [x] InceptionV2/V3          2015
 - [x] InceptionV4/Res         2016
+- [ ] Xception                2016
 - [x] ResNet                  2015
 - [x] ResNetV2                2016
 - [x] ResNeXt                 2016
@@ -40,8 +41,8 @@ Common Type:
 - [x] EfficientNet            2019
 
 Light Type:
-- [ ] ShuffleNet              2017
-- [ ] MobileNet               2017
+- [x] ShuffleNet              2017
+- [x] MobileNet               2017
 
 Other:
 - [x] BasicGNN
@@ -51,7 +52,7 @@ Other:
 - [x] Hourglass               2015
 - [x] GNNlikeCNN              2015
 - [x] SimpleBaseline          2017
-- [ ] CPN                     2017
+- [x] CPN                     2017
 - [x] OpenPose                2017
 - [x] FPNPoseNet              2017
 - [ ] HRNet                   2018
@@ -59,7 +60,8 @@ Other:
 - [ ] Multi-CPN               2019
 
 ### Detection
-- [x] Darknet                 2016 
+- [x] Darknet-19              2016
+- [x] Darknet-53              2018 
 
 ## Future Work: Pytorch loss
 Will release a new repertory in the future(not in current repertory)

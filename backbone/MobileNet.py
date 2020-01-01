@@ -1,228 +1,99 @@
-
-__all__ = ['MobileNetV3', 'mobilenetv3']
-
-
-def conv_bn(inp, oup, stride, conv_layer=nn.Conv2d, norm_layer=nn.BatchNorm2d, nlin_layer=nn.ReLU):
-    return nn.Sequential(
-        conv_layer(inp, oup, 3, stride, 1, bias=False),
-        norm_layer(oup),
-        nlin_layer(inplace=True)
-    )
+# --------------------------------------------------------------------------- #
+# MobileNet_v1, https://arxiv.org/abs/1704.04861
+# pytorch implementation by Haiyang Liu (haiyangliu1997@gmail.com)
+# --------------------------------------------------------------------------- #
 
 
-def conv_1x1_bn(inp, oup, conv_layer=nn.Conv2d, norm_layer=nn.BatchNorm2d, nlin_layer=nn.ReLU):
-    return nn.Sequential(
-        conv_layer(inp, oup, 1, 1, 0, bias=False),
-        norm_layer(oup),
-        nlin_layer(inplace=True)
-    )
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
 
 
-class Hswish(nn.Module):
-    def __init__(self, inplace=True):
-        super(Hswish, self).__init__()
-        self.inplace = inplace
-
-    def forward(self, x):
-        return x * F.relu6(x + 3., inplace=self.inplace) / 6.
+__all__ = ['MobileNet_V1']
 
 
-class Hsigmoid(nn.Module):
-    def __init__(self, inplace=True):
-        super(Hsigmoid, self).__init__()
-        self.inplace = inplace
+class BasicConv(nn.Sequential):
+    def __init__(self,in_dim,out_dim,k,s,p):
+        super(BasicConv,self).__init__()
+        self.conv = nn.Conv2d(in_dim,out_dim,k,s,p,bias=False)
+        self.bn = nn.BatchNorm2d(out_dim)
+        self.relu = nn.ReLU(inplace=True)
+    
+class DPConv(nn.Sequential):
+    def __init__(self,in_dim,out_dim,stride):
+        super(DPConv,self).__init__()
+        self.conv_1 = nn.Conv2d(in_dim,in_dim,3,stride,1,bias=False,groups=in_dim)
+        self.bn1 = nn.BatchNorm2d(in_dim)
+        self.relu1 = nn.ReLU(inplace=True)
+        self.conv_2 = nn.Conv2d(in_dim,out_dim,1,1,0,bias=False)
+        self.bn2 = nn.BatchNorm2d(out_dim)
+        self.relu2 = nn.ReLU(inplace =True)
+        
 
-    def forward(self, x):
-        return F.relu6(x + 3., inplace=self.inplace) / 6.
+class MobileNet_V1(nn.Sequential):
+    def __init__(self,):
+        super(MobileNet_V1,self).__init__()
+        self.conv = nn.Sequential(BasicConv(3,32,3,2,1),
+             DPConv(32,64,1),
+             DPConv(64,128,2),
+             DPConv(128,128,1),
+             DPConv(128,256,2),
+             DPConv(256,256,1),
+             DPConv(256,512,2),
 
+             DPConv(512,512,1),
+             DPConv(512,512,1),
+             DPConv(512,512,1),
+             DPConv(512,512,1),
+             DPConv(512,512,1),
 
-class SEModule(nn.Module):
-    def __init__(self, channel, reduction=4):
-        super(SEModule, self).__init__()
-        self.avg_pool = nn.AdaptiveAvgPool2d(1)
-        self.fc = nn.Sequential(
-            nn.Linear(channel, channel // reduction, bias=False),
-            nn.ReLU(inplace=True),
-            nn.Linear(channel // reduction, channel, bias=False),
-            Hsigmoid()
-            # nn.Sigmoid()
+             DPConv(512,1024,2),
+             DPConv(1024,1024,1),)
+        
+        self.final = nn.Sequential(
+            nn.AdaptiveAvgPool2d(1),
+            nn.Flatten(),
+            nn.Linear(1024,1000),
+            nn.Softmax(dim=1)
         )
 
-    def forward(self, x):
-        b, c, _, _ = x.size()
-        y = self.avg_pool(x).view(b, c)
-        y = self.fc(y).view(b, c, 1, 1)
-        return x * y.expand_as(x)
 
+def _test():
+    from torchsummary import summary
+    model = MobileNet_V1()
+    torch.cuda.set_device(1)
+    model = model.cuda()
+    summary(model,input_size=(3,224,224))
+    
 
-class Identity(nn.Module):
-    def __init__(self, channel):
-        super(Identity, self).__init__()
+if __name__ == "__main__":
+    _test()
 
-    def forward(self, x):
-        return x
-
-
-def make_divisible(x, divisible_by=8):
-    import numpy as np
-    return int(np.ceil(x * 1. / divisible_by) * divisible_by)
-
-
-class MobileBottleneck(nn.Module):
-    def __init__(self, inp, oup, kernel, stride, exp, se=False, nl='RE'):
-        super(MobileBottleneck, self).__init__()
-        assert stride in [1, 2]
-        assert kernel in [3, 5]
-        padding = (kernel - 1) // 2
-        self.use_res_connect = stride == 1 and inp == oup
-
-        conv_layer = nn.Conv2d
-        norm_layer = nn.BatchNorm2d
-        if nl == 'RE':
-            nlin_layer = nn.ReLU # or ReLU6
-        elif nl == 'HS':
-            nlin_layer = Hswish
-        else:
-            raise NotImplementedError
-        if se:
-            SELayer = SEModule
-        else:
-            SELayer = Identity
-
-        self.conv = nn.Sequential(
-            # pw
-            conv_layer(inp, exp, 1, 1, 0, bias=False),
-            norm_layer(exp),
-            nlin_layer(inplace=True),
-            # dw
-            conv_layer(exp, exp, kernel, stride, padding, groups=exp, bias=False),
-            norm_layer(exp),
-            SELayer(exp),
-            nlin_layer(inplace=True),
-            # pw-linear
-            conv_layer(exp, oup, 1, 1, 0, bias=False),
-            norm_layer(oup),
-        )
-
-    def forward(self, x):
-        if self.use_res_connect:
-            return x + self.conv(x)
-        else:
-            return self.conv(x)
-
-
-class MobileNetV3(nn.Module):
-    def __init__(self, n_class=10, input_size=28, dropout=0.8, mode='small', width_mult=1.0):
-        super(MobileNetV3, self).__init__()
-        input_channel = 16
-        last_channel = 10
-        if mode == 'large':
-            # refer to Table 1 in paper
-            mobile_setting = [
-                # k, exp, c,  se,     nl,  s,
-                [3, 16,  16,  False, 'RE', 1],
-                [3, 64,  24,  False, 'RE', 2],
-                [3, 72,  24,  False, 'RE', 1],
-                [5, 72,  40,  True,  'RE', 2],
-                [5, 120, 40,  True,  'RE', 1],
-                [5, 120, 40,  True,  'RE', 1],
-                [3, 240, 80,  False, 'HS', 2],
-                [3, 200, 80,  False, 'HS', 1],
-                [3, 184, 80,  False, 'HS', 1],
-                [3, 184, 80,  False, 'HS', 1],
-                [3, 480, 112, True,  'HS', 1],
-                [3, 672, 112, True,  'HS', 1],
-                [5, 672, 160, True,  'HS', 2],
-                [5, 960, 160, True,  'HS', 1],
-                [5, 960, 160, True,  'HS', 1],
-            ]
-        elif mode == 'small':
-            # refer to Table 2 in paper
-            mobile_setting = [
-                # k, exp, c,  se,     nl,  s,
-                [3, 16,  16,  True,  'RE', 1],
-                #[3, 72,  24,  False, 'RE', 1],
-                [3, 88,  24,  False, 'RE', 1],
-                [5, 96,  40,  True,  'HS', 2],
-                [5, 240, 40,  True,  'HS', 1],
-                #[5, 240, 40,  True,  'HS', 1],
-                [5, 120, 48,  True,  'HS', 1],
-                #[5, 144, 48,  True,  'HS', 1],
-                [5, 288, 96,  True,  'HS', 2],
-                #[5, 576, 96,  True,  'HS', 1],
-                [5, 576, 96,  True,  'HS', 1],
-            ]
-        else:
-            raise NotImplementedError
-
-        # building first layer
-        assert input_size % 4 == 0
-        last_channel = make_divisible(last_channel * width_mult) if width_mult > 1.0 else last_channel
-        self.features = [conv_bn(1, input_channel, 1, nlin_layer=Hswish)]
-        self.classifier = []
-
-        # building mobile blocks
-        for k, exp, c, se, nl, s in mobile_setting:
-            output_channel = make_divisible(c * width_mult)
-            exp_channel = make_divisible(exp * width_mult)
-            self.features.append(MobileBottleneck(input_channel, output_channel, k, s, exp_channel, se, nl))
-            input_channel = output_channel
-
-        # building last several layers
-        if mode == 'large':
-            last_conv = make_divisible(960 * width_mult)
-            self.features.append(conv_1x1_bn(input_channel, last_conv, nlin_layer=Hswish))
-            self.features.append(nn.AdaptiveAvgPool2d(1))
-            self.features.append(nn.Conv2d(last_conv, last_channel, 1, 1, 0))
-            self.features.append(Hswish(inplace=True))
-        elif mode == 'small':
-            last_conv = make_divisible(576 * width_mult)
-            self.features.append(conv_1x1_bn(input_channel, last_conv, nlin_layer=Hswish))
-            # self.features.append(SEModule(last_conv))  # refer to paper Table2, but I think this is a mistake
-            self.features.append(nn.AdaptiveAvgPool2d(1))
-            self.features.append(nn.Conv2d(last_conv, last_channel, 1, 1, 0))
-            self.features.append(Hswish(inplace=True))
-        else:
-            raise NotImplementedError
-
-        # make it nn.Sequential
-        self.features = nn.Sequential(*self.features)
-
-        # building classifier
-        self.classifier = nn.Sequential(
-            nn.Dropout(p=dropout),    # refer to paper section 6
-            nn.Linear(last_channel, n_class),
-        )
-
-        self._initialize_weights()
-
-    def forward(self, x):
-        x = self.features(x)
-        x = x.mean(3).mean(2)
-        x = self.classifier(x)
-        x = torch.nn.functional.softmax(x,dim=-1)
-        return x
-
-    def _initialize_weights(self):
-        # weight initialization
-        for m in self.modules():
-            if isinstance(m, nn.Conv2d):
-                nn.init.kaiming_normal_(m.weight, mode='fan_out')
-                if m.bias is not None:
-                    nn.init.zeros_(m.bias)
-            elif isinstance(m, nn.BatchNorm2d):
-                nn.init.ones_(m.weight)
-                nn.init.zeros_(m.bias)
-            elif isinstance(m, nn.Linear):
-                nn.init.normal_(m.weight, 0, 0.01)
-                if m.bias is not None:
-                    nn.init.zeros_(m.bias)
-
-
-def mobilenetv3(pretrained=False, **kwargs):
-    model = MobileNetV3(**kwargs)
-    if pretrained:
-        state_dict = torch.load('mobilenetv3_small_67.4.pth.tar')
-        model.load_state_dict(state_dict, strict=True)
-        # raise NotImplementedError
-    return model
+# ------------------------------- model summary ----------------------------- #
+#              ReLU-69          [-1, 512, 14, 14]               0
+#            Conv2d-70            [-1, 512, 7, 7]           4,608
+#       BatchNorm2d-71            [-1, 512, 7, 7]           1,024
+#              ReLU-72            [-1, 512, 7, 7]               0
+#            Conv2d-73           [-1, 1024, 7, 7]         524,288
+#       BatchNorm2d-74           [-1, 1024, 7, 7]           2,048
+#              ReLU-75           [-1, 1024, 7, 7]               0
+#            Conv2d-76           [-1, 1024, 7, 7]           9,216
+#       BatchNorm2d-77           [-1, 1024, 7, 7]           2,048
+#              ReLU-78           [-1, 1024, 7, 7]               0
+#            Conv2d-79           [-1, 1024, 7, 7]       1,048,576
+#       BatchNorm2d-80           [-1, 1024, 7, 7]           2,048
+#              ReLU-81           [-1, 1024, 7, 7]               0
+# AdaptiveAvgPool2d-82           [-1, 1024, 1, 1]               0
+#           Flatten-83                 [-1, 1024]               0
+#            Linear-84                 [-1, 1000]       1,025,000
+#           Softmax-85                 [-1, 1000]               0
+# ================================================================
+# Total params: 4,231,976
+# Trainable params: 4,231,976
+# Non-trainable params: 0
+# ----------------------------------------------------------------
+# Input size (MB): 0.57
+# Forward/backward pass size (MB): 115.45
+# Params size (MB): 16.14
+# Estimated Total Size (MB): 132.17
+# ---------------------------------- end ------------------------------------ #
