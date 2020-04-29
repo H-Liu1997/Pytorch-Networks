@@ -161,7 +161,7 @@ class DarkNet_19(nn.Module):
 def _test():
     from torchsummary import summary
     model = DarkNet_53()
-    torch.cuda.set_device(1)
+    torch.cuda.set_device(0)
     model = model.cuda()
     summary(model,input_size=(3,256,256))
     

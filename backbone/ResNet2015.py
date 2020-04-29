@@ -78,52 +78,87 @@ class BottleNeck(nn.Module):
     
 
 class ResNet(nn.Module):
-    def __init__(self,block,block_list):
+    def __init__(self, cfg, logger):
+        '''
+        block, BLOCK_LIST, in_dim, 
+        class_num, BASE=64, use_fc=True, CONV1=(7,2,3),
+        MAX_POOL=True, pretrained=False
+        '''
         super(ResNet,self).__init__()
         self.head_conv = nn.Sequential(
-            nn.Conv2d(3,64,7,2,3,bias=False),
-            nn.BatchNorm2d(64),
+            nn.Conv2d(cfg.IN_DIM,cfg.BASE,cfg.CONV1[0],cfg.CONV1[1],cfg.CONV1[2],bias=False),
+            nn.BatchNorm2d(cfg.BASE),
             nn.ReLU(inplace=True),)
-        self.maxpool_1 = nn.MaxPool2d(3,2,1)
+        if cfg.MAX_POOL:
+            self.maxpool_1 = nn.MaxPool2d(3,2,1)
+        else:
+            self.maxpool_1 = None
+        block = BottleNeck if cfg.BLOCK == 'bottleneck' else BasicBlock
         b_ = block.expansion
-        self.layer_1 = self._make_layer(block,64,64*b_,block_list[0],1)
-        self.layer_2 = self._make_layer(block,64*b_,128*b_,block_list[1],2)
-        self.layer_3 = self._make_layer(block,128*b_,256*b_,block_list[2],2)
-        self.layer_4 = self._make_layer(block,256*b_,512*b_,block_list[3],2)
-        self.avgpool_1 = nn.AdaptiveAvgPool2d((1,1))
-        self.fc_1 = nn.Sequential(
-            nn.Flatten(),
-            nn.Linear(512*b_,1000),
-            nn.Softmax(dim = 1),)
+        self.layer_1 = self._make_layer(block,cfg.BASE,cfg.BASE*b_,cfg.BLOCK_LIST[0],1)
+        self.layer_2 = self._make_layer(block,cfg.BASE*b_,cfg.BASE*2*b_,cfg.BLOCK_LIST[1],2)
+        self.layer_3 = self._make_layer(block,cfg.BASE*2*b_,cfg.BASE*4*b_,cfg.BLOCK_LIST[2],2)
+        self.layer_4 = self._make_layer(block,cfg.BASE*4*b_,cfg.BASE*8*b_,cfg.BLOCK_LIST[3],2)
+
+        final_feature = cfg.BASE*4*b_ if cfg.BLOCK_LIST[3] == 0 else cfg.BASE*8*b_
+        if cfg.USE_FC:
+            self.avgpool_1 = nn.AdaptiveAvgPool2d((1,1))
+            self.fc_1 = nn.Sequential(
+                nn.Flatten(),
+                nn.Linear(final_feature,cfg.CLASS_NUM),
+                nn.Softmax(dim = 1),)
+        else:
+            self.avgpool_1 = None
+        self.logger = logger
+        self.pretrained = cfg.PRETRAINED
         self._initialization()
     
     def _initialization(self):
-        for m in self.modules():
-            if isinstance (m,nn.Conv2d):
-                nn.init.kaiming_normal_(m.weight,mode='fan_out'
-                                        ,nonlinearity='relu')
-            elif isinstance(m, nn.BatchNorm2d):
-                nn.init.constant_(m.weight,1)
-                nn.init.constant_(m.bias,0)
-    
+        if self.pretrained is not False:
+            self.modules.load_state_dict(model_zoo.load_url(model_urls[self.pretrained]))
+            #TODO(liu):check it correct or not.
+        else:
+            for name, sub_module in self.named_modules():
+                if isinstance(sub_module, nn.Conv2d) or isinstance(sub_module, nn.ConvTranspose2d):
+                    nn.init.kaiming_normal_(sub_module.weight,mode='fan_out'
+                                            ,nonlinearity='relu')
+                    if self.logger is not None:
+                        self.logger.info('init {}.weight as kaiming_normal_'.format(name))
+                    if sub_module.bias is not None:
+                        nn.init.constant_(sub_module.bias, 0.0)
+                        if self.logger is not None:
+                            self.logger.info('init {}.bias as 0'.format(name))
+                elif isinstance(sub_module, nn.BatchNorm2d):
+                    nn.init.constant_(sub_module.weight,1)
+                    nn.init.constant_(sub_module.bias,0)
+                    if self.logger is not None:
+                        self.logger.info('init {}.weight as constant_ 1'.format(name))
+                        self.logger.info('init {}.bias as constant_ 0'.format(name))
+            
     def _make_layer(self,block,in_dim,out_dim,layer_num,stride):
         net_layers = []
-        for layer in range(layer_num):
-            if layer == 0:
-                net_layers.append(block(in_dim,out_dim,stride))
-            else:
-                net_layers.append(block(out_dim,out_dim,1))
-        return nn.Sequential(*net_layers)
+        if layer_num == 0:
+            return None
+        else:    
+            for layer in range(layer_num):
+                if layer == 0:
+                    net_layers.append(block(in_dim,out_dim,stride))
+                else:
+                    net_layers.append(block(out_dim,out_dim,1))
+            return nn.Sequential(*net_layers)
                     
     def forward(self,input_):
         x = self.head_conv(input_)
-        x = self.maxpool_1(x)
+        if self.maxpool_1 is not None:
+            x = self.maxpool_1(x)
         x = self.layer_1(x)
         x = self.layer_2(x)
         x = self.layer_3(x)
-        x = self.layer_4(x)
-        x = self.avgpool_1(x)
-        x = self.fc_1(x)
+        if self.layer_4 is not None:
+            x = self.layer_4(x)
+        if self.avgpool_1 is not None:
+            x = self.avgpool_1(x)
+            x = self.fc_1(x)
         return x       
 
 model_urls = {
@@ -165,14 +200,6 @@ def ResNet152(pretrained = False):
     return model
 
 
-def _test():
-    from torchsummary import summary
-    model = ResNet18()
-    model = model.cuda()
-    summary(model,input_size=(3,224,224))
-
-if __name__ == "__main__":
-    _test()
 
 # ------------------------------- mistakes ---------------------------------- #
 # downsample also need add batchnorm
