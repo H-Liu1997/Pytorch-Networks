@@ -13,6 +13,9 @@ from tensorboardX import SummaryWriter
 from easydict import EasyDict as edict
 from random import randint
 
+import torchvision
+import torchvision.transforms as transforms
+
 from config import cfg, load_cfg
 from network_factory import get_network
 from opt_factory import get_opt
@@ -40,7 +43,7 @@ def load_checkpoints(model, opt, save_path, logger):
         states = torch.load(save_path.EXPS+save_path.NAME+save_path.MODEL)
         model.load_state_dict(states['model_state'])
         opt.load_state_dict(states['opt_state'])
-        current_epoch = states_d['epoch']
+        current_epoch = states['epoch']
         logger.info('loading checkpoints success')
     except:
         current_epoch = 0
@@ -49,18 +52,20 @@ def load_checkpoints(model, opt, save_path, logger):
 
 
 def main():
+    #from resnet_ori import ResNet18
     logger = load_cfg()     
     torch.manual_seed(cfg.DETERMINISTIC.SEED)
     torch.cuda.manual_seed(cfg.DETERMINISTIC.SEED)
     torch.backends.cudnn.deterministic = cfg.DETERMINISTIC.CUDNN
     np.random.seed(cfg.DETERMINISTIC.SEED)
-  
+    
     train_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.DATA, 'train', cfg=cfg.TRAIN, logger=logger)
     val_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.EVAL, 'eval', cfg=cfg.TRAIN, logger=logger)
-
+    
+    #model = ResNet18()
     model = get_network(cfg.MODEL.NAME, cfg=cfg.MODEL, logger=logger)
     model = torch.nn.DataParallel(model, cfg.GPUS).cuda() if torch.cuda.is_available() else model
-    opt = get_opt(model, cfg.TRAIN, logger)
+    opt,lr_scheduler = get_opt(model, cfg.TRAIN, logger)
     loss_func = get_loss_func(cfg.MODEL.LOSS, logger=logger)
 
     current_epoch = load_checkpoints(model, opt, cfg.PATH , logger)
@@ -88,7 +93,7 @@ def main():
             if cfg.SHORT_TEST == True:
                 if its == 20:
                     break
-    
+        lr_scheduler.step()
         save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.MODEL, model, opt, epoch)
         acc_val = val(val_loader, model, logger)
         log_writter.add_scalars("acc",{'acc_train':acc_train_class.print_(),

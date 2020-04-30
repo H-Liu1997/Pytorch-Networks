@@ -6,12 +6,16 @@ from easydict import EasyDict as edict
 
 cfg = edict()
 cfg.PATH = edict()
-cfg.PATH.DATA = '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1'
-cfg.PATH.EVAL = '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1'
+cfg.PATH.DATA = ['/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1',
+                 '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_2',
+                 '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_3',
+                 '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_4',
+                 '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_5',]
+cfg.PATH.EVAL = ['/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/test_batch']
 cfg.PATH.TEST = '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1'
 cfg.PATH.RES_TEST = './res_imgs/'
 cfg.PATH.EXPS = './exps/'
-cfg.PATH.NAME = 'test_v3'
+cfg.PATH.NAME = 'res_18_v3_la'
 cfg.PATH.MODEL = '/model.pth'
 cfg.PATH.LOG = '/log.txt'
 cfg.PATH.RESULTS = '/results/'
@@ -21,14 +25,17 @@ cfg.DETERMINISTIC.SEED = 0
 cfg.DETERMINISTIC.CUDNN = True
 
 cfg.TRAIN = edict()
-cfg.TRAIN.EPOCHS = 120
-cfg.TRAIN.BATCHSIZE = 16
+cfg.TRAIN.EPOCHS = 200
+cfg.TRAIN.BATCHSIZE = 128
 cfg.TRAIN.L1SCALING = 100
-cfg.TRAIN.TYPE = 'adam'
-cfg.TRAIN.LR = 3e-4
+cfg.TRAIN.TYPE = 'sgd'
+cfg.TRAIN.LR = 1e-1
 cfg.TRAIN.BETA1 = 0.9
 cfg.TRAIN.BETA2 = 0.999
-cfg.TRAIN.WEIGHT_DECAY = 0
+cfg.TRAIN.LR_TYPR = 'stone'
+cfg.TRAIN.LR_REDUCE = [140,170]
+cfg.TRAIN.LR_FACTOR = 0.1
+cfg.TRAIN.WEIGHT_DECAY = 1e-4
 cfg.TRAIN.NUM_WORKERS = 16
 cfg.TRAIN.USE_AUG = True
 cfg.TRAIN.CROP = 32
@@ -43,7 +50,7 @@ cfg.MODEL.IN_DIM = 3
 cfg.MODEL.CLASS_NUM = 10 
 cfg.MODEL.BASE = 16 
 cfg.MODEL.USE_FC = True 
-cfg.MODEL.CONV1 = (3,2,1)
+cfg.MODEL.CONV1 = (3,1,1)
 cfg.MODEL.MAX_POOL = False 
 cfg.MODEL.PRETRAINED = False  
 

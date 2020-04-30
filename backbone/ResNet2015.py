@@ -12,6 +12,15 @@ import torch.nn.functional as F
 __all__ = ['ResNet18','ResNet34','ResNet50','ResNet101','ResNet152']
 
 
+class LambdaLayer(nn.Module):
+    def __init__(self, lambd):
+        super(LambdaLayer, self).__init__()
+        self.lambd = lambd
+
+    def forward(self, x):
+        return self.lambd(x)
+
+
 class BasicBlock(nn.Module):
     expansion = 1
     def __init__(self,in_dim,out_dim,stride=1):
@@ -26,10 +35,11 @@ class BasicBlock(nn.Module):
         if in_dim == out_dim and stride == 1:
             self.downsample = None
         else:
-            self.downsample = nn.Sequential(
-                nn.Conv2d(in_dim,out_dim,1,stride,0,bias=False),
-                nn.BatchNorm2d(out_dim),
-            )
+            self.downsample =LambdaLayer(lambda x: F.pad(x[:, :, ::2, ::2], (0, 0, 0, 0, out_dim//4, out_dim//4), "constant", 0))
+            # self.downsample = nn.Sequential(
+            #     nn.Conv2d(in_dim,out_dim,1,stride,0,bias=False),
+            #     nn.BatchNorm2d(out_dim),
+            # )
  
     def forward(self,input_):
         x_input = input_
@@ -105,8 +115,7 @@ class ResNet(nn.Module):
             self.avgpool_1 = nn.AdaptiveAvgPool2d((1,1))
             self.fc_1 = nn.Sequential(
                 nn.Flatten(),
-                nn.Linear(final_feature,cfg.CLASS_NUM),
-                nn.Softmax(dim = 1),)
+                nn.Linear(final_feature,cfg.CLASS_NUM),)
         else:
             self.avgpool_1 = None
         self.logger = logger

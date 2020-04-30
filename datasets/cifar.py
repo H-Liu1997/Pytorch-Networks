@@ -15,14 +15,18 @@ def unpickle(file):
 
 class CIFARData(torch.utils.data.Dataset):
     def __init__(self, img_path, dtype='train', label_path=None, aug=None):
-        self.data_full = unpickle(img_path)
+        self.data_full = unpickle(img_path[0])
         self.data = np.array(self.data_full[b'data'])
         self.label = np.array(self.data_full[b'labels'])
+        for i in range(len(img_path)-1):
+            self.data_full = unpickle(img_path[i+1])
+            self.data = np.concatenate((self.data, np.array(self.data_full[b'data'])))
+            self.label = np.concatenate((self.label, np.array(self.data_full[b'labels'])))
         self.dtype = dtype
         self.aug = aug
         
     def __getitem__(self,index):
-        data_final = self.data[index].reshape(32,32,3) 
+        data_final = self.data[index].reshape(3,32,32).transpose(1,2,0) 
         if self.aug is not None:
             data_final = self.aug(data_final)
         if self.dtype == 'test':
