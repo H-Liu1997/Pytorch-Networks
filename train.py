@@ -12,9 +12,7 @@ import torch.nn.functional as F
 from tensorboardX import SummaryWriter
 from easydict import EasyDict as edict
 from random import randint
-
-import torchvision
-import torchvision.transforms as transforms
+from ptflops import get_model_complexity_info
 
 from config import cfg, load_cfg
 from network_factory import get_network
@@ -52,7 +50,6 @@ def load_checkpoints(model, opt, save_path, logger):
 
 
 def main():
-    #from resnet_ori import ResNet18
     logger = load_cfg()     
     torch.manual_seed(cfg.DETERMINISTIC.SEED)
     torch.cuda.manual_seed(cfg.DETERMINISTIC.SEED)
@@ -62,9 +59,13 @@ def main():
     train_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.DATA, 'train', cfg=cfg.TRAIN, logger=logger)
     val_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.EVAL, 'eval', cfg=cfg.TRAIN, logger=logger)
     
-    #model = ResNet18()
     model = get_network(cfg.MODEL.NAME, cfg=cfg.MODEL, logger=logger)
     model = torch.nn.DataParallel(model, cfg.GPUS).cuda() if torch.cuda.is_available() else model
+    flops, params = get_model_complexity_info(model,  (cfg.MODEL.IN_DIM, cfg.TRAIN.CROP, cfg.TRAIN.CROP), 
+        as_strings=True, print_per_layer_stat=True)
+    logger.info('{:<30}  {:<8}'.format('Computational complexity: ', flops))
+    logger.info('{:<30}  {:<8}'.format('Number of parameters: ', params))
+    
     opt,lr_scheduler = get_opt(model, cfg.TRAIN, logger)
     loss_func = get_loss_func(cfg.MODEL.LOSS, logger=logger)
 
