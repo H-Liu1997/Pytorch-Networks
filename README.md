@@ -8,8 +8,15 @@
 [![stars](https://img.shields.io/github/stars/HaiyangLiu1997/Pytorch-Networks.svg)](https://github.com/HaiyangLiu1997/Pytorch-Networks/stargazers)
 </div>
 
-## How to use it
-All networks already pass forward test
+## Accuracy Report
+|  Model   |   Dataset   |  #Params  | Test Prec(Paper)  | Test Prec(This impl) |
+|----------|:-----------:|:---------:|:------:|:------:|
+|[ResNet-20]()|  CIFAR-10  | 0.27M | 91.25%  |  **92.02%**   |
+|[ResNet-32]()|  CIFAR-10  | 0.46M | 92.49%  |  **92.61%**   |
+|[ResNet-44]()|  CIFAR-10  | 0.66M | 92.83%  |  **92.46%**   |
+|[ResNet-56]()|  CIFAR-10  | 0.66M | 93.03%  |  **93.22%**   |
+|[ResNet-110]()|  CIFAR-10  | 0.66M | 93.57%  |  **92.92%**   |
+
 
 **For backbone networks**
 

@@ -26,7 +26,7 @@ class CIFARData(torch.utils.data.Dataset):
         self.aug = aug
         
     def __getitem__(self,index):
-        data_final = self.data[index].reshape(3,32,32).transpose(1,2,0) 
+        data_final = self.data[index].reshape(3,32,32).transpose(1,2,0)
         if self.aug is not None:
             data_final = self.aug(data_final)
         if self.dtype == 'test':

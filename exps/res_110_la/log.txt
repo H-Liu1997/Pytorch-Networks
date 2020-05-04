@@ -1,0 +1,1932 @@
+2020-05-01 01:47:21,412:INFO:start creating config files...
+2020-05-01 01:47:21,414:INFO:update config files success
+2020-05-01 01:47:21,699:INFO:init head_conv.0.weight as kaiming_normal_
+2020-05-01 01:47:21,702:INFO:init head_conv.1.weight as constant_ 1
+2020-05-01 01:47:21,702:INFO:init head_conv.1.bias as constant_ 0
+2020-05-01 01:47:21,702:INFO:init layer_1.0.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,702:INFO:init layer_1.0.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,702:INFO:init layer_1.0.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,703:INFO:init layer_1.0.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,703:INFO:init layer_1.0.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,703:INFO:init layer_1.0.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,703:INFO:init layer_1.1.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,703:INFO:init layer_1.1.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,703:INFO:init layer_1.1.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,703:INFO:init layer_1.1.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,703:INFO:init layer_1.1.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,704:INFO:init layer_1.1.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,704:INFO:init layer_1.2.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,704:INFO:init layer_1.2.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,704:INFO:init layer_1.2.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,704:INFO:init layer_1.2.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,704:INFO:init layer_1.2.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,704:INFO:init layer_1.2.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,704:INFO:init layer_1.3.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,705:INFO:init layer_1.3.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,705:INFO:init layer_1.3.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,705:INFO:init layer_1.3.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,705:INFO:init layer_1.3.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,705:INFO:init layer_1.3.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,705:INFO:init layer_1.4.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,705:INFO:init layer_1.4.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,705:INFO:init layer_1.4.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,706:INFO:init layer_1.4.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,706:INFO:init layer_1.4.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,706:INFO:init layer_1.4.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,706:INFO:init layer_1.5.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,706:INFO:init layer_1.5.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,706:INFO:init layer_1.5.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,706:INFO:init layer_1.5.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,706:INFO:init layer_1.5.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,706:INFO:init layer_1.5.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,706:INFO:init layer_1.6.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,706:INFO:init layer_1.6.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,707:INFO:init layer_1.6.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,707:INFO:init layer_1.6.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,707:INFO:init layer_1.6.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,707:INFO:init layer_1.6.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,707:INFO:init layer_1.7.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,707:INFO:init layer_1.7.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,707:INFO:init layer_1.7.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,707:INFO:init layer_1.7.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,707:INFO:init layer_1.7.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,707:INFO:init layer_1.7.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,708:INFO:init layer_1.8.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,708:INFO:init layer_1.8.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,708:INFO:init layer_1.8.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,708:INFO:init layer_1.8.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,709:INFO:init layer_1.8.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,709:INFO:init layer_1.8.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,709:INFO:init layer_1.9.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,709:INFO:init layer_1.9.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,709:INFO:init layer_1.9.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,709:INFO:init layer_1.9.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,709:INFO:init layer_1.9.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,709:INFO:init layer_1.9.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,710:INFO:init layer_1.10.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,710:INFO:init layer_1.10.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,710:INFO:init layer_1.10.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,710:INFO:init layer_1.10.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,710:INFO:init layer_1.10.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,710:INFO:init layer_1.10.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,711:INFO:init layer_1.11.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,711:INFO:init layer_1.11.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,711:INFO:init layer_1.11.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,711:INFO:init layer_1.11.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,711:INFO:init layer_1.11.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,711:INFO:init layer_1.11.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,711:INFO:init layer_1.12.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,711:INFO:init layer_1.12.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,711:INFO:init layer_1.12.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,712:INFO:init layer_1.12.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,712:INFO:init layer_1.12.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,712:INFO:init layer_1.12.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,712:INFO:init layer_1.13.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,712:INFO:init layer_1.13.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,712:INFO:init layer_1.13.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,712:INFO:init layer_1.13.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,712:INFO:init layer_1.13.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,712:INFO:init layer_1.13.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,713:INFO:init layer_1.14.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,713:INFO:init layer_1.14.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,713:INFO:init layer_1.14.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,713:INFO:init layer_1.14.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,713:INFO:init layer_1.14.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,713:INFO:init layer_1.14.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,713:INFO:init layer_1.15.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,713:INFO:init layer_1.15.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,713:INFO:init layer_1.15.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,714:INFO:init layer_1.15.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,714:INFO:init layer_1.15.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,714:INFO:init layer_1.15.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,714:INFO:init layer_1.16.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,714:INFO:init layer_1.16.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,714:INFO:init layer_1.16.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,714:INFO:init layer_1.16.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,714:INFO:init layer_1.16.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,714:INFO:init layer_1.16.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,715:INFO:init layer_1.17.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,715:INFO:init layer_1.17.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,715:INFO:init layer_1.17.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,715:INFO:init layer_1.17.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,715:INFO:init layer_1.17.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,715:INFO:init layer_1.17.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,715:INFO:init layer_2.0.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,715:INFO:init layer_2.0.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,715:INFO:init layer_2.0.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,716:INFO:init layer_2.0.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,716:INFO:init layer_2.0.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,716:INFO:init layer_2.0.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,716:INFO:init layer_2.1.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,716:INFO:init layer_2.1.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,716:INFO:init layer_2.1.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,716:INFO:init layer_2.1.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,717:INFO:init layer_2.1.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,717:INFO:init layer_2.1.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,717:INFO:init layer_2.2.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,717:INFO:init layer_2.2.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,717:INFO:init layer_2.2.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,717:INFO:init layer_2.2.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,717:INFO:init layer_2.2.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,717:INFO:init layer_2.2.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,718:INFO:init layer_2.3.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,718:INFO:init layer_2.3.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,718:INFO:init layer_2.3.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,718:INFO:init layer_2.3.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,718:INFO:init layer_2.3.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,718:INFO:init layer_2.3.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,718:INFO:init layer_2.4.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,719:INFO:init layer_2.4.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,719:INFO:init layer_2.4.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,719:INFO:init layer_2.4.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,719:INFO:init layer_2.4.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,719:INFO:init layer_2.4.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,719:INFO:init layer_2.5.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,719:INFO:init layer_2.5.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,719:INFO:init layer_2.5.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,720:INFO:init layer_2.5.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,720:INFO:init layer_2.5.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,720:INFO:init layer_2.5.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,720:INFO:init layer_2.6.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,720:INFO:init layer_2.6.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,720:INFO:init layer_2.6.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,720:INFO:init layer_2.6.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,721:INFO:init layer_2.6.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,721:INFO:init layer_2.6.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,721:INFO:init layer_2.7.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,721:INFO:init layer_2.7.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,721:INFO:init layer_2.7.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,721:INFO:init layer_2.7.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,721:INFO:init layer_2.7.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,721:INFO:init layer_2.7.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,722:INFO:init layer_2.8.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,722:INFO:init layer_2.8.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,722:INFO:init layer_2.8.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,722:INFO:init layer_2.8.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,722:INFO:init layer_2.8.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,722:INFO:init layer_2.8.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,722:INFO:init layer_2.9.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,723:INFO:init layer_2.9.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,723:INFO:init layer_2.9.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,723:INFO:init layer_2.9.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,723:INFO:init layer_2.9.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,723:INFO:init layer_2.9.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,723:INFO:init layer_2.10.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,723:INFO:init layer_2.10.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,723:INFO:init layer_2.10.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,724:INFO:init layer_2.10.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,724:INFO:init layer_2.10.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,724:INFO:init layer_2.10.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,724:INFO:init layer_2.11.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,724:INFO:init layer_2.11.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,724:INFO:init layer_2.11.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,724:INFO:init layer_2.11.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,725:INFO:init layer_2.11.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,725:INFO:init layer_2.11.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,725:INFO:init layer_2.12.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,725:INFO:init layer_2.12.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,725:INFO:init layer_2.12.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,725:INFO:init layer_2.12.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,725:INFO:init layer_2.12.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,725:INFO:init layer_2.12.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,726:INFO:init layer_2.13.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,726:INFO:init layer_2.13.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,726:INFO:init layer_2.13.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,726:INFO:init layer_2.13.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,726:INFO:init layer_2.13.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,726:INFO:init layer_2.13.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,726:INFO:init layer_2.14.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,726:INFO:init layer_2.14.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,727:INFO:init layer_2.14.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,727:INFO:init layer_2.14.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,727:INFO:init layer_2.14.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,727:INFO:init layer_2.14.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,727:INFO:init layer_2.15.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,727:INFO:init layer_2.15.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,727:INFO:init layer_2.15.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,727:INFO:init layer_2.15.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,728:INFO:init layer_2.15.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,728:INFO:init layer_2.15.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,728:INFO:init layer_2.16.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,728:INFO:init layer_2.16.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,728:INFO:init layer_2.16.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,728:INFO:init layer_2.16.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,728:INFO:init layer_2.16.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,729:INFO:init layer_2.16.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,729:INFO:init layer_2.17.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,729:INFO:init layer_2.17.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,729:INFO:init layer_2.17.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,729:INFO:init layer_2.17.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,730:INFO:init layer_2.17.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,730:INFO:init layer_2.17.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,730:INFO:init layer_3.0.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,730:INFO:init layer_3.0.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,730:INFO:init layer_3.0.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,731:INFO:init layer_3.0.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,731:INFO:init layer_3.0.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,731:INFO:init layer_3.0.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,731:INFO:init layer_3.1.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,732:INFO:init layer_3.1.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,732:INFO:init layer_3.1.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,732:INFO:init layer_3.1.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,732:INFO:init layer_3.1.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,733:INFO:init layer_3.1.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,733:INFO:init layer_3.2.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,733:INFO:init layer_3.2.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,734:INFO:init layer_3.2.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,734:INFO:init layer_3.2.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,734:INFO:init layer_3.2.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,734:INFO:init layer_3.2.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,735:INFO:init layer_3.3.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,735:INFO:init layer_3.3.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,735:INFO:init layer_3.3.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,735:INFO:init layer_3.3.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,736:INFO:init layer_3.3.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,736:INFO:init layer_3.3.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,736:INFO:init layer_3.4.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,737:INFO:init layer_3.4.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,737:INFO:init layer_3.4.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,737:INFO:init layer_3.4.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,738:INFO:init layer_3.4.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,738:INFO:init layer_3.4.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,738:INFO:init layer_3.5.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,738:INFO:init layer_3.5.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,739:INFO:init layer_3.5.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,739:INFO:init layer_3.5.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,739:INFO:init layer_3.5.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,739:INFO:init layer_3.5.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,740:INFO:init layer_3.6.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,740:INFO:init layer_3.6.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,740:INFO:init layer_3.6.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,740:INFO:init layer_3.6.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,741:INFO:init layer_3.6.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,741:INFO:init layer_3.6.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,741:INFO:init layer_3.7.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,741:INFO:init layer_3.7.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,741:INFO:init layer_3.7.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,742:INFO:init layer_3.7.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,742:INFO:init layer_3.7.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,742:INFO:init layer_3.7.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,742:INFO:init layer_3.8.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,742:INFO:init layer_3.8.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,743:INFO:init layer_3.8.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,743:INFO:init layer_3.8.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,743:INFO:init layer_3.8.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,743:INFO:init layer_3.8.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,743:INFO:init layer_3.9.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,744:INFO:init layer_3.9.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,744:INFO:init layer_3.9.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,744:INFO:init layer_3.9.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,745:INFO:init layer_3.9.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,745:INFO:init layer_3.9.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,745:INFO:init layer_3.10.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,745:INFO:init layer_3.10.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,745:INFO:init layer_3.10.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,745:INFO:init layer_3.10.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,746:INFO:init layer_3.10.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,746:INFO:init layer_3.10.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,746:INFO:init layer_3.11.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,746:INFO:init layer_3.11.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,746:INFO:init layer_3.11.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,747:INFO:init layer_3.11.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,747:INFO:init layer_3.11.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,747:INFO:init layer_3.11.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,747:INFO:init layer_3.12.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,748:INFO:init layer_3.12.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,748:INFO:init layer_3.12.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,748:INFO:init layer_3.12.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,748:INFO:init layer_3.12.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,749:INFO:init layer_3.12.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,749:INFO:init layer_3.13.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,749:INFO:init layer_3.13.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,749:INFO:init layer_3.13.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,750:INFO:init layer_3.13.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,750:INFO:init layer_3.13.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,750:INFO:init layer_3.13.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,750:INFO:init layer_3.14.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,750:INFO:init layer_3.14.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,751:INFO:init layer_3.14.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,751:INFO:init layer_3.14.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,751:INFO:init layer_3.14.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,751:INFO:init layer_3.14.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,752:INFO:init layer_3.15.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,752:INFO:init layer_3.15.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,752:INFO:init layer_3.15.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,752:INFO:init layer_3.15.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,753:INFO:init layer_3.15.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,753:INFO:init layer_3.15.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,753:INFO:init layer_3.16.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,753:INFO:init layer_3.16.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,753:INFO:init layer_3.16.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,754:INFO:init layer_3.16.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,754:INFO:init layer_3.16.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,754:INFO:init layer_3.16.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:21,754:INFO:init layer_3.17.subconv_1.0.weight as kaiming_normal_
+2020-05-01 01:47:21,754:INFO:init layer_3.17.subconv_1.1.weight as constant_ 1
+2020-05-01 01:47:21,755:INFO:init layer_3.17.subconv_1.1.bias as constant_ 0
+2020-05-01 01:47:21,755:INFO:init layer_3.17.subconv_2.0.weight as kaiming_normal_
+2020-05-01 01:47:21,755:INFO:init layer_3.17.subconv_2.1.weight as constant_ 1
+2020-05-01 01:47:21,755:INFO:init layer_3.17.subconv_2.1.bias as constant_ 0
+2020-05-01 01:47:25,539:INFO:Computational complexity:       0.26 GMac
+2020-05-01 01:47:25,539:INFO:Number of parameters:           1.73 M  
+2020-05-01 01:47:25,540:INFO:no checkpoints
+2020-05-01 01:47:26,378:INFO:[0]{0}/{390} loss:4.017522 lr:0.100000
+2020-05-01 01:47:31,630:INFO:[0]{50}/{390} loss:2.308622 lr:0.100000
+2020-05-01 01:47:36,651:INFO:[0]{100}/{390} loss:2.302397 lr:0.100000
+2020-05-01 01:47:41,785:INFO:[0]{150}/{390} loss:2.287302 lr:0.100000
+2020-05-01 01:47:47,029:INFO:[0]{200}/{390} loss:2.305679 lr:0.100000
+2020-05-01 01:47:51,870:INFO:[0]{250}/{390} loss:2.238580 lr:0.100000
+2020-05-01 01:47:56,762:INFO:[0]{300}/{390} loss:2.150328 lr:0.100000
+2020-05-01 01:48:01,608:INFO:[0]{350}/{390} loss:1.992239 lr:0.100000
+2020-05-01 01:48:28,797:INFO:[1]{0}/{390} loss:1.941997 lr:0.100000
+2020-05-01 01:48:33,800:INFO:[1]{50}/{390} loss:1.968888 lr:0.100000
+2020-05-01 01:48:39,026:INFO:[1]{100}/{390} loss:1.863750 lr:0.100000
+2020-05-01 01:48:44,342:INFO:[1]{150}/{390} loss:1.867098 lr:0.100000
+2020-05-01 01:48:49,660:INFO:[1]{200}/{390} loss:1.816797 lr:0.100000
+2020-05-01 01:48:54,963:INFO:[1]{250}/{390} loss:1.699973 lr:0.100000
+2020-05-01 01:49:00,144:INFO:[1]{300}/{390} loss:1.764379 lr:0.100000
+2020-05-01 01:49:05,145:INFO:[1]{350}/{390} loss:1.751568 lr:0.100000
+2020-05-01 01:49:29,697:INFO:[2]{0}/{390} loss:1.485771 lr:0.100000
+2020-05-01 01:49:34,877:INFO:[2]{50}/{390} loss:1.642142 lr:0.100000
+2020-05-01 01:49:40,112:INFO:[2]{100}/{390} loss:1.595472 lr:0.100000
+2020-05-01 01:49:45,350:INFO:[2]{150}/{390} loss:1.591440 lr:0.100000
+2020-05-01 01:49:50,408:INFO:[2]{200}/{390} loss:1.413510 lr:0.100000
+2020-05-01 01:49:55,469:INFO:[2]{250}/{390} loss:1.551555 lr:0.100000
+2020-05-01 01:50:00,648:INFO:[2]{300}/{390} loss:1.397892 lr:0.100000
+2020-05-01 01:50:05,781:INFO:[2]{350}/{390} loss:1.332941 lr:0.100000
+2020-05-01 01:50:28,296:INFO:[3]{0}/{390} loss:1.237425 lr:0.100000
+2020-05-01 01:50:33,572:INFO:[3]{50}/{390} loss:1.451955 lr:0.100000
+2020-05-01 01:50:38,790:INFO:[3]{100}/{390} loss:1.207626 lr:0.100000
+2020-05-01 01:50:43,787:INFO:[3]{150}/{390} loss:1.383320 lr:0.100000
+2020-05-01 01:50:48,826:INFO:[3]{200}/{390} loss:1.110329 lr:0.100000
+2020-05-01 01:50:53,819:INFO:[3]{250}/{390} loss:1.133516 lr:0.100000
+2020-05-01 01:50:58,747:INFO:[3]{300}/{390} loss:1.022568 lr:0.100000
+2020-05-01 01:51:03,982:INFO:[3]{350}/{390} loss:1.118795 lr:0.100000
+2020-05-01 01:51:26,459:INFO:[4]{0}/{390} loss:1.150858 lr:0.100000
+2020-05-01 01:51:31,763:INFO:[4]{50}/{390} loss:1.119356 lr:0.100000
+2020-05-01 01:51:37,040:INFO:[4]{100}/{390} loss:1.182378 lr:0.100000
+2020-05-01 01:51:42,124:INFO:[4]{150}/{390} loss:1.148784 lr:0.100000
+2020-05-01 01:51:47,398:INFO:[4]{200}/{390} loss:1.071937 lr:0.100000
+2020-05-01 01:51:52,613:INFO:[4]{250}/{390} loss:0.932000 lr:0.100000
+2020-05-01 01:51:57,657:INFO:[4]{300}/{390} loss:0.908318 lr:0.100000
+2020-05-01 01:52:02,633:INFO:[4]{350}/{390} loss:0.940776 lr:0.100000
+2020-05-01 01:52:28,039:INFO:[5]{0}/{390} loss:0.882195 lr:0.100000
+2020-05-01 01:52:32,974:INFO:[5]{50}/{390} loss:0.902779 lr:0.100000
+2020-05-01 01:52:38,075:INFO:[5]{100}/{390} loss:0.896792 lr:0.100000
+2020-05-01 01:52:43,298:INFO:[5]{150}/{390} loss:0.935094 lr:0.100000
+2020-05-01 01:52:48,456:INFO:[5]{200}/{390} loss:0.934157 lr:0.100000
+2020-05-01 01:52:53,411:INFO:[5]{250}/{390} loss:1.025932 lr:0.100000
+2020-05-01 01:52:58,342:INFO:[5]{300}/{390} loss:1.054752 lr:0.100000
+2020-05-01 01:53:03,426:INFO:[5]{350}/{390} loss:0.727464 lr:0.100000
+2020-05-01 01:53:27,772:INFO:[6]{0}/{390} loss:0.956970 lr:0.100000
+2020-05-01 01:53:33,074:INFO:[6]{50}/{390} loss:0.801459 lr:0.100000
+2020-05-01 01:53:38,434:INFO:[6]{100}/{390} loss:0.907157 lr:0.100000
+2020-05-01 01:53:43,452:INFO:[6]{150}/{390} loss:0.839865 lr:0.100000
+2020-05-01 01:53:48,465:INFO:[6]{200}/{390} loss:0.854299 lr:0.100000
+2020-05-01 01:53:53,586:INFO:[6]{250}/{390} loss:0.830769 lr:0.100000
+2020-05-01 01:53:58,559:INFO:[6]{300}/{390} loss:0.845634 lr:0.100000
+2020-05-01 01:54:03,473:INFO:[6]{350}/{390} loss:1.031876 lr:0.100000
+2020-05-01 01:54:28,796:INFO:[7]{0}/{390} loss:0.579705 lr:0.100000
+2020-05-01 01:54:33,999:INFO:[7]{50}/{390} loss:0.696398 lr:0.100000
+2020-05-01 01:54:39,268:INFO:[7]{100}/{390} loss:0.866221 lr:0.100000
+2020-05-01 01:54:44,286:INFO:[7]{150}/{390} loss:0.983979 lr:0.100000
+2020-05-01 01:54:49,217:INFO:[7]{200}/{390} loss:0.533798 lr:0.100000
+2020-05-01 01:54:54,255:INFO:[7]{250}/{390} loss:0.774640 lr:0.100000
+2020-05-01 01:54:59,681:INFO:[7]{300}/{390} loss:0.684104 lr:0.100000
+2020-05-01 01:55:04,819:INFO:[7]{350}/{390} loss:0.660365 lr:0.100000
+2020-05-01 01:55:30,674:INFO:[8]{0}/{390} loss:0.641956 lr:0.100000
+2020-05-01 01:55:35,617:INFO:[8]{50}/{390} loss:0.746064 lr:0.100000
+2020-05-01 01:55:40,522:INFO:[8]{100}/{390} loss:0.650774 lr:0.100000
+2020-05-01 01:55:45,513:INFO:[8]{150}/{390} loss:0.689846 lr:0.100000
+2020-05-01 01:55:50,746:INFO:[8]{200}/{390} loss:0.776989 lr:0.100000
+2020-05-01 01:55:55,764:INFO:[8]{250}/{390} loss:0.669737 lr:0.100000
+2020-05-01 01:56:00,647:INFO:[8]{300}/{390} loss:0.593299 lr:0.100000
+2020-05-01 01:56:05,525:INFO:[8]{350}/{390} loss:0.593858 lr:0.100000
+2020-05-01 01:56:29,986:INFO:[9]{0}/{390} loss:0.896476 lr:0.100000
+2020-05-01 01:56:35,413:INFO:[9]{50}/{390} loss:0.728633 lr:0.100000
+2020-05-01 01:56:40,666:INFO:[9]{100}/{390} loss:0.711456 lr:0.100000
+2020-05-01 01:56:45,878:INFO:[9]{150}/{390} loss:0.596755 lr:0.100000
+2020-05-01 01:56:51,148:INFO:[9]{200}/{390} loss:0.531379 lr:0.100000
+2020-05-01 01:56:56,425:INFO:[9]{250}/{390} loss:0.657652 lr:0.100000
+2020-05-01 01:57:01,465:INFO:[9]{300}/{390} loss:0.686325 lr:0.100000
+2020-05-01 01:57:06,722:INFO:[9]{350}/{390} loss:0.657822 lr:0.100000
+2020-05-01 01:57:30,061:INFO:[10]{0}/{390} loss:0.640873 lr:0.100000
+2020-05-01 01:57:35,189:INFO:[10]{50}/{390} loss:0.568209 lr:0.100000
+2020-05-01 01:57:40,393:INFO:[10]{100}/{390} loss:0.685035 lr:0.100000
+2020-05-01 01:57:45,443:INFO:[10]{150}/{390} loss:0.662145 lr:0.100000
+2020-05-01 01:57:50,533:INFO:[10]{200}/{390} loss:0.772407 lr:0.100000
+2020-05-01 01:57:55,653:INFO:[10]{250}/{390} loss:0.680859 lr:0.100000
+2020-05-01 01:58:00,821:INFO:[10]{300}/{390} loss:0.560427 lr:0.100000
+2020-05-01 01:58:05,802:INFO:[10]{350}/{390} loss:0.648682 lr:0.100000
+2020-05-01 01:58:30,859:INFO:[11]{0}/{390} loss:0.645957 lr:0.100000
+2020-05-01 01:58:36,144:INFO:[11]{50}/{390} loss:0.739139 lr:0.100000
+2020-05-01 01:58:41,272:INFO:[11]{100}/{390} loss:0.466699 lr:0.100000
+2020-05-01 01:58:46,301:INFO:[11]{150}/{390} loss:0.550193 lr:0.100000
+2020-05-01 01:58:51,306:INFO:[11]{200}/{390} loss:0.588602 lr:0.100000
+2020-05-01 01:58:56,577:INFO:[11]{250}/{390} loss:0.492488 lr:0.100000
+2020-05-01 01:59:01,698:INFO:[11]{300}/{390} loss:0.608586 lr:0.100000
+2020-05-01 01:59:07,101:INFO:[11]{350}/{390} loss:0.508685 lr:0.100000
+2020-05-01 01:59:30,697:INFO:[12]{0}/{390} loss:0.494715 lr:0.100000
+2020-05-01 01:59:35,801:INFO:[12]{50}/{390} loss:0.610994 lr:0.100000
+2020-05-01 01:59:41,066:INFO:[12]{100}/{390} loss:0.651498 lr:0.100000
+2020-05-01 01:59:46,165:INFO:[12]{150}/{390} loss:0.560004 lr:0.100000
+2020-05-01 01:59:51,146:INFO:[12]{200}/{390} loss:0.543950 lr:0.100000
+2020-05-01 01:59:56,385:INFO:[12]{250}/{390} loss:0.586470 lr:0.100000
+2020-05-01 02:00:01,573:INFO:[12]{300}/{390} loss:0.581949 lr:0.100000
+2020-05-01 02:00:06,634:INFO:[12]{350}/{390} loss:0.555838 lr:0.100000
+2020-05-01 02:00:32,426:INFO:[13]{0}/{390} loss:0.563828 lr:0.100000
+2020-05-01 02:00:37,431:INFO:[13]{50}/{390} loss:0.447924 lr:0.100000
+2020-05-01 02:00:42,434:INFO:[13]{100}/{390} loss:0.582045 lr:0.100000
+2020-05-01 02:00:47,429:INFO:[13]{150}/{390} loss:0.724137 lr:0.100000
+2020-05-01 02:00:52,408:INFO:[13]{200}/{390} loss:0.465925 lr:0.100000
+2020-05-01 02:00:57,358:INFO:[13]{250}/{390} loss:0.601971 lr:0.100000
+2020-05-01 02:01:02,349:INFO:[13]{300}/{390} loss:0.598113 lr:0.100000
+2020-05-01 02:01:07,402:INFO:[13]{350}/{390} loss:0.638496 lr:0.100000
+2020-05-01 02:01:31,626:INFO:[14]{0}/{390} loss:0.552679 lr:0.100000
+2020-05-01 02:01:36,817:INFO:[14]{50}/{390} loss:0.476191 lr:0.100000
+2020-05-01 02:01:42,025:INFO:[14]{100}/{390} loss:0.590709 lr:0.100000
+2020-05-01 02:01:47,059:INFO:[14]{150}/{390} loss:0.596005 lr:0.100000
+2020-05-01 02:01:52,120:INFO:[14]{200}/{390} loss:0.623200 lr:0.100000
+2020-05-01 02:01:57,320:INFO:[14]{250}/{390} loss:0.568126 lr:0.100000
+2020-05-01 02:02:02,439:INFO:[14]{300}/{390} loss:0.552508 lr:0.100000
+2020-05-01 02:02:07,690:INFO:[14]{350}/{390} loss:0.494413 lr:0.100000
+2020-05-01 02:02:31,611:INFO:[15]{0}/{390} loss:0.419388 lr:0.100000
+2020-05-01 02:02:36,796:INFO:[15]{50}/{390} loss:0.562653 lr:0.100000
+2020-05-01 02:02:41,737:INFO:[15]{100}/{390} loss:0.531686 lr:0.100000
+2020-05-01 02:02:46,644:INFO:[15]{150}/{390} loss:0.552881 lr:0.100000
+2020-05-01 02:02:51,781:INFO:[15]{200}/{390} loss:0.495855 lr:0.100000
+2020-05-01 02:02:56,938:INFO:[15]{250}/{390} loss:0.594578 lr:0.100000
+2020-05-01 02:03:02,134:INFO:[15]{300}/{390} loss:0.398641 lr:0.100000
+2020-05-01 02:03:07,263:INFO:[15]{350}/{390} loss:0.635198 lr:0.100000
+2020-05-01 02:03:30,070:INFO:[16]{0}/{390} loss:0.487802 lr:0.100000
+2020-05-01 02:03:35,345:INFO:[16]{50}/{390} loss:0.369017 lr:0.100000
+2020-05-01 02:03:40,403:INFO:[16]{100}/{390} loss:0.543836 lr:0.100000
+2020-05-01 02:03:45,474:INFO:[16]{150}/{390} loss:0.367255 lr:0.100000
+2020-05-01 02:03:50,668:INFO:[16]{200}/{390} loss:0.518091 lr:0.100000
+2020-05-01 02:03:55,880:INFO:[16]{250}/{390} loss:0.610765 lr:0.100000
+2020-05-01 02:04:01,090:INFO:[16]{300}/{390} loss:0.364106 lr:0.100000
+2020-05-01 02:04:06,348:INFO:[16]{350}/{390} loss:0.427296 lr:0.100000
+2020-05-01 02:04:31,940:INFO:[17]{0}/{390} loss:0.506473 lr:0.100000
+2020-05-01 02:04:36,886:INFO:[17]{50}/{390} loss:0.488397 lr:0.100000
+2020-05-01 02:04:42,003:INFO:[17]{100}/{390} loss:0.315951 lr:0.100000
+2020-05-01 02:04:47,210:INFO:[17]{150}/{390} loss:0.569678 lr:0.100000
+2020-05-01 02:04:52,232:INFO:[17]{200}/{390} loss:0.455124 lr:0.100000
+2020-05-01 02:04:57,549:INFO:[17]{250}/{390} loss:0.425532 lr:0.100000
+2020-05-01 02:05:02,565:INFO:[17]{300}/{390} loss:0.371467 lr:0.100000
+2020-05-01 02:05:07,433:INFO:[17]{350}/{390} loss:0.617158 lr:0.100000
+2020-05-01 02:05:34,996:INFO:[18]{0}/{390} loss:0.368143 lr:0.100000
+2020-05-01 02:05:40,082:INFO:[18]{50}/{390} loss:0.431305 lr:0.100000
+2020-05-01 02:05:45,270:INFO:[18]{100}/{390} loss:0.432170 lr:0.100000
+2020-05-01 02:05:50,354:INFO:[18]{150}/{390} loss:0.507538 lr:0.100000
+2020-05-01 02:05:55,499:INFO:[18]{200}/{390} loss:0.384982 lr:0.100000
+2020-05-01 02:06:00,535:INFO:[18]{250}/{390} loss:0.476786 lr:0.100000
+2020-05-01 02:06:05,539:INFO:[18]{300}/{390} loss:0.414739 lr:0.100000
+2020-05-01 02:06:10,528:INFO:[18]{350}/{390} loss:0.502439 lr:0.100000
+2020-05-01 02:06:34,018:INFO:[19]{0}/{390} loss:0.499317 lr:0.100000
+2020-05-01 02:06:39,226:INFO:[19]{50}/{390} loss:0.458494 lr:0.100000
+2020-05-01 02:06:44,363:INFO:[19]{100}/{390} loss:0.392092 lr:0.100000
+2020-05-01 02:06:49,507:INFO:[19]{150}/{390} loss:0.483105 lr:0.100000
+2020-05-01 02:06:54,473:INFO:[19]{200}/{390} loss:0.415852 lr:0.100000
+2020-05-01 02:06:59,505:INFO:[19]{250}/{390} loss:0.243698 lr:0.100000
+2020-05-01 02:07:04,821:INFO:[19]{300}/{390} loss:0.311041 lr:0.100000
+2020-05-01 02:07:10,117:INFO:[19]{350}/{390} loss:0.397312 lr:0.100000
+2020-05-01 02:07:33,186:INFO:[20]{0}/{390} loss:0.301258 lr:0.100000
+2020-05-01 02:07:38,544:INFO:[20]{50}/{390} loss:0.388158 lr:0.100000
+2020-05-01 02:07:43,734:INFO:[20]{100}/{390} loss:0.439151 lr:0.100000
+2020-05-01 02:07:48,679:INFO:[20]{150}/{390} loss:0.419223 lr:0.100000
+2020-05-01 02:07:53,585:INFO:[20]{200}/{390} loss:0.478652 lr:0.100000
+2020-05-01 02:07:58,549:INFO:[20]{250}/{390} loss:0.268584 lr:0.100000
+2020-05-01 02:08:03,829:INFO:[20]{300}/{390} loss:0.429724 lr:0.100000
+2020-05-01 02:08:08,966:INFO:[20]{350}/{390} loss:0.311091 lr:0.100000
+2020-05-01 02:08:34,403:INFO:[21]{0}/{390} loss:0.435856 lr:0.100000
+2020-05-01 02:08:39,341:INFO:[21]{50}/{390} loss:0.351107 lr:0.100000
+2020-05-01 02:08:44,277:INFO:[21]{100}/{390} loss:0.375390 lr:0.100000
+2020-05-01 02:08:49,160:INFO:[21]{150}/{390} loss:0.388191 lr:0.100000
+2020-05-01 02:08:54,036:INFO:[21]{200}/{390} loss:0.435254 lr:0.100000
+2020-05-01 02:08:59,126:INFO:[21]{250}/{390} loss:0.444458 lr:0.100000
+2020-05-01 02:09:04,136:INFO:[21]{300}/{390} loss:0.455285 lr:0.100000
+2020-05-01 02:09:09,311:INFO:[21]{350}/{390} loss:0.375888 lr:0.100000
+2020-05-01 02:09:33,923:INFO:[22]{0}/{390} loss:0.329667 lr:0.100000
+2020-05-01 02:09:39,076:INFO:[22]{50}/{390} loss:0.335547 lr:0.100000
+2020-05-01 02:09:44,144:INFO:[22]{100}/{390} loss:0.281252 lr:0.100000
+2020-05-01 02:09:49,221:INFO:[22]{150}/{390} loss:0.417505 lr:0.100000
+2020-05-01 02:09:54,393:INFO:[22]{200}/{390} loss:0.506087 lr:0.100000
+2020-05-01 02:09:59,325:INFO:[22]{250}/{390} loss:0.421206 lr:0.100000
+2020-05-01 02:10:04,323:INFO:[22]{300}/{390} loss:0.402878 lr:0.100000
+2020-05-01 02:10:09,224:INFO:[22]{350}/{390} loss:0.459120 lr:0.100000
+2020-05-01 02:10:32,428:INFO:[23]{0}/{390} loss:0.294829 lr:0.100000
+2020-05-01 02:10:37,399:INFO:[23]{50}/{390} loss:0.474638 lr:0.100000
+2020-05-01 02:10:42,645:INFO:[23]{100}/{390} loss:0.296491 lr:0.100000
+2020-05-01 02:10:47,875:INFO:[23]{150}/{390} loss:0.348814 lr:0.100000
+2020-05-01 02:10:52,942:INFO:[23]{200}/{390} loss:0.336605 lr:0.100000
+2020-05-01 02:10:58,020:INFO:[23]{250}/{390} loss:0.328491 lr:0.100000
+2020-05-01 02:11:03,326:INFO:[23]{300}/{390} loss:0.351856 lr:0.100000
+2020-05-01 02:11:08,556:INFO:[23]{350}/{390} loss:0.395150 lr:0.100000
+2020-05-01 02:11:31,745:INFO:[24]{0}/{390} loss:0.271212 lr:0.100000
+2020-05-01 02:11:36,690:INFO:[24]{50}/{390} loss:0.288101 lr:0.100000
+2020-05-01 02:11:41,727:INFO:[24]{100}/{390} loss:0.399805 lr:0.100000
+2020-05-01 02:11:46,946:INFO:[24]{150}/{390} loss:0.409680 lr:0.100000
+2020-05-01 02:11:52,179:INFO:[24]{200}/{390} loss:0.322541 lr:0.100000
+2020-05-01 02:11:57,369:INFO:[24]{250}/{390} loss:0.333634 lr:0.100000
+2020-05-01 02:12:02,432:INFO:[24]{300}/{390} loss:0.245871 lr:0.100000
+2020-05-01 02:12:07,614:INFO:[24]{350}/{390} loss:0.388891 lr:0.100000
+2020-05-01 02:12:33,209:INFO:[25]{0}/{390} loss:0.351842 lr:0.100000
+2020-05-01 02:12:38,341:INFO:[25]{50}/{390} loss:0.333250 lr:0.100000
+2020-05-01 02:12:43,440:INFO:[25]{100}/{390} loss:0.353240 lr:0.100000
+2020-05-01 02:12:48,636:INFO:[25]{150}/{390} loss:0.300709 lr:0.100000
+2020-05-01 02:12:53,739:INFO:[25]{200}/{390} loss:0.312259 lr:0.100000
+2020-05-01 02:12:58,953:INFO:[25]{250}/{390} loss:0.394662 lr:0.100000
+2020-05-01 02:13:04,182:INFO:[25]{300}/{390} loss:0.281989 lr:0.100000
+2020-05-01 02:13:09,331:INFO:[25]{350}/{390} loss:0.254111 lr:0.100000
+2020-05-01 02:13:33,056:INFO:[26]{0}/{390} loss:0.563619 lr:0.100000
+2020-05-01 02:13:38,321:INFO:[26]{50}/{390} loss:0.462205 lr:0.100000
+2020-05-01 02:13:43,313:INFO:[26]{100}/{390} loss:0.238910 lr:0.100000
+2020-05-01 02:13:48,490:INFO:[26]{150}/{390} loss:0.341086 lr:0.100000
+2020-05-01 02:13:53,423:INFO:[26]{200}/{390} loss:0.385391 lr:0.100000
+2020-05-01 02:13:58,508:INFO:[26]{250}/{390} loss:0.329187 lr:0.100000
+2020-05-01 02:14:03,802:INFO:[26]{300}/{390} loss:0.362778 lr:0.100000
+2020-05-01 02:14:08,992:INFO:[26]{350}/{390} loss:0.345315 lr:0.100000
+2020-05-01 02:14:33,074:INFO:[27]{0}/{390} loss:0.237834 lr:0.100000
+2020-05-01 02:14:38,145:INFO:[27]{50}/{390} loss:0.331820 lr:0.100000
+2020-05-01 02:14:43,190:INFO:[27]{100}/{390} loss:0.310528 lr:0.100000
+2020-05-01 02:14:48,216:INFO:[27]{150}/{390} loss:0.455883 lr:0.100000
+2020-05-01 02:14:53,225:INFO:[27]{200}/{390} loss:0.475300 lr:0.100000
+2020-05-01 02:14:58,247:INFO:[27]{250}/{390} loss:0.407360 lr:0.100000
+2020-05-01 02:15:03,420:INFO:[27]{300}/{390} loss:0.428349 lr:0.100000
+2020-05-01 02:15:08,576:INFO:[27]{350}/{390} loss:0.291312 lr:0.100000
+2020-05-01 02:15:32,817:INFO:[28]{0}/{390} loss:0.421193 lr:0.100000
+2020-05-01 02:15:37,920:INFO:[28]{50}/{390} loss:0.496854 lr:0.100000
+2020-05-01 02:15:42,828:INFO:[28]{100}/{390} loss:0.265500 lr:0.100000
+2020-05-01 02:15:47,794:INFO:[28]{150}/{390} loss:0.351777 lr:0.100000
+2020-05-01 02:15:52,796:INFO:[28]{200}/{390} loss:0.264836 lr:0.100000
+2020-05-01 02:15:57,833:INFO:[28]{250}/{390} loss:0.254646 lr:0.100000
+2020-05-01 02:16:03,125:INFO:[28]{300}/{390} loss:0.219044 lr:0.100000
+2020-05-01 02:16:08,315:INFO:[28]{350}/{390} loss:0.445410 lr:0.100000
+2020-05-01 02:16:33,599:INFO:[29]{0}/{390} loss:0.320241 lr:0.100000
+2020-05-01 02:16:38,702:INFO:[29]{50}/{390} loss:0.287688 lr:0.100000
+2020-05-01 02:16:43,679:INFO:[29]{100}/{390} loss:0.345950 lr:0.100000
+2020-05-01 02:16:48,854:INFO:[29]{150}/{390} loss:0.278125 lr:0.100000
+2020-05-01 02:16:54,133:INFO:[29]{200}/{390} loss:0.391977 lr:0.100000
+2020-05-01 02:16:59,374:INFO:[29]{250}/{390} loss:0.327500 lr:0.100000
+2020-05-01 02:17:04,551:INFO:[29]{300}/{390} loss:0.403816 lr:0.100000
+2020-05-01 02:17:09,723:INFO:[29]{350}/{390} loss:0.251381 lr:0.100000
+2020-05-01 02:17:36,135:INFO:[30]{0}/{390} loss:0.337683 lr:0.100000
+2020-05-01 02:17:41,410:INFO:[30]{50}/{390} loss:0.338999 lr:0.100000
+2020-05-01 02:17:46,680:INFO:[30]{100}/{390} loss:0.320596 lr:0.100000
+2020-05-01 02:17:51,797:INFO:[30]{150}/{390} loss:0.302335 lr:0.100000
+2020-05-01 02:17:56,904:INFO:[30]{200}/{390} loss:0.344242 lr:0.100000
+2020-05-01 02:18:01,997:INFO:[30]{250}/{390} loss:0.333890 lr:0.100000
+2020-05-01 02:18:07,056:INFO:[30]{300}/{390} loss:0.184717 lr:0.100000
+2020-05-01 02:18:12,138:INFO:[30]{350}/{390} loss:0.415524 lr:0.100000
+2020-05-01 02:18:38,090:INFO:[31]{0}/{390} loss:0.173642 lr:0.100000
+2020-05-01 02:18:43,394:INFO:[31]{50}/{390} loss:0.249685 lr:0.100000
+2020-05-01 02:18:48,533:INFO:[31]{100}/{390} loss:0.286289 lr:0.100000
+2020-05-01 02:18:53,535:INFO:[31]{150}/{390} loss:0.317612 lr:0.100000
+2020-05-01 02:18:58,648:INFO:[31]{200}/{390} loss:0.157563 lr:0.100000
+2020-05-01 02:19:03,688:INFO:[31]{250}/{390} loss:0.349939 lr:0.100000
+2020-05-01 02:19:08,789:INFO:[31]{300}/{390} loss:0.419546 lr:0.100000
+2020-05-01 02:19:13,942:INFO:[31]{350}/{390} loss:0.300205 lr:0.100000
+2020-05-01 02:19:38,802:INFO:[32]{0}/{390} loss:0.308469 lr:0.100000
+2020-05-01 02:19:43,926:INFO:[32]{50}/{390} loss:0.306885 lr:0.100000
+2020-05-01 02:19:49,054:INFO:[32]{100}/{390} loss:0.254748 lr:0.100000
+2020-05-01 02:19:54,009:INFO:[32]{150}/{390} loss:0.291385 lr:0.100000
+2020-05-01 02:19:58,903:INFO:[32]{200}/{390} loss:0.319192 lr:0.100000
+2020-05-01 02:20:03,892:INFO:[32]{250}/{390} loss:0.271334 lr:0.100000
+2020-05-01 02:20:09,237:INFO:[32]{300}/{390} loss:0.300941 lr:0.100000
+2020-05-01 02:20:14,427:INFO:[32]{350}/{390} loss:0.202310 lr:0.100000
+2020-05-01 02:20:39,853:INFO:[33]{0}/{390} loss:0.319546 lr:0.100000
+2020-05-01 02:20:44,954:INFO:[33]{50}/{390} loss:0.312528 lr:0.100000
+2020-05-01 02:20:50,136:INFO:[33]{100}/{390} loss:0.287592 lr:0.100000
+2020-05-01 02:20:55,198:INFO:[33]{150}/{390} loss:0.396829 lr:0.100000
+2020-05-01 02:21:00,468:INFO:[33]{200}/{390} loss:0.294849 lr:0.100000
+2020-05-01 02:21:05,651:INFO:[33]{250}/{390} loss:0.272506 lr:0.100000
+2020-05-01 02:21:10,996:INFO:[33]{300}/{390} loss:0.255120 lr:0.100000
+2020-05-01 02:21:16,176:INFO:[33]{350}/{390} loss:0.351114 lr:0.100000
+2020-05-01 02:21:40,292:INFO:[34]{0}/{390} loss:0.195665 lr:0.100000
+2020-05-01 02:21:45,261:INFO:[34]{50}/{390} loss:0.257278 lr:0.100000
+2020-05-01 02:21:50,342:INFO:[34]{100}/{390} loss:0.290746 lr:0.100000
+2020-05-01 02:21:55,559:INFO:[34]{150}/{390} loss:0.262431 lr:0.100000
+2020-05-01 02:22:00,506:INFO:[34]{200}/{390} loss:0.237957 lr:0.100000
+2020-05-01 02:22:05,757:INFO:[34]{250}/{390} loss:0.360868 lr:0.100000
+2020-05-01 02:22:10,844:INFO:[34]{300}/{390} loss:0.434974 lr:0.100000
+2020-05-01 02:22:15,878:INFO:[34]{350}/{390} loss:0.346220 lr:0.100000
+2020-05-01 02:22:38,557:INFO:[35]{0}/{390} loss:0.293977 lr:0.100000
+2020-05-01 02:22:43,627:INFO:[35]{50}/{390} loss:0.132203 lr:0.100000
+2020-05-01 02:22:48,570:INFO:[35]{100}/{390} loss:0.321050 lr:0.100000
+2020-05-01 02:22:53,684:INFO:[35]{150}/{390} loss:0.325412 lr:0.100000
+2020-05-01 02:22:58,635:INFO:[35]{200}/{390} loss:0.393226 lr:0.100000
+2020-05-01 02:23:03,617:INFO:[35]{250}/{390} loss:0.322673 lr:0.100000
+2020-05-01 02:23:08,614:INFO:[35]{300}/{390} loss:0.251777 lr:0.100000
+2020-05-01 02:23:13,601:INFO:[35]{350}/{390} loss:0.306266 lr:0.100000
+2020-05-01 02:23:39,677:INFO:[36]{0}/{390} loss:0.257765 lr:0.100000
+2020-05-01 02:23:44,768:INFO:[36]{50}/{390} loss:0.222330 lr:0.100000
+2020-05-01 02:23:49,998:INFO:[36]{100}/{390} loss:0.283620 lr:0.100000
+2020-05-01 02:23:55,031:INFO:[36]{150}/{390} loss:0.270450 lr:0.100000
+2020-05-01 02:24:00,112:INFO:[36]{200}/{390} loss:0.233297 lr:0.100000
+2020-05-01 02:24:05,117:INFO:[36]{250}/{390} loss:0.257706 lr:0.100000
+2020-05-01 02:24:10,088:INFO:[36]{300}/{390} loss:0.286467 lr:0.100000
+2020-05-01 02:24:15,401:INFO:[36]{350}/{390} loss:0.284450 lr:0.100000
+2020-05-01 02:24:39,089:INFO:[37]{0}/{390} loss:0.316721 lr:0.100000
+2020-05-01 02:24:44,571:INFO:[37]{50}/{390} loss:0.220507 lr:0.100000
+2020-05-01 02:24:49,767:INFO:[37]{100}/{390} loss:0.399080 lr:0.100000
+2020-05-01 02:24:54,645:INFO:[37]{150}/{390} loss:0.278508 lr:0.100000
+2020-05-01 02:24:59,516:INFO:[37]{200}/{390} loss:0.298867 lr:0.100000
+2020-05-01 02:25:04,480:INFO:[37]{250}/{390} loss:0.286817 lr:0.100000
+2020-05-01 02:25:09,489:INFO:[37]{300}/{390} loss:0.265813 lr:0.100000
+2020-05-01 02:25:14,586:INFO:[37]{350}/{390} loss:0.375944 lr:0.100000
+2020-05-01 02:25:38,499:INFO:[38]{0}/{390} loss:0.285134 lr:0.100000
+2020-05-01 02:25:43,593:INFO:[38]{50}/{390} loss:0.263807 lr:0.100000
+2020-05-01 02:25:48,731:INFO:[38]{100}/{390} loss:0.216577 lr:0.100000
+2020-05-01 02:25:54,062:INFO:[38]{150}/{390} loss:0.383461 lr:0.100000
+2020-05-01 02:25:59,298:INFO:[38]{200}/{390} loss:0.308153 lr:0.100000
+2020-05-01 02:26:04,473:INFO:[38]{250}/{390} loss:0.367182 lr:0.100000
+2020-05-01 02:26:09,386:INFO:[38]{300}/{390} loss:0.166030 lr:0.100000
+2020-05-01 02:26:14,254:INFO:[38]{350}/{390} loss:0.237875 lr:0.100000
+2020-05-01 02:26:36,670:INFO:[39]{0}/{390} loss:0.165266 lr:0.100000
+2020-05-01 02:26:41,571:INFO:[39]{50}/{390} loss:0.153465 lr:0.100000
+2020-05-01 02:26:46,440:INFO:[39]{100}/{390} loss:0.264341 lr:0.100000
+2020-05-01 02:26:51,307:INFO:[39]{150}/{390} loss:0.397844 lr:0.100000
+2020-05-01 02:26:56,181:INFO:[39]{200}/{390} loss:0.244595 lr:0.100000
+2020-05-01 02:27:01,045:INFO:[39]{250}/{390} loss:0.125963 lr:0.100000
+2020-05-01 02:27:05,910:INFO:[39]{300}/{390} loss:0.263774 lr:0.100000
+2020-05-01 02:27:10,893:INFO:[39]{350}/{390} loss:0.236473 lr:0.100000
+2020-05-01 02:27:34,296:INFO:[40]{0}/{390} loss:0.231340 lr:0.100000
+2020-05-01 02:27:39,445:INFO:[40]{50}/{390} loss:0.377878 lr:0.100000
+2020-05-01 02:27:44,519:INFO:[40]{100}/{390} loss:0.269272 lr:0.100000
+2020-05-01 02:27:49,791:INFO:[40]{150}/{390} loss:0.371725 lr:0.100000
+2020-05-01 02:27:54,932:INFO:[40]{200}/{390} loss:0.264035 lr:0.100000
+2020-05-01 02:28:00,013:INFO:[40]{250}/{390} loss:0.312675 lr:0.100000
+2020-05-01 02:28:05,287:INFO:[40]{300}/{390} loss:0.250629 lr:0.100000
+2020-05-01 02:28:10,242:INFO:[40]{350}/{390} loss:0.195318 lr:0.100000
+2020-05-01 02:28:35,059:INFO:[41]{0}/{390} loss:0.194280 lr:0.100000
+2020-05-01 02:28:40,073:INFO:[41]{50}/{390} loss:0.198367 lr:0.100000
+2020-05-01 02:28:45,016:INFO:[41]{100}/{390} loss:0.324137 lr:0.100000
+2020-05-01 02:28:50,216:INFO:[41]{150}/{390} loss:0.306608 lr:0.100000
+2020-05-01 02:28:55,356:INFO:[41]{200}/{390} loss:0.253644 lr:0.100000
+2020-05-01 02:29:00,537:INFO:[41]{250}/{390} loss:0.231782 lr:0.100000
+2020-05-01 02:29:05,767:INFO:[41]{300}/{390} loss:0.411162 lr:0.100000
+2020-05-01 02:29:11,049:INFO:[41]{350}/{390} loss:0.159859 lr:0.100000
+2020-05-01 02:29:34,231:INFO:[42]{0}/{390} loss:0.202864 lr:0.100000
+2020-05-01 02:29:39,175:INFO:[42]{50}/{390} loss:0.204625 lr:0.100000
+2020-05-01 02:29:44,043:INFO:[42]{100}/{390} loss:0.184232 lr:0.100000
+2020-05-01 02:29:48,910:INFO:[42]{150}/{390} loss:0.245726 lr:0.100000
+2020-05-01 02:29:53,778:INFO:[42]{200}/{390} loss:0.268419 lr:0.100000
+2020-05-01 02:29:58,842:INFO:[42]{250}/{390} loss:0.161975 lr:0.100000
+2020-05-01 02:30:04,025:INFO:[42]{300}/{390} loss:0.325919 lr:0.100000
+2020-05-01 02:30:09,092:INFO:[42]{350}/{390} loss:0.329761 lr:0.100000
+2020-05-01 02:30:36,520:INFO:[43]{0}/{390} loss:0.386785 lr:0.100000
+2020-05-01 02:30:41,548:INFO:[43]{50}/{390} loss:0.179878 lr:0.100000
+2020-05-01 02:30:46,560:INFO:[43]{100}/{390} loss:0.308921 lr:0.100000
+2020-05-01 02:30:51,641:INFO:[43]{150}/{390} loss:0.293865 lr:0.100000
+2020-05-01 02:30:56,778:INFO:[43]{200}/{390} loss:0.304779 lr:0.100000
+2020-05-01 02:31:01,877:INFO:[43]{250}/{390} loss:0.149960 lr:0.100000
+2020-05-01 02:31:07,154:INFO:[43]{300}/{390} loss:0.195790 lr:0.100000
+2020-05-01 02:31:12,364:INFO:[43]{350}/{390} loss:0.277610 lr:0.100000
+2020-05-01 02:31:36,930:INFO:[44]{0}/{390} loss:0.188143 lr:0.100000
+2020-05-01 02:31:41,930:INFO:[44]{50}/{390} loss:0.139091 lr:0.100000
+2020-05-01 02:31:47,280:INFO:[44]{100}/{390} loss:0.298372 lr:0.100000
+2020-05-01 02:31:52,565:INFO:[44]{150}/{390} loss:0.247189 lr:0.100000
+2020-05-01 02:31:57,903:INFO:[44]{200}/{390} loss:0.345349 lr:0.100000
+2020-05-01 02:32:03,064:INFO:[44]{250}/{390} loss:0.182504 lr:0.100000
+2020-05-01 02:32:08,006:INFO:[44]{300}/{390} loss:0.158757 lr:0.100000
+2020-05-01 02:32:12,922:INFO:[44]{350}/{390} loss:0.323943 lr:0.100000
+2020-05-01 02:32:38,185:INFO:[45]{0}/{390} loss:0.283831 lr:0.100000
+2020-05-01 02:32:43,182:INFO:[45]{50}/{390} loss:0.159909 lr:0.100000
+2020-05-01 02:32:48,200:INFO:[45]{100}/{390} loss:0.468150 lr:0.100000
+2020-05-01 02:32:53,273:INFO:[45]{150}/{390} loss:0.151882 lr:0.100000
+2020-05-01 02:32:58,503:INFO:[45]{200}/{390} loss:0.446511 lr:0.100000
+2020-05-01 02:33:03,809:INFO:[45]{250}/{390} loss:0.205022 lr:0.100000
+2020-05-01 02:33:09,056:INFO:[45]{300}/{390} loss:0.244306 lr:0.100000
+2020-05-01 02:33:14,378:INFO:[45]{350}/{390} loss:0.263473 lr:0.100000
+2020-05-01 02:33:37,746:INFO:[46]{0}/{390} loss:0.253870 lr:0.100000
+2020-05-01 02:33:42,956:INFO:[46]{50}/{390} loss:0.205591 lr:0.100000
+2020-05-01 02:33:48,032:INFO:[46]{100}/{390} loss:0.210664 lr:0.100000
+2020-05-01 02:33:53,178:INFO:[46]{150}/{390} loss:0.257401 lr:0.100000
+2020-05-01 02:33:58,509:INFO:[46]{200}/{390} loss:0.285925 lr:0.100000
+2020-05-01 02:34:03,789:INFO:[46]{250}/{390} loss:0.274036 lr:0.100000
+2020-05-01 02:34:09,113:INFO:[46]{300}/{390} loss:0.186618 lr:0.100000
+2020-05-01 02:34:14,522:INFO:[46]{350}/{390} loss:0.353582 lr:0.100000
+2020-05-01 02:34:40,821:INFO:[47]{0}/{390} loss:0.258637 lr:0.100000
+2020-05-01 02:34:46,161:INFO:[47]{50}/{390} loss:0.151940 lr:0.100000
+2020-05-01 02:34:51,275:INFO:[47]{100}/{390} loss:0.340931 lr:0.100000
+2020-05-01 02:34:56,367:INFO:[47]{150}/{390} loss:0.206146 lr:0.100000
+2020-05-01 02:35:01,622:INFO:[47]{200}/{390} loss:0.310347 lr:0.100000
+2020-05-01 02:35:06,591:INFO:[47]{250}/{390} loss:0.287707 lr:0.100000
+2020-05-01 02:35:11,577:INFO:[47]{300}/{390} loss:0.246094 lr:0.100000
+2020-05-01 02:35:16,844:INFO:[47]{350}/{390} loss:0.197161 lr:0.100000
+2020-05-01 02:35:43,958:INFO:[48]{0}/{390} loss:0.212657 lr:0.100000
+2020-05-01 02:35:48,961:INFO:[48]{50}/{390} loss:0.185165 lr:0.100000
+2020-05-01 02:35:54,295:INFO:[48]{100}/{390} loss:0.190274 lr:0.100000
+2020-05-01 02:35:59,409:INFO:[48]{150}/{390} loss:0.325179 lr:0.100000
+2020-05-01 02:36:04,570:INFO:[48]{200}/{390} loss:0.250361 lr:0.100000
+2020-05-01 02:36:09,681:INFO:[48]{250}/{390} loss:0.182512 lr:0.100000
+2020-05-01 02:36:14,612:INFO:[48]{300}/{390} loss:0.108795 lr:0.100000
+2020-05-01 02:36:19,553:INFO:[48]{350}/{390} loss:0.293644 lr:0.100000
+2020-05-01 02:36:42,974:INFO:[49]{0}/{390} loss:0.189313 lr:0.100000
+2020-05-01 02:36:47,928:INFO:[49]{50}/{390} loss:0.218346 lr:0.100000
+2020-05-01 02:36:52,949:INFO:[49]{100}/{390} loss:0.188826 lr:0.100000
+2020-05-01 02:36:57,827:INFO:[49]{150}/{390} loss:0.290373 lr:0.100000
+2020-05-01 02:37:02,699:INFO:[49]{200}/{390} loss:0.392768 lr:0.100000
+2020-05-01 02:37:07,595:INFO:[49]{250}/{390} loss:0.253540 lr:0.100000
+2020-05-01 02:37:12,479:INFO:[49]{300}/{390} loss:0.239945 lr:0.100000
+2020-05-01 02:37:17,570:INFO:[49]{350}/{390} loss:0.392503 lr:0.100000
+2020-05-01 02:37:42,473:INFO:[50]{0}/{390} loss:0.244428 lr:0.100000
+2020-05-01 02:37:47,584:INFO:[50]{50}/{390} loss:0.288496 lr:0.100000
+2020-05-01 02:37:52,749:INFO:[50]{100}/{390} loss:0.259909 lr:0.100000
+2020-05-01 02:37:57,900:INFO:[50]{150}/{390} loss:0.287261 lr:0.100000
+2020-05-01 02:38:03,145:INFO:[50]{200}/{390} loss:0.141769 lr:0.100000
+2020-05-01 02:38:08,271:INFO:[50]{250}/{390} loss:0.226876 lr:0.100000
+2020-05-01 02:38:13,321:INFO:[50]{300}/{390} loss:0.218302 lr:0.100000
+2020-05-01 02:38:18,358:INFO:[50]{350}/{390} loss:0.309924 lr:0.100000
+2020-05-01 02:38:43,666:INFO:[51]{0}/{390} loss:0.203360 lr:0.100000
+2020-05-01 02:38:48,770:INFO:[51]{50}/{390} loss:0.237811 lr:0.100000
+2020-05-01 02:38:54,065:INFO:[51]{100}/{390} loss:0.215246 lr:0.100000
+2020-05-01 02:38:59,409:INFO:[51]{150}/{390} loss:0.186689 lr:0.100000
+2020-05-01 02:39:04,432:INFO:[51]{200}/{390} loss:0.292801 lr:0.100000
+2020-05-01 02:39:09,594:INFO:[51]{250}/{390} loss:0.216426 lr:0.100000
+2020-05-01 02:39:14,913:INFO:[51]{300}/{390} loss:0.308804 lr:0.100000
+2020-05-01 02:39:20,129:INFO:[51]{350}/{390} loss:0.243982 lr:0.100000
+2020-05-01 02:39:46,235:INFO:[52]{0}/{390} loss:0.262352 lr:0.100000
+2020-05-01 02:39:51,593:INFO:[52]{50}/{390} loss:0.164930 lr:0.100000
+2020-05-01 02:39:56,832:INFO:[52]{100}/{390} loss:0.165697 lr:0.100000
+2020-05-01 02:40:01,733:INFO:[52]{150}/{390} loss:0.330306 lr:0.100000
+2020-05-01 02:40:06,621:INFO:[52]{200}/{390} loss:0.254778 lr:0.100000
+2020-05-01 02:40:11,493:INFO:[52]{250}/{390} loss:0.202467 lr:0.100000
+2020-05-01 02:40:16,375:INFO:[52]{300}/{390} loss:0.198482 lr:0.100000
+2020-05-01 02:40:21,251:INFO:[52]{350}/{390} loss:0.241742 lr:0.100000
+2020-05-01 02:40:46,069:INFO:[53]{0}/{390} loss:0.211337 lr:0.100000
+2020-05-01 02:40:51,408:INFO:[53]{50}/{390} loss:0.291646 lr:0.100000
+2020-05-01 02:40:56,541:INFO:[53]{100}/{390} loss:0.169308 lr:0.100000
+2020-05-01 02:41:01,580:INFO:[53]{150}/{390} loss:0.151748 lr:0.100000
+2020-05-01 02:41:06,495:INFO:[53]{200}/{390} loss:0.248116 lr:0.100000
+2020-05-01 02:41:11,763:INFO:[53]{250}/{390} loss:0.263274 lr:0.100000
+2020-05-01 02:41:16,847:INFO:[53]{300}/{390} loss:0.219484 lr:0.100000
+2020-05-01 02:41:21,717:INFO:[53]{350}/{390} loss:0.251726 lr:0.100000
+2020-05-01 02:41:44,254:INFO:[54]{0}/{390} loss:0.183758 lr:0.100000
+2020-05-01 02:41:49,464:INFO:[54]{50}/{390} loss:0.176920 lr:0.100000
+2020-05-01 02:41:54,724:INFO:[54]{100}/{390} loss:0.265512 lr:0.100000
+2020-05-01 02:42:00,064:INFO:[54]{150}/{390} loss:0.246948 lr:0.100000
+2020-05-01 02:42:05,155:INFO:[54]{200}/{390} loss:0.371488 lr:0.100000
+2020-05-01 02:42:10,085:INFO:[54]{250}/{390} loss:0.258015 lr:0.100000
+2020-05-01 02:42:15,239:INFO:[54]{300}/{390} loss:0.362712 lr:0.100000
+2020-05-01 02:42:20,376:INFO:[54]{350}/{390} loss:0.229856 lr:0.100000
+2020-05-01 02:42:46,551:INFO:[55]{0}/{390} loss:0.251795 lr:0.100000
+2020-05-01 02:42:51,518:INFO:[55]{50}/{390} loss:0.224228 lr:0.100000
+2020-05-01 02:42:56,827:INFO:[55]{100}/{390} loss:0.164520 lr:0.100000
+2020-05-01 02:43:01,989:INFO:[55]{150}/{390} loss:0.274042 lr:0.100000
+2020-05-01 02:43:07,006:INFO:[55]{200}/{390} loss:0.235449 lr:0.100000
+2020-05-01 02:43:12,079:INFO:[55]{250}/{390} loss:0.204757 lr:0.100000
+2020-05-01 02:43:17,088:INFO:[55]{300}/{390} loss:0.205035 lr:0.100000
+2020-05-01 02:43:22,132:INFO:[55]{350}/{390} loss:0.229628 lr:0.100000
+2020-05-01 02:43:47,277:INFO:[56]{0}/{390} loss:0.208990 lr:0.100000
+2020-05-01 02:43:52,423:INFO:[56]{50}/{390} loss:0.124389 lr:0.100000
+2020-05-01 02:43:57,303:INFO:[56]{100}/{390} loss:0.135660 lr:0.100000
+2020-05-01 02:44:02,183:INFO:[56]{150}/{390} loss:0.171874 lr:0.100000
+2020-05-01 02:44:07,119:INFO:[56]{200}/{390} loss:0.244131 lr:0.100000
+2020-05-01 02:44:11,997:INFO:[56]{250}/{390} loss:0.170065 lr:0.100000
+2020-05-01 02:44:16,888:INFO:[56]{300}/{390} loss:0.269083 lr:0.100000
+2020-05-01 02:44:22,139:INFO:[56]{350}/{390} loss:0.081935 lr:0.100000
+2020-05-01 02:44:49,818:INFO:[57]{0}/{390} loss:0.231979 lr:0.100000
+2020-05-01 02:44:55,073:INFO:[57]{50}/{390} loss:0.188264 lr:0.100000
+2020-05-01 02:45:00,346:INFO:[57]{100}/{390} loss:0.181974 lr:0.100000
+2020-05-01 02:45:05,613:INFO:[57]{150}/{390} loss:0.213218 lr:0.100000
+2020-05-01 02:45:10,633:INFO:[57]{200}/{390} loss:0.160648 lr:0.100000
+2020-05-01 02:45:15,613:INFO:[57]{250}/{390} loss:0.165796 lr:0.100000
+2020-05-01 02:45:21,015:INFO:[57]{300}/{390} loss:0.168104 lr:0.100000
+2020-05-01 02:45:26,124:INFO:[57]{350}/{390} loss:0.198457 lr:0.100000
+2020-05-01 02:45:50,527:INFO:[58]{0}/{390} loss:0.173406 lr:0.100000
+2020-05-01 02:45:55,818:INFO:[58]{50}/{390} loss:0.245901 lr:0.100000
+2020-05-01 02:46:00,791:INFO:[58]{100}/{390} loss:0.298617 lr:0.100000
+2020-05-01 02:46:05,961:INFO:[58]{150}/{390} loss:0.177360 lr:0.100000
+2020-05-01 02:46:10,903:INFO:[58]{200}/{390} loss:0.174252 lr:0.100000
+2020-05-01 02:46:16,110:INFO:[58]{250}/{390} loss:0.133405 lr:0.100000
+2020-05-01 02:46:21,213:INFO:[58]{300}/{390} loss:0.188941 lr:0.100000
+2020-05-01 02:46:26,288:INFO:[58]{350}/{390} loss:0.250902 lr:0.100000
+2020-05-01 02:46:51,349:INFO:[59]{0}/{390} loss:0.268415 lr:0.100000
+2020-05-01 02:46:56,301:INFO:[59]{50}/{390} loss:0.278128 lr:0.100000
+2020-05-01 02:47:01,631:INFO:[59]{100}/{390} loss:0.266463 lr:0.100000
+2020-05-01 02:47:06,612:INFO:[59]{150}/{390} loss:0.159664 lr:0.100000
+2020-05-01 02:47:11,570:INFO:[59]{200}/{390} loss:0.225124 lr:0.100000
+2020-05-01 02:47:16,599:INFO:[59]{250}/{390} loss:0.291141 lr:0.100000
+2020-05-01 02:47:21,910:INFO:[59]{300}/{390} loss:0.334942 lr:0.100000
+2020-05-01 02:47:27,052:INFO:[59]{350}/{390} loss:0.200470 lr:0.100000
+2020-05-01 02:47:54,979:INFO:[60]{0}/{390} loss:0.114988 lr:0.100000
+2020-05-01 02:47:59,851:INFO:[60]{50}/{390} loss:0.224184 lr:0.100000
+2020-05-01 02:48:04,856:INFO:[60]{100}/{390} loss:0.184322 lr:0.100000
+2020-05-01 02:48:09,953:INFO:[60]{150}/{390} loss:0.157934 lr:0.100000
+2020-05-01 02:48:14,927:INFO:[60]{200}/{390} loss:0.158399 lr:0.100000
+2020-05-01 02:48:20,139:INFO:[60]{250}/{390} loss:0.277551 lr:0.100000
+2020-05-01 02:48:25,153:INFO:[60]{300}/{390} loss:0.325176 lr:0.100000
+2020-05-01 02:48:30,186:INFO:[60]{350}/{390} loss:0.218231 lr:0.100000
+2020-05-01 02:48:52,590:INFO:[61]{0}/{390} loss:0.119147 lr:0.100000
+2020-05-01 02:48:57,658:INFO:[61]{50}/{390} loss:0.146976 lr:0.100000
+2020-05-01 02:49:02,725:INFO:[61]{100}/{390} loss:0.184527 lr:0.100000
+2020-05-01 02:49:07,968:INFO:[61]{150}/{390} loss:0.168386 lr:0.100000
+2020-05-01 02:49:13,095:INFO:[61]{200}/{390} loss:0.210953 lr:0.100000
+2020-05-01 02:49:18,261:INFO:[61]{250}/{390} loss:0.192096 lr:0.100000
+2020-05-01 02:49:23,628:INFO:[61]{300}/{390} loss:0.203569 lr:0.100000
+2020-05-01 02:49:28,811:INFO:[61]{350}/{390} loss:0.287896 lr:0.100000
+2020-05-01 02:49:55,636:INFO:[62]{0}/{390} loss:0.230448 lr:0.100000
+2020-05-01 02:50:00,807:INFO:[62]{50}/{390} loss:0.149389 lr:0.100000
+2020-05-01 02:50:06,004:INFO:[62]{100}/{390} loss:0.221493 lr:0.100000
+2020-05-01 02:50:11,023:INFO:[62]{150}/{390} loss:0.203551 lr:0.100000
+2020-05-01 02:50:16,199:INFO:[62]{200}/{390} loss:0.173438 lr:0.100000
+2020-05-01 02:50:21,442:INFO:[62]{250}/{390} loss:0.195188 lr:0.100000
+2020-05-01 02:50:26,317:INFO:[62]{300}/{390} loss:0.183435 lr:0.100000
+2020-05-01 02:50:31,196:INFO:[62]{350}/{390} loss:0.141235 lr:0.100000
+2020-05-01 02:50:55,965:INFO:[63]{0}/{390} loss:0.171837 lr:0.100000
+2020-05-01 02:51:01,073:INFO:[63]{50}/{390} loss:0.207260 lr:0.100000
+2020-05-01 02:51:06,069:INFO:[63]{100}/{390} loss:0.243214 lr:0.100000
+2020-05-01 02:51:11,202:INFO:[63]{150}/{390} loss:0.268516 lr:0.100000
+2020-05-01 02:51:16,642:INFO:[63]{200}/{390} loss:0.285179 lr:0.100000
+2020-05-01 02:51:21,659:INFO:[63]{250}/{390} loss:0.196876 lr:0.100000
+2020-05-01 02:51:26,766:INFO:[63]{300}/{390} loss:0.123762 lr:0.100000
+2020-05-01 02:51:32,122:INFO:[63]{350}/{390} loss:0.412457 lr:0.100000
+2020-05-01 02:51:56,604:INFO:[64]{0}/{390} loss:0.208337 lr:0.100000
+2020-05-01 02:52:01,651:INFO:[64]{50}/{390} loss:0.202540 lr:0.100000
+2020-05-01 02:52:06,602:INFO:[64]{100}/{390} loss:0.199256 lr:0.100000
+2020-05-01 02:52:11,471:INFO:[64]{150}/{390} loss:0.181188 lr:0.100000
+2020-05-01 02:52:16,513:INFO:[64]{200}/{390} loss:0.263314 lr:0.100000
+2020-05-01 02:52:21,843:INFO:[64]{250}/{390} loss:0.219479 lr:0.100000
+2020-05-01 02:52:27,187:INFO:[64]{300}/{390} loss:0.194581 lr:0.100000
+2020-05-01 02:52:32,554:INFO:[64]{350}/{390} loss:0.318795 lr:0.100000
+2020-05-01 02:52:55,675:INFO:[65]{0}/{390} loss:0.175586 lr:0.100000
+2020-05-01 02:53:00,952:INFO:[65]{50}/{390} loss:0.147320 lr:0.100000
+2020-05-01 02:53:06,271:INFO:[65]{100}/{390} loss:0.184009 lr:0.100000
+2020-05-01 02:53:11,543:INFO:[65]{150}/{390} loss:0.180975 lr:0.100000
+2020-05-01 02:53:16,792:INFO:[65]{200}/{390} loss:0.307730 lr:0.100000
+2020-05-01 02:53:21,920:INFO:[65]{250}/{390} loss:0.216620 lr:0.100000
+2020-05-01 02:53:27,039:INFO:[65]{300}/{390} loss:0.191998 lr:0.100000
+2020-05-01 02:53:32,094:INFO:[65]{350}/{390} loss:0.177606 lr:0.100000
+2020-05-01 02:53:57,879:INFO:[66]{0}/{390} loss:0.197259 lr:0.100000
+2020-05-01 02:54:03,285:INFO:[66]{50}/{390} loss:0.154234 lr:0.100000
+2020-05-01 02:54:08,742:INFO:[66]{100}/{390} loss:0.187679 lr:0.100000
+2020-05-01 02:54:13,955:INFO:[66]{150}/{390} loss:0.142163 lr:0.100000
+2020-05-01 02:54:19,090:INFO:[66]{200}/{390} loss:0.354426 lr:0.100000
+2020-05-01 02:54:24,241:INFO:[66]{250}/{390} loss:0.168631 lr:0.100000
+2020-05-01 02:54:29,326:INFO:[66]{300}/{390} loss:0.244296 lr:0.100000
+2020-05-01 02:54:34,421:INFO:[66]{350}/{390} loss:0.287966 lr:0.100000
+2020-05-01 02:55:00,615:INFO:[67]{0}/{390} loss:0.187911 lr:0.100000
+2020-05-01 02:55:05,679:INFO:[67]{50}/{390} loss:0.199738 lr:0.100000
+2020-05-01 02:55:10,586:INFO:[67]{100}/{390} loss:0.176226 lr:0.100000
+2020-05-01 02:55:15,634:INFO:[67]{150}/{390} loss:0.278815 lr:0.100000
+2020-05-01 02:55:20,964:INFO:[67]{200}/{390} loss:0.098371 lr:0.100000
+2020-05-01 02:55:26,222:INFO:[67]{250}/{390} loss:0.196162 lr:0.100000
+2020-05-01 02:55:31,183:INFO:[67]{300}/{390} loss:0.153300 lr:0.100000
+2020-05-01 02:55:36,504:INFO:[67]{350}/{390} loss:0.273834 lr:0.100000
+2020-05-01 02:56:03,562:INFO:[68]{0}/{390} loss:0.098036 lr:0.100000
+2020-05-01 02:56:08,832:INFO:[68]{50}/{390} loss:0.146348 lr:0.100000
+2020-05-01 02:56:14,131:INFO:[68]{100}/{390} loss:0.110997 lr:0.100000
+2020-05-01 02:56:19,315:INFO:[68]{150}/{390} loss:0.220370 lr:0.100000
+2020-05-01 02:56:24,397:INFO:[68]{200}/{390} loss:0.272289 lr:0.100000
+2020-05-01 02:56:29,765:INFO:[68]{250}/{390} loss:0.268195 lr:0.100000
+2020-05-01 02:56:34,799:INFO:[68]{300}/{390} loss:0.231517 lr:0.100000
+2020-05-01 02:56:39,676:INFO:[68]{350}/{390} loss:0.220471 lr:0.100000
+2020-05-01 02:57:07,284:INFO:[69]{0}/{390} loss:0.186976 lr:0.100000
+2020-05-01 02:57:12,371:INFO:[69]{50}/{390} loss:0.190284 lr:0.100000
+2020-05-01 02:57:17,397:INFO:[69]{100}/{390} loss:0.170974 lr:0.100000
+2020-05-01 02:57:22,400:INFO:[69]{150}/{390} loss:0.196722 lr:0.100000
+2020-05-01 02:57:27,277:INFO:[69]{200}/{390} loss:0.211866 lr:0.100000
+2020-05-01 02:57:32,159:INFO:[69]{250}/{390} loss:0.147727 lr:0.100000
+2020-05-01 02:57:37,038:INFO:[69]{300}/{390} loss:0.130465 lr:0.100000
+2020-05-01 02:57:41,912:INFO:[69]{350}/{390} loss:0.127333 lr:0.100000
+2020-05-01 02:58:05,164:INFO:[70]{0}/{390} loss:0.129342 lr:0.100000
+2020-05-01 02:58:10,172:INFO:[70]{50}/{390} loss:0.196138 lr:0.100000
+2020-05-01 02:58:15,288:INFO:[70]{100}/{390} loss:0.116048 lr:0.100000
+2020-05-01 02:58:20,621:INFO:[70]{150}/{390} loss:0.203902 lr:0.100000
+2020-05-01 02:58:25,666:INFO:[70]{200}/{390} loss:0.174024 lr:0.100000
+2020-05-01 02:58:30,744:INFO:[70]{250}/{390} loss:0.213436 lr:0.100000
+2020-05-01 02:58:35,668:INFO:[70]{300}/{390} loss:0.275832 lr:0.100000
+2020-05-01 02:58:40,557:INFO:[70]{350}/{390} loss:0.230219 lr:0.100000
+2020-05-01 02:59:05,662:INFO:[71]{0}/{390} loss:0.246129 lr:0.100000
+2020-05-01 02:59:10,918:INFO:[71]{50}/{390} loss:0.122079 lr:0.100000
+2020-05-01 02:59:16,175:INFO:[71]{100}/{390} loss:0.346699 lr:0.100000
+2020-05-01 02:59:21,142:INFO:[71]{150}/{390} loss:0.164813 lr:0.100000
+2020-05-01 02:59:26,018:INFO:[71]{200}/{390} loss:0.218960 lr:0.100000
+2020-05-01 02:59:30,931:INFO:[71]{250}/{390} loss:0.147099 lr:0.100000
+2020-05-01 02:59:36,122:INFO:[71]{300}/{390} loss:0.256516 lr:0.100000
+2020-05-01 02:59:41,283:INFO:[71]{350}/{390} loss:0.271193 lr:0.100000
+2020-05-01 03:00:05,829:INFO:[72]{0}/{390} loss:0.103575 lr:0.100000
+2020-05-01 03:00:10,906:INFO:[72]{50}/{390} loss:0.119148 lr:0.100000
+2020-05-01 03:00:16,055:INFO:[72]{100}/{390} loss:0.136075 lr:0.100000
+2020-05-01 03:00:21,042:INFO:[72]{150}/{390} loss:0.125235 lr:0.100000
+2020-05-01 03:00:26,129:INFO:[72]{200}/{390} loss:0.304259 lr:0.100000
+2020-05-01 03:00:31,107:INFO:[72]{250}/{390} loss:0.232741 lr:0.100000
+2020-05-01 03:00:36,000:INFO:[72]{300}/{390} loss:0.229845 lr:0.100000
+2020-05-01 03:00:40,879:INFO:[72]{350}/{390} loss:0.232967 lr:0.100000
+2020-05-01 03:01:08,420:INFO:[73]{0}/{390} loss:0.138613 lr:0.100000
+2020-05-01 03:01:13,452:INFO:[73]{50}/{390} loss:0.196252 lr:0.100000
+2020-05-01 03:01:18,572:INFO:[73]{100}/{390} loss:0.203440 lr:0.100000
+2020-05-01 03:01:23,579:INFO:[73]{150}/{390} loss:0.284438 lr:0.100000
+2020-05-01 03:01:28,571:INFO:[73]{200}/{390} loss:0.188927 lr:0.100000
+2020-05-01 03:01:33,699:INFO:[73]{250}/{390} loss:0.146945 lr:0.100000
+2020-05-01 03:01:38,759:INFO:[73]{300}/{390} loss:0.213845 lr:0.100000
+2020-05-01 03:01:43,798:INFO:[73]{350}/{390} loss:0.194652 lr:0.100000
+2020-05-01 03:02:10,211:INFO:[74]{0}/{390} loss:0.137419 lr:0.100000
+2020-05-01 03:02:15,234:INFO:[74]{50}/{390} loss:0.136257 lr:0.100000
+2020-05-01 03:02:20,390:INFO:[74]{100}/{390} loss:0.161710 lr:0.100000
+2020-05-01 03:02:25,516:INFO:[74]{150}/{390} loss:0.150450 lr:0.100000
+2020-05-01 03:02:30,556:INFO:[74]{200}/{390} loss:0.243391 lr:0.100000
+2020-05-01 03:02:35,488:INFO:[74]{250}/{390} loss:0.208322 lr:0.100000
+2020-05-01 03:02:40,626:INFO:[74]{300}/{390} loss:0.200040 lr:0.100000
+2020-05-01 03:02:45,728:INFO:[74]{350}/{390} loss:0.142197 lr:0.100000
+2020-05-01 03:03:11,088:INFO:[75]{0}/{390} loss:0.203415 lr:0.100000
+2020-05-01 03:03:16,399:INFO:[75]{50}/{390} loss:0.143430 lr:0.100000
+2020-05-01 03:03:21,422:INFO:[75]{100}/{390} loss:0.182211 lr:0.100000
+2020-05-01 03:03:26,417:INFO:[75]{150}/{390} loss:0.179427 lr:0.100000
+2020-05-01 03:03:31,432:INFO:[75]{200}/{390} loss:0.153813 lr:0.100000
+2020-05-01 03:03:36,403:INFO:[75]{250}/{390} loss:0.330488 lr:0.100000
+2020-05-01 03:03:41,465:INFO:[75]{300}/{390} loss:0.211558 lr:0.100000
+2020-05-01 03:03:46,641:INFO:[75]{350}/{390} loss:0.197423 lr:0.100000
+2020-05-01 03:04:10,735:INFO:[76]{0}/{390} loss:0.142528 lr:0.100000
+2020-05-01 03:04:16,005:INFO:[76]{50}/{390} loss:0.213109 lr:0.100000
+2020-05-01 03:04:21,049:INFO:[76]{100}/{390} loss:0.117458 lr:0.100000
+2020-05-01 03:04:25,924:INFO:[76]{150}/{390} loss:0.191209 lr:0.100000
+2020-05-01 03:04:30,861:INFO:[76]{200}/{390} loss:0.169545 lr:0.100000
+2020-05-01 03:04:36,035:INFO:[76]{250}/{390} loss:0.202986 lr:0.100000
+2020-05-01 03:04:41,233:INFO:[76]{300}/{390} loss:0.220245 lr:0.100000
+2020-05-01 03:04:46,488:INFO:[76]{350}/{390} loss:0.219503 lr:0.100000
+2020-05-01 03:05:11,767:INFO:[77]{0}/{390} loss:0.140133 lr:0.100000
+2020-05-01 03:05:16,980:INFO:[77]{50}/{390} loss:0.203697 lr:0.100000
+2020-05-01 03:05:22,005:INFO:[77]{100}/{390} loss:0.204964 lr:0.100000
+2020-05-01 03:05:27,074:INFO:[77]{150}/{390} loss:0.201854 lr:0.100000
+2020-05-01 03:05:32,270:INFO:[77]{200}/{390} loss:0.191260 lr:0.100000
+2020-05-01 03:05:37,395:INFO:[77]{250}/{390} loss:0.083064 lr:0.100000
+2020-05-01 03:05:42,647:INFO:[77]{300}/{390} loss:0.321304 lr:0.100000
+2020-05-01 03:05:47,821:INFO:[77]{350}/{390} loss:0.134990 lr:0.100000
+2020-05-01 03:06:12,987:INFO:[78]{0}/{390} loss:0.164618 lr:0.100000
+2020-05-01 03:06:17,930:INFO:[78]{50}/{390} loss:0.153454 lr:0.100000
+2020-05-01 03:06:23,058:INFO:[78]{100}/{390} loss:0.219205 lr:0.100000
+2020-05-01 03:06:28,034:INFO:[78]{150}/{390} loss:0.139720 lr:0.100000
+2020-05-01 03:06:33,090:INFO:[78]{200}/{390} loss:0.148944 lr:0.100000
+2020-05-01 03:06:37,961:INFO:[78]{250}/{390} loss:0.346591 lr:0.100000
+2020-05-01 03:06:42,873:INFO:[78]{300}/{390} loss:0.291571 lr:0.100000
+2020-05-01 03:06:47,763:INFO:[78]{350}/{390} loss:0.157346 lr:0.100000
+2020-05-01 03:07:12,350:INFO:[79]{0}/{390} loss:0.176349 lr:0.100000
+2020-05-01 03:07:17,471:INFO:[79]{50}/{390} loss:0.145875 lr:0.100000
+2020-05-01 03:07:22,473:INFO:[79]{100}/{390} loss:0.108949 lr:0.100000
+2020-05-01 03:07:27,608:INFO:[79]{150}/{390} loss:0.242733 lr:0.100000
+2020-05-01 03:07:32,712:INFO:[79]{200}/{390} loss:0.323293 lr:0.100000
+2020-05-01 03:07:37,681:INFO:[79]{250}/{390} loss:0.244189 lr:0.100000
+2020-05-01 03:07:42,775:INFO:[79]{300}/{390} loss:0.269379 lr:0.100000
+2020-05-01 03:07:47,654:INFO:[79]{350}/{390} loss:0.181448 lr:0.100000
+2020-05-01 03:08:13,656:INFO:[80]{0}/{390} loss:0.231663 lr:0.100000
+2020-05-01 03:08:18,914:INFO:[80]{50}/{390} loss:0.214213 lr:0.100000
+2020-05-01 03:08:24,060:INFO:[80]{100}/{390} loss:0.151607 lr:0.100000
+2020-05-01 03:08:29,197:INFO:[80]{150}/{390} loss:0.279114 lr:0.100000
+2020-05-01 03:08:34,286:INFO:[80]{200}/{390} loss:0.364171 lr:0.100000
+2020-05-01 03:08:39,390:INFO:[80]{250}/{390} loss:0.143155 lr:0.100000
+2020-05-01 03:08:44,554:INFO:[80]{300}/{390} loss:0.228956 lr:0.100000
+2020-05-01 03:08:49,726:INFO:[80]{350}/{390} loss:0.156826 lr:0.100000
+2020-05-01 03:09:16,594:INFO:[81]{0}/{390} loss:0.116186 lr:0.100000
+2020-05-01 03:09:21,664:INFO:[81]{50}/{390} loss:0.121240 lr:0.100000
+2020-05-01 03:09:26,708:INFO:[81]{100}/{390} loss:0.187313 lr:0.100000
+2020-05-01 03:09:31,712:INFO:[81]{150}/{390} loss:0.183275 lr:0.100000
+2020-05-01 03:09:36,743:INFO:[81]{200}/{390} loss:0.221004 lr:0.100000
+2020-05-01 03:09:41,819:INFO:[81]{250}/{390} loss:0.180551 lr:0.100000
+2020-05-01 03:09:46,849:INFO:[81]{300}/{390} loss:0.221451 lr:0.100000
+2020-05-01 03:09:52,028:INFO:[81]{350}/{390} loss:0.222100 lr:0.100000
+2020-05-01 03:10:15,831:INFO:[82]{0}/{390} loss:0.097143 lr:0.100000
+2020-05-01 03:10:20,892:INFO:[82]{50}/{390} loss:0.202757 lr:0.100000
+2020-05-01 03:10:25,934:INFO:[82]{100}/{390} loss:0.181419 lr:0.100000
+2020-05-01 03:10:31,059:INFO:[82]{150}/{390} loss:0.201046 lr:0.100000
+2020-05-01 03:10:36,188:INFO:[82]{200}/{390} loss:0.231959 lr:0.100000
+2020-05-01 03:10:41,449:INFO:[82]{250}/{390} loss:0.302080 lr:0.100000
+2020-05-01 03:10:46,654:INFO:[82]{300}/{390} loss:0.296319 lr:0.100000
+2020-05-01 03:10:51,807:INFO:[82]{350}/{390} loss:0.165795 lr:0.100000
+2020-05-01 03:11:16,987:INFO:[83]{0}/{390} loss:0.184148 lr:0.100000
+2020-05-01 03:11:21,957:INFO:[83]{50}/{390} loss:0.229261 lr:0.100000
+2020-05-01 03:11:26,979:INFO:[83]{100}/{390} loss:0.187544 lr:0.100000
+2020-05-01 03:11:32,256:INFO:[83]{150}/{390} loss:0.193586 lr:0.100000
+2020-05-01 03:11:37,302:INFO:[83]{200}/{390} loss:0.133433 lr:0.100000
+2020-05-01 03:11:42,181:INFO:[83]{250}/{390} loss:0.184325 lr:0.100000
+2020-05-01 03:11:47,338:INFO:[83]{300}/{390} loss:0.258975 lr:0.100000
+2020-05-01 03:11:52,629:INFO:[83]{350}/{390} loss:0.180959 lr:0.100000
+2020-05-01 03:12:16,009:INFO:[84]{0}/{390} loss:0.222520 lr:0.100000
+2020-05-01 03:12:20,971:INFO:[84]{50}/{390} loss:0.136872 lr:0.100000
+2020-05-01 03:12:26,010:INFO:[84]{100}/{390} loss:0.118543 lr:0.100000
+2020-05-01 03:12:31,120:INFO:[84]{150}/{390} loss:0.123411 lr:0.100000
+2020-05-01 03:12:36,331:INFO:[84]{200}/{390} loss:0.242432 lr:0.100000
+2020-05-01 03:12:41,549:INFO:[84]{250}/{390} loss:0.199498 lr:0.100000
+2020-05-01 03:12:46,655:INFO:[84]{300}/{390} loss:0.171731 lr:0.100000
+2020-05-01 03:12:51,618:INFO:[84]{350}/{390} loss:0.166440 lr:0.100000
+2020-05-01 03:13:14,655:INFO:[85]{0}/{390} loss:0.199921 lr:0.100000
+2020-05-01 03:13:19,747:INFO:[85]{50}/{390} loss:0.233220 lr:0.100000
+2020-05-01 03:13:24,821:INFO:[85]{100}/{390} loss:0.213504 lr:0.100000
+2020-05-01 03:13:29,999:INFO:[85]{150}/{390} loss:0.253503 lr:0.100000
+2020-05-01 03:13:35,015:INFO:[85]{200}/{390} loss:0.136885 lr:0.100000
+2020-05-01 03:13:40,050:INFO:[85]{250}/{390} loss:0.222394 lr:0.100000
+2020-05-01 03:13:45,209:INFO:[85]{300}/{390} loss:0.166777 lr:0.100000
+2020-05-01 03:13:50,496:INFO:[85]{350}/{390} loss:0.168238 lr:0.100000
+2020-05-01 03:14:14,107:INFO:[86]{0}/{390} loss:0.161897 lr:0.100000
+2020-05-01 03:14:19,039:INFO:[86]{50}/{390} loss:0.099864 lr:0.100000
+2020-05-01 03:14:24,172:INFO:[86]{100}/{390} loss:0.358253 lr:0.100000
+2020-05-01 03:14:29,438:INFO:[86]{150}/{390} loss:0.209249 lr:0.100000
+2020-05-01 03:14:34,516:INFO:[86]{200}/{390} loss:0.225620 lr:0.100000
+2020-05-01 03:14:39,704:INFO:[86]{250}/{390} loss:0.244416 lr:0.100000
+2020-05-01 03:14:44,805:INFO:[86]{300}/{390} loss:0.139336 lr:0.100000
+2020-05-01 03:14:50,026:INFO:[86]{350}/{390} loss:0.186717 lr:0.100000
+2020-05-01 03:15:16,364:INFO:[87]{0}/{390} loss:0.179349 lr:0.100000
+2020-05-01 03:15:21,645:INFO:[87]{50}/{390} loss:0.108286 lr:0.100000
+2020-05-01 03:15:26,856:INFO:[87]{100}/{390} loss:0.177721 lr:0.100000
+2020-05-01 03:15:32,066:INFO:[87]{150}/{390} loss:0.125480 lr:0.100000
+2020-05-01 03:15:37,243:INFO:[87]{200}/{390} loss:0.162353 lr:0.100000
+2020-05-01 03:15:42,190:INFO:[87]{250}/{390} loss:0.191567 lr:0.100000
+2020-05-01 03:15:47,277:INFO:[87]{300}/{390} loss:0.168320 lr:0.100000
+2020-05-01 03:15:52,592:INFO:[87]{350}/{390} loss:0.255206 lr:0.100000
+2020-05-01 03:16:15,345:INFO:[88]{0}/{390} loss:0.150662 lr:0.100000
+2020-05-01 03:16:20,525:INFO:[88]{50}/{390} loss:0.249319 lr:0.100000
+2020-05-01 03:16:25,910:INFO:[88]{100}/{390} loss:0.145507 lr:0.100000
+2020-05-01 03:16:30,939:INFO:[88]{150}/{390} loss:0.167202 lr:0.100000
+2020-05-01 03:16:35,856:INFO:[88]{200}/{390} loss:0.155766 lr:0.100000
+2020-05-01 03:16:41,135:INFO:[88]{250}/{390} loss:0.147841 lr:0.100000
+2020-05-01 03:16:46,373:INFO:[88]{300}/{390} loss:0.169365 lr:0.100000
+2020-05-01 03:16:51,615:INFO:[88]{350}/{390} loss:0.287977 lr:0.100000
+2020-05-01 03:17:15,481:INFO:[89]{0}/{390} loss:0.201624 lr:0.100000
+2020-05-01 03:17:20,537:INFO:[89]{50}/{390} loss:0.224320 lr:0.100000
+2020-05-01 03:17:25,409:INFO:[89]{100}/{390} loss:0.099569 lr:0.100000
+2020-05-01 03:17:30,311:INFO:[89]{150}/{390} loss:0.140418 lr:0.100000
+2020-05-01 03:17:35,231:INFO:[89]{200}/{390} loss:0.258024 lr:0.100000
+2020-05-01 03:17:40,148:INFO:[89]{250}/{390} loss:0.142423 lr:0.100000
+2020-05-01 03:17:45,373:INFO:[89]{300}/{390} loss:0.186742 lr:0.100000
+2020-05-01 03:17:50,373:INFO:[89]{350}/{390} loss:0.242113 lr:0.100000
+2020-05-01 03:18:13,287:INFO:[90]{0}/{390} loss:0.197466 lr:0.100000
+2020-05-01 03:18:18,551:INFO:[90]{50}/{390} loss:0.150469 lr:0.100000
+2020-05-01 03:18:23,632:INFO:[90]{100}/{390} loss:0.262133 lr:0.100000
+2020-05-01 03:18:28,597:INFO:[90]{150}/{390} loss:0.147494 lr:0.100000
+2020-05-01 03:18:33,976:INFO:[90]{200}/{390} loss:0.123308 lr:0.100000
+2020-05-01 03:18:39,140:INFO:[90]{250}/{390} loss:0.194491 lr:0.100000
+2020-05-01 03:18:44,455:INFO:[90]{300}/{390} loss:0.171878 lr:0.100000
+2020-05-01 03:18:49,606:INFO:[90]{350}/{390} loss:0.138434 lr:0.100000
+2020-05-01 03:19:11,772:INFO:[91]{0}/{390} loss:0.151178 lr:0.100000
+2020-05-01 03:19:16,887:INFO:[91]{50}/{390} loss:0.144746 lr:0.100000
+2020-05-01 03:19:22,035:INFO:[91]{100}/{390} loss:0.248654 lr:0.100000
+2020-05-01 03:19:27,262:INFO:[91]{150}/{390} loss:0.152445 lr:0.100000
+2020-05-01 03:19:32,388:INFO:[91]{200}/{390} loss:0.168903 lr:0.100000
+2020-05-01 03:19:37,422:INFO:[91]{250}/{390} loss:0.168273 lr:0.100000
+2020-05-01 03:19:42,792:INFO:[91]{300}/{390} loss:0.138923 lr:0.100000
+2020-05-01 03:19:47,871:INFO:[91]{350}/{390} loss:0.184895 lr:0.100000
+2020-05-01 03:20:12,812:INFO:[92]{0}/{390} loss:0.254821 lr:0.100000
+2020-05-01 03:20:18,046:INFO:[92]{50}/{390} loss:0.123176 lr:0.100000
+2020-05-01 03:20:23,302:INFO:[92]{100}/{390} loss:0.131720 lr:0.100000
+2020-05-01 03:20:28,225:INFO:[92]{150}/{390} loss:0.148335 lr:0.100000
+2020-05-01 03:20:33,241:INFO:[92]{200}/{390} loss:0.123065 lr:0.100000
+2020-05-01 03:20:38,160:INFO:[92]{250}/{390} loss:0.176033 lr:0.100000
+2020-05-01 03:20:43,461:INFO:[92]{300}/{390} loss:0.262801 lr:0.100000
+2020-05-01 03:20:48,493:INFO:[92]{350}/{390} loss:0.151961 lr:0.100000
+2020-05-01 03:21:14,972:INFO:[93]{0}/{390} loss:0.105624 lr:0.100000
+2020-05-01 03:21:20,082:INFO:[93]{50}/{390} loss:0.077910 lr:0.100000
+2020-05-01 03:21:25,048:INFO:[93]{100}/{390} loss:0.193374 lr:0.100000
+2020-05-01 03:21:30,381:INFO:[93]{150}/{390} loss:0.188637 lr:0.100000
+2020-05-01 03:21:35,510:INFO:[93]{200}/{390} loss:0.165126 lr:0.100000
+2020-05-01 03:21:40,612:INFO:[93]{250}/{390} loss:0.153173 lr:0.100000
+2020-05-01 03:21:45,847:INFO:[93]{300}/{390} loss:0.091008 lr:0.100000
+2020-05-01 03:21:51,108:INFO:[93]{350}/{390} loss:0.147307 lr:0.100000
+2020-05-01 03:22:15,045:INFO:[94]{0}/{390} loss:0.200845 lr:0.100000
+2020-05-01 03:22:20,069:INFO:[94]{50}/{390} loss:0.108399 lr:0.100000
+2020-05-01 03:22:24,970:INFO:[94]{100}/{390} loss:0.159525 lr:0.100000
+2020-05-01 03:22:30,002:INFO:[94]{150}/{390} loss:0.150197 lr:0.100000
+2020-05-01 03:22:35,045:INFO:[94]{200}/{390} loss:0.115562 lr:0.100000
+2020-05-01 03:22:40,155:INFO:[94]{250}/{390} loss:0.143661 lr:0.100000
+2020-05-01 03:22:45,252:INFO:[94]{300}/{390} loss:0.179089 lr:0.100000
+2020-05-01 03:22:50,306:INFO:[94]{350}/{390} loss:0.125073 lr:0.100000
+2020-05-01 03:23:15,887:INFO:[95]{0}/{390} loss:0.216325 lr:0.100000
+2020-05-01 03:23:20,981:INFO:[95]{50}/{390} loss:0.193140 lr:0.100000
+2020-05-01 03:23:26,076:INFO:[95]{100}/{390} loss:0.258088 lr:0.100000
+2020-05-01 03:23:31,314:INFO:[95]{150}/{390} loss:0.180181 lr:0.100000
+2020-05-01 03:23:36,264:INFO:[95]{200}/{390} loss:0.183598 lr:0.100000
+2020-05-01 03:23:41,250:INFO:[95]{250}/{390} loss:0.172162 lr:0.100000
+2020-05-01 03:23:46,408:INFO:[95]{300}/{390} loss:0.183625 lr:0.100000
+2020-05-01 03:23:51,617:INFO:[95]{350}/{390} loss:0.188079 lr:0.100000
+2020-05-01 03:24:16,153:INFO:[96]{0}/{390} loss:0.181602 lr:0.100000
+2020-05-01 03:24:21,594:INFO:[96]{50}/{390} loss:0.205732 lr:0.100000
+2020-05-01 03:24:26,632:INFO:[96]{100}/{390} loss:0.275712 lr:0.100000
+2020-05-01 03:24:31,629:INFO:[96]{150}/{390} loss:0.158229 lr:0.100000
+2020-05-01 03:24:37,013:INFO:[96]{200}/{390} loss:0.131121 lr:0.100000
+2020-05-01 03:24:42,282:INFO:[96]{250}/{390} loss:0.194149 lr:0.100000
+2020-05-01 03:24:47,263:INFO:[96]{300}/{390} loss:0.112844 lr:0.100000
+2020-05-01 03:24:52,474:INFO:[96]{350}/{390} loss:0.185075 lr:0.100000
+2020-05-01 03:25:19,751:INFO:[97]{0}/{390} loss:0.067108 lr:0.100000
+2020-05-01 03:25:25,015:INFO:[97]{50}/{390} loss:0.119231 lr:0.100000
+2020-05-01 03:25:30,279:INFO:[97]{100}/{390} loss:0.152234 lr:0.100000
+2020-05-01 03:25:35,262:INFO:[97]{150}/{390} loss:0.113813 lr:0.100000
+2020-05-01 03:25:40,258:INFO:[97]{200}/{390} loss:0.155933 lr:0.100000
+2020-05-01 03:25:45,425:INFO:[97]{250}/{390} loss:0.173771 lr:0.100000
+2020-05-01 03:25:50,535:INFO:[97]{300}/{390} loss:0.240355 lr:0.100000
+2020-05-01 03:25:55,579:INFO:[97]{350}/{390} loss:0.273558 lr:0.100000
+2020-05-01 03:26:22,571:INFO:[98]{0}/{390} loss:0.174670 lr:0.100000
+2020-05-01 03:26:27,677:INFO:[98]{50}/{390} loss:0.146500 lr:0.100000
+2020-05-01 03:26:32,577:INFO:[98]{100}/{390} loss:0.153771 lr:0.100000
+2020-05-01 03:26:37,446:INFO:[98]{150}/{390} loss:0.221805 lr:0.100000
+2020-05-01 03:26:42,367:INFO:[98]{200}/{390} loss:0.140666 lr:0.100000
+2020-05-01 03:26:47,287:INFO:[98]{250}/{390} loss:0.236312 lr:0.100000
+2020-05-01 03:26:52,550:INFO:[98]{300}/{390} loss:0.128741 lr:0.100000
+2020-05-01 03:26:57,783:INFO:[98]{350}/{390} loss:0.156076 lr:0.100000
+2020-05-01 03:27:26,172:INFO:[99]{0}/{390} loss:0.140724 lr:0.100000
+2020-05-01 03:27:31,181:INFO:[99]{50}/{390} loss:0.169730 lr:0.100000
+2020-05-01 03:27:36,280:INFO:[99]{100}/{390} loss:0.173117 lr:0.100000
+2020-05-01 03:27:41,350:INFO:[99]{150}/{390} loss:0.213395 lr:0.100000
+2020-05-01 03:27:46,397:INFO:[99]{200}/{390} loss:0.182870 lr:0.100000
+2020-05-01 03:27:51,416:INFO:[99]{250}/{390} loss:0.165582 lr:0.100000
+2020-05-01 03:27:56,558:INFO:[99]{300}/{390} loss:0.224809 lr:0.100000
+2020-05-01 03:28:01,831:INFO:[99]{350}/{390} loss:0.128871 lr:0.100000
+2020-05-01 03:28:24,858:INFO:[100]{0}/{390} loss:0.135630 lr:0.100000
+2020-05-01 03:28:30,117:INFO:[100]{50}/{390} loss:0.156667 lr:0.100000
+2020-05-01 03:28:35,360:INFO:[100]{100}/{390} loss:0.100403 lr:0.100000
+2020-05-01 03:28:40,723:INFO:[100]{150}/{390} loss:0.201366 lr:0.100000
+2020-05-01 03:28:46,065:INFO:[100]{200}/{390} loss:0.092613 lr:0.100000
+2020-05-01 03:28:51,090:INFO:[100]{250}/{390} loss:0.179788 lr:0.100000
+2020-05-01 03:28:55,977:INFO:[100]{300}/{390} loss:0.208267 lr:0.100000
+2020-05-01 03:29:00,845:INFO:[100]{350}/{390} loss:0.160939 lr:0.100000
+2020-05-01 03:29:24,152:INFO:[101]{0}/{390} loss:0.210818 lr:0.100000
+2020-05-01 03:29:29,157:INFO:[101]{50}/{390} loss:0.161718 lr:0.100000
+2020-05-01 03:29:34,446:INFO:[101]{100}/{390} loss:0.137921 lr:0.100000
+2020-05-01 03:29:39,713:INFO:[101]{150}/{390} loss:0.332274 lr:0.100000
+2020-05-01 03:29:44,698:INFO:[101]{200}/{390} loss:0.138552 lr:0.100000
+2020-05-01 03:29:49,699:INFO:[101]{250}/{390} loss:0.188148 lr:0.100000
+2020-05-01 03:29:54,892:INFO:[101]{300}/{390} loss:0.305853 lr:0.100000
+2020-05-01 03:30:00,145:INFO:[101]{350}/{390} loss:0.277618 lr:0.100000
+2020-05-01 03:30:25,396:INFO:[102]{0}/{390} loss:0.073013 lr:0.100000
+2020-05-01 03:30:30,720:INFO:[102]{50}/{390} loss:0.102552 lr:0.100000
+2020-05-01 03:30:36,040:INFO:[102]{100}/{390} loss:0.180976 lr:0.100000
+2020-05-01 03:30:41,352:INFO:[102]{150}/{390} loss:0.212670 lr:0.100000
+2020-05-01 03:30:46,481:INFO:[102]{200}/{390} loss:0.120546 lr:0.100000
+2020-05-01 03:30:51,512:INFO:[102]{250}/{390} loss:0.143891 lr:0.100000
+2020-05-01 03:30:56,501:INFO:[102]{300}/{390} loss:0.172878 lr:0.100000
+2020-05-01 03:31:01,516:INFO:[102]{350}/{390} loss:0.174702 lr:0.100000
+2020-05-01 03:31:25,378:INFO:[103]{0}/{390} loss:0.154665 lr:0.100000
+2020-05-01 03:31:30,451:INFO:[103]{50}/{390} loss:0.242981 lr:0.100000
+2020-05-01 03:31:35,404:INFO:[103]{100}/{390} loss:0.086964 lr:0.100000
+2020-05-01 03:31:40,368:INFO:[103]{150}/{390} loss:0.221869 lr:0.100000
+2020-05-01 03:31:45,339:INFO:[103]{200}/{390} loss:0.148712 lr:0.100000
+2020-05-01 03:31:50,256:INFO:[103]{250}/{390} loss:0.198337 lr:0.100000
+2020-05-01 03:31:55,408:INFO:[103]{300}/{390} loss:0.065699 lr:0.100000
+2020-05-01 03:32:00,845:INFO:[103]{350}/{390} loss:0.170386 lr:0.100000
+2020-05-01 03:32:24,096:INFO:[104]{0}/{390} loss:0.170444 lr:0.100000
+2020-05-01 03:32:29,070:INFO:[104]{50}/{390} loss:0.234882 lr:0.100000
+2020-05-01 03:32:34,084:INFO:[104]{100}/{390} loss:0.120442 lr:0.100000
+2020-05-01 03:32:39,365:INFO:[104]{150}/{390} loss:0.214542 lr:0.100000
+2020-05-01 03:32:44,667:INFO:[104]{200}/{390} loss:0.126689 lr:0.100000
+2020-05-01 03:32:49,951:INFO:[104]{250}/{390} loss:0.077165 lr:0.100000
+2020-05-01 03:32:55,074:INFO:[104]{300}/{390} loss:0.203663 lr:0.100000
+2020-05-01 03:33:00,126:INFO:[104]{350}/{390} loss:0.175311 lr:0.100000
+2020-05-01 03:33:24,280:INFO:[105]{0}/{390} loss:0.171212 lr:0.100000
+2020-05-01 03:33:29,449:INFO:[105]{50}/{390} loss:0.138273 lr:0.100000
+2020-05-01 03:33:34,723:INFO:[105]{100}/{390} loss:0.220101 lr:0.100000
+2020-05-01 03:33:39,942:INFO:[105]{150}/{390} loss:0.145817 lr:0.100000
+2020-05-01 03:33:44,997:INFO:[105]{200}/{390} loss:0.192095 lr:0.100000
+2020-05-01 03:33:49,930:INFO:[105]{250}/{390} loss:0.144920 lr:0.100000
+2020-05-01 03:33:54,802:INFO:[105]{300}/{390} loss:0.203688 lr:0.100000
+2020-05-01 03:33:59,960:INFO:[105]{350}/{390} loss:0.161602 lr:0.100000
+2020-05-01 03:34:21,863:INFO:[106]{0}/{390} loss:0.160316 lr:0.100000
+2020-05-01 03:34:27,238:INFO:[106]{50}/{390} loss:0.094564 lr:0.100000
+2020-05-01 03:34:32,528:INFO:[106]{100}/{390} loss:0.143018 lr:0.100000
+2020-05-01 03:34:37,797:INFO:[106]{150}/{390} loss:0.251892 lr:0.100000
+2020-05-01 03:34:43,128:INFO:[106]{200}/{390} loss:0.155149 lr:0.100000
+2020-05-01 03:34:48,395:INFO:[106]{250}/{390} loss:0.156261 lr:0.100000
+2020-05-01 03:34:53,614:INFO:[106]{300}/{390} loss:0.342199 lr:0.100000
+2020-05-01 03:34:58,773:INFO:[106]{350}/{390} loss:0.199863 lr:0.100000
+2020-05-01 03:35:25,973:INFO:[107]{0}/{390} loss:0.082531 lr:0.100000
+2020-05-01 03:35:30,916:INFO:[107]{50}/{390} loss:0.088639 lr:0.100000
+2020-05-01 03:35:35,880:INFO:[107]{100}/{390} loss:0.178732 lr:0.100000
+2020-05-01 03:35:41,013:INFO:[107]{150}/{390} loss:0.172148 lr:0.100000
+2020-05-01 03:35:46,141:INFO:[107]{200}/{390} loss:0.133310 lr:0.100000
+2020-05-01 03:35:51,396:INFO:[107]{250}/{390} loss:0.226349 lr:0.100000
+2020-05-01 03:35:56,581:INFO:[107]{300}/{390} loss:0.219591 lr:0.100000
+2020-05-01 03:36:01,450:INFO:[107]{350}/{390} loss:0.168097 lr:0.100000
+2020-05-01 03:36:24,838:INFO:[108]{0}/{390} loss:0.138337 lr:0.100000
+2020-05-01 03:36:30,169:INFO:[108]{50}/{390} loss:0.180611 lr:0.100000
+2020-05-01 03:36:35,557:INFO:[108]{100}/{390} loss:0.251966 lr:0.100000
+2020-05-01 03:36:40,579:INFO:[108]{150}/{390} loss:0.165128 lr:0.100000
+2020-05-01 03:36:45,708:INFO:[108]{200}/{390} loss:0.115989 lr:0.100000
+2020-05-01 03:36:50,982:INFO:[108]{250}/{390} loss:0.191861 lr:0.100000
+2020-05-01 03:36:56,199:INFO:[108]{300}/{390} loss:0.188903 lr:0.100000
+2020-05-01 03:37:01,275:INFO:[108]{350}/{390} loss:0.198826 lr:0.100000
+2020-05-01 03:37:24,829:INFO:[109]{0}/{390} loss:0.150690 lr:0.100000
+2020-05-01 03:37:29,860:INFO:[109]{50}/{390} loss:0.235442 lr:0.100000
+2020-05-01 03:37:34,910:INFO:[109]{100}/{390} loss:0.164497 lr:0.100000
+2020-05-01 03:37:40,315:INFO:[109]{150}/{390} loss:0.119271 lr:0.100000
+2020-05-01 03:37:45,778:INFO:[109]{200}/{390} loss:0.113257 lr:0.100000
+2020-05-01 03:37:50,675:INFO:[109]{250}/{390} loss:0.295192 lr:0.100000
+2020-05-01 03:37:55,543:INFO:[109]{300}/{390} loss:0.141474 lr:0.100000
+2020-05-01 03:38:00,409:INFO:[109]{350}/{390} loss:0.210120 lr:0.100000
+2020-05-01 03:38:28,123:INFO:[110]{0}/{390} loss:0.130738 lr:0.100000
+2020-05-01 03:38:33,151:INFO:[110]{50}/{390} loss:0.152394 lr:0.100000
+2020-05-01 03:38:38,243:INFO:[110]{100}/{390} loss:0.167951 lr:0.100000
+2020-05-01 03:38:43,412:INFO:[110]{150}/{390} loss:0.124353 lr:0.100000
+2020-05-01 03:38:48,637:INFO:[110]{200}/{390} loss:0.194415 lr:0.100000
+2020-05-01 03:38:53,734:INFO:[110]{250}/{390} loss:0.208549 lr:0.100000
+2020-05-01 03:38:58,926:INFO:[110]{300}/{390} loss:0.175232 lr:0.100000
+2020-05-01 03:39:03,917:INFO:[110]{350}/{390} loss:0.152808 lr:0.100000
+2020-05-01 03:39:27,936:INFO:[111]{0}/{390} loss:0.160651 lr:0.100000
+2020-05-01 03:39:33,137:INFO:[111]{50}/{390} loss:0.140393 lr:0.100000
+2020-05-01 03:39:38,269:INFO:[111]{100}/{390} loss:0.186069 lr:0.100000
+2020-05-01 03:39:43,311:INFO:[111]{150}/{390} loss:0.191805 lr:0.100000
+2020-05-01 03:39:48,639:INFO:[111]{200}/{390} loss:0.187418 lr:0.100000
+2020-05-01 03:39:53,849:INFO:[111]{250}/{390} loss:0.206641 lr:0.100000
+2020-05-01 03:39:59,024:INFO:[111]{300}/{390} loss:0.247967 lr:0.100000
+2020-05-01 03:40:04,029:INFO:[111]{350}/{390} loss:0.128636 lr:0.100000
+2020-05-01 03:40:27,030:INFO:[112]{0}/{390} loss:0.192420 lr:0.100000
+2020-05-01 03:40:32,095:INFO:[112]{50}/{390} loss:0.203377 lr:0.100000
+2020-05-01 03:40:37,096:INFO:[112]{100}/{390} loss:0.166416 lr:0.100000
+2020-05-01 03:40:42,262:INFO:[112]{150}/{390} loss:0.246941 lr:0.100000
+2020-05-01 03:40:47,443:INFO:[112]{200}/{390} loss:0.132780 lr:0.100000
+2020-05-01 03:40:52,445:INFO:[112]{250}/{390} loss:0.149915 lr:0.100000
+2020-05-01 03:40:57,438:INFO:[112]{300}/{390} loss:0.191639 lr:0.100000
+2020-05-01 03:41:02,681:INFO:[112]{350}/{390} loss:0.179112 lr:0.100000
+2020-05-01 03:41:29,407:INFO:[113]{0}/{390} loss:0.118819 lr:0.100000
+2020-05-01 03:41:34,487:INFO:[113]{50}/{390} loss:0.103472 lr:0.100000
+2020-05-01 03:41:39,503:INFO:[113]{100}/{390} loss:0.134292 lr:0.100000
+2020-05-01 03:41:44,636:INFO:[113]{150}/{390} loss:0.081556 lr:0.100000
+2020-05-01 03:41:49,708:INFO:[113]{200}/{390} loss:0.108196 lr:0.100000
+2020-05-01 03:41:54,759:INFO:[113]{250}/{390} loss:0.150800 lr:0.100000
+2020-05-01 03:41:59,943:INFO:[113]{300}/{390} loss:0.135189 lr:0.100000
+2020-05-01 03:42:05,119:INFO:[113]{350}/{390} loss:0.235208 lr:0.100000
+2020-05-01 03:42:33,103:INFO:[114]{0}/{390} loss:0.146149 lr:0.100000
+2020-05-01 03:42:38,042:INFO:[114]{50}/{390} loss:0.121316 lr:0.100000
+2020-05-01 03:42:43,124:INFO:[114]{100}/{390} loss:0.050388 lr:0.100000
+2020-05-01 03:42:48,050:INFO:[114]{150}/{390} loss:0.079287 lr:0.100000
+2020-05-01 03:42:53,060:INFO:[114]{200}/{390} loss:0.078112 lr:0.100000
+2020-05-01 03:42:58,072:INFO:[114]{250}/{390} loss:0.151221 lr:0.100000
+2020-05-01 03:43:03,079:INFO:[114]{300}/{390} loss:0.231455 lr:0.100000
+2020-05-01 03:43:08,149:INFO:[114]{350}/{390} loss:0.177156 lr:0.100000
+2020-05-01 03:43:33,273:INFO:[115]{0}/{390} loss:0.192202 lr:0.100000
+2020-05-01 03:43:38,295:INFO:[115]{50}/{390} loss:0.183832 lr:0.100000
+2020-05-01 03:43:43,258:INFO:[115]{100}/{390} loss:0.127881 lr:0.100000
+2020-05-01 03:43:48,508:INFO:[115]{150}/{390} loss:0.215890 lr:0.100000
+2020-05-01 03:43:53,516:INFO:[115]{200}/{390} loss:0.096902 lr:0.100000
+2020-05-01 03:43:58,517:INFO:[115]{250}/{390} loss:0.172467 lr:0.100000
+2020-05-01 03:44:03,819:INFO:[115]{300}/{390} loss:0.233315 lr:0.100000
+2020-05-01 03:44:08,900:INFO:[115]{350}/{390} loss:0.177097 lr:0.100000
+2020-05-01 03:44:34,765:INFO:[116]{0}/{390} loss:0.152660 lr:0.100000
+2020-05-01 03:44:39,879:INFO:[116]{50}/{390} loss:0.139430 lr:0.100000
+2020-05-01 03:44:45,192:INFO:[116]{100}/{390} loss:0.140402 lr:0.100000
+2020-05-01 03:44:50,228:INFO:[116]{150}/{390} loss:0.125876 lr:0.100000
+2020-05-01 03:44:55,209:INFO:[116]{200}/{390} loss:0.089798 lr:0.100000
+2020-05-01 03:45:00,298:INFO:[116]{250}/{390} loss:0.211266 lr:0.100000
+2020-05-01 03:45:05,397:INFO:[116]{300}/{390} loss:0.124228 lr:0.100000
+2020-05-01 03:45:10,447:INFO:[116]{350}/{390} loss:0.196419 lr:0.100000
+2020-05-01 03:45:35,176:INFO:[117]{0}/{390} loss:0.088406 lr:0.100000
+2020-05-01 03:45:40,315:INFO:[117]{50}/{390} loss:0.175069 lr:0.100000
+2020-05-01 03:45:45,575:INFO:[117]{100}/{390} loss:0.098745 lr:0.100000
+2020-05-01 03:45:50,792:INFO:[117]{150}/{390} loss:0.146067 lr:0.100000
+2020-05-01 03:45:56,045:INFO:[117]{200}/{390} loss:0.179924 lr:0.100000
+2020-05-01 03:46:01,382:INFO:[117]{250}/{390} loss:0.095688 lr:0.100000
+2020-05-01 03:46:06,389:INFO:[117]{300}/{390} loss:0.250537 lr:0.100000
+2020-05-01 03:46:11,337:INFO:[117]{350}/{390} loss:0.340506 lr:0.100000
+2020-05-01 03:46:37,969:INFO:[118]{0}/{390} loss:0.059566 lr:0.100000
+2020-05-01 03:46:43,182:INFO:[118]{50}/{390} loss:0.147631 lr:0.100000
+2020-05-01 03:46:48,368:INFO:[118]{100}/{390} loss:0.150044 lr:0.100000
+2020-05-01 03:46:53,541:INFO:[118]{150}/{390} loss:0.183217 lr:0.100000
+2020-05-01 03:46:59,536:INFO:[118]{200}/{390} loss:0.234106 lr:0.100000
+2020-05-01 03:47:04,615:INFO:[118]{250}/{390} loss:0.195388 lr:0.100000
+2020-05-01 03:47:09,624:INFO:[118]{300}/{390} loss:0.152530 lr:0.100000
+2020-05-01 03:47:14,733:INFO:[118]{350}/{390} loss:0.164300 lr:0.100000
+2020-05-01 03:47:40,360:INFO:[119]{0}/{390} loss:0.204955 lr:0.100000
+2020-05-01 03:47:45,495:INFO:[119]{50}/{390} loss:0.134624 lr:0.100000
+2020-05-01 03:47:50,505:INFO:[119]{100}/{390} loss:0.140004 lr:0.100000
+2020-05-01 03:47:55,630:INFO:[119]{150}/{390} loss:0.244316 lr:0.100000
+2020-05-01 03:48:00,787:INFO:[119]{200}/{390} loss:0.167418 lr:0.100000
+2020-05-01 03:48:06,000:INFO:[119]{250}/{390} loss:0.139051 lr:0.100000
+2020-05-01 03:48:10,922:INFO:[119]{300}/{390} loss:0.142556 lr:0.100000
+2020-05-01 03:48:16,030:INFO:[119]{350}/{390} loss:0.070479 lr:0.100000
+2020-05-01 03:48:41,936:INFO:[120]{0}/{390} loss:0.221545 lr:0.100000
+2020-05-01 03:48:47,036:INFO:[120]{50}/{390} loss:0.131522 lr:0.100000
+2020-05-01 03:48:52,238:INFO:[120]{100}/{390} loss:0.205395 lr:0.100000
+2020-05-01 03:48:57,221:INFO:[120]{150}/{390} loss:0.141081 lr:0.100000
+2020-05-01 03:49:02,164:INFO:[120]{200}/{390} loss:0.243285 lr:0.100000
+2020-05-01 03:49:07,112:INFO:[120]{250}/{390} loss:0.158484 lr:0.100000
+2020-05-01 03:49:12,148:INFO:[120]{300}/{390} loss:0.155846 lr:0.100000
+2020-05-01 03:49:17,014:INFO:[120]{350}/{390} loss:0.105359 lr:0.100000
+2020-05-01 03:49:40,004:INFO:[121]{0}/{390} loss:0.178677 lr:0.100000
+2020-05-01 03:49:45,218:INFO:[121]{50}/{390} loss:0.127590 lr:0.100000
+2020-05-01 03:49:50,363:INFO:[121]{100}/{390} loss:0.139403 lr:0.100000
+2020-05-01 03:49:55,842:INFO:[121]{150}/{390} loss:0.099515 lr:0.100000
+2020-05-01 03:50:01,036:INFO:[121]{200}/{390} loss:0.228132 lr:0.100000
+2020-05-01 03:50:06,079:INFO:[121]{250}/{390} loss:0.138339 lr:0.100000
+2020-05-01 03:50:11,154:INFO:[121]{300}/{390} loss:0.070193 lr:0.100000
+2020-05-01 03:50:16,406:INFO:[121]{350}/{390} loss:0.170747 lr:0.100000
+2020-05-01 03:50:40,885:INFO:[122]{0}/{390} loss:0.096593 lr:0.100000
+2020-05-01 03:50:46,175:INFO:[122]{50}/{390} loss:0.095350 lr:0.100000
+2020-05-01 03:50:51,483:INFO:[122]{100}/{390} loss:0.162136 lr:0.100000
+2020-05-01 03:50:56,471:INFO:[122]{150}/{390} loss:0.129691 lr:0.100000
+2020-05-01 03:51:01,670:INFO:[122]{200}/{390} loss:0.210359 lr:0.100000
+2020-05-01 03:51:06,785:INFO:[122]{250}/{390} loss:0.201710 lr:0.100000
+2020-05-01 03:51:12,009:INFO:[122]{300}/{390} loss:0.217970 lr:0.100000
+2020-05-01 03:51:17,087:INFO:[122]{350}/{390} loss:0.158797 lr:0.100000
+2020-05-01 03:51:39,253:INFO:[123]{0}/{390} loss:0.106085 lr:0.100000
+2020-05-01 03:51:44,204:INFO:[123]{50}/{390} loss:0.104252 lr:0.100000
+2020-05-01 03:51:49,183:INFO:[123]{100}/{390} loss:0.227765 lr:0.100000
+2020-05-01 03:51:54,465:INFO:[123]{150}/{390} loss:0.175223 lr:0.100000
+2020-05-01 03:51:59,870:INFO:[123]{200}/{390} loss:0.151955 lr:0.100000
+2020-05-01 03:52:04,922:INFO:[123]{250}/{390} loss:0.110502 lr:0.100000
+2020-05-01 03:52:09,844:INFO:[123]{300}/{390} loss:0.152518 lr:0.100000
+2020-05-01 03:52:15,043:INFO:[123]{350}/{390} loss:0.161849 lr:0.100000
+2020-05-01 03:52:40,698:INFO:[124]{0}/{390} loss:0.228172 lr:0.100000
+2020-05-01 03:52:45,730:INFO:[124]{50}/{390} loss:0.232133 lr:0.100000
+2020-05-01 03:52:50,743:INFO:[124]{100}/{390} loss:0.204326 lr:0.100000
+2020-05-01 03:52:56,051:INFO:[124]{150}/{390} loss:0.120886 lr:0.100000
+2020-05-01 03:53:01,124:INFO:[124]{200}/{390} loss:0.144021 lr:0.100000
+2020-05-01 03:53:06,264:INFO:[124]{250}/{390} loss:0.201886 lr:0.100000
+2020-05-01 03:53:11,207:INFO:[124]{300}/{390} loss:0.155653 lr:0.100000
+2020-05-01 03:53:16,263:INFO:[124]{350}/{390} loss:0.195686 lr:0.100000
+2020-05-01 03:53:42,871:INFO:[125]{0}/{390} loss:0.175920 lr:0.100000
+2020-05-01 03:53:48,118:INFO:[125]{50}/{390} loss:0.165051 lr:0.100000
+2020-05-01 03:53:53,003:INFO:[125]{100}/{390} loss:0.111688 lr:0.100000
+2020-05-01 03:53:58,226:INFO:[125]{150}/{390} loss:0.119554 lr:0.100000
+2020-05-01 03:54:03,446:INFO:[125]{200}/{390} loss:0.100309 lr:0.100000
+2020-05-01 03:54:08,663:INFO:[125]{250}/{390} loss:0.141014 lr:0.100000
+2020-05-01 03:54:13,676:INFO:[125]{300}/{390} loss:0.221877 lr:0.100000
+2020-05-01 03:54:18,740:INFO:[125]{350}/{390} loss:0.223246 lr:0.100000
+2020-05-01 03:54:43,815:INFO:[126]{0}/{390} loss:0.175679 lr:0.100000
+2020-05-01 03:54:48,834:INFO:[126]{50}/{390} loss:0.147906 lr:0.100000
+2020-05-01 03:54:53,790:INFO:[126]{100}/{390} loss:0.143329 lr:0.100000
+2020-05-01 03:54:58,764:INFO:[126]{150}/{390} loss:0.170598 lr:0.100000
+2020-05-01 03:55:03,710:INFO:[126]{200}/{390} loss:0.149668 lr:0.100000
+2020-05-01 03:55:08,790:INFO:[126]{250}/{390} loss:0.131743 lr:0.100000
+2020-05-01 03:55:13,750:INFO:[126]{300}/{390} loss:0.159230 lr:0.100000
+2020-05-01 03:55:18,878:INFO:[126]{350}/{390} loss:0.156603 lr:0.100000
+2020-05-01 03:55:45,356:INFO:[127]{0}/{390} loss:0.184102 lr:0.100000
+2020-05-01 03:55:50,638:INFO:[127]{50}/{390} loss:0.161084 lr:0.100000
+2020-05-01 03:55:55,610:INFO:[127]{100}/{390} loss:0.174900 lr:0.100000
+2020-05-01 03:56:00,827:INFO:[127]{150}/{390} loss:0.205229 lr:0.100000
+2020-05-01 03:56:05,699:INFO:[127]{200}/{390} loss:0.182646 lr:0.100000
+2020-05-01 03:56:10,575:INFO:[127]{250}/{390} loss:0.093617 lr:0.100000
+2020-05-01 03:56:15,803:INFO:[127]{300}/{390} loss:0.135515 lr:0.100000
+2020-05-01 03:56:20,890:INFO:[127]{350}/{390} loss:0.080509 lr:0.100000
+2020-05-01 03:56:46,355:INFO:[128]{0}/{390} loss:0.089494 lr:0.100000
+2020-05-01 03:56:51,546:INFO:[128]{50}/{390} loss:0.103176 lr:0.100000
+2020-05-01 03:56:56,845:INFO:[128]{100}/{390} loss:0.111047 lr:0.100000
+2020-05-01 03:57:02,016:INFO:[128]{150}/{390} loss:0.155142 lr:0.100000
+2020-05-01 03:57:07,179:INFO:[128]{200}/{390} loss:0.175136 lr:0.100000
+2020-05-01 03:57:12,430:INFO:[128]{250}/{390} loss:0.147701 lr:0.100000
+2020-05-01 03:57:17,764:INFO:[128]{300}/{390} loss:0.156476 lr:0.100000
+2020-05-01 03:57:23,040:INFO:[128]{350}/{390} loss:0.072708 lr:0.100000
+2020-05-01 03:57:49,354:INFO:[129]{0}/{390} loss:0.180861 lr:0.100000
+2020-05-01 03:57:54,602:INFO:[129]{50}/{390} loss:0.202652 lr:0.100000
+2020-05-01 03:57:59,807:INFO:[129]{100}/{390} loss:0.156607 lr:0.100000
+2020-05-01 03:58:04,675:INFO:[129]{150}/{390} loss:0.108737 lr:0.100000
+2020-05-01 03:58:09,542:INFO:[129]{200}/{390} loss:0.185809 lr:0.100000
+2020-05-01 03:58:14,410:INFO:[129]{250}/{390} loss:0.090191 lr:0.100000
+2020-05-01 03:58:19,614:INFO:[129]{300}/{390} loss:0.194662 lr:0.100000
+2020-05-01 03:58:24,929:INFO:[129]{350}/{390} loss:0.171607 lr:0.100000
+2020-05-01 03:58:49,254:INFO:[130]{0}/{390} loss:0.222060 lr:0.100000
+2020-05-01 03:58:54,488:INFO:[130]{50}/{390} loss:0.246961 lr:0.100000
+2020-05-01 03:58:59,462:INFO:[130]{100}/{390} loss:0.129192 lr:0.100000
+2020-05-01 03:59:04,585:INFO:[130]{150}/{390} loss:0.181761 lr:0.100000
+2020-05-01 03:59:09,726:INFO:[130]{200}/{390} loss:0.133522 lr:0.100000
+2020-05-01 03:59:15,029:INFO:[130]{250}/{390} loss:0.128411 lr:0.100000
+2020-05-01 03:59:20,340:INFO:[130]{300}/{390} loss:0.149914 lr:0.100000
+2020-05-01 03:59:25,824:INFO:[130]{350}/{390} loss:0.157546 lr:0.100000
+2020-05-01 03:59:55,327:INFO:[131]{0}/{390} loss:0.135048 lr:0.100000
+2020-05-01 04:00:00,396:INFO:[131]{50}/{390} loss:0.166562 lr:0.100000
+2020-05-01 04:00:05,378:INFO:[131]{100}/{390} loss:0.207581 lr:0.100000
+2020-05-01 04:00:10,513:INFO:[131]{150}/{390} loss:0.142026 lr:0.100000
+2020-05-01 04:00:15,599:INFO:[131]{200}/{390} loss:0.167608 lr:0.100000
+2020-05-01 04:00:20,598:INFO:[131]{250}/{390} loss:0.133263 lr:0.100000
+2020-05-01 04:00:25,687:INFO:[131]{300}/{390} loss:0.162584 lr:0.100000
+2020-05-01 04:00:30,844:INFO:[131]{350}/{390} loss:0.104603 lr:0.100000
+2020-05-01 04:00:54,847:INFO:[132]{0}/{390} loss:0.166977 lr:0.100000
+2020-05-01 04:00:59,889:INFO:[132]{50}/{390} loss:0.091436 lr:0.100000
+2020-05-01 04:01:04,855:INFO:[132]{100}/{390} loss:0.070364 lr:0.100000
+2020-05-01 04:01:09,784:INFO:[132]{150}/{390} loss:0.191100 lr:0.100000
+2020-05-01 04:01:14,731:INFO:[132]{200}/{390} loss:0.176002 lr:0.100000
+2020-05-01 04:01:19,654:INFO:[132]{250}/{390} loss:0.193337 lr:0.100000
+2020-05-01 04:01:24,947:INFO:[132]{300}/{390} loss:0.155503 lr:0.100000
+2020-05-01 04:01:30,170:INFO:[132]{350}/{390} loss:0.108293 lr:0.100000
+2020-05-01 04:01:54,157:INFO:[133]{0}/{390} loss:0.104183 lr:0.100000
+2020-05-01 04:01:59,538:INFO:[133]{50}/{390} loss:0.223423 lr:0.100000
+2020-05-01 04:02:04,592:INFO:[133]{100}/{390} loss:0.076438 lr:0.100000
+2020-05-01 04:02:09,822:INFO:[133]{150}/{390} loss:0.240520 lr:0.100000
+2020-05-01 04:02:14,801:INFO:[133]{200}/{390} loss:0.204893 lr:0.100000
+2020-05-01 04:02:19,839:INFO:[133]{250}/{390} loss:0.216749 lr:0.100000
+2020-05-01 04:02:24,880:INFO:[133]{300}/{390} loss:0.114503 lr:0.100000
+2020-05-01 04:02:30,245:INFO:[133]{350}/{390} loss:0.153925 lr:0.100000
+2020-05-01 04:02:52,734:INFO:[134]{0}/{390} loss:0.107429 lr:0.100000
+2020-05-01 04:02:58,004:INFO:[134]{50}/{390} loss:0.152194 lr:0.100000
+2020-05-01 04:03:03,027:INFO:[134]{100}/{390} loss:0.355467 lr:0.100000
+2020-05-01 04:03:08,119:INFO:[134]{150}/{390} loss:0.123056 lr:0.100000
+2020-05-01 04:03:13,283:INFO:[134]{200}/{390} loss:0.145530 lr:0.100000
+2020-05-01 04:03:18,334:INFO:[134]{250}/{390} loss:0.145456 lr:0.100000
+2020-05-01 04:03:23,389:INFO:[134]{300}/{390} loss:0.092860 lr:0.100000
+2020-05-01 04:03:28,685:INFO:[134]{350}/{390} loss:0.194729 lr:0.100000
+2020-05-01 04:03:52,645:INFO:[135]{0}/{390} loss:0.090875 lr:0.100000
+2020-05-01 04:03:57,628:INFO:[135]{50}/{390} loss:0.207459 lr:0.100000
+2020-05-01 04:04:02,679:INFO:[135]{100}/{390} loss:0.093586 lr:0.100000
+2020-05-01 04:04:07,564:INFO:[135]{150}/{390} loss:0.232085 lr:0.100000
+2020-05-01 04:04:12,440:INFO:[135]{200}/{390} loss:0.133545 lr:0.100000
+2020-05-01 04:04:17,312:INFO:[135]{250}/{390} loss:0.113144 lr:0.100000
+2020-05-01 04:04:22,453:INFO:[135]{300}/{390} loss:0.136336 lr:0.100000
+2020-05-01 04:04:27,625:INFO:[135]{350}/{390} loss:0.235737 lr:0.100000
+2020-05-01 04:04:51,249:INFO:[136]{0}/{390} loss:0.187274 lr:0.100000
+2020-05-01 04:04:56,445:INFO:[136]{50}/{390} loss:0.081783 lr:0.100000
+2020-05-01 04:05:01,321:INFO:[136]{100}/{390} loss:0.177614 lr:0.100000
+2020-05-01 04:05:06,313:INFO:[136]{150}/{390} loss:0.108308 lr:0.100000
+2020-05-01 04:05:11,568:INFO:[136]{200}/{390} loss:0.115385 lr:0.100000
+2020-05-01 04:05:16,604:INFO:[136]{250}/{390} loss:0.187440 lr:0.100000
+2020-05-01 04:05:21,546:INFO:[136]{300}/{390} loss:0.240038 lr:0.100000
+2020-05-01 04:05:26,422:INFO:[136]{350}/{390} loss:0.164515 lr:0.100000
+2020-05-01 04:05:51,149:INFO:[137]{0}/{390} loss:0.190597 lr:0.100000
+2020-05-01 04:05:56,117:INFO:[137]{50}/{390} loss:0.203450 lr:0.100000
+2020-05-01 04:06:01,064:INFO:[137]{100}/{390} loss:0.113836 lr:0.100000
+2020-05-01 04:06:05,959:INFO:[137]{150}/{390} loss:0.140381 lr:0.100000
+2020-05-01 04:06:10,839:INFO:[137]{200}/{390} loss:0.120678 lr:0.100000
+2020-05-01 04:06:15,727:INFO:[137]{250}/{390} loss:0.172352 lr:0.100000
+2020-05-01 04:06:20,635:INFO:[137]{300}/{390} loss:0.164623 lr:0.100000
+2020-05-01 04:06:25,663:INFO:[137]{350}/{390} loss:0.259560 lr:0.100000
+2020-05-01 04:06:51,140:INFO:[138]{0}/{390} loss:0.114170 lr:0.100000
+2020-05-01 04:06:56,096:INFO:[138]{50}/{390} loss:0.090101 lr:0.100000
+2020-05-01 04:07:01,180:INFO:[138]{100}/{390} loss:0.141161 lr:0.100000
+2020-05-01 04:07:06,172:INFO:[138]{150}/{390} loss:0.183299 lr:0.100000
+2020-05-01 04:07:11,236:INFO:[138]{200}/{390} loss:0.131406 lr:0.100000
+2020-05-01 04:07:16,318:INFO:[138]{250}/{390} loss:0.114942 lr:0.100000
+2020-05-01 04:07:21,500:INFO:[138]{300}/{390} loss:0.173081 lr:0.100000
+2020-05-01 04:07:26,824:INFO:[138]{350}/{390} loss:0.141302 lr:0.100000
+2020-05-01 04:07:50,371:INFO:[139]{0}/{390} loss:0.124466 lr:0.100000
+2020-05-01 04:07:55,332:INFO:[139]{50}/{390} loss:0.140811 lr:0.100000
+2020-05-01 04:08:00,623:INFO:[139]{100}/{390} loss:0.155212 lr:0.100000
+2020-05-01 04:08:05,906:INFO:[139]{150}/{390} loss:0.073181 lr:0.100000
+2020-05-01 04:08:11,018:INFO:[139]{200}/{390} loss:0.099003 lr:0.100000
+2020-05-01 04:08:16,064:INFO:[139]{250}/{390} loss:0.179026 lr:0.100000
+2020-05-01 04:08:20,975:INFO:[139]{300}/{390} loss:0.130146 lr:0.100000
+2020-05-01 04:08:26,221:INFO:[139]{350}/{390} loss:0.093010 lr:0.100000
+2020-05-01 04:08:48,987:INFO:[140]{0}/{390} loss:0.065763 lr:0.010000
+2020-05-01 04:08:54,090:INFO:[140]{50}/{390} loss:0.068241 lr:0.010000
+2020-05-01 04:08:59,096:INFO:[140]{100}/{390} loss:0.034646 lr:0.010000
+2020-05-01 04:09:04,171:INFO:[140]{150}/{390} loss:0.065439 lr:0.010000
+2020-05-01 04:09:09,426:INFO:[140]{200}/{390} loss:0.057164 lr:0.010000
+2020-05-01 04:09:14,380:INFO:[140]{250}/{390} loss:0.088264 lr:0.010000
+2020-05-01 04:09:19,259:INFO:[140]{300}/{390} loss:0.081549 lr:0.010000
+2020-05-01 04:09:24,211:INFO:[140]{350}/{390} loss:0.033889 lr:0.010000
+2020-05-01 04:09:49,388:INFO:[141]{0}/{390} loss:0.048265 lr:0.010000
+2020-05-01 04:09:54,671:INFO:[141]{50}/{390} loss:0.030177 lr:0.010000
+2020-05-01 04:09:59,830:INFO:[141]{100}/{390} loss:0.017396 lr:0.010000
+2020-05-01 04:10:04,993:INFO:[141]{150}/{390} loss:0.027396 lr:0.010000
+2020-05-01 04:10:10,164:INFO:[141]{200}/{390} loss:0.031707 lr:0.010000
+2020-05-01 04:10:15,233:INFO:[141]{250}/{390} loss:0.021857 lr:0.010000
+2020-05-01 04:10:20,364:INFO:[141]{300}/{390} loss:0.012689 lr:0.010000
+2020-05-01 04:10:25,383:INFO:[141]{350}/{390} loss:0.015670 lr:0.010000
+2020-05-01 04:10:48,349:INFO:[142]{0}/{390} loss:0.042583 lr:0.010000
+2020-05-01 04:10:53,693:INFO:[142]{50}/{390} loss:0.050375 lr:0.010000
+2020-05-01 04:10:58,716:INFO:[142]{100}/{390} loss:0.060015 lr:0.010000
+2020-05-01 04:11:03,855:INFO:[142]{150}/{390} loss:0.057889 lr:0.010000
+2020-05-01 04:11:08,909:INFO:[142]{200}/{390} loss:0.039436 lr:0.010000
+2020-05-01 04:11:14,230:INFO:[142]{250}/{390} loss:0.059483 lr:0.010000
+2020-05-01 04:11:19,447:INFO:[142]{300}/{390} loss:0.031902 lr:0.010000
+2020-05-01 04:11:24,562:INFO:[142]{350}/{390} loss:0.056176 lr:0.010000
+2020-05-01 04:11:47,072:INFO:[143]{0}/{390} loss:0.044115 lr:0.010000
+2020-05-01 04:11:52,306:INFO:[143]{50}/{390} loss:0.041636 lr:0.010000
+2020-05-01 04:11:57,317:INFO:[143]{100}/{390} loss:0.034504 lr:0.010000
+2020-05-01 04:12:02,413:INFO:[143]{150}/{390} loss:0.027727 lr:0.010000
+2020-05-01 04:12:07,505:INFO:[143]{200}/{390} loss:0.048442 lr:0.010000
+2020-05-01 04:12:12,578:INFO:[143]{250}/{390} loss:0.010951 lr:0.010000
+2020-05-01 04:12:17,490:INFO:[143]{300}/{390} loss:0.034340 lr:0.010000
+2020-05-01 04:12:22,537:INFO:[143]{350}/{390} loss:0.011387 lr:0.010000
+2020-05-01 04:12:51,949:INFO:[144]{0}/{390} loss:0.009006 lr:0.010000
+2020-05-01 04:12:57,006:INFO:[144]{50}/{390} loss:0.022017 lr:0.010000
+2020-05-01 04:13:02,040:INFO:[144]{100}/{390} loss:0.022135 lr:0.010000
+2020-05-01 04:13:07,243:INFO:[144]{150}/{390} loss:0.055258 lr:0.010000
+2020-05-01 04:13:12,332:INFO:[144]{200}/{390} loss:0.011265 lr:0.010000
+2020-05-01 04:13:17,561:INFO:[144]{250}/{390} loss:0.019947 lr:0.010000
+2020-05-01 04:13:22,791:INFO:[144]{300}/{390} loss:0.016784 lr:0.010000
+2020-05-01 04:13:27,978:INFO:[144]{350}/{390} loss:0.057305 lr:0.010000
+2020-05-01 04:13:50,859:INFO:[145]{0}/{390} loss:0.007280 lr:0.010000
+2020-05-01 04:13:56,005:INFO:[145]{50}/{390} loss:0.018027 lr:0.010000
+2020-05-01 04:14:00,994:INFO:[145]{100}/{390} loss:0.011588 lr:0.010000
+2020-05-01 04:14:06,190:INFO:[145]{150}/{390} loss:0.030867 lr:0.010000
+2020-05-01 04:14:11,285:INFO:[145]{200}/{390} loss:0.023676 lr:0.010000
+2020-05-01 04:14:16,393:INFO:[145]{250}/{390} loss:0.018108 lr:0.010000
+2020-05-01 04:14:21,337:INFO:[145]{300}/{390} loss:0.014962 lr:0.010000
+2020-05-01 04:14:26,624:INFO:[145]{350}/{390} loss:0.004173 lr:0.010000
+2020-05-01 04:14:49,562:INFO:[146]{0}/{390} loss:0.010014 lr:0.010000
+2020-05-01 04:14:54,510:INFO:[146]{50}/{390} loss:0.015384 lr:0.010000
+2020-05-01 04:14:59,683:INFO:[146]{100}/{390} loss:0.003474 lr:0.010000
+2020-05-01 04:15:04,961:INFO:[146]{150}/{390} loss:0.004834 lr:0.010000
+2020-05-01 04:15:10,215:INFO:[146]{200}/{390} loss:0.008108 lr:0.010000
+2020-05-01 04:15:15,340:INFO:[146]{250}/{390} loss:0.010470 lr:0.010000
+2020-05-01 04:15:20,262:INFO:[146]{300}/{390} loss:0.014441 lr:0.010000
+2020-05-01 04:15:25,323:INFO:[146]{350}/{390} loss:0.038544 lr:0.010000
+2020-05-01 04:15:49,142:INFO:[147]{0}/{390} loss:0.011951 lr:0.010000
+2020-05-01 04:15:54,382:INFO:[147]{50}/{390} loss:0.006059 lr:0.010000
+2020-05-01 04:15:59,592:INFO:[147]{100}/{390} loss:0.015348 lr:0.010000
+2020-05-01 04:16:04,519:INFO:[147]{150}/{390} loss:0.026111 lr:0.010000
+2020-05-01 04:16:09,454:INFO:[147]{200}/{390} loss:0.010973 lr:0.010000
+2020-05-01 04:16:14,421:INFO:[147]{250}/{390} loss:0.007450 lr:0.010000
+2020-05-01 04:16:19,800:INFO:[147]{300}/{390} loss:0.004634 lr:0.010000
+2020-05-01 04:16:25,068:INFO:[147]{350}/{390} loss:0.044870 lr:0.010000
+2020-05-01 04:16:48,884:INFO:[148]{0}/{390} loss:0.015567 lr:0.010000
+2020-05-01 04:16:54,146:INFO:[148]{50}/{390} loss:0.005611 lr:0.010000
+2020-05-01 04:16:59,536:INFO:[148]{100}/{390} loss:0.014336 lr:0.010000
+2020-05-01 04:17:04,585:INFO:[148]{150}/{390} loss:0.009977 lr:0.010000
+2020-05-01 04:17:09,799:INFO:[148]{200}/{390} loss:0.013732 lr:0.010000
+2020-05-01 04:17:14,882:INFO:[148]{250}/{390} loss:0.002472 lr:0.010000
+2020-05-01 04:17:20,130:INFO:[148]{300}/{390} loss:0.027637 lr:0.010000
+2020-05-01 04:17:25,312:INFO:[148]{350}/{390} loss:0.002208 lr:0.010000
+2020-05-01 04:17:48,761:INFO:[149]{0}/{390} loss:0.022390 lr:0.010000
+2020-05-01 04:17:53,956:INFO:[149]{50}/{390} loss:0.020456 lr:0.010000
+2020-05-01 04:17:58,931:INFO:[149]{100}/{390} loss:0.033495 lr:0.010000
+2020-05-01 04:18:03,955:INFO:[149]{150}/{390} loss:0.032044 lr:0.010000
+2020-05-01 04:18:09,057:INFO:[149]{200}/{390} loss:0.034393 lr:0.010000
+2020-05-01 04:18:14,198:INFO:[149]{250}/{390} loss:0.013670 lr:0.010000
+2020-05-01 04:18:19,273:INFO:[149]{300}/{390} loss:0.006836 lr:0.010000
+2020-05-01 04:18:24,393:INFO:[149]{350}/{390} loss:0.005821 lr:0.010000
+2020-05-01 04:18:48,120:INFO:[150]{0}/{390} loss:0.005554 lr:0.010000
+2020-05-01 04:18:53,138:INFO:[150]{50}/{390} loss:0.018504 lr:0.010000
+2020-05-01 04:18:58,297:INFO:[150]{100}/{390} loss:0.003220 lr:0.010000
+2020-05-01 04:19:03,369:INFO:[150]{150}/{390} loss:0.008292 lr:0.010000
+2020-05-01 04:19:08,366:INFO:[150]{200}/{390} loss:0.047493 lr:0.010000
+2020-05-01 04:19:13,601:INFO:[150]{250}/{390} loss:0.017035 lr:0.010000
+2020-05-01 04:19:18,880:INFO:[150]{300}/{390} loss:0.080762 lr:0.010000
+2020-05-01 04:19:24,035:INFO:[150]{350}/{390} loss:0.006817 lr:0.010000
+2020-05-01 04:19:50,154:INFO:[151]{0}/{390} loss:0.004292 lr:0.010000
+2020-05-01 04:19:55,193:INFO:[151]{50}/{390} loss:0.002876 lr:0.010000
+2020-05-01 04:20:00,253:INFO:[151]{100}/{390} loss:0.010963 lr:0.010000
+2020-05-01 04:20:05,131:INFO:[151]{150}/{390} loss:0.005175 lr:0.010000
+2020-05-01 04:20:10,067:INFO:[151]{200}/{390} loss:0.015832 lr:0.010000
+2020-05-01 04:20:15,172:INFO:[151]{250}/{390} loss:0.008756 lr:0.010000
+2020-05-01 04:20:20,249:INFO:[151]{300}/{390} loss:0.006548 lr:0.010000
+2020-05-01 04:20:25,292:INFO:[151]{350}/{390} loss:0.003585 lr:0.010000
+2020-05-01 04:20:50,271:INFO:[152]{0}/{390} loss:0.014916 lr:0.010000
+2020-05-01 04:20:55,628:INFO:[152]{50}/{390} loss:0.005923 lr:0.010000
+2020-05-01 04:21:00,654:INFO:[152]{100}/{390} loss:0.010301 lr:0.010000
+2020-05-01 04:21:05,594:INFO:[152]{150}/{390} loss:0.005155 lr:0.010000
+2020-05-01 04:21:10,520:INFO:[152]{200}/{390} loss:0.004672 lr:0.010000
+2020-05-01 04:21:15,490:INFO:[152]{250}/{390} loss:0.008225 lr:0.010000
+2020-05-01 04:21:20,740:INFO:[152]{300}/{390} loss:0.013818 lr:0.010000
+2020-05-01 04:21:25,986:INFO:[152]{350}/{390} loss:0.009085 lr:0.010000
+2020-05-01 04:21:49,250:INFO:[153]{0}/{390} loss:0.037576 lr:0.010000
+2020-05-01 04:21:54,578:INFO:[153]{50}/{390} loss:0.012303 lr:0.010000
+2020-05-01 04:21:59,656:INFO:[153]{100}/{390} loss:0.049385 lr:0.010000
+2020-05-01 04:22:04,825:INFO:[153]{150}/{390} loss:0.006161 lr:0.010000
+2020-05-01 04:22:09,827:INFO:[153]{200}/{390} loss:0.002017 lr:0.010000
+2020-05-01 04:22:14,852:INFO:[153]{250}/{390} loss:0.038574 lr:0.010000
+2020-05-01 04:22:19,799:INFO:[153]{300}/{390} loss:0.009376 lr:0.010000
+2020-05-01 04:22:24,669:INFO:[153]{350}/{390} loss:0.016148 lr:0.010000
+2020-05-01 04:22:49,749:INFO:[154]{0}/{390} loss:0.019003 lr:0.010000
+2020-05-01 04:22:54,949:INFO:[154]{50}/{390} loss:0.007737 lr:0.010000
+2020-05-01 04:23:00,203:INFO:[154]{100}/{390} loss:0.011827 lr:0.010000
+2020-05-01 04:23:05,307:INFO:[154]{150}/{390} loss:0.003388 lr:0.010000
+2020-05-01 04:23:10,421:INFO:[154]{200}/{390} loss:0.006617 lr:0.010000
+2020-05-01 04:23:15,427:INFO:[154]{250}/{390} loss:0.017221 lr:0.010000
+2020-05-01 04:23:20,403:INFO:[154]{300}/{390} loss:0.009381 lr:0.010000
+2020-05-01 04:23:25,468:INFO:[154]{350}/{390} loss:0.012492 lr:0.010000
+2020-05-01 04:23:50,869:INFO:[155]{0}/{390} loss:0.007765 lr:0.010000
+2020-05-01 04:23:55,927:INFO:[155]{50}/{390} loss:0.010609 lr:0.010000
+2020-05-01 04:24:00,956:INFO:[155]{100}/{390} loss:0.009872 lr:0.010000
+2020-05-01 04:24:05,929:INFO:[155]{150}/{390} loss:0.007849 lr:0.010000
+2020-05-01 04:24:11,224:INFO:[155]{200}/{390} loss:0.002090 lr:0.010000
+2020-05-01 04:24:16,226:INFO:[155]{250}/{390} loss:0.012010 lr:0.010000
+2020-05-01 04:24:21,621:INFO:[155]{300}/{390} loss:0.017395 lr:0.010000
+2020-05-01 04:24:26,841:INFO:[155]{350}/{390} loss:0.012407 lr:0.010000
+2020-05-01 04:24:49,441:INFO:[156]{0}/{390} loss:0.007694 lr:0.010000
+2020-05-01 04:24:54,689:INFO:[156]{50}/{390} loss:0.002367 lr:0.010000
+2020-05-01 04:24:59,855:INFO:[156]{100}/{390} loss:0.001514 lr:0.010000
+2020-05-01 04:25:05,050:INFO:[156]{150}/{390} loss:0.023923 lr:0.010000
+2020-05-01 04:25:10,078:INFO:[156]{200}/{390} loss:0.002267 lr:0.010000
+2020-05-01 04:25:15,138:INFO:[156]{250}/{390} loss:0.016689 lr:0.010000
+2020-05-01 04:25:20,134:INFO:[156]{300}/{390} loss:0.008076 lr:0.010000
+2020-05-01 04:25:25,389:INFO:[156]{350}/{390} loss:0.012220 lr:0.010000
+2020-05-01 04:25:48,851:INFO:[157]{0}/{390} loss:0.004327 lr:0.010000
+2020-05-01 04:25:53,824:INFO:[157]{50}/{390} loss:0.006419 lr:0.010000
+2020-05-01 04:25:58,692:INFO:[157]{100}/{390} loss:0.040748 lr:0.010000
+2020-05-01 04:26:03,661:INFO:[157]{150}/{390} loss:0.004288 lr:0.010000
+2020-05-01 04:26:08,856:INFO:[157]{200}/{390} loss:0.022403 lr:0.010000
+2020-05-01 04:26:13,728:INFO:[157]{250}/{390} loss:0.011795 lr:0.010000
+2020-05-01 04:26:18,827:INFO:[157]{300}/{390} loss:0.013914 lr:0.010000
+2020-05-01 04:26:24,044:INFO:[157]{350}/{390} loss:0.013821 lr:0.010000
+2020-05-01 04:26:48,166:INFO:[158]{0}/{390} loss:0.002951 lr:0.010000
+2020-05-01 04:26:53,361:INFO:[158]{50}/{390} loss:0.007369 lr:0.010000
+2020-05-01 04:26:58,360:INFO:[158]{100}/{390} loss:0.016536 lr:0.010000
+2020-05-01 04:27:03,429:INFO:[158]{150}/{390} loss:0.027462 lr:0.010000
+2020-05-01 04:27:08,420:INFO:[158]{200}/{390} loss:0.007361 lr:0.010000
+2020-05-01 04:27:13,556:INFO:[158]{250}/{390} loss:0.008806 lr:0.010000
+2020-05-01 04:27:18,766:INFO:[158]{300}/{390} loss:0.077818 lr:0.010000
+2020-05-01 04:27:23,980:INFO:[158]{350}/{390} loss:0.004427 lr:0.010000
+2020-05-01 04:27:50,325:INFO:[159]{0}/{390} loss:0.023332 lr:0.010000
+2020-05-01 04:27:55,506:INFO:[159]{50}/{390} loss:0.003538 lr:0.010000
+2020-05-01 04:28:00,706:INFO:[159]{100}/{390} loss:0.003704 lr:0.010000
+2020-05-01 04:28:05,873:INFO:[159]{150}/{390} loss:0.014965 lr:0.010000
+2020-05-01 04:28:11,126:INFO:[159]{200}/{390} loss:0.003860 lr:0.010000
+2020-05-01 04:28:16,219:INFO:[159]{250}/{390} loss:0.014358 lr:0.010000
+2020-05-01 04:28:21,281:INFO:[159]{300}/{390} loss:0.010664 lr:0.010000
+2020-05-01 04:28:26,475:INFO:[159]{350}/{390} loss:0.002513 lr:0.010000
+2020-05-01 04:28:50,040:INFO:[160]{0}/{390} loss:0.014430 lr:0.010000
+2020-05-01 04:28:55,262:INFO:[160]{50}/{390} loss:0.004146 lr:0.010000
+2020-05-01 04:29:00,180:INFO:[160]{100}/{390} loss:0.004613 lr:0.010000
+2020-05-01 04:29:05,370:INFO:[160]{150}/{390} loss:0.006818 lr:0.010000
+2020-05-01 04:29:10,466:INFO:[160]{200}/{390} loss:0.010345 lr:0.010000
+2020-05-01 04:29:15,532:INFO:[160]{250}/{390} loss:0.032773 lr:0.010000
+2020-05-01 04:29:20,609:INFO:[160]{300}/{390} loss:0.009642 lr:0.010000
+2020-05-01 04:29:25,832:INFO:[160]{350}/{390} loss:0.001482 lr:0.010000
+2020-05-01 04:29:51,797:INFO:[161]{0}/{390} loss:0.007047 lr:0.010000
+2020-05-01 04:29:57,043:INFO:[161]{50}/{390} loss:0.002819 lr:0.010000
+2020-05-01 04:30:02,171:INFO:[161]{100}/{390} loss:0.008865 lr:0.010000
+2020-05-01 04:30:07,126:INFO:[161]{150}/{390} loss:0.008228 lr:0.010000
+2020-05-01 04:30:12,312:INFO:[161]{200}/{390} loss:0.001945 lr:0.010000
+2020-05-01 04:30:17,374:INFO:[161]{250}/{390} loss:0.010663 lr:0.010000
+2020-05-01 04:30:22,528:INFO:[161]{300}/{390} loss:0.005064 lr:0.010000
+2020-05-01 04:30:27,617:INFO:[161]{350}/{390} loss:0.000941 lr:0.010000
+2020-05-01 04:30:51,707:INFO:[162]{0}/{390} loss:0.001216 lr:0.010000
+2020-05-01 04:30:56,824:INFO:[162]{50}/{390} loss:0.023232 lr:0.010000
+2020-05-01 04:31:01,973:INFO:[162]{100}/{390} loss:0.003442 lr:0.010000
+2020-05-01 04:31:06,973:INFO:[162]{150}/{390} loss:0.006293 lr:0.010000
+2020-05-01 04:31:12,055:INFO:[162]{200}/{390} loss:0.008009 lr:0.010000
+2020-05-01 04:31:17,298:INFO:[162]{250}/{390} loss:0.006160 lr:0.010000
+2020-05-01 04:31:22,272:INFO:[162]{300}/{390} loss:0.001397 lr:0.010000
+2020-05-01 04:31:27,320:INFO:[162]{350}/{390} loss:0.002187 lr:0.010000
+2020-05-01 04:31:50,121:INFO:[163]{0}/{390} loss:0.004219 lr:0.010000
+2020-05-01 04:31:55,276:INFO:[163]{50}/{390} loss:0.001895 lr:0.010000
+2020-05-01 04:32:00,290:INFO:[163]{100}/{390} loss:0.008104 lr:0.010000
+2020-05-01 04:32:05,263:INFO:[163]{150}/{390} loss:0.005157 lr:0.010000
+2020-05-01 04:32:10,380:INFO:[163]{200}/{390} loss:0.009576 lr:0.010000
+2020-05-01 04:32:15,443:INFO:[163]{250}/{390} loss:0.002909 lr:0.010000
+2020-05-01 04:32:20,417:INFO:[163]{300}/{390} loss:0.004296 lr:0.010000
+2020-05-01 04:32:25,543:INFO:[163]{350}/{390} loss:0.008381 lr:0.010000
+2020-05-01 04:32:54,015:INFO:[164]{0}/{390} loss:0.004594 lr:0.010000
+2020-05-01 04:32:59,327:INFO:[164]{50}/{390} loss:0.001236 lr:0.010000
+2020-05-01 04:33:04,379:INFO:[164]{100}/{390} loss:0.002547 lr:0.010000
+2020-05-01 04:33:09,524:INFO:[164]{150}/{390} loss:0.000881 lr:0.010000
+2020-05-01 04:33:14,773:INFO:[164]{200}/{390} loss:0.001040 lr:0.010000
+2020-05-01 04:33:20,072:INFO:[164]{250}/{390} loss:0.000918 lr:0.010000
+2020-05-01 04:33:25,181:INFO:[164]{300}/{390} loss:0.003938 lr:0.010000
+2020-05-01 04:33:30,355:INFO:[164]{350}/{390} loss:0.006033 lr:0.010000
+2020-05-01 04:33:55,797:INFO:[165]{0}/{390} loss:0.009571 lr:0.010000
+2020-05-01 04:34:00,857:INFO:[165]{50}/{390} loss:0.002049 lr:0.010000
+2020-05-01 04:34:05,901:INFO:[165]{100}/{390} loss:0.000854 lr:0.010000
+2020-05-01 04:34:10,900:INFO:[165]{150}/{390} loss:0.008054 lr:0.010000
+2020-05-01 04:34:16,100:INFO:[165]{200}/{390} loss:0.004484 lr:0.010000
+2020-05-01 04:34:21,174:INFO:[165]{250}/{390} loss:0.006459 lr:0.010000
+2020-05-01 04:34:26,309:INFO:[165]{300}/{390} loss:0.002263 lr:0.010000
+2020-05-01 04:34:31,382:INFO:[165]{350}/{390} loss:0.003222 lr:0.010000
+2020-05-01 04:34:55,903:INFO:[166]{0}/{390} loss:0.012863 lr:0.010000
+2020-05-01 04:35:00,877:INFO:[166]{50}/{390} loss:0.006040 lr:0.010000
+2020-05-01 04:35:05,845:INFO:[166]{100}/{390} loss:0.009716 lr:0.010000
+2020-05-01 04:35:10,876:INFO:[166]{150}/{390} loss:0.001777 lr:0.010000
+2020-05-01 04:35:16,136:INFO:[166]{200}/{390} loss:0.014262 lr:0.010000
+2020-05-01 04:35:21,255:INFO:[166]{250}/{390} loss:0.002460 lr:0.010000
+2020-05-01 04:35:26,531:INFO:[166]{300}/{390} loss:0.013272 lr:0.010000
+2020-05-01 04:35:31,762:INFO:[166]{350}/{390} loss:0.007861 lr:0.010000
+2020-05-01 04:35:53,528:INFO:[167]{0}/{390} loss:0.003505 lr:0.010000
+2020-05-01 04:35:58,778:INFO:[167]{50}/{390} loss:0.001047 lr:0.010000
+2020-05-01 04:36:03,803:INFO:[167]{100}/{390} loss:0.002581 lr:0.010000
+2020-05-01 04:36:08,912:INFO:[167]{150}/{390} loss:0.002598 lr:0.010000
+2020-05-01 04:36:13,946:INFO:[167]{200}/{390} loss:0.002083 lr:0.010000
+2020-05-01 04:36:19,030:INFO:[167]{250}/{390} loss:0.016944 lr:0.010000
+2020-05-01 04:36:24,222:INFO:[167]{300}/{390} loss:0.006788 lr:0.010000
+2020-05-01 04:36:29,170:INFO:[167]{350}/{390} loss:0.011003 lr:0.010000
+2020-05-01 04:36:55,991:INFO:[168]{0}/{390} loss:0.006039 lr:0.010000
+2020-05-01 04:37:01,241:INFO:[168]{50}/{390} loss:0.001465 lr:0.010000
+2020-05-01 04:37:06,528:INFO:[168]{100}/{390} loss:0.009521 lr:0.010000
+2020-05-01 04:37:11,893:INFO:[168]{150}/{390} loss:0.000961 lr:0.010000
+2020-05-01 04:37:16,955:INFO:[168]{200}/{390} loss:0.014596 lr:0.010000
+2020-05-01 04:37:21,830:INFO:[168]{250}/{390} loss:0.003040 lr:0.010000
+2020-05-01 04:37:26,798:INFO:[168]{300}/{390} loss:0.005123 lr:0.010000
+2020-05-01 04:37:31,856:INFO:[168]{350}/{390} loss:0.007926 lr:0.010000
+2020-05-01 04:37:57,089:INFO:[169]{0}/{390} loss:0.003811 lr:0.010000
+2020-05-01 04:38:02,464:INFO:[169]{50}/{390} loss:0.001669 lr:0.010000
+2020-05-01 04:38:07,612:INFO:[169]{100}/{390} loss:0.003749 lr:0.010000
+2020-05-01 04:38:12,638:INFO:[169]{150}/{390} loss:0.004225 lr:0.010000
+2020-05-01 04:38:17,621:INFO:[169]{200}/{390} loss:0.019639 lr:0.010000
+2020-05-01 04:38:22,711:INFO:[169]{250}/{390} loss:0.003956 lr:0.010000
+2020-05-01 04:38:27,656:INFO:[169]{300}/{390} loss:0.002123 lr:0.010000
+2020-05-01 04:38:32,731:INFO:[169]{350}/{390} loss:0.003856 lr:0.010000
+2020-05-01 04:38:55,298:INFO:[170]{0}/{390} loss:0.006291 lr:0.001000
+2020-05-01 04:39:00,521:INFO:[170]{50}/{390} loss:0.001786 lr:0.001000
+2020-05-01 04:39:05,841:INFO:[170]{100}/{390} loss:0.001649 lr:0.001000
+2020-05-01 04:39:10,930:INFO:[170]{150}/{390} loss:0.000917 lr:0.001000
+2020-05-01 04:39:15,862:INFO:[170]{200}/{390} loss:0.004560 lr:0.001000
+2020-05-01 04:39:20,743:INFO:[170]{250}/{390} loss:0.015177 lr:0.001000
+2020-05-01 04:39:25,905:INFO:[170]{300}/{390} loss:0.005893 lr:0.001000
+2020-05-01 04:39:31,032:INFO:[170]{350}/{390} loss:0.003414 lr:0.001000
+2020-05-01 04:39:57,730:INFO:[171]{0}/{390} loss:0.029009 lr:0.001000
+2020-05-01 04:40:02,728:INFO:[171]{50}/{390} loss:0.001597 lr:0.001000
+2020-05-01 04:40:07,695:INFO:[171]{100}/{390} loss:0.003303 lr:0.001000
+2020-05-01 04:40:12,597:INFO:[171]{150}/{390} loss:0.000956 lr:0.001000
+2020-05-01 04:40:17,465:INFO:[171]{200}/{390} loss:0.008573 lr:0.001000
+2020-05-01 04:40:22,338:INFO:[171]{250}/{390} loss:0.002551 lr:0.001000
+2020-05-01 04:40:27,215:INFO:[171]{300}/{390} loss:0.001003 lr:0.001000
+2020-05-01 04:40:32,092:INFO:[171]{350}/{390} loss:0.008860 lr:0.001000
+2020-05-01 04:40:58,609:INFO:[172]{0}/{390} loss:0.013934 lr:0.001000
+2020-05-01 04:41:03,840:INFO:[172]{50}/{390} loss:0.000498 lr:0.001000
+2020-05-01 04:41:09,059:INFO:[172]{100}/{390} loss:0.004633 lr:0.001000
+2020-05-01 04:41:14,277:INFO:[172]{150}/{390} loss:0.007191 lr:0.001000
+2020-05-01 04:41:19,497:INFO:[172]{200}/{390} loss:0.006239 lr:0.001000
+2020-05-01 04:41:24,711:INFO:[172]{250}/{390} loss:0.002061 lr:0.001000
+2020-05-01 04:41:29,926:INFO:[172]{300}/{390} loss:0.005100 lr:0.001000
+2020-05-01 04:41:34,927:INFO:[172]{350}/{390} loss:0.004803 lr:0.001000
+2020-05-01 04:41:59,126:INFO:[173]{0}/{390} loss:0.000460 lr:0.001000
+2020-05-01 04:42:04,172:INFO:[173]{50}/{390} loss:0.018699 lr:0.001000
+2020-05-01 04:42:09,156:INFO:[173]{100}/{390} loss:0.000474 lr:0.001000
+2020-05-01 04:42:14,348:INFO:[173]{150}/{390} loss:0.000734 lr:0.001000
+2020-05-01 04:42:19,623:INFO:[173]{200}/{390} loss:0.004853 lr:0.001000
+2020-05-01 04:42:24,833:INFO:[173]{250}/{390} loss:0.001243 lr:0.001000
+2020-05-01 04:42:29,984:INFO:[173]{300}/{390} loss:0.001115 lr:0.001000
+2020-05-01 04:42:35,199:INFO:[173]{350}/{390} loss:0.001484 lr:0.001000
+2020-05-01 04:42:59,823:INFO:[174]{0}/{390} loss:0.001263 lr:0.001000
+2020-05-01 04:43:04,831:INFO:[174]{50}/{390} loss:0.000715 lr:0.001000
+2020-05-01 04:43:09,908:INFO:[174]{100}/{390} loss:0.001382 lr:0.001000
+2020-05-01 04:43:15,205:INFO:[174]{150}/{390} loss:0.002077 lr:0.001000
+2020-05-01 04:43:20,477:INFO:[174]{200}/{390} loss:0.000838 lr:0.001000
+2020-05-01 04:43:25,512:INFO:[174]{250}/{390} loss:0.002265 lr:0.001000
+2020-05-01 04:43:30,840:INFO:[174]{300}/{390} loss:0.003440 lr:0.001000
+2020-05-01 04:43:35,961:INFO:[174]{350}/{390} loss:0.000559 lr:0.001000
+2020-05-01 04:43:59,962:INFO:[175]{0}/{390} loss:0.000319 lr:0.001000
+2020-05-01 04:44:05,126:INFO:[175]{50}/{390} loss:0.000850 lr:0.001000
+2020-05-01 04:44:10,177:INFO:[175]{100}/{390} loss:0.015212 lr:0.001000
+2020-05-01 04:44:15,142:INFO:[175]{150}/{390} loss:0.002391 lr:0.001000
+2020-05-01 04:44:20,264:INFO:[175]{200}/{390} loss:0.011318 lr:0.001000
+2020-05-01 04:44:25,409:INFO:[175]{250}/{390} loss:0.000687 lr:0.001000
+2020-05-01 04:44:30,348:INFO:[175]{300}/{390} loss:0.011058 lr:0.001000
+2020-05-01 04:44:35,540:INFO:[175]{350}/{390} loss:0.000891 lr:0.001000
+2020-05-01 04:44:59,271:INFO:[176]{0}/{390} loss:0.003778 lr:0.001000
+2020-05-01 04:45:04,275:INFO:[176]{50}/{390} loss:0.000933 lr:0.001000
+2020-05-01 04:45:09,158:INFO:[176]{100}/{390} loss:0.001582 lr:0.001000
+2020-05-01 04:45:14,037:INFO:[176]{150}/{390} loss:0.001503 lr:0.001000
+2020-05-01 04:45:19,004:INFO:[176]{200}/{390} loss:0.000900 lr:0.001000
+2020-05-01 04:45:24,059:INFO:[176]{250}/{390} loss:0.004674 lr:0.001000
+2020-05-01 04:45:29,328:INFO:[176]{300}/{390} loss:0.002409 lr:0.001000
+2020-05-01 04:45:34,405:INFO:[176]{350}/{390} loss:0.002109 lr:0.001000
+2020-05-01 04:45:56,276:INFO:[177]{0}/{390} loss:0.003484 lr:0.001000
+2020-05-01 04:46:01,475:INFO:[177]{50}/{390} loss:0.004696 lr:0.001000
+2020-05-01 04:46:06,472:INFO:[177]{100}/{390} loss:0.004621 lr:0.001000
+2020-05-01 04:46:11,390:INFO:[177]{150}/{390} loss:0.004406 lr:0.001000
+2020-05-01 04:46:16,399:INFO:[177]{200}/{390} loss:0.000609 lr:0.001000
+2020-05-01 04:46:21,429:INFO:[177]{250}/{390} loss:0.002472 lr:0.001000
+2020-05-01 04:46:26,590:INFO:[177]{300}/{390} loss:0.004221 lr:0.001000
+2020-05-01 04:46:31,615:INFO:[177]{350}/{390} loss:0.007305 lr:0.001000
+2020-05-01 04:46:54,983:INFO:[178]{0}/{390} loss:0.000869 lr:0.001000
+2020-05-01 04:46:59,960:INFO:[178]{50}/{390} loss:0.003268 lr:0.001000
+2020-05-01 04:47:05,030:INFO:[178]{100}/{390} loss:0.007031 lr:0.001000
+2020-05-01 04:47:10,371:INFO:[178]{150}/{390} loss:0.001462 lr:0.001000
+2020-05-01 04:47:15,724:INFO:[178]{200}/{390} loss:0.006267 lr:0.001000
+2020-05-01 04:47:20,918:INFO:[178]{250}/{390} loss:0.001173 lr:0.001000
+2020-05-01 04:47:25,874:INFO:[178]{300}/{390} loss:0.013191 lr:0.001000
+2020-05-01 04:47:30,746:INFO:[178]{350}/{390} loss:0.000844 lr:0.001000
+2020-05-01 04:47:55,940:INFO:[179]{0}/{390} loss:0.000993 lr:0.001000
+2020-05-01 04:48:01,245:INFO:[179]{50}/{390} loss:0.005722 lr:0.001000
+2020-05-01 04:48:06,430:INFO:[179]{100}/{390} loss:0.000947 lr:0.001000
+2020-05-01 04:48:11,620:INFO:[179]{150}/{390} loss:0.001291 lr:0.001000
+2020-05-01 04:48:16,798:INFO:[179]{200}/{390} loss:0.003469 lr:0.001000
+2020-05-01 04:48:21,788:INFO:[179]{250}/{390} loss:0.002216 lr:0.001000
+2020-05-01 04:48:26,860:INFO:[179]{300}/{390} loss:0.001547 lr:0.001000
+2020-05-01 04:48:31,826:INFO:[179]{350}/{390} loss:0.008303 lr:0.001000
+2020-05-01 04:48:55,036:INFO:[180]{0}/{390} loss:0.002475 lr:0.001000
+2020-05-01 04:49:00,431:INFO:[180]{50}/{390} loss:0.005136 lr:0.001000
+2020-05-01 04:49:05,400:INFO:[180]{100}/{390} loss:0.010657 lr:0.001000
+2020-05-01 04:49:10,554:INFO:[180]{150}/{390} loss:0.008463 lr:0.001000
+2020-05-01 04:49:15,740:INFO:[180]{200}/{390} loss:0.000853 lr:0.001000
+2020-05-01 04:49:20,947:INFO:[180]{250}/{390} loss:0.001555 lr:0.001000
+2020-05-01 04:49:26,161:INFO:[180]{300}/{390} loss:0.000560 lr:0.001000
+2020-05-01 04:49:31,375:INFO:[180]{350}/{390} loss:0.001796 lr:0.001000
+2020-05-01 04:49:56,045:INFO:[181]{0}/{390} loss:0.002248 lr:0.001000
+2020-05-01 04:50:01,481:INFO:[181]{50}/{390} loss:0.006238 lr:0.001000
+2020-05-01 04:50:06,606:INFO:[181]{100}/{390} loss:0.007953 lr:0.001000
+2020-05-01 04:50:11,772:INFO:[181]{150}/{390} loss:0.002454 lr:0.001000
+2020-05-01 04:50:16,668:INFO:[181]{200}/{390} loss:0.001685 lr:0.001000
+2020-05-01 04:50:21,546:INFO:[181]{250}/{390} loss:0.005478 lr:0.001000
+2020-05-01 04:50:26,421:INFO:[181]{300}/{390} loss:0.003200 lr:0.001000
+2020-05-01 04:50:31,295:INFO:[181]{350}/{390} loss:0.003972 lr:0.001000
+2020-05-01 04:50:54,891:INFO:[182]{0}/{390} loss:0.002284 lr:0.001000
+2020-05-01 04:51:00,114:INFO:[182]{50}/{390} loss:0.002781 lr:0.001000
+2020-05-01 04:51:05,321:INFO:[182]{100}/{390} loss:0.002287 lr:0.001000
+2020-05-01 04:51:10,524:INFO:[182]{150}/{390} loss:0.001397 lr:0.001000
+2020-05-01 04:51:15,552:INFO:[182]{200}/{390} loss:0.006657 lr:0.001000
+2020-05-01 04:51:20,605:INFO:[182]{250}/{390} loss:0.002037 lr:0.001000
+2020-05-01 04:51:26,000:INFO:[182]{300}/{390} loss:0.001850 lr:0.001000
+2020-05-01 04:51:31,118:INFO:[182]{350}/{390} loss:0.001906 lr:0.001000
+2020-05-01 04:51:58,166:INFO:[183]{0}/{390} loss:0.001938 lr:0.001000
+2020-05-01 04:52:03,380:INFO:[183]{50}/{390} loss:0.005568 lr:0.001000
+2020-05-01 04:52:08,359:INFO:[183]{100}/{390} loss:0.001192 lr:0.001000
+2020-05-01 04:52:13,459:INFO:[183]{150}/{390} loss:0.004701 lr:0.001000
+2020-05-01 04:52:18,524:INFO:[183]{200}/{390} loss:0.000628 lr:0.001000
+2020-05-01 04:52:23,406:INFO:[183]{250}/{390} loss:0.001784 lr:0.001000
+2020-05-01 04:52:28,377:INFO:[183]{300}/{390} loss:0.015526 lr:0.001000
+2020-05-01 04:52:33,344:INFO:[183]{350}/{390} loss:0.004902 lr:0.001000
+2020-05-01 04:52:57,768:INFO:[184]{0}/{390} loss:0.000906 lr:0.001000
+2020-05-01 04:53:02,999:INFO:[184]{50}/{390} loss:0.000840 lr:0.001000
+2020-05-01 04:53:08,028:INFO:[184]{100}/{390} loss:0.007544 lr:0.001000
+2020-05-01 04:53:13,108:INFO:[184]{150}/{390} loss:0.001236 lr:0.001000
+2020-05-01 04:53:18,345:INFO:[184]{200}/{390} loss:0.002061 lr:0.001000
+2020-05-01 04:53:23,526:INFO:[184]{250}/{390} loss:0.001576 lr:0.001000
+2020-05-01 04:53:28,574:INFO:[184]{300}/{390} loss:0.002649 lr:0.001000
+2020-05-01 04:53:33,734:INFO:[184]{350}/{390} loss:0.001490 lr:0.001000
+2020-05-01 04:53:55,936:INFO:[185]{0}/{390} loss:0.002277 lr:0.001000
+2020-05-01 04:54:01,198:INFO:[185]{50}/{390} loss:0.000957 lr:0.001000
+2020-05-01 04:54:06,358:INFO:[185]{100}/{390} loss:0.002978 lr:0.001000
+2020-05-01 04:54:11,535:INFO:[185]{150}/{390} loss:0.002146 lr:0.001000
+2020-05-01 04:54:16,637:INFO:[185]{200}/{390} loss:0.001205 lr:0.001000
+2020-05-01 04:54:21,883:INFO:[185]{250}/{390} loss:0.001869 lr:0.001000
+2020-05-01 04:54:26,890:INFO:[185]{300}/{390} loss:0.002055 lr:0.001000
+2020-05-01 04:54:32,021:INFO:[185]{350}/{390} loss:0.003049 lr:0.001000
+2020-05-01 04:54:57,294:INFO:[186]{0}/{390} loss:0.005939 lr:0.001000
+2020-05-01 04:55:02,671:INFO:[186]{50}/{390} loss:0.006523 lr:0.001000
+2020-05-01 04:55:07,794:INFO:[186]{100}/{390} loss:0.001869 lr:0.001000
+2020-05-01 04:55:13,059:INFO:[186]{150}/{390} loss:0.002496 lr:0.001000
+2020-05-01 04:55:18,343:INFO:[186]{200}/{390} loss:0.001017 lr:0.001000
+2020-05-01 04:55:23,642:INFO:[186]{250}/{390} loss:0.000626 lr:0.001000
+2020-05-01 04:55:28,949:INFO:[186]{300}/{390} loss:0.001253 lr:0.001000
+2020-05-01 04:55:34,162:INFO:[186]{350}/{390} loss:0.001149 lr:0.001000
+2020-05-01 04:55:58,305:INFO:[187]{0}/{390} loss:0.002223 lr:0.001000
+2020-05-01 04:56:03,400:INFO:[187]{50}/{390} loss:0.006231 lr:0.001000
+2020-05-01 04:56:08,618:INFO:[187]{100}/{390} loss:0.002424 lr:0.001000
+2020-05-01 04:56:13,572:INFO:[187]{150}/{390} loss:0.002893 lr:0.001000
+2020-05-01 04:56:18,450:INFO:[187]{200}/{390} loss:0.000859 lr:0.001000
+2020-05-01 04:56:23,323:INFO:[187]{250}/{390} loss:0.004518 lr:0.001000
+2020-05-01 04:56:28,195:INFO:[187]{300}/{390} loss:0.001222 lr:0.001000
+2020-05-01 04:56:33,073:INFO:[187]{350}/{390} loss:0.002941 lr:0.001000
+2020-05-01 04:56:58,029:INFO:[188]{0}/{390} loss:0.003042 lr:0.001000
+2020-05-01 04:57:03,228:INFO:[188]{50}/{390} loss:0.003985 lr:0.001000
+2020-05-01 04:57:08,448:INFO:[188]{100}/{390} loss:0.003719 lr:0.001000
+2020-05-01 04:57:13,490:INFO:[188]{150}/{390} loss:0.002227 lr:0.001000
+2020-05-01 04:57:18,579:INFO:[188]{200}/{390} loss:0.005569 lr:0.001000
+2020-05-01 04:57:23,476:INFO:[188]{250}/{390} loss:0.000990 lr:0.001000
+2020-05-01 04:57:28,447:INFO:[188]{300}/{390} loss:0.000979 lr:0.001000
+2020-05-01 04:57:33,409:INFO:[188]{350}/{390} loss:0.002118 lr:0.001000
+2020-05-01 04:57:56,118:INFO:[189]{0}/{390} loss:0.002042 lr:0.001000
+2020-05-01 04:58:01,479:INFO:[189]{50}/{390} loss:0.002420 lr:0.001000
+2020-05-01 04:58:06,541:INFO:[189]{100}/{390} loss:0.000841 lr:0.001000
+2020-05-01 04:58:11,752:INFO:[189]{150}/{390} loss:0.001327 lr:0.001000
+2020-05-01 04:58:17,054:INFO:[189]{200}/{390} loss:0.004757 lr:0.001000
+2020-05-01 04:58:21,921:INFO:[189]{250}/{390} loss:0.001723 lr:0.001000
+2020-05-01 04:58:26,849:INFO:[189]{300}/{390} loss:0.002473 lr:0.001000
+2020-05-01 04:58:32,229:INFO:[189]{350}/{390} loss:0.010311 lr:0.001000
+2020-05-01 04:58:57,144:INFO:[190]{0}/{390} loss:0.012915 lr:0.001000
+2020-05-01 04:59:02,483:INFO:[190]{50}/{390} loss:0.005018 lr:0.001000
+2020-05-01 04:59:07,435:INFO:[190]{100}/{390} loss:0.010757 lr:0.001000
+2020-05-01 04:59:12,818:INFO:[190]{150}/{390} loss:0.002181 lr:0.001000
+2020-05-01 04:59:18,216:INFO:[190]{200}/{390} loss:0.001013 lr:0.001000
+2020-05-01 04:59:23,487:INFO:[190]{250}/{390} loss:0.004713 lr:0.001000
+2020-05-01 04:59:28,569:INFO:[190]{300}/{390} loss:0.004478 lr:0.001000
+2020-05-01 04:59:33,713:INFO:[190]{350}/{390} loss:0.000484 lr:0.001000
+2020-05-01 05:00:00,128:INFO:[191]{0}/{390} loss:0.000922 lr:0.001000
+2020-05-01 05:00:05,374:INFO:[191]{50}/{390} loss:0.003265 lr:0.001000
+2020-05-01 05:00:10,568:INFO:[191]{100}/{390} loss:0.006511 lr:0.001000
+2020-05-01 05:00:15,605:INFO:[191]{150}/{390} loss:0.001782 lr:0.001000
+2020-05-01 05:00:20,597:INFO:[191]{200}/{390} loss:0.000444 lr:0.001000
+2020-05-01 05:00:25,550:INFO:[191]{250}/{390} loss:0.002317 lr:0.001000
+2020-05-01 05:00:30,535:INFO:[191]{300}/{390} loss:0.008671 lr:0.001000
+2020-05-01 05:00:35,501:INFO:[191]{350}/{390} loss:0.003528 lr:0.001000
+2020-05-01 05:01:01,343:INFO:[192]{0}/{390} loss:0.000964 lr:0.001000
+2020-05-01 05:01:06,639:INFO:[192]{50}/{390} loss:0.000458 lr:0.001000
+2020-05-01 05:01:11,932:INFO:[192]{100}/{390} loss:0.005996 lr:0.001000
+2020-05-01 05:01:17,196:INFO:[192]{150}/{390} loss:0.004123 lr:0.001000
+2020-05-01 05:01:22,412:INFO:[192]{200}/{390} loss:0.000996 lr:0.001000
+2020-05-01 05:01:27,317:INFO:[192]{250}/{390} loss:0.001329 lr:0.001000
+2020-05-01 05:01:32,192:INFO:[192]{300}/{390} loss:0.034329 lr:0.001000
+2020-05-01 05:01:37,061:INFO:[192]{350}/{390} loss:0.002212 lr:0.001000
+2020-05-01 05:02:03,739:INFO:[193]{0}/{390} loss:0.001169 lr:0.001000
+2020-05-01 05:02:08,795:INFO:[193]{50}/{390} loss:0.000807 lr:0.001000
+2020-05-01 05:02:13,906:INFO:[193]{100}/{390} loss:0.002199 lr:0.001000
+2020-05-01 05:02:19,146:INFO:[193]{150}/{390} loss:0.000956 lr:0.001000
+2020-05-01 05:02:24,325:INFO:[193]{200}/{390} loss:0.009971 lr:0.001000
+2020-05-01 05:02:29,244:INFO:[193]{250}/{390} loss:0.006029 lr:0.001000
+2020-05-01 05:02:34,257:INFO:[193]{300}/{390} loss:0.002087 lr:0.001000
+2020-05-01 05:02:39,301:INFO:[193]{350}/{390} loss:0.005303 lr:0.001000
+2020-05-01 05:03:04,674:INFO:[194]{0}/{390} loss:0.002565 lr:0.001000
+2020-05-01 05:03:09,670:INFO:[194]{50}/{390} loss:0.000570 lr:0.001000
+2020-05-01 05:03:14,675:INFO:[194]{100}/{390} loss:0.003749 lr:0.001000
+2020-05-01 05:03:19,768:INFO:[194]{150}/{390} loss:0.000725 lr:0.001000
+2020-05-01 05:03:25,089:INFO:[194]{200}/{390} loss:0.002833 lr:0.001000
+2020-05-01 05:03:30,120:INFO:[194]{250}/{390} loss:0.001280 lr:0.001000
+2020-05-01 05:03:35,309:INFO:[194]{300}/{390} loss:0.000272 lr:0.001000
+2020-05-01 05:03:40,507:INFO:[194]{350}/{390} loss:0.002627 lr:0.001000
+2020-05-01 05:04:04,157:INFO:[195]{0}/{390} loss:0.009671 lr:0.001000
+2020-05-01 05:04:09,118:INFO:[195]{50}/{390} loss:0.002957 lr:0.001000
+2020-05-01 05:04:13,989:INFO:[195]{100}/{390} loss:0.000724 lr:0.001000
+2020-05-01 05:04:18,870:INFO:[195]{150}/{390} loss:0.001052 lr:0.001000
+2020-05-01 05:04:23,947:INFO:[195]{200}/{390} loss:0.001026 lr:0.001000
+2020-05-01 05:04:29,081:INFO:[195]{250}/{390} loss:0.001415 lr:0.001000
+2020-05-01 05:04:34,201:INFO:[195]{300}/{390} loss:0.000833 lr:0.001000
+2020-05-01 05:04:39,291:INFO:[195]{350}/{390} loss:0.001205 lr:0.001000
+2020-05-01 05:05:02,640:INFO:[196]{0}/{390} loss:0.011439 lr:0.001000
+2020-05-01 05:05:07,691:INFO:[196]{50}/{390} loss:0.000652 lr:0.001000
+2020-05-01 05:05:12,622:INFO:[196]{100}/{390} loss:0.004585 lr:0.001000
+2020-05-01 05:05:17,667:INFO:[196]{150}/{390} loss:0.001517 lr:0.001000
+2020-05-01 05:05:22,911:INFO:[196]{200}/{390} loss:0.002830 lr:0.001000
+2020-05-01 05:05:28,153:INFO:[196]{250}/{390} loss:0.002769 lr:0.001000
+2020-05-01 05:05:33,311:INFO:[196]{300}/{390} loss:0.000995 lr:0.001000
+2020-05-01 05:05:38,665:INFO:[196]{350}/{390} loss:0.003792 lr:0.001000
+2020-05-01 05:06:05,105:INFO:[197]{0}/{390} loss:0.009239 lr:0.001000
+2020-05-01 05:06:10,345:INFO:[197]{50}/{390} loss:0.000735 lr:0.001000
+2020-05-01 05:06:15,651:INFO:[197]{100}/{390} loss:0.001063 lr:0.001000
+2020-05-01 05:06:20,944:INFO:[197]{150}/{390} loss:0.000739 lr:0.001000
+2020-05-01 05:06:26,045:INFO:[197]{200}/{390} loss:0.002078 lr:0.001000
+2020-05-01 05:06:31,031:INFO:[197]{250}/{390} loss:0.001313 lr:0.001000
+2020-05-01 05:06:36,055:INFO:[197]{300}/{390} loss:0.021904 lr:0.001000
+2020-05-01 05:06:41,249:INFO:[197]{350}/{390} loss:0.002646 lr:0.001000
+2020-05-01 05:07:10,563:INFO:[198]{0}/{390} loss:0.004203 lr:0.001000
+2020-05-01 05:07:15,924:INFO:[198]{50}/{390} loss:0.001043 lr:0.001000
+2020-05-01 05:07:21,013:INFO:[198]{100}/{390} loss:0.002441 lr:0.001000
+2020-05-01 05:07:26,003:INFO:[198]{150}/{390} loss:0.000635 lr:0.001000
+2020-05-01 05:07:31,177:INFO:[198]{200}/{390} loss:0.001815 lr:0.001000
+2020-05-01 05:07:36,404:INFO:[198]{250}/{390} loss:0.005775 lr:0.001000
+2020-05-01 05:07:41,611:INFO:[198]{300}/{390} loss:0.002495 lr:0.001000
+2020-05-01 05:07:46,692:INFO:[198]{350}/{390} loss:0.001478 lr:0.001000
+2020-05-01 05:08:10,967:INFO:[199]{0}/{390} loss:0.000564 lr:0.001000
+2020-05-01 05:08:16,157:INFO:[199]{50}/{390} loss:0.003134 lr:0.001000
+2020-05-01 05:08:21,174:INFO:[199]{100}/{390} loss:0.003384 lr:0.001000
+2020-05-01 05:08:26,261:INFO:[199]{150}/{390} loss:0.000906 lr:0.001000
+2020-05-01 05:08:31,419:INFO:[199]{200}/{390} loss:0.004388 lr:0.001000
+2020-05-01 05:08:36,711:INFO:[199]{250}/{390} loss:0.002704 lr:0.001000
+2020-05-01 05:08:41,887:INFO:[199]{300}/{390} loss:0.011941 lr:0.001000
+2020-05-01 05:08:47,017:INFO:[199]{350}/{390} loss:0.002924 lr:0.001000

@@ -15,8 +15,8 @@ def get_loader(dataset_type, data_path, loader_type, label_path=None, cfg=None, 
         if cfg.USE_AUG == True:
             train_aug = transforms.Compose([
                 transforms.ToPILImage(),
-                transforms.RandomCrop(cfg.CROP, cfg.PAD),
                 transforms.RandomHorizontalFlip(),
+                transforms.RandomCrop(cfg.CROP, cfg.PAD),
                 transforms.ToTensor(),
                 transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
             ])
@@ -31,7 +31,7 @@ def get_loader(dataset_type, data_path, loader_type, label_path=None, cfg=None, 
         _data = _data_class(data_path,  dtype='train', label_path=label_path, aug=train_aug) 
         data_loader = torch.utils.data.DataLoader(_data,
             batch_size=cfg.BATCHSIZE, shuffle=True, num_workers=cfg.NUM_WORKERS,
-            drop_last=True)
+            drop_last=False)
 
     elif loader_type == 'eval':
         if cfg.USE_AUG == True:
@@ -48,7 +48,7 @@ def get_loader(dataset_type, data_path, loader_type, label_path=None, cfg=None, 
 
         _data = _data_class(data_path,  dtype='eval', label_path=label_path, aug=val_aug) 
         data_loader = torch.utils.data.DataLoader(_data,
-            batch_size=8, shuffle=False, num_workers=8,
+            batch_size=128, shuffle=False, num_workers=16,
             drop_last=False)
 
     elif loader_type == 'self_test':

@@ -23,7 +23,7 @@ class LambdaLayer(nn.Module):
 
 class BasicBlock(nn.Module):
     expansion = 1
-    def __init__(self,in_dim,out_dim,stride=1):
+    def __init__(self,in_dim,out_dim,stride=1,op="A"):
         super(BasicBlock,self).__init__()
         self.subconv_1 = nn.Sequential(
             nn.Conv2d(in_dim,out_dim,3,stride,1,bias=False),
@@ -33,20 +33,19 @@ class BasicBlock(nn.Module):
             nn.Conv2d(out_dim,out_dim,3,1,1,bias=False),
             nn.BatchNorm2d(out_dim))
         if in_dim == out_dim and stride == 1:
-            self.downsample = None
-        else:
+            self.downsample = nn.Sequential()
+        elif op == 'A':
             self.downsample =LambdaLayer(lambda x: F.pad(x[:, :, ::2, ::2], (0, 0, 0, 0, out_dim//4, out_dim//4), "constant", 0))
-            # self.downsample = nn.Sequential(
-            #     nn.Conv2d(in_dim,out_dim,1,stride,0,bias=False),
-            #     nn.BatchNorm2d(out_dim),
-            # )
+        else:
+            self.downsample = nn.Sequential(
+                nn.Conv2d(in_dim,out_dim,1,stride,0,bias=False),
+                nn.BatchNorm2d(out_dim),
+            )
  
     def forward(self,input_):
-        x_input = input_
         x_0 = self.subconv_1(input_)
         x_1 = self.subconv_2(x_0)
-        if self.downsample is not None:
-            x_input = self.downsample(input_) 
+        x_input = self.downsample(input_) 
         x_final = F.relu(x_input + x_1,inplace=True)
         return x_final
 
@@ -102,7 +101,7 @@ class ResNet(nn.Module):
         if cfg.MAX_POOL:
             self.maxpool_1 = nn.MaxPool2d(3,2,1)
         else:
-            self.maxpool_1 = None
+            self.maxpool_1 = nn.Sequential()
         block = BottleNeck if cfg.BLOCK == 'bottleneck' else BasicBlock
         b_ = block.expansion
         self.layer_1 = self._make_layer(block,cfg.BASE,cfg.BASE*b_,cfg.BLOCK_LIST[0],1)
@@ -117,7 +116,8 @@ class ResNet(nn.Module):
                 nn.Flatten(),
                 nn.Linear(final_feature,cfg.CLASS_NUM),)
         else:
-            self.avgpool_1 = None
+            self.avgpool_1 = nn.Sequential()
+            self.fc_1 = nn.Sequential()
         self.logger = logger
         self.pretrained = cfg.PRETRAINED
         self._initialization()
@@ -128,26 +128,28 @@ class ResNet(nn.Module):
             #TODO(liu):check it correct or not.
         else:
             for name, sub_module in self.named_modules():
-                if isinstance(sub_module, nn.Conv2d) or isinstance(sub_module, nn.ConvTranspose2d):
-                    nn.init.kaiming_normal_(sub_module.weight,mode='fan_out'
-                                            ,nonlinearity='relu')
+                if isinstance(sub_module, nn.Conv2d) or isinstance(sub_module, nn.ConvTranspose2d) or \
+                    isinstance(sub_module, nn.Linear):
+                    nn.init.kaiming_normal_(sub_module.weight)
+                    # nn.init.kaiming_normal_(sub_module.weight,mode='fan_out'
+                    #                         ,nonlinearity='relu')
                     if self.logger is not None:
                         self.logger.info('init {}.weight as kaiming_normal_'.format(name))
                     if sub_module.bias is not None:
                         nn.init.constant_(sub_module.bias, 0.0)
                         if self.logger is not None:
                             self.logger.info('init {}.bias as 0'.format(name))
-                elif isinstance(sub_module, nn.BatchNorm2d):
-                    nn.init.constant_(sub_module.weight,1)
-                    nn.init.constant_(sub_module.bias,0)
-                    if self.logger is not None:
-                        self.logger.info('init {}.weight as constant_ 1'.format(name))
-                        self.logger.info('init {}.bias as constant_ 0'.format(name))
+                # elif isinstance(sub_module, nn.BatchNorm2d):
+                #     nn.init.constant_(sub_module.weight,1)
+                #     nn.init.constant_(sub_module.bias,0)
+                #     if self.logger is not None:
+                #         self.logger.info('init {}.weight as constant_ 1'.format(name))
+                #         self.logger.info('init {}.bias as constant_ 0'.format(name))
             
     def _make_layer(self,block,in_dim,out_dim,layer_num,stride):
         net_layers = []
         if layer_num == 0:
-            return None
+            return nn.Sequential()
         else:    
             for layer in range(layer_num):
                 if layer == 0:
@@ -158,16 +160,13 @@ class ResNet(nn.Module):
                     
     def forward(self,input_):
         x = self.head_conv(input_)
-        if self.maxpool_1 is not None:
-            x = self.maxpool_1(x)
+        x = self.maxpool_1(x)
         x = self.layer_1(x)
         x = self.layer_2(x)
         x = self.layer_3(x)
-        if self.layer_4 is not None:
-            x = self.layer_4(x)
-        if self.avgpool_1 is not None:
-            x = self.avgpool_1(x)
-            x = self.fc_1(x)
+        x = self.layer_4(x)
+        x = self.avgpool_1(x)
+        x = self.fc_1(x)
         return x       
 
 model_urls = {
