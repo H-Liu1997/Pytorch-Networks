@@ -11,11 +11,11 @@
 ## Accuracy Report
 |  Model   |   Dataset   |  #Params  | Test Prec(Paper)  | Test Prec(This impl) |
 |----------|:-----------:|:---------:|:------:|:------:|
-|[ResNet-20]()|  CIFAR-10  | 0.27M | 91.25%  |  **92.02%**   |
-|[ResNet-32]()|  CIFAR-10  | 0.46M | 92.49%  |  **92.61%**   |
-|[ResNet-44]()|  CIFAR-10  | 0.66M | 92.83%  |  **92.46%**   |
-|[ResNet-56]()|  CIFAR-10  | 0.85M | 93.03%  |  **93.22%**   |
-|[ResNet-110]()|  CIFAR-10  | 1.73M | 93.57%  |  **92.92%**   |
+|[ResNet-20](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_18_v3_la)|  CIFAR-10  | 0.27M | 91.25%  |  **92.02%**   |
+|[ResNet-32](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_34_la)|  CIFAR-10  | 0.46M | 92.49%  |  **92.61%**   |
+|[ResNet-44](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_44_100_150_swaug)|  CIFAR-10  | 0.66M | **92.83%**  |  92.46%   |
+|[ResNet-56](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_56_100_150_swaug)|  CIFAR-10  | 0.85M | 93.03%  |  **93.22%**   |
+|[ResNet-110](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_110_la)|  CIFAR-10  | 1.73M | **93.57%**  |  92.92%   |
 
 
 **For backbone networks**
