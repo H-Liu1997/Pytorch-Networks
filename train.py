@@ -48,7 +48,7 @@ def trainer(cfg):
     opt,lr_scheduler = get_opt(model, cfg.TRAIN, logger)
     loss_func = get_loss_func(cfg.MODEL.LOSS, logger=logger)
 
-    current_epoch = load_checkpoints(model, opt, cfg.PATH , logger)
+    current_epoch = load_checkpoints(model, opt, cfg.PATH , logger,lr_scheduler)
     log_writter = SummaryWriter(cfg.PATH.EXPS+cfg.PATH.NAME)
     
     #TODO(liu):add warm up
@@ -90,7 +90,7 @@ def trainer(cfg):
                     break
 
         lr_scheduler.step()
-        save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.MODEL, model, opt, epoch)
+        save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.MODEL, model, opt, epoch,lr_scheduler)
         acc_val, loss_val = val(val_loader, model, logger, loss_func, epoch)
         log_writter.add_scalars("acc",{'acc_train':acc_train_class.print_(),
                                      'acc_val':acc_val,},
@@ -103,7 +103,7 @@ def trainer(cfg):
         if best_val[0] < acc_val:
             best_val[0] = acc_val
             best_val[1] = epoch
-            save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.BESTMODEL, model, opt, epoch)
+            save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.BESTMODEL, model, opt, epoch,lr_scheduler)
         logger.info('BestV Prec@1:%.4f\t'%(best_val[0])+"Best Epoch:%d"%(best_val[1]))
 
     plot_result_data(acc_total,acc_val_total,loss_total,
@@ -114,5 +114,12 @@ def trainer(cfg):
 if __name__ == "__main__":
     from config import cfg
     trainer(cfg)
+    from config1 import cfg
+    trainer(cfg)
+    from config2 import cfg
+    trainer(cfg)
+    from config3 import cfg
+    trainer(cfg)
+
     # from config2 import cfg
     # main(cfg)            

@@ -1,0 +1,1563 @@
+start creating config files...
+update config files success
+init head_conv.0.weight as kaiming_normal_
+init layer_1.0.subconv_1.0.weight as kaiming_normal_
+init layer_1.0.subconv_2.0.weight as kaiming_normal_
+init layer_1.1.subconv_1.0.weight as kaiming_normal_
+init layer_1.1.subconv_2.0.weight as kaiming_normal_
+init layer_2.0.subconv_1.0.weight as kaiming_normal_
+init layer_2.0.subconv_2.0.weight as kaiming_normal_
+init layer_2.1.subconv_1.0.weight as kaiming_normal_
+init layer_2.1.subconv_2.0.weight as kaiming_normal_
+init layer_3.0.subconv_1.0.weight as kaiming_normal_
+init layer_3.0.subconv_2.0.weight as kaiming_normal_
+init layer_3.1.subconv_1.0.weight as kaiming_normal_
+init layer_3.1.subconv_2.0.weight as kaiming_normal_
+init layer_4.0.subconv_1.0.weight as kaiming_normal_
+init layer_4.0.subconv_2.0.weight as kaiming_normal_
+init layer_4.1.subconv_1.0.weight as kaiming_normal_
+init layer_4.1.subconv_2.0.weight as kaiming_normal_
+init fc_1.1.weight as kaiming_normal_
+init fc_1.1.bias as 0
+Computational complexity:       0.55 GMac
+Number of parameters:           11.0 M  
+no checkpoints
+[0][0/391]	Loss:3.75324	Lr:0.100000	Data:0598ms	Train:0093ms	Mem:0.75Gb	Prec@1:0.0781
+[0][150/391]	Loss:1.97025	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.75Gb	Prec@1:0.1569
+[0][300/391]	Loss:1.93151	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.75Gb	Prec@1:0.2192
+[0][0/79]	Loss:1.78313	Lr:0.000000	Data:0522ms	Train:0003ms	Mem:0.75Gb	Prec@1:0.3438
+[0][50/79]	Loss:1.86501	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.75Gb	Prec@1:0.3370
+Train Prec@1:0.2463	Val Prec@1:0.3393
+BestV Prec@1:0.3393	Best Epoch:0
+[1][0/391]	Loss:1.72303	Lr:0.100000	Data:0620ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.3594
+[1][150/391]	Loss:1.82464	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.3813
+[1][300/391]	Loss:1.33640	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.4021
+[1][0/79]	Loss:1.39938	Lr:0.000000	Data:0559ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.5078
+[1][50/79]	Loss:1.50961	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.4775
+Train Prec@1:0.4132	Val Prec@1:0.4731
+BestV Prec@1:0.4731	Best Epoch:1
+[2][0/391]	Loss:1.38766	Lr:0.100000	Data:0651ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.4453
+[2][150/391]	Loss:1.46231	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.4656
+[2][300/391]	Loss:1.66093	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.4826
+[2][0/79]	Loss:1.21213	Lr:0.000000	Data:0520ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.5703
+[2][50/79]	Loss:1.30411	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.5188
+Train Prec@1:0.4906	Val Prec@1:0.5167
+BestV Prec@1:0.5167	Best Epoch:2
+[3][0/391]	Loss:1.15432	Lr:0.100000	Data:0617ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.6016
+[3][150/391]	Loss:1.12106	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.5397
+[3][300/391]	Loss:1.14803	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.5506
+[3][0/79]	Loss:1.14139	Lr:0.000000	Data:0554ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.5859
+[3][50/79]	Loss:1.28183	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.5636
+Train Prec@1:0.5603	Val Prec@1:0.5606
+BestV Prec@1:0.5606	Best Epoch:3
+[4][0/391]	Loss:0.94527	Lr:0.100000	Data:0622ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.6719
+[4][150/391]	Loss:1.07480	Lr:0.100000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.6044
+[4][300/391]	Loss:0.88354	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.6151
+[4][0/79]	Loss:0.89322	Lr:0.000000	Data:0559ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.6797
+[4][50/79]	Loss:1.16376	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.6195
+Train Prec@1:0.6173	Val Prec@1:0.6149
+BestV Prec@1:0.6149	Best Epoch:4
+[5][0/391]	Loss:0.97070	Lr:0.100000	Data:0603ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.6719
+[5][150/391]	Loss:0.90665	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.6528
+[5][300/391]	Loss:0.88063	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.6597
+[5][0/79]	Loss:1.01182	Lr:0.000000	Data:0526ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.6719
+[5][50/79]	Loss:1.11283	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.6670
+Train Prec@1:0.6637	Val Prec@1:0.6677
+BestV Prec@1:0.6677	Best Epoch:5
+[6][0/391]	Loss:0.81143	Lr:0.100000	Data:0655ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.7109
+[6][150/391]	Loss:0.75068	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.6920
+[6][300/391]	Loss:0.93359	Lr:0.100000	Data:0000ms	Train:0096ms	Mem:0.76Gb	Prec@1:0.7007
+[6][0/79]	Loss:0.77354	Lr:0.000000	Data:0516ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.7188
+[6][50/79]	Loss:1.01902	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.7114
+Train Prec@1:0.7049	Val Prec@1:0.7105
+BestV Prec@1:0.7105	Best Epoch:6
+[7][0/391]	Loss:0.84003	Lr:0.100000	Data:0587ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.6719
+[7][150/391]	Loss:0.75130	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.7296
+[7][300/391]	Loss:0.66010	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.7361
+[7][0/79]	Loss:0.74564	Lr:0.000000	Data:0524ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.7578
+[7][50/79]	Loss:0.69841	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.7454
+Train Prec@1:0.7397	Val Prec@1:0.7441
+BestV Prec@1:0.7441	Best Epoch:7
+[8][0/391]	Loss:0.69654	Lr:0.100000	Data:0642ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.7500
+[8][150/391]	Loss:0.69317	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.7617
+[8][300/391]	Loss:0.80346	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.7644
+[8][0/79]	Loss:0.91845	Lr:0.000000	Data:0522ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.6953
+[8][50/79]	Loss:0.87003	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.7292
+Train Prec@1:0.7652	Val Prec@1:0.7292
+BestV Prec@1:0.7441	Best Epoch:7
+[9][0/391]	Loss:0.59435	Lr:0.100000	Data:0626ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.7422
+[9][150/391]	Loss:0.56850	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.7840
+[9][300/391]	Loss:0.49087	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.7869
+[9][0/79]	Loss:0.66590	Lr:0.000000	Data:0522ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.7891
+[9][50/79]	Loss:0.68295	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.7799
+Train Prec@1:0.7871	Val Prec@1:0.7761
+BestV Prec@1:0.7761	Best Epoch:9
+[10][0/391]	Loss:0.46555	Lr:0.100000	Data:0621ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.8359
+[10][150/391]	Loss:0.65058	Lr:0.100000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.8046
+[10][300/391]	Loss:0.61532	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.8019
+[10][0/79]	Loss:0.57495	Lr:0.000000	Data:0524ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8047
+[10][50/79]	Loss:0.54579	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8006
+Train Prec@1:0.8020	Val Prec@1:0.7991
+BestV Prec@1:0.7991	Best Epoch:10
+[11][0/391]	Loss:0.69587	Lr:0.100000	Data:0640ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.8125
+[11][150/391]	Loss:0.53489	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.8172
+[11][300/391]	Loss:0.40167	Lr:0.100000	Data:0000ms	Train:0094ms	Mem:0.76Gb	Prec@1:0.8179
+[11][0/79]	Loss:0.71126	Lr:0.000000	Data:0523ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.7422
+[11][50/79]	Loss:0.61113	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.7771
+Train Prec@1:0.8181	Val Prec@1:0.7770
+BestV Prec@1:0.7991	Best Epoch:10
+[12][0/391]	Loss:0.64091	Lr:0.100000	Data:0682ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.7656
+[12][150/391]	Loss:0.41992	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.8280
+[12][300/391]	Loss:0.32236	Lr:0.100000	Data:0002ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.8308
+[12][0/79]	Loss:0.72061	Lr:0.000000	Data:0515ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.7891
+[12][50/79]	Loss:0.77262	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.7748
+Train Prec@1:0.8304	Val Prec@1:0.7779
+BestV Prec@1:0.7991	Best Epoch:10
+[13][0/391]	Loss:0.38509	Lr:0.100000	Data:0621ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9063
+[13][150/391]	Loss:0.32824	Lr:0.100000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.8422
+[13][300/391]	Loss:0.46647	Lr:0.100000	Data:0001ms	Train:0098ms	Mem:0.76Gb	Prec@1:0.8424
+[13][0/79]	Loss:0.55844	Lr:0.000000	Data:0518ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.7969
+[13][50/79]	Loss:0.54945	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8218
+Train Prec@1:0.8425	Val Prec@1:0.8213
+BestV Prec@1:0.8213	Best Epoch:13
+[14][0/391]	Loss:0.43568	Lr:0.100000	Data:0671ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.8594
+[14][150/391]	Loss:0.43201	Lr:0.100000	Data:0005ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.8518
+[14][300/391]	Loss:0.35375	Lr:0.100000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.8507
+[14][0/79]	Loss:0.57229	Lr:0.000000	Data:0619ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.7891
+[14][50/79]	Loss:0.61950	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8171
+Train Prec@1:0.8509	Val Prec@1:0.8172
+BestV Prec@1:0.8213	Best Epoch:13
+[15][0/391]	Loss:0.30708	Lr:0.100000	Data:0634ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.8828
+[15][150/391]	Loss:0.43561	Lr:0.100000	Data:0000ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.8611
+[15][300/391]	Loss:0.49242	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.8589
+[15][0/79]	Loss:0.41894	Lr:0.000000	Data:0528ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8516
+[15][50/79]	Loss:0.53390	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8390
+Train Prec@1:0.8592	Val Prec@1:0.8387
+BestV Prec@1:0.8387	Best Epoch:15
+[16][0/391]	Loss:0.35533	Lr:0.100000	Data:0664ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.8906
+[16][150/391]	Loss:0.36312	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.8688
+[16][300/391]	Loss:0.45769	Lr:0.100000	Data:0003ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.8658
+[16][0/79]	Loss:0.41613	Lr:0.000000	Data:0598ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8672
+[16][50/79]	Loss:0.56801	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8415
+Train Prec@1:0.8656	Val Prec@1:0.8399
+BestV Prec@1:0.8399	Best Epoch:16
+[17][0/391]	Loss:0.36954	Lr:0.100000	Data:0719ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.8672
+[17][150/391]	Loss:0.37367	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.8817
+[17][300/391]	Loss:0.34218	Lr:0.100000	Data:0000ms	Train:0092ms	Mem:0.76Gb	Prec@1:0.8791
+[17][0/79]	Loss:0.42357	Lr:0.000000	Data:0581ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8594
+[17][50/79]	Loss:0.54049	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8382
+Train Prec@1:0.8764	Val Prec@1:0.8360
+BestV Prec@1:0.8399	Best Epoch:16
+[18][0/391]	Loss:0.28905	Lr:0.100000	Data:0619ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9141
+[18][150/391]	Loss:0.31326	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.8845
+[18][300/391]	Loss:0.44285	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.8839
+[18][0/79]	Loss:0.39542	Lr:0.000000	Data:0609ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8594
+[18][50/79]	Loss:0.50987	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8385
+Train Prec@1:0.8831	Val Prec@1:0.8381
+BestV Prec@1:0.8399	Best Epoch:16
+[19][0/391]	Loss:0.35555	Lr:0.100000	Data:0610ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.8516
+[19][150/391]	Loss:0.34564	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.8909
+[19][300/391]	Loss:0.17830	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.8855
+[19][0/79]	Loss:0.39828	Lr:0.000000	Data:0614ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8594
+[19][50/79]	Loss:0.50519	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8436
+Train Prec@1:0.8858	Val Prec@1:0.8392
+BestV Prec@1:0.8399	Best Epoch:16
+[20][0/391]	Loss:0.26314	Lr:0.100000	Data:0618ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9063
+[20][150/391]	Loss:0.27614	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.8925
+[20][300/391]	Loss:0.19141	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.8915
+[20][0/79]	Loss:0.46760	Lr:0.000000	Data:0595ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8281
+[20][50/79]	Loss:0.54987	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8415
+Train Prec@1:0.8904	Val Prec@1:0.8431
+BestV Prec@1:0.8431	Best Epoch:20
+[21][0/391]	Loss:0.22600	Lr:0.100000	Data:0611ms	Train:0078ms	Mem:0.76Gb	Prec@1:0.9063
+[21][150/391]	Loss:0.18615	Lr:0.100000	Data:0002ms	Train:0092ms	Mem:0.76Gb	Prec@1:0.9006
+[21][300/391]	Loss:0.32336	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.8971
+[21][0/79]	Loss:0.35877	Lr:0.000000	Data:0636ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8828
+[21][50/79]	Loss:0.44249	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8485
+Train Prec@1:0.8955	Val Prec@1:0.8486
+BestV Prec@1:0.8486	Best Epoch:21
+[22][0/391]	Loss:0.22532	Lr:0.100000	Data:0717ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9141
+[22][150/391]	Loss:0.25030	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9033
+[22][300/391]	Loss:0.37240	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9011
+[22][0/79]	Loss:0.38505	Lr:0.000000	Data:0599ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8438
+[22][50/79]	Loss:0.56802	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8603
+Train Prec@1:0.8995	Val Prec@1:0.8605
+BestV Prec@1:0.8605	Best Epoch:22
+[23][0/391]	Loss:0.15369	Lr:0.100000	Data:0692ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9531
+[23][150/391]	Loss:0.28622	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9057
+[23][300/391]	Loss:0.26901	Lr:0.100000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9037
+[23][0/79]	Loss:0.38268	Lr:0.000000	Data:0607ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8672
+[23][50/79]	Loss:0.61340	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8591
+Train Prec@1:0.9026	Val Prec@1:0.8613
+BestV Prec@1:0.8613	Best Epoch:23
+[24][0/391]	Loss:0.27261	Lr:0.100000	Data:0702ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9063
+[24][150/391]	Loss:0.34311	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9114
+[24][300/391]	Loss:0.24538	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9088
+[24][0/79]	Loss:0.36669	Lr:0.000000	Data:0596ms	Train:0004ms	Mem:0.76Gb	Prec@1:0.8984
+[24][50/79]	Loss:0.52770	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8658
+Train Prec@1:0.9068	Val Prec@1:0.8664
+BestV Prec@1:0.8664	Best Epoch:24
+[25][0/391]	Loss:0.24034	Lr:0.100000	Data:0704ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9141
+[25][150/391]	Loss:0.19099	Lr:0.100000	Data:0002ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9110
+[25][300/391]	Loss:0.18362	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9104
+[25][0/79]	Loss:0.32678	Lr:0.000000	Data:0603ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8594
+[25][50/79]	Loss:0.52277	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8528
+Train Prec@1:0.9093	Val Prec@1:0.8548
+BestV Prec@1:0.8664	Best Epoch:24
+[26][0/391]	Loss:0.25010	Lr:0.100000	Data:0607ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9219
+[26][150/391]	Loss:0.19333	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9170
+[26][300/391]	Loss:0.26657	Lr:0.100000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9139
+[26][0/79]	Loss:0.43401	Lr:0.000000	Data:0606ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8750
+[26][50/79]	Loss:0.65054	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8609
+Train Prec@1:0.9127	Val Prec@1:0.8616
+BestV Prec@1:0.8664	Best Epoch:24
+[27][0/391]	Loss:0.11931	Lr:0.100000	Data:0617ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9609
+[27][150/391]	Loss:0.29328	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9196
+[27][300/391]	Loss:0.21162	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9171
+[27][0/79]	Loss:0.36012	Lr:0.000000	Data:0614ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9141
+[27][50/79]	Loss:0.41287	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8647
+Train Prec@1:0.9164	Val Prec@1:0.8629
+BestV Prec@1:0.8664	Best Epoch:24
+[28][0/391]	Loss:0.11470	Lr:0.100000	Data:0669ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9531
+[28][150/391]	Loss:0.18536	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9228
+[28][300/391]	Loss:0.27597	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9190
+[28][0/79]	Loss:0.45829	Lr:0.000000	Data:0598ms	Train:0004ms	Mem:0.76Gb	Prec@1:0.8359
+[28][50/79]	Loss:0.48435	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8496
+Train Prec@1:0.9181	Val Prec@1:0.8472
+BestV Prec@1:0.8664	Best Epoch:24
+[29][0/391]	Loss:0.19452	Lr:0.100000	Data:0639ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9375
+[29][150/391]	Loss:0.25368	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9231
+[29][300/391]	Loss:0.21218	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9222
+[29][0/79]	Loss:0.39098	Lr:0.000000	Data:0595ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[29][50/79]	Loss:0.49891	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8670
+Train Prec@1:0.9206	Val Prec@1:0.8645
+BestV Prec@1:0.8664	Best Epoch:24
+[30][0/391]	Loss:0.13110	Lr:0.100000	Data:0633ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9453
+[30][150/391]	Loss:0.07337	Lr:0.100000	Data:0002ms	Train:0086ms	Mem:0.76Gb	Prec@1:0.9258
+[30][300/391]	Loss:0.21148	Lr:0.100000	Data:0000ms	Train:0088ms	Mem:0.76Gb	Prec@1:0.9241
+[30][0/79]	Loss:0.54613	Lr:0.000000	Data:0602ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8359
+[30][50/79]	Loss:0.55161	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8490
+Train Prec@1:0.9231	Val Prec@1:0.8503
+BestV Prec@1:0.8664	Best Epoch:24
+[31][0/391]	Loss:0.17977	Lr:0.100000	Data:0615ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9531
+[31][150/391]	Loss:0.17034	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9297
+[31][300/391]	Loss:0.14117	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9268
+[31][0/79]	Loss:0.37411	Lr:0.000000	Data:0592ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8750
+[31][50/79]	Loss:0.43030	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8683
+Train Prec@1:0.9243	Val Prec@1:0.8675
+BestV Prec@1:0.8675	Best Epoch:31
+[32][0/391]	Loss:0.16105	Lr:0.100000	Data:0697ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9375
+[32][150/391]	Loss:0.12997	Lr:0.100000	Data:0000ms	Train:0078ms	Mem:0.76Gb	Prec@1:0.9308
+[32][300/391]	Loss:0.22275	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9268
+[32][0/79]	Loss:0.34326	Lr:0.000000	Data:0635ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9063
+[32][50/79]	Loss:0.40232	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8703
+Train Prec@1:0.9253	Val Prec@1:0.8660
+BestV Prec@1:0.8675	Best Epoch:31
+[33][0/391]	Loss:0.16135	Lr:0.100000	Data:0666ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9141
+[33][150/391]	Loss:0.14585	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9292
+[33][300/391]	Loss:0.14309	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9279
+[33][0/79]	Loss:0.35562	Lr:0.000000	Data:0613ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8828
+[33][50/79]	Loss:0.40355	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8719
+Train Prec@1:0.9267	Val Prec@1:0.8746
+BestV Prec@1:0.8746	Best Epoch:33
+[34][0/391]	Loss:0.14775	Lr:0.100000	Data:0703ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9375
+[34][150/391]	Loss:0.11567	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9346
+[34][300/391]	Loss:0.20573	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9320
+[34][0/79]	Loss:0.33263	Lr:0.000000	Data:0634ms	Train:0013ms	Mem:0.76Gb	Prec@1:0.8750
+[34][50/79]	Loss:0.37378	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8762
+Train Prec@1:0.9304	Val Prec@1:0.8796
+BestV Prec@1:0.8796	Best Epoch:34
+[35][0/391]	Loss:0.15958	Lr:0.100000	Data:0666ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9375
+[35][150/391]	Loss:0.16326	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9397
+[35][300/391]	Loss:0.18558	Lr:0.100000	Data:0001ms	Train:0090ms	Mem:0.76Gb	Prec@1:0.9328
+[35][0/79]	Loss:0.34334	Lr:0.000000	Data:0586ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8906
+[35][50/79]	Loss:0.49093	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8632
+Train Prec@1:0.9325	Val Prec@1:0.8620
+BestV Prec@1:0.8796	Best Epoch:34
+[36][0/391]	Loss:0.13054	Lr:0.100000	Data:0674ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9609
+[36][150/391]	Loss:0.19122	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9406
+[36][300/391]	Loss:0.16796	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9373
+[36][0/79]	Loss:0.28222	Lr:0.000000	Data:0612ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[36][50/79]	Loss:0.40404	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8787
+Train Prec@1:0.9355	Val Prec@1:0.8784
+BestV Prec@1:0.8796	Best Epoch:34
+[37][0/391]	Loss:0.13332	Lr:0.100000	Data:0641ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9453
+[37][150/391]	Loss:0.25673	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9384
+[37][300/391]	Loss:0.16564	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9356
+[37][0/79]	Loss:0.27264	Lr:0.000000	Data:0603ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9141
+[37][50/79]	Loss:0.44424	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8722
+Train Prec@1:0.9332	Val Prec@1:0.8761
+BestV Prec@1:0.8796	Best Epoch:34
+[38][0/391]	Loss:0.20475	Lr:0.100000	Data:0600ms	Train:0087ms	Mem:0.76Gb	Prec@1:0.9453
+[38][150/391]	Loss:0.12278	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9415
+[38][300/391]	Loss:0.25442	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9372
+[38][0/79]	Loss:0.40422	Lr:0.000000	Data:0606ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8672
+[38][50/79]	Loss:0.54347	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8583
+Train Prec@1:0.9362	Val Prec@1:0.8596
+BestV Prec@1:0.8796	Best Epoch:34
+[39][0/391]	Loss:0.19920	Lr:0.100000	Data:0639ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9531
+[39][150/391]	Loss:0.10225	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9369
+[39][300/391]	Loss:0.20088	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9371
+[39][0/79]	Loss:0.32886	Lr:0.000000	Data:0644ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9297
+[39][50/79]	Loss:0.43474	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8759
+Train Prec@1:0.9374	Val Prec@1:0.8758
+BestV Prec@1:0.8796	Best Epoch:34
+[40][0/391]	Loss:0.13989	Lr:0.100000	Data:0619ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9453
+[40][150/391]	Loss:0.26967	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9447
+[40][300/391]	Loss:0.11409	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9396
+[40][0/79]	Loss:0.28332	Lr:0.000000	Data:0609ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9063
+[40][50/79]	Loss:0.38268	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8615
+Train Prec@1:0.9384	Val Prec@1:0.8630
+BestV Prec@1:0.8796	Best Epoch:34
+[41][0/391]	Loss:0.14949	Lr:0.100000	Data:0619ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9531
+[41][150/391]	Loss:0.11748	Lr:0.100000	Data:0000ms	Train:0095ms	Mem:0.76Gb	Prec@1:0.9367
+[41][300/391]	Loss:0.33226	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9356
+[41][0/79]	Loss:0.42669	Lr:0.000000	Data:0605ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8438
+[41][50/79]	Loss:0.31044	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8744
+Train Prec@1:0.9357	Val Prec@1:0.8739
+BestV Prec@1:0.8796	Best Epoch:34
+[42][0/391]	Loss:0.14713	Lr:0.100000	Data:0609ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9531
+[42][150/391]	Loss:0.24025	Lr:0.100000	Data:0001ms	Train:0090ms	Mem:0.76Gb	Prec@1:0.9476
+[42][300/391]	Loss:0.16833	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9423
+[42][0/79]	Loss:0.43851	Lr:0.000000	Data:0603ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8672
+[42][50/79]	Loss:0.32930	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8722
+Train Prec@1:0.9409	Val Prec@1:0.8725
+BestV Prec@1:0.8796	Best Epoch:34
+[43][0/391]	Loss:0.13546	Lr:0.100000	Data:0609ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9297
+[43][150/391]	Loss:0.14390	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9478
+[43][300/391]	Loss:0.17151	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9432
+[43][0/79]	Loss:0.37044	Lr:0.000000	Data:0602ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[43][50/79]	Loss:0.46237	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8650
+Train Prec@1:0.9420	Val Prec@1:0.8666
+BestV Prec@1:0.8796	Best Epoch:34
+[44][0/391]	Loss:0.17323	Lr:0.100000	Data:0624ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9453
+[44][150/391]	Loss:0.23435	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9450
+[44][300/391]	Loss:0.19475	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9439
+[44][0/79]	Loss:0.30757	Lr:0.000000	Data:0598ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8672
+[44][50/79]	Loss:0.32179	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8808
+Train Prec@1:0.9426	Val Prec@1:0.8814
+BestV Prec@1:0.8814	Best Epoch:44
+[45][0/391]	Loss:0.12899	Lr:0.100000	Data:0713ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9375
+[45][150/391]	Loss:0.12185	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9458
+[45][300/391]	Loss:0.18768	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9449
+[45][0/79]	Loss:0.35367	Lr:0.000000	Data:0613ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[45][50/79]	Loss:0.43427	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8879
+Train Prec@1:0.9441	Val Prec@1:0.8853
+BestV Prec@1:0.8853	Best Epoch:45
+[46][0/391]	Loss:0.09643	Lr:0.100000	Data:0678ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9531
+[46][150/391]	Loss:0.13618	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9467
+[46][300/391]	Loss:0.20015	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9444
+[46][0/79]	Loss:0.37846	Lr:0.000000	Data:0607ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8906
+[46][50/79]	Loss:0.46670	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8828
+Train Prec@1:0.9443	Val Prec@1:0.8821
+BestV Prec@1:0.8853	Best Epoch:45
+[47][0/391]	Loss:0.16326	Lr:0.100000	Data:0624ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9141
+[47][150/391]	Loss:0.16581	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9472
+[47][300/391]	Loss:0.15321	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9445
+[47][0/79]	Loss:0.26148	Lr:0.000000	Data:0595ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9063
+[47][50/79]	Loss:0.44161	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8908
+Train Prec@1:0.9438	Val Prec@1:0.8890
+BestV Prec@1:0.8890	Best Epoch:47
+[48][0/391]	Loss:0.19156	Lr:0.100000	Data:0705ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9297
+[48][150/391]	Loss:0.13563	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9517
+[48][300/391]	Loss:0.19002	Lr:0.100000	Data:0000ms	Train:0091ms	Mem:0.76Gb	Prec@1:0.9500
+[48][0/79]	Loss:0.36514	Lr:0.000000	Data:0601ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8906
+[48][50/79]	Loss:0.32639	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8747
+Train Prec@1:0.9480	Val Prec@1:0.8786
+BestV Prec@1:0.8890	Best Epoch:47
+[49][0/391]	Loss:0.13092	Lr:0.100000	Data:0604ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9531
+[49][150/391]	Loss:0.16906	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9495
+[49][300/391]	Loss:0.12300	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9470
+[49][0/79]	Loss:0.29788	Lr:0.000000	Data:0609ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9141
+[49][50/79]	Loss:0.33788	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8775
+Train Prec@1:0.9456	Val Prec@1:0.8795
+BestV Prec@1:0.8890	Best Epoch:47
+[50][0/391]	Loss:0.15555	Lr:0.100000	Data:0625ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9531
+[50][150/391]	Loss:0.11906	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9543
+[50][300/391]	Loss:0.16476	Lr:0.100000	Data:0001ms	Train:0090ms	Mem:0.76Gb	Prec@1:0.9507
+[50][0/79]	Loss:0.33925	Lr:0.000000	Data:0619ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8750
+[50][50/79]	Loss:0.25621	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8767
+Train Prec@1:0.9500	Val Prec@1:0.8796
+BestV Prec@1:0.8890	Best Epoch:47
+[51][0/391]	Loss:0.07357	Lr:0.100000	Data:0625ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9766
+[51][150/391]	Loss:0.15167	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9492
+[51][300/391]	Loss:0.16705	Lr:0.100000	Data:0000ms	Train:0091ms	Mem:0.76Gb	Prec@1:0.9466
+[51][0/79]	Loss:0.47804	Lr:0.000000	Data:0606ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8750
+[51][50/79]	Loss:0.37603	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8545
+Train Prec@1:0.9459	Val Prec@1:0.8578
+BestV Prec@1:0.8890	Best Epoch:47
+[52][0/391]	Loss:0.09777	Lr:0.100000	Data:0653ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9609
+[52][150/391]	Loss:0.06921	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9548
+[52][300/391]	Loss:0.20739	Lr:0.100000	Data:0001ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9523
+[52][0/79]	Loss:0.28210	Lr:0.000000	Data:0594ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9219
+[52][50/79]	Loss:0.46511	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8785
+Train Prec@1:0.9516	Val Prec@1:0.8763
+BestV Prec@1:0.8890	Best Epoch:47
+[53][0/391]	Loss:0.08651	Lr:0.100000	Data:0622ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9766
+[53][150/391]	Loss:0.25856	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9492
+[53][300/391]	Loss:0.16239	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9494
+[53][0/79]	Loss:0.44240	Lr:0.000000	Data:0602ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9063
+[53][50/79]	Loss:0.27693	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8825
+Train Prec@1:0.9487	Val Prec@1:0.8833
+BestV Prec@1:0.8890	Best Epoch:47
+[54][0/391]	Loss:0.14204	Lr:0.100000	Data:0613ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9609
+[54][150/391]	Loss:0.18731	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9514
+[54][300/391]	Loss:0.06643	Lr:0.100000	Data:0003ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9505
+[54][0/79]	Loss:0.39369	Lr:0.000000	Data:0615ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8750
+[54][50/79]	Loss:0.74689	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8644
+Train Prec@1:0.9491	Val Prec@1:0.8637
+BestV Prec@1:0.8890	Best Epoch:47
+[55][0/391]	Loss:0.21663	Lr:0.100000	Data:0601ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9063
+[55][150/391]	Loss:0.12593	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9564
+[55][300/391]	Loss:0.06239	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9541
+[55][0/79]	Loss:0.45086	Lr:0.000000	Data:0590ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8750
+[55][50/79]	Loss:0.41601	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8745
+Train Prec@1:0.9517	Val Prec@1:0.8728
+BestV Prec@1:0.8890	Best Epoch:47
+[56][0/391]	Loss:0.09632	Lr:0.100000	Data:0604ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9766
+[56][150/391]	Loss:0.08775	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9578
+[56][300/391]	Loss:0.22160	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9537
+[56][0/79]	Loss:0.45073	Lr:0.000000	Data:0610ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8750
+[56][50/79]	Loss:0.39739	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8752
+Train Prec@1:0.9524	Val Prec@1:0.8779
+BestV Prec@1:0.8890	Best Epoch:47
+[57][0/391]	Loss:0.13266	Lr:0.100000	Data:0648ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9531
+[57][150/391]	Loss:0.06406	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9548
+[57][300/391]	Loss:0.12204	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9517
+[57][0/79]	Loss:0.37120	Lr:0.000000	Data:0607ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8906
+[57][50/79]	Loss:0.31821	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8899
+Train Prec@1:0.9517	Val Prec@1:0.8886
+BestV Prec@1:0.8890	Best Epoch:47
+[58][0/391]	Loss:0.07201	Lr:0.100000	Data:0653ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9766
+[58][150/391]	Loss:0.19239	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9600
+[58][300/391]	Loss:0.12804	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9540
+[58][0/79]	Loss:0.41518	Lr:0.000000	Data:0606ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8906
+[58][50/79]	Loss:0.37031	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8837
+Train Prec@1:0.9529	Val Prec@1:0.8823
+BestV Prec@1:0.8890	Best Epoch:47
+[59][0/391]	Loss:0.19688	Lr:0.100000	Data:0621ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9531
+[59][150/391]	Loss:0.07737	Lr:0.100000	Data:0001ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9534
+[59][300/391]	Loss:0.20082	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9522
+[59][0/79]	Loss:0.30624	Lr:0.000000	Data:0602ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8906
+[59][50/79]	Loss:0.23201	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8909
+Train Prec@1:0.9515	Val Prec@1:0.8910
+BestV Prec@1:0.8910	Best Epoch:59
+[60][0/391]	Loss:0.19728	Lr:0.100000	Data:0718ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9297
+[60][150/391]	Loss:0.08353	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9617
+[60][300/391]	Loss:0.16618	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9553
+[60][0/79]	Loss:0.23960	Lr:0.000000	Data:0611ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9219
+[60][50/79]	Loss:0.41696	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8797
+Train Prec@1:0.9539	Val Prec@1:0.8801
+BestV Prec@1:0.8910	Best Epoch:59
+[61][0/391]	Loss:0.18627	Lr:0.100000	Data:0596ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9141
+[61][150/391]	Loss:0.15179	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9564
+[61][300/391]	Loss:0.15677	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9554
+[61][0/79]	Loss:0.29777	Lr:0.000000	Data:0602ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[61][50/79]	Loss:0.46645	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8781
+Train Prec@1:0.9538	Val Prec@1:0.8760
+BestV Prec@1:0.8910	Best Epoch:59
+[62][0/391]	Loss:0.13234	Lr:0.100000	Data:0644ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9609
+[62][150/391]	Loss:0.13877	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9573
+[62][300/391]	Loss:0.22311	Lr:0.100000	Data:0001ms	Train:0079ms	Mem:0.76Gb	Prec@1:0.9565
+[62][0/79]	Loss:0.35458	Lr:0.000000	Data:0591ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[62][50/79]	Loss:0.35434	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8794
+Train Prec@1:0.9549	Val Prec@1:0.8803
+BestV Prec@1:0.8910	Best Epoch:59
+[63][0/391]	Loss:0.12819	Lr:0.100000	Data:0641ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9609
+[63][150/391]	Loss:0.12503	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9519
+[63][300/391]	Loss:0.12162	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9546
+[63][0/79]	Loss:0.41803	Lr:0.000000	Data:0600ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8828
+[63][50/79]	Loss:0.39643	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8899
+Train Prec@1:0.9541	Val Prec@1:0.8907
+BestV Prec@1:0.8910	Best Epoch:59
+[64][0/391]	Loss:0.10154	Lr:0.100000	Data:0647ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9688
+[64][150/391]	Loss:0.13497	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9593
+[64][300/391]	Loss:0.17560	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9575
+[64][0/79]	Loss:0.43291	Lr:0.000000	Data:0603ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8750
+[64][50/79]	Loss:0.55774	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8681
+Train Prec@1:0.9553	Val Prec@1:0.8694
+BestV Prec@1:0.8910	Best Epoch:59
+[65][0/391]	Loss:0.18655	Lr:0.100000	Data:0640ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9297
+[65][150/391]	Loss:0.12652	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9563
+[65][300/391]	Loss:0.21812	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9538
+[65][0/79]	Loss:0.31049	Lr:0.000000	Data:0614ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8906
+[65][50/79]	Loss:0.38255	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8873
+Train Prec@1:0.9533	Val Prec@1:0.8870
+BestV Prec@1:0.8910	Best Epoch:59
+[66][0/391]	Loss:0.18431	Lr:0.100000	Data:0634ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9453
+[66][150/391]	Loss:0.13785	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9560
+[66][300/391]	Loss:0.10525	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9556
+[66][0/79]	Loss:0.33020	Lr:0.000000	Data:0594ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9063
+[66][50/79]	Loss:0.43242	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8729
+Train Prec@1:0.9556	Val Prec@1:0.8751
+BestV Prec@1:0.8910	Best Epoch:59
+[67][0/391]	Loss:0.07701	Lr:0.100000	Data:0626ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9766
+[67][150/391]	Loss:0.04892	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9621
+[67][300/391]	Loss:0.06671	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9576
+[67][0/79]	Loss:0.25155	Lr:0.000000	Data:0594ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9063
+[67][50/79]	Loss:0.36873	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8923
+Train Prec@1:0.9558	Val Prec@1:0.8895
+BestV Prec@1:0.8910	Best Epoch:59
+[68][0/391]	Loss:0.11738	Lr:0.100000	Data:0572ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9609
+[68][150/391]	Loss:0.08291	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9621
+[68][300/391]	Loss:0.19926	Lr:0.100000	Data:0000ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9593
+[68][0/79]	Loss:0.35646	Lr:0.000000	Data:0589ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[68][50/79]	Loss:0.34051	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8808
+Train Prec@1:0.9586	Val Prec@1:0.8816
+BestV Prec@1:0.8910	Best Epoch:59
+[69][0/391]	Loss:0.01851	Lr:0.100000	Data:0691ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[69][150/391]	Loss:0.14819	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9608
+[69][300/391]	Loss:0.12963	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9583
+[69][0/79]	Loss:0.37255	Lr:0.000000	Data:0609ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[69][50/79]	Loss:0.44230	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8825
+Train Prec@1:0.9574	Val Prec@1:0.8837
+BestV Prec@1:0.8910	Best Epoch:59
+[70][0/391]	Loss:0.09518	Lr:0.100000	Data:0632ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9453
+[70][150/391]	Loss:0.09672	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9619
+[70][300/391]	Loss:0.16869	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9579
+[70][0/79]	Loss:0.37407	Lr:0.000000	Data:0610ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9063
+[70][50/79]	Loss:0.28474	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8868
+Train Prec@1:0.9570	Val Prec@1:0.8869
+BestV Prec@1:0.8910	Best Epoch:59
+[71][0/391]	Loss:0.09740	Lr:0.100000	Data:0639ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9688
+[71][150/391]	Loss:0.16620	Lr:0.100000	Data:0001ms	Train:0091ms	Mem:0.76Gb	Prec@1:0.9597
+[71][300/391]	Loss:0.27982	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9589
+[71][0/79]	Loss:0.30398	Lr:0.000000	Data:0606ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[71][50/79]	Loss:0.53792	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8866
+Train Prec@1:0.9569	Val Prec@1:0.8857
+BestV Prec@1:0.8910	Best Epoch:59
+[72][0/391]	Loss:0.17362	Lr:0.100000	Data:0633ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9531
+[72][150/391]	Loss:0.11056	Lr:0.100000	Data:0000ms	Train:0091ms	Mem:0.76Gb	Prec@1:0.9596
+[72][300/391]	Loss:0.17326	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9585
+[72][0/79]	Loss:0.39652	Lr:0.000000	Data:0601ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8828
+[72][50/79]	Loss:0.50944	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8805
+Train Prec@1:0.9576	Val Prec@1:0.8790
+BestV Prec@1:0.8910	Best Epoch:59
+[73][0/391]	Loss:0.12922	Lr:0.100000	Data:0615ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9453
+[73][150/391]	Loss:0.08903	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9602
+[73][300/391]	Loss:0.16080	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9590
+[73][0/79]	Loss:0.41900	Lr:0.000000	Data:0606ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8906
+[73][50/79]	Loss:0.42915	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8753
+Train Prec@1:0.9579	Val Prec@1:0.8777
+BestV Prec@1:0.8910	Best Epoch:59
+[74][0/391]	Loss:0.17130	Lr:0.100000	Data:0616ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9531
+[74][150/391]	Loss:0.12909	Lr:0.100000	Data:0000ms	Train:0096ms	Mem:0.76Gb	Prec@1:0.9611
+[74][300/391]	Loss:0.06875	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9603
+[74][0/79]	Loss:0.25250	Lr:0.000000	Data:0603ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[74][50/79]	Loss:0.34425	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8978
+Train Prec@1:0.9590	Val Prec@1:0.8957
+BestV Prec@1:0.8957	Best Epoch:74
+[75][0/391]	Loss:0.09084	Lr:0.100000	Data:0704ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9766
+[75][150/391]	Loss:0.05378	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9605
+[75][300/391]	Loss:0.14455	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9605
+[75][0/79]	Loss:0.37154	Lr:0.000000	Data:0520ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9063
+[75][50/79]	Loss:0.42048	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8750
+Train Prec@1:0.9600	Val Prec@1:0.8752
+BestV Prec@1:0.8957	Best Epoch:74
+[76][0/391]	Loss:0.07390	Lr:0.100000	Data:0612ms	Train:0080ms	Mem:0.76Gb	Prec@1:0.9766
+[76][150/391]	Loss:0.14118	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9604
+[76][300/391]	Loss:0.04615	Lr:0.100000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9591
+[76][0/79]	Loss:0.34822	Lr:0.000000	Data:0616ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8828
+[76][50/79]	Loss:0.30991	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8876
+Train Prec@1:0.9586	Val Prec@1:0.8860
+BestV Prec@1:0.8957	Best Epoch:74
+[77][0/391]	Loss:0.14065	Lr:0.100000	Data:0657ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9453
+[77][150/391]	Loss:0.05405	Lr:0.100000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9666
+[77][300/391]	Loss:0.08151	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9624
+[77][0/79]	Loss:0.54615	Lr:0.000000	Data:0598ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8672
+[77][50/79]	Loss:0.39410	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8626
+Train Prec@1:0.9598	Val Prec@1:0.8645
+BestV Prec@1:0.8957	Best Epoch:74
+[78][0/391]	Loss:0.17823	Lr:0.100000	Data:0606ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9375
+[78][150/391]	Loss:0.08728	Lr:0.100000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9625
+[78][300/391]	Loss:0.07118	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9619
+[78][0/79]	Loss:0.39729	Lr:0.000000	Data:0598ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8828
+[78][50/79]	Loss:0.31788	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8785
+Train Prec@1:0.9603	Val Prec@1:0.8787
+BestV Prec@1:0.8957	Best Epoch:74
+[79][0/391]	Loss:0.09023	Lr:0.100000	Data:0661ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9688
+[79][150/391]	Loss:0.13711	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9600
+[79][300/391]	Loss:0.12519	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9606
+[79][0/79]	Loss:0.37542	Lr:0.000000	Data:0609ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[79][50/79]	Loss:0.31533	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8891
+Train Prec@1:0.9596	Val Prec@1:0.8890
+BestV Prec@1:0.8957	Best Epoch:74
+[80][0/391]	Loss:0.11837	Lr:0.100000	Data:0681ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9609
+[80][150/391]	Loss:0.07140	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9630
+[80][300/391]	Loss:0.15412	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9617
+[80][0/79]	Loss:0.37748	Lr:0.000000	Data:0593ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9141
+[80][50/79]	Loss:0.29767	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8811
+Train Prec@1:0.9612	Val Prec@1:0.8799
+BestV Prec@1:0.8957	Best Epoch:74
+[81][0/391]	Loss:0.14079	Lr:0.100000	Data:0626ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9609
+[81][150/391]	Loss:0.12681	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9647
+[81][300/391]	Loss:0.12559	Lr:0.100000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9619
+[81][0/79]	Loss:0.25121	Lr:0.000000	Data:0520ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9141
+[81][50/79]	Loss:0.27426	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8912
+Train Prec@1:0.9604	Val Prec@1:0.8898
+BestV Prec@1:0.8957	Best Epoch:74
+[82][0/391]	Loss:0.19353	Lr:0.100000	Data:0643ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9219
+[82][150/391]	Loss:0.06237	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9654
+[82][300/391]	Loss:0.13979	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9633
+[82][0/79]	Loss:0.26971	Lr:0.000000	Data:0609ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9063
+[82][50/79]	Loss:0.44809	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8874
+Train Prec@1:0.9619	Val Prec@1:0.8852
+BestV Prec@1:0.8957	Best Epoch:74
+[83][0/391]	Loss:0.06388	Lr:0.100000	Data:0614ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9766
+[83][150/391]	Loss:0.06924	Lr:0.100000	Data:0000ms	Train:0096ms	Mem:0.76Gb	Prec@1:0.9649
+[83][300/391]	Loss:0.05739	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9629
+[83][0/79]	Loss:0.35136	Lr:0.000000	Data:0609ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9141
+[83][50/79]	Loss:0.37112	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8868
+Train Prec@1:0.9608	Val Prec@1:0.8868
+BestV Prec@1:0.8957	Best Epoch:74
+[84][0/391]	Loss:0.16078	Lr:0.100000	Data:0645ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9375
+[84][150/391]	Loss:0.14243	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9647
+[84][300/391]	Loss:0.17397	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9630
+[84][0/79]	Loss:0.32834	Lr:0.000000	Data:0584ms	Train:0007ms	Mem:0.76Gb	Prec@1:0.9297
+[84][50/79]	Loss:0.26617	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8885
+Train Prec@1:0.9610	Val Prec@1:0.8879
+BestV Prec@1:0.8957	Best Epoch:74
+[85][0/391]	Loss:0.11343	Lr:0.100000	Data:0649ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9531
+[85][150/391]	Loss:0.12492	Lr:0.100000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9623
+[85][300/391]	Loss:0.14862	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9602
+[85][0/79]	Loss:0.38527	Lr:0.000000	Data:0609ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8672
+[85][50/79]	Loss:0.34813	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8801
+Train Prec@1:0.9600	Val Prec@1:0.8799
+BestV Prec@1:0.8957	Best Epoch:74
+[86][0/391]	Loss:0.08189	Lr:0.100000	Data:0621ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9766
+[86][150/391]	Loss:0.12687	Lr:0.100000	Data:0001ms	Train:0100ms	Mem:0.76Gb	Prec@1:0.9639
+[86][300/391]	Loss:0.05084	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9612
+[86][0/79]	Loss:0.30326	Lr:0.000000	Data:0604ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9141
+[86][50/79]	Loss:0.36002	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8851
+Train Prec@1:0.9592	Val Prec@1:0.8851
+BestV Prec@1:0.8957	Best Epoch:74
+[87][0/391]	Loss:0.08718	Lr:0.100000	Data:0661ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9688
+[87][150/391]	Loss:0.09608	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9645
+[87][300/391]	Loss:0.17469	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9627
+[87][0/79]	Loss:0.50691	Lr:0.000000	Data:0611ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8516
+[87][50/79]	Loss:0.52669	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8632
+Train Prec@1:0.9621	Val Prec@1:0.8633
+BestV Prec@1:0.8957	Best Epoch:74
+[88][0/391]	Loss:0.11575	Lr:0.100000	Data:0620ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9531
+[88][150/391]	Loss:0.08574	Lr:0.100000	Data:0000ms	Train:0079ms	Mem:0.76Gb	Prec@1:0.9672
+[88][300/391]	Loss:0.12683	Lr:0.100000	Data:0002ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9636
+[88][0/79]	Loss:0.49977	Lr:0.000000	Data:0590ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8438
+[88][50/79]	Loss:0.40591	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8807
+Train Prec@1:0.9614	Val Prec@1:0.8789
+BestV Prec@1:0.8957	Best Epoch:74
+[89][0/391]	Loss:0.11142	Lr:0.100000	Data:0616ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9688
+[89][150/391]	Loss:0.12606	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9637
+[89][300/391]	Loss:0.15226	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9626
+[89][0/79]	Loss:0.43266	Lr:0.000000	Data:0589ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8672
+[89][50/79]	Loss:0.49241	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8753
+Train Prec@1:0.9607	Val Prec@1:0.8787
+BestV Prec@1:0.8957	Best Epoch:74
+[90][0/391]	Loss:0.11634	Lr:0.100000	Data:0621ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9609
+[90][150/391]	Loss:0.06135	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9661
+[90][300/391]	Loss:0.06920	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9652
+[90][0/79]	Loss:0.30294	Lr:0.000000	Data:0603ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9141
+[90][50/79]	Loss:0.25178	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8912
+Train Prec@1:0.9641	Val Prec@1:0.8937
+BestV Prec@1:0.8957	Best Epoch:74
+[91][0/391]	Loss:0.09125	Lr:0.100000	Data:0647ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9531
+[91][150/391]	Loss:0.13402	Lr:0.100000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9662
+[91][300/391]	Loss:0.10327	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9617
+[91][0/79]	Loss:0.31985	Lr:0.000000	Data:0607ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[91][50/79]	Loss:0.42739	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8894
+Train Prec@1:0.9608	Val Prec@1:0.8890
+BestV Prec@1:0.8957	Best Epoch:74
+[92][0/391]	Loss:0.09984	Lr:0.100000	Data:0642ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9688
+[92][150/391]	Loss:0.09803	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9687
+[92][300/391]	Loss:0.07239	Lr:0.100000	Data:0006ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9642
+[92][0/79]	Loss:0.44677	Lr:0.000000	Data:0607ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[92][50/79]	Loss:0.46489	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8750
+Train Prec@1:0.9631	Val Prec@1:0.8774
+BestV Prec@1:0.8957	Best Epoch:74
+[93][0/391]	Loss:0.11315	Lr:0.100000	Data:0705ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9609
+[93][150/391]	Loss:0.22739	Lr:0.100000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9701
+[93][300/391]	Loss:0.11358	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9656
+[93][0/79]	Loss:0.26680	Lr:0.000000	Data:0612ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9141
+[93][50/79]	Loss:0.47030	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8885
+Train Prec@1:0.9631	Val Prec@1:0.8869
+BestV Prec@1:0.8957	Best Epoch:74
+[94][0/391]	Loss:0.11366	Lr:0.100000	Data:0661ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9688
+[94][150/391]	Loss:0.12940	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9658
+[94][300/391]	Loss:0.12143	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9646
+[94][0/79]	Loss:0.36613	Lr:0.000000	Data:0605ms	Train:0006ms	Mem:0.76Gb	Prec@1:0.9063
+[94][50/79]	Loss:0.36248	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8948
+Train Prec@1:0.9634	Val Prec@1:0.8957
+BestV Prec@1:0.8957	Best Epoch:74
+[95][0/391]	Loss:0.03719	Lr:0.100000	Data:0618ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9922
+[95][150/391]	Loss:0.09288	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9635
+[95][300/391]	Loss:0.09089	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9617
+[95][0/79]	Loss:0.34942	Lr:0.000000	Data:0612ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8984
+[95][50/79]	Loss:0.32990	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8882
+Train Prec@1:0.9615	Val Prec@1:0.8852
+BestV Prec@1:0.8957	Best Epoch:74
+[96][0/391]	Loss:0.07725	Lr:0.100000	Data:0610ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9688
+[96][150/391]	Loss:0.10595	Lr:0.100000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9676
+[96][300/391]	Loss:0.05961	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9639
+[96][0/79]	Loss:0.32975	Lr:0.000000	Data:0600ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9297
+[96][50/79]	Loss:0.27436	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8911
+Train Prec@1:0.9623	Val Prec@1:0.8897
+BestV Prec@1:0.8957	Best Epoch:74
+[97][0/391]	Loss:0.08047	Lr:0.100000	Data:0625ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9766
+[97][150/391]	Loss:0.21934	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9655
+[97][300/391]	Loss:0.18937	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9640
+[97][0/79]	Loss:0.35467	Lr:0.000000	Data:0600ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[97][50/79]	Loss:0.22280	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8954
+Train Prec@1:0.9632	Val Prec@1:0.8981
+BestV Prec@1:0.8981	Best Epoch:97
+[98][0/391]	Loss:0.11215	Lr:0.100000	Data:0698ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9609
+[98][150/391]	Loss:0.10033	Lr:0.100000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9657
+[98][300/391]	Loss:0.11812	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9644
+[98][0/79]	Loss:0.36643	Lr:0.000000	Data:0602ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9297
+[98][50/79]	Loss:0.41036	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.8822
+Train Prec@1:0.9636	Val Prec@1:0.8816
+BestV Prec@1:0.8981	Best Epoch:97
+[99][0/391]	Loss:0.06455	Lr:0.100000	Data:0614ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9766
+[99][150/391]	Loss:0.08987	Lr:0.100000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9689
+[99][300/391]	Loss:0.08044	Lr:0.100000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9655
+[99][0/79]	Loss:0.35979	Lr:0.000000	Data:0613ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.8828
+[99][50/79]	Loss:0.31617	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.8868
+Train Prec@1:0.9640	Val Prec@1:0.8874
+BestV Prec@1:0.8981	Best Epoch:97
+[100][0/391]	Loss:0.06541	Lr:0.010000	Data:0674ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9688
+[100][150/391]	Loss:0.05285	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9815
+[100][300/391]	Loss:0.06407	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9842
+[100][0/79]	Loss:0.19282	Lr:0.000000	Data:0605ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9453
+[100][50/79]	Loss:0.15057	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9206
+Train Prec@1:0.9852	Val Prec@1:0.9227
+BestV Prec@1:0.9227	Best Epoch:100
+[101][0/391]	Loss:0.01973	Lr:0.010000	Data:0714ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9922
+[101][150/391]	Loss:0.01461	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9915
+[101][300/391]	Loss:0.02372	Lr:0.010000	Data:0001ms	Train:0093ms	Mem:0.76Gb	Prec@1:0.9920
+[101][0/79]	Loss:0.23079	Lr:0.000000	Data:0595ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9453
+[101][50/79]	Loss:0.16618	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9245
+Train Prec@1:0.9922	Val Prec@1:0.9262
+BestV Prec@1:0.9262	Best Epoch:101
+[102][0/391]	Loss:0.01337	Lr:0.010000	Data:0662ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[102][150/391]	Loss:0.00826	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9941
+[102][300/391]	Loss:0.01307	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9940
+[102][0/79]	Loss:0.21831	Lr:0.000000	Data:0605ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9609
+[102][50/79]	Loss:0.13385	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9262
+Train Prec@1:0.9942	Val Prec@1:0.9280
+BestV Prec@1:0.9280	Best Epoch:102
+[103][0/391]	Loss:0.00716	Lr:0.010000	Data:0688ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[103][150/391]	Loss:0.03383	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9960
+[103][300/391]	Loss:0.01344	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9957
+[103][0/79]	Loss:0.23558	Lr:0.000000	Data:0599ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[103][50/79]	Loss:0.12145	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9282
+Train Prec@1:0.9959	Val Prec@1:0.9294
+BestV Prec@1:0.9294	Best Epoch:103
+[104][0/391]	Loss:0.02065	Lr:0.010000	Data:0704ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[104][150/391]	Loss:0.01239	Lr:0.010000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9967
+[104][300/391]	Loss:0.00930	Lr:0.010000	Data:0001ms	Train:0092ms	Mem:0.76Gb	Prec@1:0.9964
+[104][0/79]	Loss:0.26441	Lr:0.000000	Data:0612ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[104][50/79]	Loss:0.13711	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9274
+Train Prec@1:0.9962	Val Prec@1:0.9289
+BestV Prec@1:0.9294	Best Epoch:103
+[105][0/391]	Loss:0.00366	Lr:0.010000	Data:0621ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[105][150/391]	Loss:0.01924	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9975
+[105][300/391]	Loss:0.02238	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9972
+[105][0/79]	Loss:0.25469	Lr:0.000000	Data:0605ms	Train:0007ms	Mem:0.76Gb	Prec@1:0.9297
+[105][50/79]	Loss:0.12844	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9272
+Train Prec@1:0.9970	Val Prec@1:0.9285
+BestV Prec@1:0.9294	Best Epoch:103
+[106][0/391]	Loss:0.00935	Lr:0.010000	Data:0632ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[106][150/391]	Loss:0.00906	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9968
+[106][300/391]	Loss:0.01050	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9972
+[106][0/79]	Loss:0.27294	Lr:0.000000	Data:0615ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[106][50/79]	Loss:0.14539	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9288
+Train Prec@1:0.9971	Val Prec@1:0.9303
+BestV Prec@1:0.9303	Best Epoch:106
+[107][0/391]	Loss:0.00459	Lr:0.010000	Data:0727ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[107][150/391]	Loss:0.00725	Lr:0.010000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9974
+[107][300/391]	Loss:0.00359	Lr:0.010000	Data:0000ms	Train:0093ms	Mem:0.76Gb	Prec@1:0.9973
+[107][0/79]	Loss:0.27738	Lr:0.000000	Data:0594ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9297
+[107][50/79]	Loss:0.14824	Lr:0.000000	Data:0020ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9271
+Train Prec@1:0.9975	Val Prec@1:0.9294
+BestV Prec@1:0.9303	Best Epoch:106
+[108][0/391]	Loss:0.00604	Lr:0.010000	Data:0622ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[108][150/391]	Loss:0.00176	Lr:0.010000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9987
+[108][300/391]	Loss:0.02425	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9983
+[108][0/79]	Loss:0.26313	Lr:0.000000	Data:0604ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9453
+[108][50/79]	Loss:0.14028	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9285
+Train Prec@1:0.9981	Val Prec@1:0.9300
+BestV Prec@1:0.9303	Best Epoch:106
+[109][0/391]	Loss:0.00351	Lr:0.010000	Data:0661ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[109][150/391]	Loss:0.00219	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9982
+[109][300/391]	Loss:0.00763	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9980
+[109][0/79]	Loss:0.30410	Lr:0.000000	Data:0592ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9297
+[109][50/79]	Loss:0.11630	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9278
+Train Prec@1:0.9981	Val Prec@1:0.9295
+BestV Prec@1:0.9303	Best Epoch:106
+[110][0/391]	Loss:0.00347	Lr:0.010000	Data:0631ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[110][150/391]	Loss:0.00280	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9984
+[110][300/391]	Loss:0.00847	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9981
+[110][0/79]	Loss:0.28705	Lr:0.000000	Data:0607ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9297
+[110][50/79]	Loss:0.14362	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9272
+Train Prec@1:0.9982	Val Prec@1:0.9288
+BestV Prec@1:0.9303	Best Epoch:106
+[111][0/391]	Loss:0.00709	Lr:0.010000	Data:0637ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[111][150/391]	Loss:0.00646	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9984
+[111][300/391]	Loss:0.00459	Lr:0.010000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9985
+[111][0/79]	Loss:0.25431	Lr:0.000000	Data:0603ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[111][50/79]	Loss:0.14333	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9288
+Train Prec@1:0.9985	Val Prec@1:0.9293
+BestV Prec@1:0.9303	Best Epoch:106
+[112][0/391]	Loss:0.00491	Lr:0.010000	Data:0653ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[112][150/391]	Loss:0.00613	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9982
+[112][300/391]	Loss:0.00299	Lr:0.010000	Data:0000ms	Train:0078ms	Mem:0.76Gb	Prec@1:0.9982
+[112][0/79]	Loss:0.27612	Lr:0.000000	Data:0606ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[112][50/79]	Loss:0.14249	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9274
+Train Prec@1:0.9983	Val Prec@1:0.9286
+BestV Prec@1:0.9303	Best Epoch:106
+[113][0/391]	Loss:0.01914	Lr:0.010000	Data:0648ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9922
+[113][150/391]	Loss:0.00787	Lr:0.010000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9981
+[113][300/391]	Loss:0.01020	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9983
+[113][0/79]	Loss:0.30312	Lr:0.000000	Data:0634ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[113][50/79]	Loss:0.13466	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9275
+Train Prec@1:0.9983	Val Prec@1:0.9283
+BestV Prec@1:0.9303	Best Epoch:106
+[114][0/391]	Loss:0.00355	Lr:0.010000	Data:0648ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[114][150/391]	Loss:0.00378	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9983
+[114][300/391]	Loss:0.00125	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9986
+[114][0/79]	Loss:0.28667	Lr:0.000000	Data:0604ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[114][50/79]	Loss:0.12379	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9300
+Train Prec@1:0.9987	Val Prec@1:0.9301
+BestV Prec@1:0.9303	Best Epoch:106
+[115][0/391]	Loss:0.00151	Lr:0.010000	Data:0649ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[115][150/391]	Loss:0.01019	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9991
+[115][300/391]	Loss:0.00218	Lr:0.010000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9990
+[115][0/79]	Loss:0.28030	Lr:0.000000	Data:0589ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[115][50/79]	Loss:0.11749	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9297
+Train Prec@1:0.9990	Val Prec@1:0.9302
+BestV Prec@1:0.9303	Best Epoch:106
+[116][0/391]	Loss:0.02895	Lr:0.010000	Data:0663ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9844
+[116][150/391]	Loss:0.00160	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9994
+[116][300/391]	Loss:0.00300	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9991
+[116][0/79]	Loss:0.34330	Lr:0.000000	Data:0599ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9297
+[116][50/79]	Loss:0.13469	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9288
+Train Prec@1:0.9991	Val Prec@1:0.9302
+BestV Prec@1:0.9303	Best Epoch:106
+[117][0/391]	Loss:0.00099	Lr:0.010000	Data:0621ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[117][150/391]	Loss:0.00542	Lr:0.010000	Data:0000ms	Train:0090ms	Mem:0.76Gb	Prec@1:0.9991
+[117][300/391]	Loss:0.00205	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9992
+[117][0/79]	Loss:0.32495	Lr:0.000000	Data:0608ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[117][50/79]	Loss:0.12634	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9311
+Train Prec@1:0.9992	Val Prec@1:0.9315
+BestV Prec@1:0.9315	Best Epoch:117
+[118][0/391]	Loss:0.01201	Lr:0.010000	Data:0711ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[118][150/391]	Loss:0.01710	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9992
+[118][300/391]	Loss:0.00142	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9990
+[118][0/79]	Loss:0.30912	Lr:0.000000	Data:0617ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9297
+[118][50/79]	Loss:0.13690	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9300
+Train Prec@1:0.9992	Val Prec@1:0.9305
+BestV Prec@1:0.9315	Best Epoch:117
+[119][0/391]	Loss:0.00127	Lr:0.010000	Data:0610ms	Train:0078ms	Mem:0.76Gb	Prec@1:1.0000
+[119][150/391]	Loss:0.00615	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9993
+[119][300/391]	Loss:0.00379	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9993
+[119][0/79]	Loss:0.33257	Lr:0.000000	Data:0594ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9297
+[119][50/79]	Loss:0.14195	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9297
+Train Prec@1:0.9992	Val Prec@1:0.9302
+BestV Prec@1:0.9315	Best Epoch:117
+[120][0/391]	Loss:0.00393	Lr:0.010000	Data:0615ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[120][150/391]	Loss:0.00246	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9991
+[120][300/391]	Loss:0.00389	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9989
+[120][0/79]	Loss:0.30430	Lr:0.000000	Data:0592ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[120][50/79]	Loss:0.11117	Lr:0.000000	Data:0019ms	Train:0001ms	Mem:0.76Gb	Prec@1:0.9301
+Train Prec@1:0.9989	Val Prec@1:0.9309
+BestV Prec@1:0.9315	Best Epoch:117
+[121][0/391]	Loss:0.01246	Lr:0.010000	Data:0630ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[121][150/391]	Loss:0.00100	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9991
+[121][300/391]	Loss:0.00150	Lr:0.010000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9993
+[121][0/79]	Loss:0.28690	Lr:0.000000	Data:0592ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9453
+[121][50/79]	Loss:0.12144	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9289
+Train Prec@1:0.9993	Val Prec@1:0.9299
+BestV Prec@1:0.9315	Best Epoch:117
+[122][0/391]	Loss:0.00115	Lr:0.010000	Data:0650ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[122][150/391]	Loss:0.00274	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9991
+[122][300/391]	Loss:0.00352	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9994
+[122][0/79]	Loss:0.28574	Lr:0.000000	Data:0609ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[122][50/79]	Loss:0.12868	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9308
+Train Prec@1:0.9993	Val Prec@1:0.9314
+BestV Prec@1:0.9315	Best Epoch:117
+[123][0/391]	Loss:0.00875	Lr:0.010000	Data:0641ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[123][150/391]	Loss:0.00125	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9995
+[123][300/391]	Loss:0.00514	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9994
+[123][0/79]	Loss:0.27378	Lr:0.000000	Data:0598ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[123][50/79]	Loss:0.11054	Lr:0.000000	Data:0022ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9306
+Train Prec@1:0.9994	Val Prec@1:0.9310
+BestV Prec@1:0.9315	Best Epoch:117
+[124][0/391]	Loss:0.00082	Lr:0.010000	Data:0658ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[124][150/391]	Loss:0.00222	Lr:0.010000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9995
+[124][300/391]	Loss:0.00346	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9994
+[124][0/79]	Loss:0.30206	Lr:0.000000	Data:0590ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[124][50/79]	Loss:0.11079	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9315
+Train Prec@1:0.9994	Val Prec@1:0.9316
+BestV Prec@1:0.9316	Best Epoch:124
+[125][0/391]	Loss:0.00150	Lr:0.010000	Data:0700ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[125][150/391]	Loss:0.00066	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9993
+[125][300/391]	Loss:0.00213	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9994
+[125][0/79]	Loss:0.28666	Lr:0.000000	Data:0614ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[125][50/79]	Loss:0.12273	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9312
+Train Prec@1:0.9994	Val Prec@1:0.9321
+BestV Prec@1:0.9321	Best Epoch:125
+[126][0/391]	Loss:0.00185	Lr:0.010000	Data:0696ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[126][150/391]	Loss:0.00336	Lr:0.010000	Data:0000ms	Train:0092ms	Mem:0.76Gb	Prec@1:0.9992
+[126][300/391]	Loss:0.00123	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9993
+[126][0/79]	Loss:0.31024	Lr:0.000000	Data:0579ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[126][50/79]	Loss:0.14075	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9314
+Train Prec@1:0.9992	Val Prec@1:0.9320
+BestV Prec@1:0.9321	Best Epoch:125
+[127][0/391]	Loss:0.00583	Lr:0.010000	Data:0638ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[127][150/391]	Loss:0.01677	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9995
+[127][300/391]	Loss:0.00634	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9995
+[127][0/79]	Loss:0.30821	Lr:0.000000	Data:0593ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[127][50/79]	Loss:0.11533	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9324
+Train Prec@1:0.9995	Val Prec@1:0.9325
+BestV Prec@1:0.9325	Best Epoch:127
+[128][0/391]	Loss:0.00133	Lr:0.010000	Data:0698ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[128][150/391]	Loss:0.00106	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[128][300/391]	Loss:0.00266	Lr:0.010000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9996
+[128][0/79]	Loss:0.29330	Lr:0.000000	Data:0562ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[128][50/79]	Loss:0.12483	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9311
+Train Prec@1:0.9996	Val Prec@1:0.9318
+BestV Prec@1:0.9325	Best Epoch:127
+[129][0/391]	Loss:0.00398	Lr:0.010000	Data:0607ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[129][150/391]	Loss:0.00210	Lr:0.010000	Data:0001ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9995
+[129][300/391]	Loss:0.00131	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9995
+[129][0/79]	Loss:0.27809	Lr:0.000000	Data:0603ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[129][50/79]	Loss:0.13947	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9312
+Train Prec@1:0.9994	Val Prec@1:0.9325
+BestV Prec@1:0.9325	Best Epoch:127
+[130][0/391]	Loss:0.00281	Lr:0.010000	Data:0624ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[130][150/391]	Loss:0.00175	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9993
+[130][300/391]	Loss:0.00273	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9995
+[130][0/79]	Loss:0.29745	Lr:0.000000	Data:0600ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[130][50/79]	Loss:0.14002	Lr:0.000000	Data:0024ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9335
+Train Prec@1:0.9996	Val Prec@1:0.9330
+BestV Prec@1:0.9330	Best Epoch:130
+[131][0/391]	Loss:0.00094	Lr:0.010000	Data:0695ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[131][150/391]	Loss:0.00058	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[131][300/391]	Loss:0.00086	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[131][0/79]	Loss:0.31343	Lr:0.000000	Data:0614ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[131][50/79]	Loss:0.14006	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9321
+Train Prec@1:0.9997	Val Prec@1:0.9327
+BestV Prec@1:0.9330	Best Epoch:130
+[132][0/391]	Loss:0.00075	Lr:0.010000	Data:0597ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[132][150/391]	Loss:0.00403	Lr:0.010000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9996
+[132][300/391]	Loss:0.00046	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9996
+[132][0/79]	Loss:0.27957	Lr:0.000000	Data:0651ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[132][50/79]	Loss:0.14242	Lr:0.000000	Data:0021ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9324
+Train Prec@1:0.9996	Val Prec@1:0.9328
+BestV Prec@1:0.9330	Best Epoch:130
+[133][0/391]	Loss:0.00103	Lr:0.010000	Data:0651ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[133][150/391]	Loss:0.00087	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9997
+[133][300/391]	Loss:0.00137	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9998
+[133][0/79]	Loss:0.30281	Lr:0.000000	Data:0623ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[133][50/79]	Loss:0.13707	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9337
+Train Prec@1:0.9998	Val Prec@1:0.9333
+BestV Prec@1:0.9333	Best Epoch:133
+[134][0/391]	Loss:0.00460	Lr:0.010000	Data:0699ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[134][150/391]	Loss:0.00262	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9994
+[134][300/391]	Loss:0.00098	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9995
+[134][0/79]	Loss:0.30577	Lr:0.000000	Data:0602ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[134][50/79]	Loss:0.13139	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9317
+Train Prec@1:0.9995	Val Prec@1:0.9323
+BestV Prec@1:0.9333	Best Epoch:133
+[135][0/391]	Loss:0.00143	Lr:0.010000	Data:0642ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[135][150/391]	Loss:0.00070	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9997
+[135][300/391]	Loss:0.00040	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[135][0/79]	Loss:0.31202	Lr:0.000000	Data:0612ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[135][50/79]	Loss:0.13854	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9321
+Train Prec@1:0.9997	Val Prec@1:0.9327
+BestV Prec@1:0.9333	Best Epoch:133
+[136][0/391]	Loss:0.00127	Lr:0.010000	Data:0632ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[136][150/391]	Loss:0.00081	Lr:0.010000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9996
+[136][300/391]	Loss:0.00051	Lr:0.010000	Data:0001ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9996
+[136][0/79]	Loss:0.27842	Lr:0.000000	Data:0607ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[136][50/79]	Loss:0.13680	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9331
+Train Prec@1:0.9996	Val Prec@1:0.9331
+BestV Prec@1:0.9333	Best Epoch:133
+[137][0/391]	Loss:0.00115	Lr:0.010000	Data:0617ms	Train:0072ms	Mem:0.76Gb	Prec@1:1.0000
+[137][150/391]	Loss:0.00079	Lr:0.010000	Data:0000ms	Train:0092ms	Mem:0.76Gb	Prec@1:0.9997
+[137][300/391]	Loss:0.00150	Lr:0.010000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9997
+[137][0/79]	Loss:0.28355	Lr:0.000000	Data:0588ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[137][50/79]	Loss:0.13656	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9323
+Train Prec@1:0.9996	Val Prec@1:0.9332
+BestV Prec@1:0.9333	Best Epoch:133
+[138][0/391]	Loss:0.00201	Lr:0.010000	Data:0642ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[138][150/391]	Loss:0.00104	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9996
+[138][300/391]	Loss:0.00923	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9995
+[138][0/79]	Loss:0.28177	Lr:0.000000	Data:0600ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[138][50/79]	Loss:0.11440	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9331
+Train Prec@1:0.9996	Val Prec@1:0.9324
+BestV Prec@1:0.9333	Best Epoch:133
+[139][0/391]	Loss:0.00614	Lr:0.010000	Data:0618ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[139][150/391]	Loss:0.00118	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9996
+[139][300/391]	Loss:0.00138	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[139][0/79]	Loss:0.29693	Lr:0.000000	Data:0581ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[139][50/79]	Loss:0.12343	Lr:0.000000	Data:0023ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9324
+Train Prec@1:0.9997	Val Prec@1:0.9324
+BestV Prec@1:0.9333	Best Epoch:133
+[140][0/391]	Loss:0.00395	Lr:0.010000	Data:0616ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[140][150/391]	Loss:0.00320	Lr:0.010000	Data:0002ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[140][300/391]	Loss:0.00104	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9997
+[140][0/79]	Loss:0.33077	Lr:0.000000	Data:0550ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[140][50/79]	Loss:0.13374	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9321
+Train Prec@1:0.9996	Val Prec@1:0.9321
+BestV Prec@1:0.9333	Best Epoch:133
+[141][0/391]	Loss:0.00148	Lr:0.010000	Data:0653ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[141][150/391]	Loss:0.00214	Lr:0.010000	Data:0001ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9994
+[141][300/391]	Loss:0.00160	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9996
+[141][0/79]	Loss:0.33526	Lr:0.000000	Data:0552ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[141][50/79]	Loss:0.12714	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9301
+Train Prec@1:0.9996	Val Prec@1:0.9309
+BestV Prec@1:0.9333	Best Epoch:133
+[142][0/391]	Loss:0.00039	Lr:0.010000	Data:0623ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[142][150/391]	Loss:0.00297	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[142][300/391]	Loss:0.00081	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9997
+[142][0/79]	Loss:0.33225	Lr:0.000000	Data:0543ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[142][50/79]	Loss:0.11744	Lr:0.000000	Data:0021ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9326
+Train Prec@1:0.9998	Val Prec@1:0.9323
+BestV Prec@1:0.9333	Best Epoch:133
+[143][0/391]	Loss:0.00297	Lr:0.010000	Data:0643ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[143][150/391]	Loss:0.00054	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[143][300/391]	Loss:0.00028	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9997
+[143][0/79]	Loss:0.31387	Lr:0.000000	Data:0574ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9297
+[143][50/79]	Loss:0.14496	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9320
+Train Prec@1:0.9998	Val Prec@1:0.9333
+BestV Prec@1:0.9333	Best Epoch:133
+[144][0/391]	Loss:0.00131	Lr:0.010000	Data:0641ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[144][150/391]	Loss:0.00252	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[144][300/391]	Loss:0.00178	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[144][0/79]	Loss:0.31092	Lr:0.000000	Data:0558ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9297
+[144][50/79]	Loss:0.14033	Lr:0.000000	Data:0022ms	Train:0004ms	Mem:0.76Gb	Prec@1:0.9311
+Train Prec@1:0.9997	Val Prec@1:0.9321
+BestV Prec@1:0.9333	Best Epoch:133
+[145][0/391]	Loss:0.00100	Lr:0.010000	Data:0659ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[145][150/391]	Loss:0.00352	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[145][300/391]	Loss:0.00041	Lr:0.010000	Data:0000ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9997
+[145][0/79]	Loss:0.33286	Lr:0.000000	Data:0563ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[145][50/79]	Loss:0.13066	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9329
+Train Prec@1:0.9997	Val Prec@1:0.9333
+BestV Prec@1:0.9333	Best Epoch:133
+[146][0/391]	Loss:0.00172	Lr:0.010000	Data:0625ms	Train:0079ms	Mem:0.76Gb	Prec@1:1.0000
+[146][150/391]	Loss:0.01409	Lr:0.010000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9997
+[146][300/391]	Loss:0.00368	Lr:0.010000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[146][0/79]	Loss:0.34474	Lr:0.000000	Data:0545ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[146][50/79]	Loss:0.12428	Lr:0.000000	Data:0017ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9334
+Train Prec@1:0.9998	Val Prec@1:0.9338
+BestV Prec@1:0.9338	Best Epoch:146
+[147][0/391]	Loss:0.00072	Lr:0.010000	Data:0628ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[147][150/391]	Loss:0.00062	Lr:0.010000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9998
+[147][300/391]	Loss:0.00285	Lr:0.010000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[147][0/79]	Loss:0.35251	Lr:0.000000	Data:0574ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[147][50/79]	Loss:0.13164	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9318
+Train Prec@1:0.9999	Val Prec@1:0.9325
+BestV Prec@1:0.9338	Best Epoch:146
+[148][0/391]	Loss:0.00449	Lr:0.010000	Data:0627ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[148][150/391]	Loss:0.00083	Lr:0.010000	Data:0003ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[148][300/391]	Loss:0.00370	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9998
+[148][0/79]	Loss:0.35130	Lr:0.000000	Data:0585ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[148][50/79]	Loss:0.16148	Lr:0.000000	Data:0022ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9320
+Train Prec@1:0.9998	Val Prec@1:0.9329
+BestV Prec@1:0.9338	Best Epoch:146
+[149][0/391]	Loss:0.00171	Lr:0.010000	Data:0619ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[149][150/391]	Loss:0.00068	Lr:0.010000	Data:0001ms	Train:0078ms	Mem:0.76Gb	Prec@1:0.9996
+[149][300/391]	Loss:0.00118	Lr:0.010000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9996
+[149][0/79]	Loss:0.32237	Lr:0.000000	Data:0548ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[149][50/79]	Loss:0.14857	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9338
+Train Prec@1:0.9996	Val Prec@1:0.9338
+BestV Prec@1:0.9338	Best Epoch:146
+[150][0/391]	Loss:0.00113	Lr:0.001000	Data:0646ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[150][150/391]	Loss:0.00144	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[150][300/391]	Loss:0.00093	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[150][0/79]	Loss:0.31052	Lr:0.000000	Data:0592ms	Train:0006ms	Mem:0.76Gb	Prec@1:0.9375
+[150][50/79]	Loss:0.15661	Lr:0.000000	Data:0021ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9347
+Train Prec@1:0.9999	Val Prec@1:0.9340
+BestV Prec@1:0.9340	Best Epoch:150
+[151][0/391]	Loss:0.00079	Lr:0.001000	Data:0665ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[151][150/391]	Loss:0.00092	Lr:0.001000	Data:0000ms	Train:0090ms	Mem:0.76Gb	Prec@1:0.9998
+[151][300/391]	Loss:0.00659	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[151][0/79]	Loss:0.34117	Lr:0.000000	Data:0614ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[151][50/79]	Loss:0.14918	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9335
+Train Prec@1:0.9998	Val Prec@1:0.9334
+BestV Prec@1:0.9340	Best Epoch:150
+[152][0/391]	Loss:0.00245	Lr:0.001000	Data:0615ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[152][150/391]	Loss:0.00082	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[152][300/391]	Loss:0.00125	Lr:0.001000	Data:0001ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[152][0/79]	Loss:0.31622	Lr:0.000000	Data:0549ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[152][50/79]	Loss:0.15194	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9340
+Train Prec@1:1.0000	Val Prec@1:0.9333
+BestV Prec@1:0.9340	Best Epoch:150
+[153][0/391]	Loss:0.00273	Lr:0.001000	Data:0631ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[153][150/391]	Loss:0.00080	Lr:0.001000	Data:0000ms	Train:0078ms	Mem:0.76Gb	Prec@1:0.9997
+[153][300/391]	Loss:0.00054	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9998
+[153][0/79]	Loss:0.33155	Lr:0.000000	Data:0585ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[153][50/79]	Loss:0.15469	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9340
+Train Prec@1:0.9997	Val Prec@1:0.9338
+BestV Prec@1:0.9340	Best Epoch:150
+[154][0/391]	Loss:0.00092	Lr:0.001000	Data:0620ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[154][150/391]	Loss:0.00057	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:1.0000
+[154][300/391]	Loss:0.00080	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:1.0000
+[154][0/79]	Loss:0.31561	Lr:0.000000	Data:0560ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[154][50/79]	Loss:0.14823	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9334
+Train Prec@1:0.9999	Val Prec@1:0.9330
+BestV Prec@1:0.9340	Best Epoch:150
+[155][0/391]	Loss:0.00065	Lr:0.001000	Data:0595ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[155][150/391]	Loss:0.00080	Lr:0.001000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9998
+[155][300/391]	Loss:0.00168	Lr:0.001000	Data:0001ms	Train:0092ms	Mem:0.76Gb	Prec@1:0.9998
+[155][0/79]	Loss:0.30842	Lr:0.000000	Data:0579ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[155][50/79]	Loss:0.14794	Lr:0.000000	Data:0023ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9338
+Train Prec@1:0.9999	Val Prec@1:0.9334
+BestV Prec@1:0.9340	Best Epoch:150
+[156][0/391]	Loss:0.00290	Lr:0.001000	Data:0616ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[156][150/391]	Loss:0.00050	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[156][300/391]	Loss:0.00252	Lr:0.001000	Data:0001ms	Train:0110ms	Mem:0.76Gb	Prec@1:0.9998
+[156][0/79]	Loss:0.32636	Lr:0.000000	Data:0587ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[156][50/79]	Loss:0.15759	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9344
+Train Prec@1:0.9998	Val Prec@1:0.9337
+BestV Prec@1:0.9340	Best Epoch:150
+[157][0/391]	Loss:0.00714	Lr:0.001000	Data:0648ms	Train:0074ms	Mem:0.76Gb	Prec@1:0.9922
+[157][150/391]	Loss:0.00783	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[157][300/391]	Loss:0.00113	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[157][0/79]	Loss:0.31047	Lr:0.000000	Data:0560ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[157][50/79]	Loss:0.14156	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9340
+Train Prec@1:0.9998	Val Prec@1:0.9334
+BestV Prec@1:0.9340	Best Epoch:150
+[158][0/391]	Loss:0.00077	Lr:0.001000	Data:0629ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[158][150/391]	Loss:0.00107	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9998
+[158][300/391]	Loss:0.00132	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[158][0/79]	Loss:0.32236	Lr:0.000000	Data:0586ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9297
+[158][50/79]	Loss:0.14631	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9332
+Train Prec@1:0.9998	Val Prec@1:0.9333
+BestV Prec@1:0.9340	Best Epoch:150
+[159][0/391]	Loss:0.00165	Lr:0.001000	Data:0620ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[159][150/391]	Loss:0.00079	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[159][300/391]	Loss:0.00105	Lr:0.001000	Data:0001ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[159][0/79]	Loss:0.31796	Lr:0.000000	Data:0581ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[159][50/79]	Loss:0.14748	Lr:0.000000	Data:0022ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9344
+Train Prec@1:0.9999	Val Prec@1:0.9340
+BestV Prec@1:0.9340	Best Epoch:150
+[160][0/391]	Loss:0.00168	Lr:0.001000	Data:0640ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[160][150/391]	Loss:0.00224	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[160][300/391]	Loss:0.00070	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[160][0/79]	Loss:0.30707	Lr:0.000000	Data:0541ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[160][50/79]	Loss:0.14177	Lr:0.000000	Data:0021ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9344
+Train Prec@1:0.9999	Val Prec@1:0.9339
+BestV Prec@1:0.9340	Best Epoch:150
+[161][0/391]	Loss:0.00026	Lr:0.001000	Data:0650ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[161][150/391]	Loss:0.00479	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9997
+[161][300/391]	Loss:0.00092	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[161][0/79]	Loss:0.32420	Lr:0.000000	Data:0581ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[161][50/79]	Loss:0.15214	Lr:0.000000	Data:0021ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9337
+Train Prec@1:0.9998	Val Prec@1:0.9336
+BestV Prec@1:0.9340	Best Epoch:150
+[162][0/391]	Loss:0.00332	Lr:0.001000	Data:0595ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[162][150/391]	Loss:0.00094	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[162][300/391]	Loss:0.00075	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9997
+[162][0/79]	Loss:0.31682	Lr:0.000000	Data:0579ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[162][50/79]	Loss:0.15287	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9338
+Train Prec@1:0.9998	Val Prec@1:0.9333
+BestV Prec@1:0.9340	Best Epoch:150
+[163][0/391]	Loss:0.00101	Lr:0.001000	Data:0603ms	Train:0080ms	Mem:0.76Gb	Prec@1:1.0000
+[163][150/391]	Loss:0.00062	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[163][300/391]	Loss:0.00118	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[163][0/79]	Loss:0.31023	Lr:0.000000	Data:0548ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[163][50/79]	Loss:0.15278	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9350
+Train Prec@1:0.9999	Val Prec@1:0.9341
+BestV Prec@1:0.9341	Best Epoch:163
+[164][0/391]	Loss:0.00275	Lr:0.001000	Data:0681ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[164][150/391]	Loss:0.00085	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9998
+[164][300/391]	Loss:0.00091	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[164][0/79]	Loss:0.31629	Lr:0.000000	Data:0606ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[164][50/79]	Loss:0.14744	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9335
+Train Prec@1:0.9999	Val Prec@1:0.9333
+BestV Prec@1:0.9341	Best Epoch:163
+[165][0/391]	Loss:0.00043	Lr:0.001000	Data:0647ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[165][150/391]	Loss:0.00167	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[165][300/391]	Loss:0.00114	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[165][0/79]	Loss:0.31205	Lr:0.000000	Data:0573ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[165][50/79]	Loss:0.14957	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9350
+Train Prec@1:0.9999	Val Prec@1:0.9346
+BestV Prec@1:0.9346	Best Epoch:165
+[166][0/391]	Loss:0.00111	Lr:0.001000	Data:0640ms	Train:0082ms	Mem:0.76Gb	Prec@1:1.0000
+[166][150/391]	Loss:0.00066	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[166][300/391]	Loss:0.00063	Lr:0.001000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9999
+[166][0/79]	Loss:0.32348	Lr:0.000000	Data:0579ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[166][50/79]	Loss:0.14839	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9346
+Train Prec@1:0.9999	Val Prec@1:0.9342
+BestV Prec@1:0.9346	Best Epoch:165
+[167][0/391]	Loss:0.00146	Lr:0.001000	Data:0644ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[167][150/391]	Loss:0.00084	Lr:0.001000	Data:0000ms	Train:0078ms	Mem:0.76Gb	Prec@1:0.9999
+[167][300/391]	Loss:0.00068	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[167][0/79]	Loss:0.33656	Lr:0.000000	Data:0580ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[167][50/79]	Loss:0.13063	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9340
+Train Prec@1:0.9999	Val Prec@1:0.9340
+BestV Prec@1:0.9346	Best Epoch:165
+[168][0/391]	Loss:0.00076	Lr:0.001000	Data:0651ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[168][150/391]	Loss:0.00168	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[168][300/391]	Loss:0.00540	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9998
+[168][0/79]	Loss:0.32559	Lr:0.000000	Data:0574ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[168][50/79]	Loss:0.15069	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9344
+Train Prec@1:0.9999	Val Prec@1:0.9338
+BestV Prec@1:0.9346	Best Epoch:165
+[169][0/391]	Loss:0.00117	Lr:0.001000	Data:0643ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[169][150/391]	Loss:0.00161	Lr:0.001000	Data:0000ms	Train:0097ms	Mem:0.76Gb	Prec@1:0.9998
+[169][300/391]	Loss:0.00116	Lr:0.001000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9998
+[169][0/79]	Loss:0.31796	Lr:0.000000	Data:0558ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[169][50/79]	Loss:0.14774	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9331
+Train Prec@1:0.9999	Val Prec@1:0.9329
+BestV Prec@1:0.9346	Best Epoch:165
+[170][0/391]	Loss:0.00353	Lr:0.001000	Data:0592ms	Train:0079ms	Mem:0.76Gb	Prec@1:1.0000
+[170][150/391]	Loss:0.00157	Lr:0.001000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9998
+[170][300/391]	Loss:0.00076	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[170][0/79]	Loss:0.32102	Lr:0.000000	Data:0565ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[170][50/79]	Loss:0.14392	Lr:0.000000	Data:0021ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9347
+Train Prec@1:0.9998	Val Prec@1:0.9343
+BestV Prec@1:0.9346	Best Epoch:165
+[171][0/391]	Loss:0.00025	Lr:0.001000	Data:0629ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[171][150/391]	Loss:0.00375	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9997
+[171][300/391]	Loss:0.00060	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[171][0/79]	Loss:0.33612	Lr:0.000000	Data:0568ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[171][50/79]	Loss:0.14464	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9328
+Train Prec@1:0.9997	Val Prec@1:0.9328
+BestV Prec@1:0.9346	Best Epoch:165
+[172][0/391]	Loss:0.00058	Lr:0.001000	Data:0625ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[172][150/391]	Loss:0.00327	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:1.0000
+[172][300/391]	Loss:0.00077	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[172][0/79]	Loss:0.30299	Lr:0.000000	Data:0595ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[172][50/79]	Loss:0.14998	Lr:0.000000	Data:0024ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9347
+Train Prec@1:1.0000	Val Prec@1:0.9343
+BestV Prec@1:0.9346	Best Epoch:165
+[173][0/391]	Loss:0.00650	Lr:0.001000	Data:0623ms	Train:0073ms	Mem:0.76Gb	Prec@1:0.9922
+[173][150/391]	Loss:0.00088	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[173][300/391]	Loss:0.00062	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[173][0/79]	Loss:0.31496	Lr:0.000000	Data:0568ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[173][50/79]	Loss:0.13944	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9350
+Train Prec@1:0.9998	Val Prec@1:0.9349
+BestV Prec@1:0.9349	Best Epoch:173
+[174][0/391]	Loss:0.00132	Lr:0.001000	Data:0683ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[174][150/391]	Loss:0.00064	Lr:0.001000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9998
+[174][300/391]	Loss:0.00088	Lr:0.001000	Data:0000ms	Train:0096ms	Mem:0.76Gb	Prec@1:0.9998
+[174][0/79]	Loss:0.32502	Lr:0.000000	Data:0600ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[174][50/79]	Loss:0.14876	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9347
+Train Prec@1:0.9998	Val Prec@1:0.9345
+BestV Prec@1:0.9349	Best Epoch:173
+[175][0/391]	Loss:0.00048	Lr:0.001000	Data:0675ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[175][150/391]	Loss:0.00127	Lr:0.001000	Data:0006ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9998
+[175][300/391]	Loss:0.00204	Lr:0.001000	Data:0002ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9998
+[175][0/79]	Loss:0.31631	Lr:0.000000	Data:0604ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[175][50/79]	Loss:0.14931	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9337
+Train Prec@1:0.9998	Val Prec@1:0.9331
+BestV Prec@1:0.9349	Best Epoch:173
+[176][0/391]	Loss:0.00085	Lr:0.001000	Data:0655ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[176][150/391]	Loss:0.00415	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[176][300/391]	Loss:0.00319	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[176][0/79]	Loss:0.32611	Lr:0.000000	Data:0567ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[176][50/79]	Loss:0.13889	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9341
+Train Prec@1:0.9999	Val Prec@1:0.9340
+BestV Prec@1:0.9349	Best Epoch:173
+[177][0/391]	Loss:0.00116	Lr:0.001000	Data:0641ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[177][150/391]	Loss:0.00167	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[177][300/391]	Loss:0.00109	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[177][0/79]	Loss:0.31925	Lr:0.000000	Data:0575ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[177][50/79]	Loss:0.14712	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9354
+Train Prec@1:0.9998	Val Prec@1:0.9354
+BestV Prec@1:0.9354	Best Epoch:177
+[178][0/391]	Loss:0.00209	Lr:0.001000	Data:0668ms	Train:0080ms	Mem:0.76Gb	Prec@1:1.0000
+[178][150/391]	Loss:0.00123	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[178][300/391]	Loss:0.00075	Lr:0.001000	Data:0001ms	Train:0096ms	Mem:0.76Gb	Prec@1:0.9999
+[178][0/79]	Loss:0.32320	Lr:0.000000	Data:0626ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[178][50/79]	Loss:0.15193	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9344
+Train Prec@1:0.9999	Val Prec@1:0.9341
+BestV Prec@1:0.9354	Best Epoch:177
+[179][0/391]	Loss:0.00099	Lr:0.001000	Data:0684ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[179][150/391]	Loss:0.00277	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9997
+[179][300/391]	Loss:0.00130	Lr:0.001000	Data:0000ms	Train:0089ms	Mem:0.76Gb	Prec@1:0.9998
+[179][0/79]	Loss:0.33788	Lr:0.000000	Data:0587ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[179][50/79]	Loss:0.14751	Lr:0.000000	Data:0021ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9341
+Train Prec@1:0.9998	Val Prec@1:0.9342
+BestV Prec@1:0.9354	Best Epoch:177
+[180][0/391]	Loss:0.00231	Lr:0.001000	Data:0616ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[180][150/391]	Loss:0.00123	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[180][300/391]	Loss:0.00086	Lr:0.001000	Data:0000ms	Train:0087ms	Mem:0.76Gb	Prec@1:0.9999
+[180][0/79]	Loss:0.30898	Lr:0.000000	Data:0544ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[180][50/79]	Loss:0.15423	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9346
+Train Prec@1:0.9999	Val Prec@1:0.9344
+BestV Prec@1:0.9354	Best Epoch:177
+[181][0/391]	Loss:0.00105	Lr:0.001000	Data:0670ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[181][150/391]	Loss:0.00133	Lr:0.001000	Data:0000ms	Train:0096ms	Mem:0.76Gb	Prec@1:0.9999
+[181][300/391]	Loss:0.00038	Lr:0.001000	Data:0000ms	Train:0090ms	Mem:0.76Gb	Prec@1:0.9999
+[181][0/79]	Loss:0.31949	Lr:0.000000	Data:0578ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[181][50/79]	Loss:0.15098	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9334
+Train Prec@1:0.9999	Val Prec@1:0.9333
+BestV Prec@1:0.9354	Best Epoch:177
+[182][0/391]	Loss:0.00132	Lr:0.001000	Data:0648ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[182][150/391]	Loss:0.00152	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[182][300/391]	Loss:0.00103	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[182][0/79]	Loss:0.33449	Lr:0.000000	Data:0580ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[182][50/79]	Loss:0.15938	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9335
+Train Prec@1:0.9999	Val Prec@1:0.9337
+BestV Prec@1:0.9354	Best Epoch:177
+[183][0/391]	Loss:0.00079	Lr:0.001000	Data:0627ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[183][150/391]	Loss:0.00244	Lr:0.001000	Data:0001ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[183][300/391]	Loss:0.00075	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[183][0/79]	Loss:0.31554	Lr:0.000000	Data:0604ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[183][50/79]	Loss:0.15320	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9346
+Train Prec@1:0.9999	Val Prec@1:0.9341
+BestV Prec@1:0.9354	Best Epoch:177
+[184][0/391]	Loss:0.00093	Lr:0.001000	Data:0645ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[184][150/391]	Loss:0.00246	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[184][300/391]	Loss:0.00056	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[184][0/79]	Loss:0.32350	Lr:0.000000	Data:0572ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[184][50/79]	Loss:0.14402	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9340
+Train Prec@1:0.9999	Val Prec@1:0.9336
+BestV Prec@1:0.9354	Best Epoch:177
+[185][0/391]	Loss:0.00159	Lr:0.001000	Data:0619ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[185][150/391]	Loss:0.00123	Lr:0.001000	Data:0001ms	Train:0098ms	Mem:0.76Gb	Prec@1:0.9999
+[185][300/391]	Loss:0.00134	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[185][0/79]	Loss:0.29798	Lr:0.000000	Data:0570ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[185][50/79]	Loss:0.14538	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9343
+Train Prec@1:0.9999	Val Prec@1:0.9335
+BestV Prec@1:0.9354	Best Epoch:177
+[186][0/391]	Loss:0.00210	Lr:0.001000	Data:0622ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[186][150/391]	Loss:0.00100	Lr:0.001000	Data:0000ms	Train:0092ms	Mem:0.76Gb	Prec@1:0.9999
+[186][300/391]	Loss:0.00166	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9998
+[186][0/79]	Loss:0.31346	Lr:0.000000	Data:0586ms	Train:0010ms	Mem:0.76Gb	Prec@1:0.9375
+[186][50/79]	Loss:0.14871	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9347
+Train Prec@1:0.9999	Val Prec@1:0.9346
+BestV Prec@1:0.9354	Best Epoch:177
+[187][0/391]	Loss:0.00077	Lr:0.001000	Data:0634ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[187][150/391]	Loss:0.00145	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[187][300/391]	Loss:0.00060	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[187][0/79]	Loss:0.31372	Lr:0.000000	Data:0582ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[187][50/79]	Loss:0.15987	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9344
+Train Prec@1:0.9999	Val Prec@1:0.9338
+BestV Prec@1:0.9354	Best Epoch:177
+[188][0/391]	Loss:0.00082	Lr:0.001000	Data:0611ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[188][150/391]	Loss:0.00057	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9998
+[188][300/391]	Loss:0.00075	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[188][0/79]	Loss:0.30649	Lr:0.000000	Data:0583ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[188][50/79]	Loss:0.14513	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9357
+Train Prec@1:0.9999	Val Prec@1:0.9348
+BestV Prec@1:0.9354	Best Epoch:177
+[189][0/391]	Loss:0.00149	Lr:0.001000	Data:0584ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[189][150/391]	Loss:0.00093	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[189][300/391]	Loss:0.00076	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[189][0/79]	Loss:0.33619	Lr:0.000000	Data:0556ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[189][50/79]	Loss:0.14364	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9332
+Train Prec@1:0.9999	Val Prec@1:0.9331
+BestV Prec@1:0.9354	Best Epoch:177
+[190][0/391]	Loss:0.00082	Lr:0.001000	Data:0666ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[190][150/391]	Loss:0.00055	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:1.0000
+[190][300/391]	Loss:0.00088	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:1.0000
+[190][0/79]	Loss:0.33253	Lr:0.000000	Data:0562ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[190][50/79]	Loss:0.14942	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9337
+Train Prec@1:1.0000	Val Prec@1:0.9337
+BestV Prec@1:0.9354	Best Epoch:177
+[191][0/391]	Loss:0.00578	Lr:0.001000	Data:0659ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[191][150/391]	Loss:0.00056	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[191][300/391]	Loss:0.00449	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[191][0/79]	Loss:0.32367	Lr:0.000000	Data:0578ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[191][50/79]	Loss:0.14890	Lr:0.000000	Data:0022ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9341
+Train Prec@1:0.9999	Val Prec@1:0.9337
+BestV Prec@1:0.9354	Best Epoch:177
+[192][0/391]	Loss:0.00154	Lr:0.001000	Data:0656ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[192][150/391]	Loss:0.00158	Lr:0.001000	Data:0000ms	Train:0087ms	Mem:0.76Gb	Prec@1:0.9998
+[192][300/391]	Loss:0.00056	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[192][0/79]	Loss:0.31703	Lr:0.000000	Data:0561ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[192][50/79]	Loss:0.14405	Lr:0.000000	Data:0021ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9340
+Train Prec@1:0.9999	Val Prec@1:0.9338
+BestV Prec@1:0.9354	Best Epoch:177
+[193][0/391]	Loss:0.00112	Lr:0.001000	Data:0620ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[193][150/391]	Loss:0.00130	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[193][300/391]	Loss:0.00086	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[193][0/79]	Loss:0.31108	Lr:0.000000	Data:0561ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[193][50/79]	Loss:0.14645	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9357
+Train Prec@1:0.9999	Val Prec@1:0.9352
+BestV Prec@1:0.9354	Best Epoch:177
+[194][0/391]	Loss:0.00031	Lr:0.001000	Data:0618ms	Train:0074ms	Mem:0.76Gb	Prec@1:1.0000
+[194][150/391]	Loss:0.00148	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[194][300/391]	Loss:0.00038	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[194][0/79]	Loss:0.32445	Lr:0.000000	Data:0554ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[194][50/79]	Loss:0.13621	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9349
+Train Prec@1:0.9999	Val Prec@1:0.9345
+BestV Prec@1:0.9354	Best Epoch:177
+[195][0/391]	Loss:0.00061	Lr:0.001000	Data:0658ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[195][150/391]	Loss:0.00046	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:1.0000
+[195][300/391]	Loss:0.00129	Lr:0.001000	Data:0001ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[195][0/79]	Loss:0.31897	Lr:0.000000	Data:0556ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[195][50/79]	Loss:0.14346	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9352
+Train Prec@1:0.9999	Val Prec@1:0.9346
+BestV Prec@1:0.9354	Best Epoch:177
+[196][0/391]	Loss:0.00086	Lr:0.001000	Data:0667ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[196][150/391]	Loss:0.00061	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9998
+[196][300/391]	Loss:0.00035	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[196][0/79]	Loss:0.31086	Lr:0.000000	Data:0562ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[196][50/79]	Loss:0.14420	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9352
+Train Prec@1:0.9999	Val Prec@1:0.9348
+BestV Prec@1:0.9354	Best Epoch:177
+[197][0/391]	Loss:0.00024	Lr:0.001000	Data:0640ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[197][150/391]	Loss:0.00143	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[197][300/391]	Loss:0.00050	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[197][0/79]	Loss:0.31239	Lr:0.000000	Data:0579ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[197][50/79]	Loss:0.14640	Lr:0.000000	Data:0020ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9352
+Train Prec@1:0.9999	Val Prec@1:0.9348
+BestV Prec@1:0.9354	Best Epoch:177
+[198][0/391]	Loss:0.00105	Lr:0.001000	Data:0610ms	Train:0076ms	Mem:0.76Gb	Prec@1:1.0000
+[198][150/391]	Loss:0.00149	Lr:0.001000	Data:0000ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[198][300/391]	Loss:0.00049	Lr:0.001000	Data:0001ms	Train:0077ms	Mem:0.76Gb	Prec@1:0.9999
+[198][0/79]	Loss:0.31155	Lr:0.000000	Data:0612ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9375
+[198][50/79]	Loss:0.14687	Lr:0.000000	Data:0019ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9341
+Train Prec@1:0.9999	Val Prec@1:0.9339
+BestV Prec@1:0.9354	Best Epoch:177
+[199][0/391]	Loss:0.00124	Lr:0.001000	Data:0638ms	Train:0073ms	Mem:0.76Gb	Prec@1:1.0000
+[199][150/391]	Loss:0.00108	Lr:0.001000	Data:0000ms	Train:0076ms	Mem:0.76Gb	Prec@1:0.9999
+[199][300/391]	Loss:0.00175	Lr:0.001000	Data:0000ms	Train:0075ms	Mem:0.76Gb	Prec@1:0.9999
+[199][0/79]	Loss:0.30063	Lr:0.000000	Data:0561ms	Train:0003ms	Mem:0.76Gb	Prec@1:0.9375
+[199][50/79]	Loss:0.15213	Lr:0.000000	Data:0021ms	Train:0002ms	Mem:0.76Gb	Prec@1:0.9331
+Train Prec@1:0.9999	Val Prec@1:0.9334
+BestV Prec@1:0.9354	Best Epoch:177
+$HOME=/home/liuhaiyang
+CONFIGDIR=/home/liuhaiyang/.config/matplotlib
+matplotlib data path: /home/liuhaiyang/.conda/envs/pt36/lib/python3.6/site-packages/matplotlib/mpl-data
+loaded rc file /home/liuhaiyang/.conda/envs/pt36/lib/python3.6/site-packages/matplotlib/mpl-data/matplotlibrc
+matplotlib version 3.0.3
+interactive is False
+platform is linux
+loaded modules: ['builtins', 'sys', '_frozen_importlib', '_imp', '_warnings', '_thread', '_weakref', '_frozen_importlib_external', '_io', 'marshal', 'posix', 'zipimport', 'encodings', 'codecs', '_codecs', 'encodings.aliases', 'encodings.utf_8', '_signal', '__main__', 'encodings.latin_1', 'io', 'abc', '_weakrefset', 'site', 'os', 'errno', 'stat', '_stat', 'posixpath', 'genericpath', 'os.path', '_collections_abc', '_sitebuiltins', 'sysconfig', '_sysconfigdata_m_linux_x86_64-linux-gnu', '_bootlocale', '_locale', 'types', 'functools', '_functools', 'collections', 'operator', '_operator', 'keyword', 'heapq', '_heapq', 'itertools', 'reprlib', '_collections', 'weakref', 'collections.abc', 'importlib', 'importlib._bootstrap', 'importlib._bootstrap_external', 'warnings', 'importlib.util', 'importlib.abc', 'importlib.machinery', 'contextlib', 'mpl_toolkits', 'google', 'encodings.cp437', 'random', 'math', 'hashlib', '_hashlib', '_blake2', '_sha3', 'bisect', '_bisect', '_random', 'cv2', 'numpy', '__future__', 'numpy._globals', 'numpy.__config__', 'numpy.version', 'numpy._distributor_init', 'ctypes', '_ctypes', 'struct', '_struct', 'ctypes._endian', 'numpy._mklinit', 'numpy.core', 'numpy.core.info', 'numpy.core.multiarray', 'numpy.core.overrides', 'datetime', 'time', '_datetime', 'numpy.core._multiarray_umath', 'numpy.compat', 'numpy.compat._inspect', 'numpy.compat.py3k', 'pathlib', 'fnmatch', 're', 'enum', 'sre_compile', '_sre', 'sre_parse', 'sre_constants', 'copyreg', 'ntpath', 'urllib', 'urllib.parse', 'numpy.core.umath', 'numpy.core.numerictypes', 'numbers', 'numpy.core._string_helpers', 'numpy.core._type_aliases', 'numpy.core._dtype', 'numpy.core.numeric', 'numpy.core._internal', 'pickle', '_compat_pickle', '_pickle', 'numpy.core.fromnumeric', 'numpy.core._methods', 'numpy.core.arrayprint', 'numpy.core.defchararray', 'numpy.core.records', 'numpy.core.memmap', 'numpy.core.function_base', 'numpy.core.machar', 'numpy.core.getlimits', 'numpy.core.shape_base', 'numpy.core.einsumfunc', 'numpy.core._add_newdocs', 'numpy.core._multiarray_tests', 'numpy.core._dtype_ctypes', 'numpy._pytesttester', 'numpy.lib', 'numpy.lib.info', 'numpy.lib.type_check', 'numpy.lib.ufunclike', 'numpy.lib.index_tricks', 'numpy.matrixlib', 'numpy.matrixlib.defmatrix', 'ast', '_ast', 'numpy.linalg', 'numpy.linalg.info', 'numpy.linalg.linalg', 'numpy.lib.twodim_base', 'numpy.linalg.lapack_lite', 'numpy.linalg._umath_linalg', 'numpy.lib.function_base', 'numpy.lib.utils', 'numpy.lib.histograms', 'numpy.lib.stride_tricks', 'numpy.lib.mixins', 'numpy.lib.nanfunctions', 'numpy.lib.shape_base', 'numpy.lib.scimath', 'numpy.lib.polynomial', 'numpy.lib.arraysetops', 'numpy.lib.npyio', 'numpy.lib.format', 'numpy.lib._datasource', 'shutil', 'zlib', 'bz2', '_compression', 'threading', 'traceback', 'linecache', 'tokenize', 'token', '_bz2', 'lzma', '_lzma', 'pwd', 'grp', 'numpy.lib._iotools', 'numpy.lib.financial', 'decimal', '_decimal', 'numpy.lib.arrayterator', 'numpy.lib.arraypad', 'numpy.lib._version', 'numpy.fft', 'numpy.fft.info', 'numpy.fft.fftpack', 'numpy.fft.fftpack_lite', 'numpy.fft.helper', 'mkl_fft', 'mkl_fft._pydfti', '_cython_0_29_7', 'cython_runtime', 'mkl_fft._version', 'mkl_fft._numpy_fft', 'numpy.polynomial', 'numpy.polynomial.polynomial', 'numpy.polynomial.polyutils', 'numpy.polynomial._polybase', 'numpy.polynomial.chebyshev', 'numpy.polynomial.legendre', 'numpy.polynomial.hermite', 'numpy.polynomial.hermite_e', 'numpy.polynomial.laguerre', 'numpy.random', 'numpy.random.mtrand', 'mtrand', 'numpy.ctypeslib', 'numpy.ma', 'numpy.ma.core', 'textwrap', 'numpy.ma.extras', 'numpy.testing', 'unittest', 'unittest.result', 'unittest.util', 'unittest.case', 'difflib', 'logging', 'string', '_string', 'atexit', 'pprint', 'unittest.suite', 'unittest.loader', 'unittest.main', 'argparse', 'copy', 'gettext', 'locale', 'unittest.runner', 'unittest.signals', 'signal', 'numpy.testing._private', 'numpy.testing._private.utils', 'gc', 'tempfile', 'numpy.testing._private.decorators', 'numpy.testing._private.nosetester', 'cv2.Error', 'cv2.detail', 'cv2.dnn', 'cv2.fisheye', 'cv2.flann', 'cv2.instr', 'cv2.ipp', 'cv2.ml', 'cv2.ocl', 'cv2.ogl', 'cv2.videostab', 'cv2.cv2', 'cv2.data', 'torch', 'platform', 'subprocess', '_posixsubprocess', 'select', 'selectors', 'torch._utils', 'torch._utils_internal', 'torch.version', 'torch._six', 'queue', 'torch._C._onnx', 'torch._C._jit_tree_views', 'torch._C.cpp', 'torch._C.cpp.nn', 'torch._C', 'torch.random', 'torch.serialization', 'inspect', 'dis', 'opcode', '_opcode', 'tarfile', 'zipfile', 'binascii', 'torch._tensor_str', 'torch.tensor', 'torch.utils', 'torch.utils.throughput_benchmark', 'torch.utils.hooks', 'torch.storage', 'torch.cuda', 'multiprocessing', 'multiprocessing.context', 'multiprocessing.process', 'multiprocessing.reduction', 'socket', '_socket', 'array', '__mp_main__', 'multiprocessing.util', 'torch.cuda._utils', 'torch.cuda.random', 'torch.cuda.sparse', 'torch.cuda.profiler', 'torch.cuda.nvtx', 'glob', 'torch.cuda.streams', 'torch.sparse', 'torch.functional', 'torch.nn', 'torch.nn.modules', 'torch.nn.modules.module', 'torch.nn.backends', 'torch.nn.backends.thnn', 'torch.nn.backends.backend', 'torch.nn._functions', 'torch.nn._functions.thnn', 'torch.nn._functions.thnn.auto', 'torch._thnn', 'torch._thnn.utils', 'torch.autograd', 'torch.autograd.variable', 'torch.autograd.function', 'torch.autograd.gradcheck', 'torch.testing', 'torch.autograd.grad_mode', 'torch.autograd.anomaly_mode', 'torch.autograd.profiler', 'torch.nn._functions.thnn.auto_double_backwards', 'torch.nn._functions.thnn.auto_symbolic', 'torch.autograd._functions', 'torch.autograd._functions.tensor', 'torch.autograd._functions.utils', 'torch.nn._functions.thnn.normalization', 'torch.nn._functions.thnn.sparse', 'torch.nn.parameter', 'torch.nn.modules.linear', 'torch.nn.functional', 'torch.nn._reduction', 'torch.nn.modules.utils', 'torch.nn._functions.vision', 'torch.backends', 'torch.backends.cudnn', 'torch.nn.grad', 'torch.nn._VF', 'torch._jit_internal', 'typing', 'typing.io', 'typing.re', 'torch.nn.init', 'torch.nn.modules.conv', 'torch.nn.modules.activation', 'torch.nn.modules.loss', 'torch.nn.modules.container', 'torch.nn.modules.pooling', 'torch.nn.modules.batchnorm', 'torch.nn.modules._functions', 'torch.nn.modules.instancenorm', 'torch.nn.modules.normalization', 'torch.nn.modules.dropout', 'torch.nn.modules.padding', 'torch.nn.modules.sparse', 'torch.nn.modules.rnn', 'torch.nn.utils', 'torch.nn.utils.rnn', 'torch.nn.utils.clip_grad', 'torch.nn.utils.weight_norm', 'torch.nn.utils.convert_parameters', 'torch.nn.utils.spectral_norm', 'torch.nn.utils.fusion', 'torch.nn.modules.pixelshuffle', 'torch.nn.modules.upsampling', 'torch.nn.modules.distance', 'torch.nn.modules.fold', 'torch.nn.modules.adaptive', 'torch.nn.modules.transformer', 'torch.nn.modules.flatten', 'torch.nn.parallel', 'torch.nn.parallel.parallel_apply', 'torch.nn.parallel.replicate', 'torch.cuda.comm', 'torch.cuda.nccl', 'torch.nn.parallel.data_parallel', 'torch.nn.parallel.scatter_gather', 'torch.nn.parallel._functions', 'torch.nn.parallel.distributed', 'torch.distributed', 'torch.distributed.distributed_c10d', 'torch.distributed.rendezvous', 'torch.nn._intrinsic', 'torch.nn._intrinsic.modules', 'torch.nn._intrinsic.modules.fused', 'torch.nn.quantized', 'torch.nn.quantized.modules', 'torch.nn.quantized.modules.activation', 'torch.nn.quantized.functional', 'torch._ops', 'torch.jit', 'torch.jit.frontend', 'torch.jit.annotations', 'torch.nn.quantized.modules.conv', 'torch.nn.quantized.modules.linear', 'torch.optim', 'torch.optim.adadelta', 'torch.optim.optimizer', 'torch.optim.adagrad', 'torch.optim.adam', 'torch.optim.adamw', 'torch.optim.sparse_adam', 'torch.optim.adamax', 'torch.optim.asgd', 'torch.optim.sgd', 'torch.optim.rprop', 'torch.optim.rmsprop', 'torch.optim.lbfgs', 'torch.optim.lr_scheduler', 'torch.multiprocessing', 'torch.multiprocessing.reductions', 'multiprocessing.resource_sharer', 'torch.multiprocessing.spawn', 'multiprocessing.connection', '_multiprocessing', 'torch.utils.backcompat', 'torch.onnx', 'torch.hub', 'urllib.request', 'base64', 'email', 'http', 'http.client', 'email.parser', 'email.feedparser', 'email.errors', 'email._policybase', 'email.header', 'email.quoprimime', 'email.base64mime', 'email.charset', 'email.encoders', 'quopri', 'email.utils', 'email._parseaddr', 'calendar', 'email.message', 'uu', 'email._encoded_words', 'email.iterators', 'ssl', 'ipaddress', '_ssl', 'urllib.error', 'urllib.response', 'tqdm', 'tqdm._tqdm', 'tqdm._utils', 'tqdm._monitor', 'multiprocessing.synchronize', 'tqdm._tqdm_gui', 'tqdm._tqdm_pandas', 'tqdm._main', 'tqdm._version', 'torch.distributions', 'torch.distributions.bernoulli', 'torch.distributions.constraints', 'torch.distributions.exp_family', 'torch.distributions.distribution', 'torch.distributions.utils', 'torch.distributions.beta', 'torch.distributions.dirichlet', 'torch.distributions.binomial', 'torch.distributions.categorical', 'torch.distributions.cauchy', 'torch.distributions.chi2', 'torch.distributions.gamma', 'torch.distributions.constraint_registry', 'torch.distributions.transforms', 'torch.distributions.exponential', 'torch.distributions.fishersnedecor', 'torch.distributions.geometric', 'torch.distributions.gumbel', 'torch.distributions.uniform', 'torch.distributions.transformed_distribution', 'torch.distributions.half_cauchy', 'torch.distributions.half_normal', 'torch.distributions.normal', 'torch.distributions.independent', 'torch.distributions.kl', 'torch.distributions.laplace', 'torch.distributions.lowrank_multivariate_normal', 'torch.distributions.multivariate_normal', 'torch.distributions.one_hot_categorical', 'torch.distributions.pareto', 'torch.distributions.poisson', 'torch.distributions.log_normal', 'torch.distributions.logistic_normal', 'torch.distributions.multinomial', 'torch.distributions.negative_binomial', 'torch.distributions.relaxed_bernoulli', 'torch.distributions.relaxed_categorical', 'torch.distributions.studentT', 'torch.distributions.weibull', 'torch.backends.cuda', 'torch.backends.mkl', 'torch.backends.openmp', 'torch.utils.data', 'torch.utils.data.sampler', 'torch.utils.data.distributed', 'torch.utils.data.dataset', 'torch.utils.data.dataloader', 'torch.utils.data._utils', 'torch.utils.data._utils.worker', 'torch.utils.data._utils.signal_handling', 'torch.utils.data._utils.pin_memory', 'torch.utils.data._utils.collate', 'torch.utils.data._utils.fetch', 'torch.__config__', 'torch.__future__', 'torch._torch_docs', 'torch._tensor_docs', 'torch._storage_docs', 'torch.quasirandom', 'tensorboardX', 'tensorboardX.record_writer', 'tensorboardX.crc32c', 'tensorboardX.torchvis', 'six', 'tensorboardX.writer', 'json', 'json.decoder', 'json.scanner', '_json', 'json.encoder', 'tensorboardX.embedding', 'tensorboardX.event_file_writer', 'tensorboardX.proto', 'tensorboardX.proto.event_pb2', 'google.protobuf', 'pkg_resources', 'pkgutil', 'plistlib', 'xml', 'xml.parsers', 'xml.parsers.expat', 'pyexpat.errors', 'pyexpat.model', 'pyexpat', 'xml.parsers.expat.model', 'xml.parsers.expat.errors', 'pkg_resources.extern', 'pkg_resources._vendor', 'pkg_resources.extern.six', 'pkg_resources._vendor.six', 'pkg_resources.extern.six.moves', 'pkg_resources._vendor.six.moves', 'pkg_resources.py31compat', 'pkg_resources.extern.appdirs', 'pkg_resources._vendor.packaging.__about__', 'pkg_resources.extern.packaging', 'pkg_resources.extern.packaging.version', 'pkg_resources.extern.packaging._structures', 'pkg_resources.extern.packaging.specifiers', 'pkg_resources.extern.packaging._compat', 'pkg_resources.extern.packaging.requirements', 'pkg_resources.extern.pyparsing', 'pkg_resources.extern.six.moves.urllib', 'pkg_resources.extern.packaging.markers', 'google.protobuf.descriptor', 'google.protobuf.internal', 'google.protobuf.internal.api_implementation', 'google.protobuf.internal._api_implementation', 'google.protobuf.pyext', 'google.protobuf.internal.containers', 'google.protobuf.internal.enum_type_wrapper', 'google.protobuf.message', 'google.protobuf.pyext._message', 'google.protobuf.reflection', 'google.protobuf.message_factory', 'google.protobuf.descriptor_pool', 'google.protobuf.descriptor_database', 'google.protobuf.text_encoding', 'google.protobuf.pyext.cpp_message', 'google.protobuf.symbol_database', 'tensorboardX.proto.summary_pb2', 'tensorboardX.proto.tensor_pb2', 'tensorboardX.proto.resource_handle_pb2', 'google.protobuf.internal.well_known_types', 'tensorboardX.proto.tensor_shape_pb2', 'tensorboardX.proto.types_pb2', 'tensorboardX.onnx_graph', 'tensorboardX.proto.graph_pb2', 'tensorboardX.proto.node_def_pb2', 'tensorboardX.proto.attr_value_pb2', 'tensorboardX.proto.versions_pb2', 'tensorboardX.pytorch_graph', 'distutils', 'distutils.version', 'tensorboardX.proto.step_stats_pb2', 'tensorboardX.proto_graph', 'tensorboardX.summary', 'six.moves', 'tensorboardX.proto.plugin_pr_curve_pb2', 'tensorboardX.proto.plugin_text_pb2', 'tensorboardX.proto.layout_pb2', 'tensorboardX.x2num', 'tensorboardX.utils', 'tensorboardX.visdom_writer', 'easydict', 'torchvision', 'torchvision.models', 'torchvision.models.alexnet', 'torch.utils.model_zoo', 'torchvision.models.resnet', 'torchvision.models.vgg', 'torchvision.models.squeezenet', 'torchvision.models.inception', 'torchvision.models.densenet', 'torchvision.datasets', 'torchvision.datasets.lsun', 'PIL', 'PIL._version', 'PIL.Image', 'PIL._util', 'PIL.ImageMode', 'PIL.TiffTags', 'PIL._binary', 'PIL._imaging', 'cffi', 'cffi.api', 'cffi.lock', 'cffi.error', 'cffi.model', 'torchvision.datasets.folder', 'torchvision.datasets.coco', 'torchvision.datasets.cifar', 'torchvision.datasets.utils', 'torchvision.datasets.stl10', 'torchvision.datasets.mnist', 'gzip', 'torchvision.datasets.svhn', 'torchvision.datasets.phototour', 'torchvision.datasets.fakedata', 'torchvision.transforms', 'torchvision.transforms.transforms', 'torchvision.transforms.functional', 'PIL.ImageOps', 'PIL.ImageEnhance', 'PIL.ImageFilter', 'PIL.ImageStat', 'torchvision.datasets.semeion', 'torchvision.datasets.omniglot', 'torchvision.datasets.sbu', 'torchvision.datasets.flickr', 'html', 'html.entities', 'html.parser', '_markupbase', 'torchvision.datasets.voc', 'xml.etree', 'xml.etree.ElementTree', 'xml.etree.ElementPath', '_elementtree', 'torchvision.datasets.cityscapes', 'torchvision.utils', 'network_factory', 'backbone', 'backbone.ResNet2015', 'opt_factory', 'loss_factory', 'datasets', 'datasets.loader_factory', 'datasets.cifar', 'test', 'config', 'utils', 'yaml', 'yaml.error', 'yaml.tokens', 'yaml.events', 'yaml.nodes', 'yaml.loader', 'yaml.reader', 'yaml.scanner', 'yaml.parser', 'yaml.composer', 'yaml.constructor', 'yaml.resolver', 'yaml.dumper', 'yaml.emitter', 'yaml.serializer', 'yaml.representer', 'yaml.cyaml', '_yaml', 'ptflops', 'ptflops.flops_counter', 'caffe2', 'caffe2.python', 'caffe2.proto', 'caffe2.proto.caffe2_pb2', 'caffe2.proto.metanet_pb2', 'caffe2.proto.torch_pb2', 'caffe2.python.workspace', 'past', 'past.translation', 'imp', 'lib2to3', 'lib2to3.pgen2', 'lib2to3.pgen2.parse', 'lib2to3.pgen2.token', 'lib2to3.refactor', 'lib2to3.pgen2.driver', 'lib2to3.pgen2.grammar', 'lib2to3.pgen2.tokenize', 'lib2to3.pgen2.pgen', 'lib2to3.fixer_util', 'lib2to3.pytree', 'lib2to3.pygram', 'lib2to3.patcomp', 'lib2to3.pgen2.literals', 'lib2to3.btm_matcher', 'lib2to3.btm_utils', 'libfuturize', 'libfuturize.fixes', 'future', 'past.builtins', 'future.utils', 'past.builtins.noniterators', 'past.types', 'past.utils', 'past.types.basestring', 'past.types.olddict', 'past.types.oldstr', 'past.builtins.misc', 'caffe2.python.scope', 'caffe2.python.utils', 'caffe2.python.compatibility', 'google.protobuf.text_format', 'google.protobuf.internal.type_checkers', 'google.protobuf.internal.decoder', 'google.protobuf.internal.encoder', 'google.protobuf.internal.wire_format', 'caffe2.python._import_c_extension', 'caffe2.python.extension_loader', 'caffe2.python.caffe2_pybind11_state_gpu', 'multiprocessing.queues', 'multiprocessing.popen_fork', 'hmac', 'matplotlib', 'matplotlib.cbook', 'matplotlib.cbook.deprecation', 'matplotlib.rcsetup', 'matplotlib.fontconfig_pattern', 'pyparsing', 'matplotlib.colors', 'matplotlib._color_data', 'cycler', 'matplotlib._version', 'dateutil', 'dateutil._version']
+CACHEDIR=/home/liuhaiyang/.cache/matplotlib
+Using fontManager instance from /home/liuhaiyang/.cache/matplotlib/fontlist-v300.json
+Loaded backend qt5agg version unknown.
+Loaded backend qt5agg version unknown.
+Loaded backend qt4agg version unknown.
+Loaded backend tkagg version unknown.
+Loaded backend agg version unknown.
+Loaded backend agg version unknown.
+update_title_pos
+findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/liuhaiyang/.conda/envs/pt36/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+update_title_pos
+update_title_pos
+update_title_pos
+start creating config files...
+update config files success
+init head_conv.0.weight as kaiming_normal_
+init layer_1.0.subconv_1.0.weight as kaiming_normal_
+init layer_1.0.subconv_2.0.weight as kaiming_normal_
+init layer_1.1.subconv_1.0.weight as kaiming_normal_
+init layer_1.1.subconv_2.0.weight as kaiming_normal_
+init layer_1.2.subconv_1.0.weight as kaiming_normal_
+init layer_1.2.subconv_2.0.weight as kaiming_normal_
+init layer_1.3.subconv_1.0.weight as kaiming_normal_
+init layer_1.3.subconv_2.0.weight as kaiming_normal_
+init layer_1.4.subconv_1.0.weight as kaiming_normal_
+init layer_1.4.subconv_2.0.weight as kaiming_normal_
+init layer_1.5.subconv_1.0.weight as kaiming_normal_
+init layer_1.5.subconv_2.0.weight as kaiming_normal_
+init layer_1.6.subconv_1.0.weight as kaiming_normal_
+init layer_1.6.subconv_2.0.weight as kaiming_normal_
+init layer_1.7.subconv_1.0.weight as kaiming_normal_
+init layer_1.7.subconv_2.0.weight as kaiming_normal_
+init layer_1.8.subconv_1.0.weight as kaiming_normal_
+init layer_1.8.subconv_2.0.weight as kaiming_normal_
+init layer_1.9.subconv_1.0.weight as kaiming_normal_
+init layer_1.9.subconv_2.0.weight as kaiming_normal_
+init layer_1.10.subconv_1.0.weight as kaiming_normal_
+init layer_1.10.subconv_2.0.weight as kaiming_normal_
+init layer_1.11.subconv_1.0.weight as kaiming_normal_
+init layer_1.11.subconv_2.0.weight as kaiming_normal_
+init layer_1.12.subconv_1.0.weight as kaiming_normal_
+init layer_1.12.subconv_2.0.weight as kaiming_normal_
+init layer_1.13.subconv_1.0.weight as kaiming_normal_
+init layer_1.13.subconv_2.0.weight as kaiming_normal_
+init layer_1.14.subconv_1.0.weight as kaiming_normal_
+init layer_1.14.subconv_2.0.weight as kaiming_normal_
+init layer_1.15.subconv_1.0.weight as kaiming_normal_
+init layer_1.15.subconv_2.0.weight as kaiming_normal_
+init layer_1.16.subconv_1.0.weight as kaiming_normal_
+init layer_1.16.subconv_2.0.weight as kaiming_normal_
+init layer_1.17.subconv_1.0.weight as kaiming_normal_
+init layer_1.17.subconv_2.0.weight as kaiming_normal_
+init layer_2.0.subconv_1.0.weight as kaiming_normal_
+init layer_2.0.subconv_2.0.weight as kaiming_normal_
+init layer_2.1.subconv_1.0.weight as kaiming_normal_
+init layer_2.1.subconv_2.0.weight as kaiming_normal_
+init layer_2.2.subconv_1.0.weight as kaiming_normal_
+init layer_2.2.subconv_2.0.weight as kaiming_normal_
+init layer_2.3.subconv_1.0.weight as kaiming_normal_
+init layer_2.3.subconv_2.0.weight as kaiming_normal_
+init layer_2.4.subconv_1.0.weight as kaiming_normal_
+init layer_2.4.subconv_2.0.weight as kaiming_normal_
+init layer_2.5.subconv_1.0.weight as kaiming_normal_
+init layer_2.5.subconv_2.0.weight as kaiming_normal_
+init layer_2.6.subconv_1.0.weight as kaiming_normal_
+init layer_2.6.subconv_2.0.weight as kaiming_normal_
+init layer_2.7.subconv_1.0.weight as kaiming_normal_
+init layer_2.7.subconv_2.0.weight as kaiming_normal_
+init layer_2.8.subconv_1.0.weight as kaiming_normal_
+init layer_2.8.subconv_2.0.weight as kaiming_normal_
+init layer_2.9.subconv_1.0.weight as kaiming_normal_
+init layer_2.9.subconv_2.0.weight as kaiming_normal_
+init layer_2.10.subconv_1.0.weight as kaiming_normal_
+init layer_2.10.subconv_2.0.weight as kaiming_normal_
+init layer_2.11.subconv_1.0.weight as kaiming_normal_
+init layer_2.11.subconv_2.0.weight as kaiming_normal_
+init layer_2.12.subconv_1.0.weight as kaiming_normal_
+init layer_2.12.subconv_2.0.weight as kaiming_normal_
+init layer_2.13.subconv_1.0.weight as kaiming_normal_
+init layer_2.13.subconv_2.0.weight as kaiming_normal_
+init layer_2.14.subconv_1.0.weight as kaiming_normal_
+init layer_2.14.subconv_2.0.weight as kaiming_normal_
+init layer_2.15.subconv_1.0.weight as kaiming_normal_
+init layer_2.15.subconv_2.0.weight as kaiming_normal_
+init layer_2.16.subconv_1.0.weight as kaiming_normal_
+init layer_2.16.subconv_2.0.weight as kaiming_normal_
+init layer_2.17.subconv_1.0.weight as kaiming_normal_
+init layer_2.17.subconv_2.0.weight as kaiming_normal_
+init layer_3.0.subconv_1.0.weight as kaiming_normal_
+init layer_3.0.subconv_2.0.weight as kaiming_normal_
+init layer_3.1.subconv_1.0.weight as kaiming_normal_
+init layer_3.1.subconv_2.0.weight as kaiming_normal_
+init layer_3.2.subconv_1.0.weight as kaiming_normal_
+init layer_3.2.subconv_2.0.weight as kaiming_normal_
+init layer_3.3.subconv_1.0.weight as kaiming_normal_
+init layer_3.3.subconv_2.0.weight as kaiming_normal_
+init layer_3.4.subconv_1.0.weight as kaiming_normal_
+init layer_3.4.subconv_2.0.weight as kaiming_normal_
+init layer_3.5.subconv_1.0.weight as kaiming_normal_
+init layer_3.5.subconv_2.0.weight as kaiming_normal_
+init layer_3.6.subconv_1.0.weight as kaiming_normal_
+init layer_3.6.subconv_2.0.weight as kaiming_normal_
+init layer_3.7.subconv_1.0.weight as kaiming_normal_
+init layer_3.7.subconv_2.0.weight as kaiming_normal_
+init layer_3.8.subconv_1.0.weight as kaiming_normal_
+init layer_3.8.subconv_2.0.weight as kaiming_normal_
+init layer_3.9.subconv_1.0.weight as kaiming_normal_
+init layer_3.9.subconv_2.0.weight as kaiming_normal_
+init layer_3.10.subconv_1.0.weight as kaiming_normal_
+init layer_3.10.subconv_2.0.weight as kaiming_normal_
+init layer_3.11.subconv_1.0.weight as kaiming_normal_
+init layer_3.11.subconv_2.0.weight as kaiming_normal_
+init layer_3.12.subconv_1.0.weight as kaiming_normal_
+init layer_3.12.subconv_2.0.weight as kaiming_normal_
+init layer_3.13.subconv_1.0.weight as kaiming_normal_
+init layer_3.13.subconv_2.0.weight as kaiming_normal_
+init layer_3.14.subconv_1.0.weight as kaiming_normal_
+init layer_3.14.subconv_2.0.weight as kaiming_normal_
+init layer_3.15.subconv_1.0.weight as kaiming_normal_
+init layer_3.15.subconv_2.0.weight as kaiming_normal_
+init layer_3.16.subconv_1.0.weight as kaiming_normal_
+init layer_3.16.subconv_2.0.weight as kaiming_normal_
+init layer_3.17.subconv_1.0.weight as kaiming_normal_
+init layer_3.17.subconv_2.0.weight as kaiming_normal_
+init fc_1.1.weight as kaiming_normal_
+init fc_1.1.bias as 0
+Computational complexity:       0.26 GMac
+Number of parameters:           1.73 M  
+no checkpoints
+[0][0/391]	Loss:5.76719	Lr:0.100000	Data:0609ms	Train:0112ms	Mem:1.26Gb	Prec@1:0.0859
+[0][150/391]	Loss:2.27682	Lr:0.100000	Data:0001ms	Train:0094ms	Mem:1.26Gb	Prec@1:0.1054

@@ -36,11 +36,12 @@ class BasicBlock(nn.Module):
             self.downsample = nn.Sequential()
         elif op == 'A':
             self.downsample =LambdaLayer(lambda x: F.pad(x[:, :, ::2, ::2], (0, 0, 0, 0, out_dim//4, out_dim//4), "constant", 0))
-        else:
+        elif op == 'B':
             self.downsample = nn.Sequential(
                 nn.Conv2d(in_dim,out_dim,1,stride,0,bias=False),
                 nn.BatchNorm2d(out_dim),
             )
+        else: raise ValueError
  
     def forward(self,input_):
         x_0 = self.subconv_1(input_)
@@ -104,10 +105,10 @@ class ResNet(nn.Module):
             self.maxpool_1 = nn.Sequential()
         block = BottleNeck if cfg.BLOCK == 'bottleneck' else BasicBlock
         b_ = block.expansion
-        self.layer_1 = self._make_layer(block,cfg.BASE,cfg.BASE*b_,cfg.BLOCK_LIST[0],1)
-        self.layer_2 = self._make_layer(block,cfg.BASE*b_,cfg.BASE*2*b_,cfg.BLOCK_LIST[1],2)
-        self.layer_3 = self._make_layer(block,cfg.BASE*2*b_,cfg.BASE*4*b_,cfg.BLOCK_LIST[2],2)
-        self.layer_4 = self._make_layer(block,cfg.BASE*4*b_,cfg.BASE*8*b_,cfg.BLOCK_LIST[3],2)
+        self.layer_1 = self._make_layer(block,cfg.BASE,cfg.BASE*b_,cfg.BLOCK_LIST[0],cfg.STRIDE1,cfg.OPERATION)
+        self.layer_2 = self._make_layer(block,cfg.BASE*b_,cfg.BASE*2*b_,cfg.BLOCK_LIST[1],2,cfg.OPERATION)
+        self.layer_3 = self._make_layer(block,cfg.BASE*2*b_,cfg.BASE*4*b_,cfg.BLOCK_LIST[2],2,cfg.OPERATION)
+        self.layer_4 = self._make_layer(block,cfg.BASE*4*b_,cfg.BASE*8*b_,cfg.BLOCK_LIST[3],2,cfg.OPERATION)
 
         final_feature = cfg.BASE*4*b_ if cfg.BLOCK_LIST[3] == 0 else cfg.BASE*8*b_
         if cfg.USE_FC:
@@ -146,16 +147,16 @@ class ResNet(nn.Module):
                 #         self.logger.info('init {}.weight as constant_ 1'.format(name))
                 #         self.logger.info('init {}.bias as constant_ 0'.format(name))
             
-    def _make_layer(self,block,in_dim,out_dim,layer_num,stride):
+    def _make_layer(self,block,in_dim,out_dim,layer_num,stride,op):
         net_layers = []
         if layer_num == 0:
             return nn.Sequential()
         else:    
             for layer in range(layer_num):
                 if layer == 0:
-                    net_layers.append(block(in_dim,out_dim,stride))
+                    net_layers.append(block(in_dim,out_dim,stride,op))
                 else:
-                    net_layers.append(block(out_dim,out_dim,1))
+                    net_layers.append(block(out_dim,out_dim,1,op))
             return nn.Sequential(*net_layers)
                     
     def forward(self,input_):

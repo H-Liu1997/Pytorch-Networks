@@ -14,19 +14,28 @@ def print_to_screen(loss, lr, its, epoch, its_num,
         +"Mem:%.2fGb\t"%(mem) +"Prec@1:%.4f"%(acc))
         
 
-def save_checkpoints(save_path, model, opt, epoch):
-    states = { 'model_state': model.state_dict(),
-               'epoch': epoch + 1,
-               'opt_state': opt.state_dict(),}
+def save_checkpoints(save_path, model, opt, epoch,lrs=None):
+    if lrs is not None:
+        states = { 'model_state': model.state_dict(),
+                'epoch': epoch + 1,
+                'opt_state': opt.state_dict(),
+                'lrs':lrs.state_dict(),}
+    else:
+        states = { 'model_state': model.state_dict(),
+                'epoch': epoch + 1,
+                'opt_state': opt.state_dict(),
+                'lrs':lrs.state_dict(),}
     torch.save(states, save_path)
 
 
-def load_checkpoints(model, opt, save_path, logger):
+def load_checkpoints(model, opt, save_path, logger, lrs=None):
     try:
         states = torch.load(save_path.EXPS+save_path.NAME+save_path.MODEL)
         model.load_state_dict(states['model_state'])
         opt.load_state_dict(states['opt_state'])
         current_epoch = states['epoch']
+        if lrs is not None:
+            lrs.load_state_dict(states['lrs'])
         logger.info('loading checkpoints success')
     except:
         current_epoch = 0
