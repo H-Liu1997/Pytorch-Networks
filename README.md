@@ -16,8 +16,8 @@
 |[ResNet-44](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_44_100_150_swaug)|  CIFAR-10  | 0.66M | 100,150,200|**92.83%**  |  92.46%   |
 |[ResNet-56](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_56_100_150_swaug)|  CIFAR-10  | 0.85M | 100,150,200|93.03%  |  **93.22%**   |
 |[ResNet-110](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_110_la)|  CIFAR-10  | 1.73M | 82,123,164 |**93.57%**  |  93.40%   |
-|[ResNet-18(A)](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_18_100_150)|  CIFAR-10  | 11.0M |- | 100,150,200| **93.54%**   |
-|[ResNet-18(B)](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_18_100_150_b)|  CIFAR-10  | 11.17M |- |80,110,120 | **94.51%**  |
+|[ResNet-18(A)](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_18_100_150)|  CIFAR-10  | 11.0M |100,150,200|- | **93.54%**   |
+|[ResNet-18(B)](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_18_100_150_b)|  CIFAR-10  | 11.17M |80,110,120|- | **94.51%**  |
 
 
 **For backbone networks**
