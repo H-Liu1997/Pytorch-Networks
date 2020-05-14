@@ -4,7 +4,6 @@ import torch
 import cv2
 from . import cifar
 from . import cub200_2011
-from . import cub200
 
 LOADER_LUT = {
         'cifar' : cifar.CIFARData,
@@ -18,6 +17,7 @@ def get_loader(dataset_type, data_path, loader_type, label_path=None, cfg=None, 
             train_aug = transforms.Compose([
                 transforms.ToPILImage(),
                 transforms.RandomHorizontalFlip(),
+                transforms.RandomRotation(cfg.ROATION),
                 #transforms.RandomCrop(cfg.CROP, cfg.PAD),
                 transforms.RandomResizedCrop(cfg.CROP),
                 transforms.ToTensor(),

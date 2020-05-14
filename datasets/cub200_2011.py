@@ -55,6 +55,7 @@ class CUBData(torch.utils.data.Dataset):
 
     def __getitem__(self,index):
         img_data = cv2.imread(self.data_list[self.train_or_test[index]-1][:-1])
+        img_data = cv2.cvtColor(img_data, cv2.COLOR_BGR2RGB)
         img_data_resize = img_data#self._resize(img_data)
         if self.aug is not None:
             data_final = self.aug(img_data_resize.astype(np.uint8))

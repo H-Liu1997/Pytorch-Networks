@@ -1,0 +1,9 @@
+RegNetX-4.0GF_dds_8gpu.pyth
+exps/reg_50_cub_v4_r30/bestmodel.pth
+exps/reg_50_cub_v4_r30/model.pth
+exps/reg_50_cub_v7_cos/model.pth
+exps/res_50_cub_v15/bestmodel.pth
+exps/res_50_cub_v15/model.pth
+exps/res_50_cub_v17/bestmodel.pth
+exps/res_50_cub_v17/model.pth
+exps/reg_50_cub_v7_cos/bestmodel.pth

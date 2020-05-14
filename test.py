@@ -14,6 +14,7 @@ from config import cfg
 from utils import load_test_checkpoints, CalculateAcc, \
     SelfData, load_cfg, print_to_screen
 
+
 def test(test_loader, model, logger=None, Writer=None):
     
     model.eval()
@@ -50,13 +51,11 @@ def val(val_loader, model, logger=None, loss_function=None, epoch=0, print_fre=5
             loss_val.add_value(loss.cpu())
             acc_single_val.add_value(outputs.cpu(),targets.cpu())
             mem = torch.cuda.memory_cached() / 1E9 if torch.cuda.is_available() else 0
-            if its % 50 == 0:
+            if its % print_fre == 0:
                 print_to_screen(loss, 0, its, epoch, its_num,
                     logger, data_time, train_time, mem, acc=acc_single_val.print_())               
     return acc_single_val.print_(), loss_val.avg()        
     
-
-
 
 def main(test_type):
     logger = load_cfg(cfg)
@@ -70,11 +69,6 @@ def main(test_type):
         test_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.TEST, 'test', cfg.TRAIN, logger)
         test(test_loader, model, logger)
     
-
-
-
-
-
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

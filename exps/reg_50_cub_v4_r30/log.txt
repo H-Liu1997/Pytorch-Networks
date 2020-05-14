@@ -1,0 +1,585 @@
+start creating config files...
+update config files success
+Computational complexity:       4.0 GMac
+Number of parameters:           21.03 M 
+no checkpoints
+[0][0/750]	Loss:5.34323	Lr:0.001000	Data:1579ms	Train:0481ms	Mem:1.19Gb	Prec@1:0.0000
+[0][300/750]	Loss:5.31519	Lr:0.001000	Data:0007ms	Train:0101ms	Mem:1.19Gb	Prec@1:0.0137
+[0][600/750]	Loss:4.53617	Lr:0.001000	Data:0007ms	Train:0160ms	Mem:1.19Gb	Prec@1:0.0320
+[0][0/725]	Loss:2.70198	Lr:0.000000	Data:1469ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.0000
+[0][300/725]	Loss:3.27532	Lr:0.000000	Data:0030ms	Train:0130ms	Mem:1.25Gb	Prec@1:0.2587
+[0][600/725]	Loss:3.93896	Lr:0.000000	Data:0020ms	Train:0030ms	Mem:1.25Gb	Prec@1:0.2546
+Train Prec@1:0.0429	Val Prec@1:0.2463
+BestV Prec@1:0.2463	Best Epoch:0
+[1][0/750]	Loss:4.39641	Lr:0.001000	Data:1528ms	Train:0191ms	Mem:1.25Gb	Prec@1:0.0000
+[1][300/750]	Loss:3.49578	Lr:0.001000	Data:0005ms	Train:0097ms	Mem:1.25Gb	Prec@1:0.1782
+[1][600/750]	Loss:2.73313	Lr:0.001000	Data:0007ms	Train:0093ms	Mem:1.25Gb	Prec@1:0.2121
+[1][0/725]	Loss:1.62718	Lr:0.000000	Data:1439ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.6250
+[1][300/725]	Loss:0.63436	Lr:0.000000	Data:0090ms	Train:0081ms	Mem:1.25Gb	Prec@1:0.5091
+[1][600/725]	Loss:2.47649	Lr:0.000000	Data:0048ms	Train:0059ms	Mem:1.25Gb	Prec@1:0.4611
+Train Prec@1:0.2262	Val Prec@1:0.4746
+BestV Prec@1:0.4746	Best Epoch:1
+[2][0/750]	Loss:3.70458	Lr:0.001000	Data:1514ms	Train:0181ms	Mem:1.25Gb	Prec@1:0.3750
+[2][300/750]	Loss:2.32559	Lr:0.001000	Data:0019ms	Train:0166ms	Mem:1.25Gb	Prec@1:0.3621
+[2][600/750]	Loss:3.18383	Lr:0.001000	Data:0014ms	Train:0212ms	Mem:1.25Gb	Prec@1:0.3733
+[2][0/725]	Loss:0.91091	Lr:0.000000	Data:1374ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[2][300/725]	Loss:0.62396	Lr:0.000000	Data:0070ms	Train:0029ms	Mem:1.25Gb	Prec@1:0.5901
+[2][600/725]	Loss:1.41451	Lr:0.000000	Data:0014ms	Train:0089ms	Mem:1.25Gb	Prec@1:0.5595
+Train Prec@1:0.3847	Val Prec@1:0.5697
+BestV Prec@1:0.5697	Best Epoch:2
+[3][0/750]	Loss:2.22670	Lr:0.001000	Data:1391ms	Train:0193ms	Mem:1.25Gb	Prec@1:0.6250
+[3][300/750]	Loss:2.62721	Lr:0.001000	Data:0002ms	Train:0136ms	Mem:1.25Gb	Prec@1:0.4593
+[3][600/750]	Loss:3.12478	Lr:0.001000	Data:0009ms	Train:0110ms	Mem:1.25Gb	Prec@1:0.4680
+[3][0/725]	Loss:1.68568	Lr:0.000000	Data:1600ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.5000
+[3][300/725]	Loss:0.16190	Lr:0.000000	Data:0054ms	Train:0107ms	Mem:1.25Gb	Prec@1:0.6636
+[3][600/725]	Loss:1.55249	Lr:0.000000	Data:0045ms	Train:0057ms	Mem:1.25Gb	Prec@1:0.6664
+Train Prec@1:0.4708	Val Prec@1:0.6733
+BestV Prec@1:0.6733	Best Epoch:3
+[4][0/750]	Loss:2.07134	Lr:0.001000	Data:1543ms	Train:0178ms	Mem:1.25Gb	Prec@1:0.5000
+[4][300/750]	Loss:2.17348	Lr:0.001000	Data:0029ms	Train:0122ms	Mem:1.25Gb	Prec@1:0.5411
+[4][600/750]	Loss:2.11132	Lr:0.001000	Data:0003ms	Train:0134ms	Mem:1.25Gb	Prec@1:0.5406
+[4][0/725]	Loss:1.02194	Lr:0.000000	Data:1430ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.6250
+[4][300/725]	Loss:0.16349	Lr:0.000000	Data:0054ms	Train:0042ms	Mem:1.25Gb	Prec@1:0.7230
+[4][600/725]	Loss:0.76255	Lr:0.000000	Data:0036ms	Train:0056ms	Mem:1.25Gb	Prec@1:0.7011
+Train Prec@1:0.5434	Val Prec@1:0.7149
+BestV Prec@1:0.7149	Best Epoch:4
+[5][0/750]	Loss:2.50691	Lr:0.001000	Data:1518ms	Train:0164ms	Mem:1.25Gb	Prec@1:0.3750
+[5][300/750]	Loss:1.30755	Lr:0.001000	Data:0006ms	Train:0236ms	Mem:1.25Gb	Prec@1:0.5930
+[5][600/750]	Loss:1.85741	Lr:0.001000	Data:0012ms	Train:0146ms	Mem:1.25Gb	Prec@1:0.5953
+[5][0/725]	Loss:1.66389	Lr:0.000000	Data:1489ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.5000
+[5][300/725]	Loss:0.12446	Lr:0.000000	Data:0012ms	Train:0033ms	Mem:1.25Gb	Prec@1:0.7263
+[5][600/725]	Loss:0.58788	Lr:0.000000	Data:0047ms	Train:0152ms	Mem:1.25Gb	Prec@1:0.7121
+Train Prec@1:0.5913	Val Prec@1:0.7273
+BestV Prec@1:0.7273	Best Epoch:5
+[6][0/750]	Loss:1.15103	Lr:0.001000	Data:1571ms	Train:0198ms	Mem:1.25Gb	Prec@1:0.7500
+[6][300/750]	Loss:1.02073	Lr:0.001000	Data:0011ms	Train:0110ms	Mem:1.25Gb	Prec@1:0.6466
+[6][600/750]	Loss:1.16000	Lr:0.001000	Data:0022ms	Train:0188ms	Mem:1.25Gb	Prec@1:0.6437
+[6][0/725]	Loss:1.65646	Lr:0.000000	Data:1378ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.3750
+[6][300/725]	Loss:0.04142	Lr:0.000000	Data:0051ms	Train:0118ms	Mem:1.25Gb	Prec@1:0.7517
+[6][600/725]	Loss:0.72994	Lr:0.000000	Data:0037ms	Train:0133ms	Mem:1.25Gb	Prec@1:0.7454
+Train Prec@1:0.6435	Val Prec@1:0.7544
+BestV Prec@1:0.7544	Best Epoch:6
+[7][0/750]	Loss:1.72914	Lr:0.001000	Data:1683ms	Train:0202ms	Mem:1.25Gb	Prec@1:0.6250
+[7][300/750]	Loss:1.22494	Lr:0.001000	Data:0007ms	Train:0157ms	Mem:1.25Gb	Prec@1:0.6566
+[7][600/750]	Loss:1.05989	Lr:0.001000	Data:0013ms	Train:0148ms	Mem:1.25Gb	Prec@1:0.6581
+[7][0/725]	Loss:0.73054	Lr:0.000000	Data:1413ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.6250
+[7][300/725]	Loss:0.07032	Lr:0.000000	Data:0079ms	Train:0051ms	Mem:1.25Gb	Prec@1:0.7770
+[7][600/725]	Loss:0.60331	Lr:0.000000	Data:0023ms	Train:0079ms	Mem:1.25Gb	Prec@1:0.7737
+Train Prec@1:0.6580	Val Prec@1:0.7860
+BestV Prec@1:0.7860	Best Epoch:7
+[8][0/750]	Loss:0.50417	Lr:0.001000	Data:1634ms	Train:0189ms	Mem:1.25Gb	Prec@1:0.8750
+[8][300/750]	Loss:1.74580	Lr:0.001000	Data:0021ms	Train:0158ms	Mem:1.25Gb	Prec@1:0.6732
+[8][600/750]	Loss:0.87001	Lr:0.001000	Data:0011ms	Train:0132ms	Mem:1.25Gb	Prec@1:0.6841
+[8][0/725]	Loss:0.98481	Lr:0.000000	Data:1413ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.8750
+[8][300/725]	Loss:0.03807	Lr:0.000000	Data:0081ms	Train:0085ms	Mem:1.25Gb	Prec@1:0.7890
+[8][600/725]	Loss:0.60282	Lr:0.000000	Data:0067ms	Train:0041ms	Mem:1.25Gb	Prec@1:0.7725
+Train Prec@1:0.6845	Val Prec@1:0.7829
+BestV Prec@1:0.7860	Best Epoch:7
+[9][0/750]	Loss:2.03464	Lr:0.001000	Data:1465ms	Train:0186ms	Mem:1.25Gb	Prec@1:0.3750
+[9][300/750]	Loss:1.30494	Lr:0.001000	Data:0012ms	Train:0108ms	Mem:1.25Gb	Prec@1:0.7118
+[9][600/750]	Loss:1.88507	Lr:0.001000	Data:0005ms	Train:0157ms	Mem:1.25Gb	Prec@1:0.7053
+[9][0/725]	Loss:1.11171	Lr:0.000000	Data:1400ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.6250
+[9][300/725]	Loss:0.12544	Lr:0.000000	Data:0059ms	Train:0033ms	Mem:1.25Gb	Prec@1:0.7753
+[9][600/725]	Loss:0.49461	Lr:0.000000	Data:0059ms	Train:0035ms	Mem:1.25Gb	Prec@1:0.7741
+Train Prec@1:0.7059	Val Prec@1:0.7827
+BestV Prec@1:0.7860	Best Epoch:7
+[10][0/750]	Loss:2.26426	Lr:0.001000	Data:1559ms	Train:0199ms	Mem:1.25Gb	Prec@1:0.5000
+[10][300/750]	Loss:1.28446	Lr:0.001000	Data:0004ms	Train:0106ms	Mem:1.25Gb	Prec@1:0.7139
+[10][600/750]	Loss:0.72379	Lr:0.001000	Data:0007ms	Train:0121ms	Mem:1.25Gb	Prec@1:0.7261
+[10][0/725]	Loss:1.03514	Lr:0.000000	Data:1497ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[10][300/725]	Loss:0.12119	Lr:0.000000	Data:0037ms	Train:0049ms	Mem:1.25Gb	Prec@1:0.7770
+[10][600/725]	Loss:0.68895	Lr:0.000000	Data:0037ms	Train:0224ms	Mem:1.25Gb	Prec@1:0.7804
+Train Prec@1:0.7231	Val Prec@1:0.7932
+BestV Prec@1:0.7932	Best Epoch:10
+[11][0/750]	Loss:0.66471	Lr:0.001000	Data:1447ms	Train:0250ms	Mem:1.25Gb	Prec@1:0.8750
+[11][300/750]	Loss:1.49373	Lr:0.001000	Data:0001ms	Train:0120ms	Mem:1.25Gb	Prec@1:0.7317
+[11][600/750]	Loss:0.57977	Lr:0.001000	Data:0012ms	Train:0120ms	Mem:1.25Gb	Prec@1:0.7386
+[11][0/725]	Loss:1.83067	Lr:0.000000	Data:1513ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.5000
+[11][300/725]	Loss:0.04183	Lr:0.000000	Data:0043ms	Train:0028ms	Mem:1.25Gb	Prec@1:0.7861
+[11][600/725]	Loss:0.80045	Lr:0.000000	Data:0074ms	Train:0045ms	Mem:1.25Gb	Prec@1:0.7862
+Train Prec@1:0.7354	Val Prec@1:0.7970
+BestV Prec@1:0.7970	Best Epoch:11
+[12][0/750]	Loss:1.19519	Lr:0.001000	Data:1654ms	Train:0229ms	Mem:1.25Gb	Prec@1:0.3750
+[12][300/750]	Loss:1.26669	Lr:0.001000	Data:0003ms	Train:0128ms	Mem:1.25Gb	Prec@1:0.7413
+[12][600/750]	Loss:1.44287	Lr:0.001000	Data:0012ms	Train:0162ms	Mem:1.25Gb	Prec@1:0.7413
+[12][0/725]	Loss:0.63139	Lr:0.000000	Data:1519ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.7500
+[12][300/725]	Loss:0.00638	Lr:0.000000	Data:0008ms	Train:0033ms	Mem:1.25Gb	Prec@1:0.7919
+[12][600/725]	Loss:0.20746	Lr:0.000000	Data:0059ms	Train:0050ms	Mem:1.25Gb	Prec@1:0.7922
+Train Prec@1:0.7421	Val Prec@1:0.8046
+BestV Prec@1:0.8046	Best Epoch:12
+[13][0/750]	Loss:0.81528	Lr:0.001000	Data:1355ms	Train:0174ms	Mem:1.25Gb	Prec@1:0.7500
+[13][300/750]	Loss:0.65425	Lr:0.001000	Data:0011ms	Train:0131ms	Mem:1.25Gb	Prec@1:0.7579
+[13][600/750]	Loss:0.39148	Lr:0.001000	Data:0011ms	Train:0188ms	Mem:1.25Gb	Prec@1:0.7581
+[13][0/725]	Loss:0.85618	Lr:0.000000	Data:1398ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[13][300/725]	Loss:0.00074	Lr:0.000000	Data:0030ms	Train:0100ms	Mem:1.25Gb	Prec@1:0.7998
+[13][600/725]	Loss:0.71380	Lr:0.000000	Data:0052ms	Train:0039ms	Mem:1.25Gb	Prec@1:0.7897
+Train Prec@1:0.7554	Val Prec@1:0.8013
+BestV Prec@1:0.8046	Best Epoch:12
+[14][0/750]	Loss:0.66034	Lr:0.001000	Data:1574ms	Train:0174ms	Mem:1.25Gb	Prec@1:0.8750
+[14][300/750]	Loss:0.91066	Lr:0.001000	Data:0001ms	Train:0081ms	Mem:1.25Gb	Prec@1:0.7749
+[14][600/750]	Loss:0.35496	Lr:0.001000	Data:0009ms	Train:0212ms	Mem:1.25Gb	Prec@1:0.7745
+[14][0/725]	Loss:1.40622	Lr:0.000000	Data:1589ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.7500
+[14][300/725]	Loss:0.01882	Lr:0.000000	Data:0035ms	Train:0051ms	Mem:1.25Gb	Prec@1:0.8032
+[14][600/725]	Loss:0.72170	Lr:0.000000	Data:0029ms	Train:0065ms	Mem:1.25Gb	Prec@1:0.8080
+Train Prec@1:0.7708	Val Prec@1:0.8193
+BestV Prec@1:0.8193	Best Epoch:14
+[15][0/750]	Loss:1.27796	Lr:0.001000	Data:1632ms	Train:0180ms	Mem:1.25Gb	Prec@1:0.7500
+[15][300/750]	Loss:1.52076	Lr:0.001000	Data:0009ms	Train:0197ms	Mem:1.25Gb	Prec@1:0.7841
+[15][600/750]	Loss:0.92832	Lr:0.001000	Data:0009ms	Train:0112ms	Mem:1.25Gb	Prec@1:0.7800
+[15][0/725]	Loss:1.21664	Lr:0.000000	Data:1441ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.6250
+[15][300/725]	Loss:0.01117	Lr:0.000000	Data:0070ms	Train:0062ms	Mem:1.25Gb	Prec@1:0.8002
+[15][600/725]	Loss:1.05336	Lr:0.000000	Data:0038ms	Train:0097ms	Mem:1.25Gb	Prec@1:0.8070
+Train Prec@1:0.7835	Val Prec@1:0.8200
+BestV Prec@1:0.8200	Best Epoch:15
+[16][0/750]	Loss:0.72054	Lr:0.001000	Data:1571ms	Train:0170ms	Mem:1.25Gb	Prec@1:0.7500
+[16][300/750]	Loss:0.95431	Lr:0.001000	Data:0007ms	Train:0216ms	Mem:1.25Gb	Prec@1:0.7953
+[16][600/750]	Loss:1.38637	Lr:0.001000	Data:0005ms	Train:0224ms	Mem:1.25Gb	Prec@1:0.7895
+[16][0/725]	Loss:0.68869	Lr:0.000000	Data:1464ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[16][300/725]	Loss:0.01251	Lr:0.000000	Data:0093ms	Train:0104ms	Mem:1.25Gb	Prec@1:0.8048
+[16][600/725]	Loss:0.65521	Lr:0.000000	Data:0030ms	Train:0050ms	Mem:1.25Gb	Prec@1:0.8074
+Train Prec@1:0.7913	Val Prec@1:0.8207
+BestV Prec@1:0.8207	Best Epoch:16
+[17][0/750]	Loss:0.64329	Lr:0.001000	Data:1407ms	Train:0190ms	Mem:1.25Gb	Prec@1:0.7500
+[17][300/750]	Loss:0.53272	Lr:0.001000	Data:0008ms	Train:0164ms	Mem:1.25Gb	Prec@1:0.8056
+[17][600/750]	Loss:1.06670	Lr:0.001000	Data:0033ms	Train:0150ms	Mem:1.25Gb	Prec@1:0.7960
+[17][0/725]	Loss:1.07000	Lr:0.000000	Data:1629ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.7500
+[17][300/725]	Loss:0.11013	Lr:0.000000	Data:0028ms	Train:0059ms	Mem:1.25Gb	Prec@1:0.8032
+[17][600/725]	Loss:0.81366	Lr:0.000000	Data:0062ms	Train:0062ms	Mem:1.25Gb	Prec@1:0.8070
+Train Prec@1:0.7963	Val Prec@1:0.8171
+BestV Prec@1:0.8207	Best Epoch:16
+[18][0/750]	Loss:0.46722	Lr:0.001000	Data:1565ms	Train:0190ms	Mem:1.25Gb	Prec@1:1.0000
+[18][300/750]	Loss:1.71078	Lr:0.001000	Data:0017ms	Train:0090ms	Mem:1.25Gb	Prec@1:0.8156
+[18][600/750]	Loss:1.17313	Lr:0.001000	Data:0015ms	Train:0088ms	Mem:1.25Gb	Prec@1:0.8026
+[18][0/725]	Loss:0.94911	Lr:0.000000	Data:1545ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[18][300/725]	Loss:0.12593	Lr:0.000000	Data:0040ms	Train:0204ms	Mem:1.25Gb	Prec@1:0.7994
+[18][600/725]	Loss:0.43199	Lr:0.000000	Data:0014ms	Train:0185ms	Mem:1.25Gb	Prec@1:0.7983
+Train Prec@1:0.7981	Val Prec@1:0.8100
+BestV Prec@1:0.8207	Best Epoch:16
+[19][0/750]	Loss:1.03335	Lr:0.001000	Data:1486ms	Train:0194ms	Mem:1.25Gb	Prec@1:0.6250
+[19][300/750]	Loss:0.44541	Lr:0.001000	Data:0015ms	Train:0104ms	Mem:1.25Gb	Prec@1:0.8056
+[19][600/750]	Loss:0.60498	Lr:0.001000	Data:0023ms	Train:0214ms	Mem:1.25Gb	Prec@1:0.8078
+[19][0/725]	Loss:1.37828	Lr:0.000000	Data:1485ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[19][300/725]	Loss:0.06979	Lr:0.000000	Data:0021ms	Train:0030ms	Mem:1.25Gb	Prec@1:0.8007
+[19][600/725]	Loss:0.86280	Lr:0.000000	Data:0035ms	Train:0037ms	Mem:1.25Gb	Prec@1:0.8032
+Train Prec@1:0.8078	Val Prec@1:0.8145
+BestV Prec@1:0.8207	Best Epoch:16
+[20][0/750]	Loss:0.23783	Lr:0.001000	Data:1399ms	Train:0226ms	Mem:1.25Gb	Prec@1:1.0000
+[20][300/750]	Loss:0.42018	Lr:0.001000	Data:0004ms	Train:0111ms	Mem:1.25Gb	Prec@1:0.8206
+[20][600/750]	Loss:0.16896	Lr:0.001000	Data:0007ms	Train:0222ms	Mem:1.25Gb	Prec@1:0.8207
+[20][0/725]	Loss:1.02393	Lr:0.000000	Data:1380ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[20][300/725]	Loss:0.01573	Lr:0.000000	Data:0030ms	Train:0041ms	Mem:1.25Gb	Prec@1:0.8073
+[20][600/725]	Loss:0.63971	Lr:0.000000	Data:0058ms	Train:0044ms	Mem:1.25Gb	Prec@1:0.8089
+Train Prec@1:0.8183	Val Prec@1:0.8207
+BestV Prec@1:0.8207	Best Epoch:16
+[21][0/750]	Loss:0.51524	Lr:0.001000	Data:1590ms	Train:0222ms	Mem:1.25Gb	Prec@1:0.8750
+[21][300/750]	Loss:1.53838	Lr:0.001000	Data:0025ms	Train:0124ms	Mem:1.25Gb	Prec@1:0.8389
+[21][600/750]	Loss:0.57345	Lr:0.001000	Data:0024ms	Train:0120ms	Mem:1.25Gb	Prec@1:0.8330
+[21][0/725]	Loss:1.25555	Lr:0.000000	Data:1494ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[21][300/725]	Loss:0.00820	Lr:0.000000	Data:0029ms	Train:0067ms	Mem:1.25Gb	Prec@1:0.8044
+[21][600/725]	Loss:0.40815	Lr:0.000000	Data:0084ms	Train:0034ms	Mem:1.25Gb	Prec@1:0.8043
+Train Prec@1:0.8322	Val Prec@1:0.8176
+BestV Prec@1:0.8207	Best Epoch:16
+[22][0/750]	Loss:1.43457	Lr:0.001000	Data:1761ms	Train:0230ms	Mem:1.25Gb	Prec@1:0.6250
+[22][300/750]	Loss:1.61241	Lr:0.001000	Data:0016ms	Train:0108ms	Mem:1.25Gb	Prec@1:0.8335
+[22][600/750]	Loss:0.49667	Lr:0.001000	Data:0007ms	Train:0210ms	Mem:1.25Gb	Prec@1:0.8367
+[22][0/725]	Loss:1.16831	Lr:0.000000	Data:1542ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[22][300/725]	Loss:0.00588	Lr:0.000000	Data:0040ms	Train:0029ms	Mem:1.25Gb	Prec@1:0.8081
+[22][600/725]	Loss:0.85142	Lr:0.000000	Data:0053ms	Train:0025ms	Mem:1.25Gb	Prec@1:0.8147
+Train Prec@1:0.8355	Val Prec@1:0.8259
+BestV Prec@1:0.8259	Best Epoch:22
+[23][0/750]	Loss:0.43213	Lr:0.001000	Data:1397ms	Train:0181ms	Mem:1.25Gb	Prec@1:0.8750
+[23][300/750]	Loss:0.58132	Lr:0.001000	Data:0013ms	Train:0193ms	Mem:1.25Gb	Prec@1:0.8331
+[23][600/750]	Loss:0.39803	Lr:0.001000	Data:0007ms	Train:0080ms	Mem:1.25Gb	Prec@1:0.8322
+[23][0/725]	Loss:0.99817	Lr:0.000000	Data:1597ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[23][300/725]	Loss:0.03394	Lr:0.000000	Data:0038ms	Train:0186ms	Mem:1.25Gb	Prec@1:0.8148
+[23][600/725]	Loss:0.47745	Lr:0.000000	Data:0018ms	Train:0077ms	Mem:1.25Gb	Prec@1:0.8120
+Train Prec@1:0.8300	Val Prec@1:0.8234
+BestV Prec@1:0.8259	Best Epoch:22
+[24][0/750]	Loss:0.95603	Lr:0.001000	Data:1787ms	Train:0234ms	Mem:1.25Gb	Prec@1:0.8750
+[24][300/750]	Loss:0.11617	Lr:0.001000	Data:0023ms	Train:0080ms	Mem:1.25Gb	Prec@1:0.8301
+[24][600/750]	Loss:0.31909	Lr:0.001000	Data:0005ms	Train:0198ms	Mem:1.25Gb	Prec@1:0.8388
+[24][0/725]	Loss:1.17784	Lr:0.000000	Data:1686ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[24][300/725]	Loss:0.00545	Lr:0.000000	Data:0035ms	Train:0159ms	Mem:1.25Gb	Prec@1:0.8102
+[24][600/725]	Loss:0.58175	Lr:0.000000	Data:0059ms	Train:0025ms	Mem:1.25Gb	Prec@1:0.8111
+Train Prec@1:0.8413	Val Prec@1:0.8234
+BestV Prec@1:0.8259	Best Epoch:22
+[25][0/750]	Loss:0.46952	Lr:0.001000	Data:1829ms	Train:0178ms	Mem:1.25Gb	Prec@1:0.8750
+[25][300/750]	Loss:0.78644	Lr:0.001000	Data:0012ms	Train:0169ms	Mem:1.25Gb	Prec@1:0.8455
+[25][600/750]	Loss:0.58418	Lr:0.001000	Data:0010ms	Train:0108ms	Mem:1.25Gb	Prec@1:0.8478
+[25][0/725]	Loss:1.35104	Lr:0.000000	Data:1501ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.6250
+[25][300/725]	Loss:0.00987	Lr:0.000000	Data:0007ms	Train:0115ms	Mem:1.25Gb	Prec@1:0.7965
+[25][600/725]	Loss:0.89941	Lr:0.000000	Data:0042ms	Train:0073ms	Mem:1.25Gb	Prec@1:0.8047
+Train Prec@1:0.8435	Val Prec@1:0.8188
+BestV Prec@1:0.8259	Best Epoch:22
+[26][0/750]	Loss:0.51215	Lr:0.000100	Data:1381ms	Train:0204ms	Mem:1.25Gb	Prec@1:0.7500
+[26][300/750]	Loss:0.08203	Lr:0.000100	Data:0017ms	Train:0187ms	Mem:1.25Gb	Prec@1:0.8542
+[26][600/750]	Loss:1.09215	Lr:0.000100	Data:0047ms	Train:0199ms	Mem:1.25Gb	Prec@1:0.8527
+[26][0/725]	Loss:0.88186	Lr:0.000000	Data:1583ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.7500
+[26][300/725]	Loss:0.00403	Lr:0.000000	Data:0042ms	Train:0032ms	Mem:1.25Gb	Prec@1:0.8169
+[26][600/725]	Loss:0.94472	Lr:0.000000	Data:0038ms	Train:0041ms	Mem:1.25Gb	Prec@1:0.8236
+Train Prec@1:0.8532	Val Prec@1:0.8341
+BestV Prec@1:0.8341	Best Epoch:26
+[27][0/750]	Loss:0.32485	Lr:0.000100	Data:1436ms	Train:0197ms	Mem:1.25Gb	Prec@1:1.0000
+[27][300/750]	Loss:0.93337	Lr:0.000100	Data:0012ms	Train:0152ms	Mem:1.25Gb	Prec@1:0.8671
+[27][600/750]	Loss:0.58114	Lr:0.000100	Data:0024ms	Train:0270ms	Mem:1.25Gb	Prec@1:0.8679
+[27][0/725]	Loss:1.02279	Lr:0.000000	Data:1296ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[27][300/725]	Loss:0.00537	Lr:0.000000	Data:0086ms	Train:0009ms	Mem:1.25Gb	Prec@1:0.8189
+[27][600/725]	Loss:0.92344	Lr:0.000000	Data:0062ms	Train:0081ms	Mem:1.25Gb	Prec@1:0.8199
+Train Prec@1:0.8679	Val Prec@1:0.8324
+BestV Prec@1:0.8341	Best Epoch:26
+[28][0/750]	Loss:0.65893	Lr:0.000100	Data:1443ms	Train:0206ms	Mem:1.25Gb	Prec@1:0.8750
+[28][300/750]	Loss:0.40344	Lr:0.000100	Data:0009ms	Train:0181ms	Mem:1.25Gb	Prec@1:0.8758
+[28][600/750]	Loss:1.71278	Lr:0.000100	Data:0014ms	Train:0189ms	Mem:1.25Gb	Prec@1:0.8777
+[28][0/725]	Loss:1.04840	Lr:0.000000	Data:1201ms	Train:0012ms	Mem:1.25Gb	Prec@1:0.7500
+[28][300/725]	Loss:0.00539	Lr:0.000000	Data:0047ms	Train:0164ms	Mem:1.25Gb	Prec@1:0.8260
+[28][600/725]	Loss:0.88346	Lr:0.000000	Data:0061ms	Train:0178ms	Mem:1.25Gb	Prec@1:0.8270
+Train Prec@1:0.8804	Val Prec@1:0.8378
+BestV Prec@1:0.8378	Best Epoch:28
+[29][0/750]	Loss:0.96900	Lr:0.000100	Data:1651ms	Train:0226ms	Mem:1.25Gb	Prec@1:0.8750
+[29][300/750]	Loss:1.23183	Lr:0.000100	Data:0012ms	Train:0086ms	Mem:1.25Gb	Prec@1:0.8654
+[29][600/750]	Loss:0.12647	Lr:0.000100	Data:0021ms	Train:0171ms	Mem:1.25Gb	Prec@1:0.8710
+[29][0/725]	Loss:1.06463	Lr:0.000000	Data:1394ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[29][300/725]	Loss:0.00730	Lr:0.000000	Data:0079ms	Train:0061ms	Mem:1.25Gb	Prec@1:0.8235
+[29][600/725]	Loss:0.83005	Lr:0.000000	Data:0064ms	Train:0043ms	Mem:1.25Gb	Prec@1:0.8222
+Train Prec@1:0.8722	Val Prec@1:0.8355
+BestV Prec@1:0.8378	Best Epoch:28
+[30][0/750]	Loss:0.88471	Lr:0.000100	Data:1615ms	Train:0186ms	Mem:1.25Gb	Prec@1:0.8750
+[30][300/750]	Loss:0.32941	Lr:0.000100	Data:0040ms	Train:0146ms	Mem:1.25Gb	Prec@1:0.8825
+[30][600/750]	Loss:0.73274	Lr:0.000100	Data:0012ms	Train:0148ms	Mem:1.25Gb	Prec@1:0.8821
+[30][0/725]	Loss:1.05845	Lr:0.000000	Data:1447ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[30][300/725]	Loss:0.00385	Lr:0.000000	Data:0023ms	Train:0223ms	Mem:1.25Gb	Prec@1:0.8281
+[30][600/725]	Loss:0.91810	Lr:0.000000	Data:0043ms	Train:0028ms	Mem:1.25Gb	Prec@1:0.8257
+Train Prec@1:0.8805	Val Prec@1:0.8383
+BestV Prec@1:0.8383	Best Epoch:30
+[31][0/750]	Loss:0.57740	Lr:0.000100	Data:1378ms	Train:0209ms	Mem:1.25Gb	Prec@1:0.8750
+[31][300/750]	Loss:0.51057	Lr:0.000100	Data:0008ms	Train:0238ms	Mem:1.25Gb	Prec@1:0.8787
+[31][600/750]	Loss:0.37583	Lr:0.000100	Data:0008ms	Train:0142ms	Mem:1.25Gb	Prec@1:0.8823
+[31][0/725]	Loss:1.20331	Lr:0.000000	Data:1543ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[31][300/725]	Loss:0.00976	Lr:0.000000	Data:0069ms	Train:0140ms	Mem:1.25Gb	Prec@1:0.8231
+[31][600/725]	Loss:0.76051	Lr:0.000000	Data:0034ms	Train:0030ms	Mem:1.25Gb	Prec@1:0.8251
+Train Prec@1:0.8799	Val Prec@1:0.8371
+BestV Prec@1:0.8383	Best Epoch:30
+[32][0/750]	Loss:1.11481	Lr:0.000100	Data:1329ms	Train:0256ms	Mem:1.25Gb	Prec@1:0.7500
+[32][300/750]	Loss:1.06588	Lr:0.000100	Data:0034ms	Train:0177ms	Mem:1.25Gb	Prec@1:0.8916
+[32][600/750]	Loss:0.09339	Lr:0.000100	Data:0005ms	Train:0157ms	Mem:1.25Gb	Prec@1:0.8887
+[32][0/725]	Loss:0.99626	Lr:0.000000	Data:1456ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.7500
+[32][300/725]	Loss:0.00532	Lr:0.000000	Data:0013ms	Train:0057ms	Mem:1.25Gb	Prec@1:0.8256
+[32][600/725]	Loss:0.77538	Lr:0.000000	Data:0038ms	Train:0179ms	Mem:1.25Gb	Prec@1:0.8274
+Train Prec@1:0.8849	Val Prec@1:0.8397
+BestV Prec@1:0.8397	Best Epoch:32
+[33][0/750]	Loss:0.63342	Lr:0.000100	Data:1620ms	Train:0210ms	Mem:1.25Gb	Prec@1:0.8750
+[33][300/750]	Loss:0.57697	Lr:0.000100	Data:0009ms	Train:0149ms	Mem:1.25Gb	Prec@1:0.8762
+[33][600/750]	Loss:0.23477	Lr:0.000100	Data:0004ms	Train:0113ms	Mem:1.25Gb	Prec@1:0.8767
+[33][0/725]	Loss:0.80353	Lr:0.000000	Data:1500ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[33][300/725]	Loss:0.00542	Lr:0.000000	Data:0045ms	Train:0169ms	Mem:1.25Gb	Prec@1:0.8268
+[33][600/725]	Loss:0.75028	Lr:0.000000	Data:0054ms	Train:0012ms	Mem:1.25Gb	Prec@1:0.8288
+Train Prec@1:0.8812	Val Prec@1:0.8402
+BestV Prec@1:0.8402	Best Epoch:33
+[34][0/750]	Loss:0.36819	Lr:0.000100	Data:1558ms	Train:0193ms	Mem:1.25Gb	Prec@1:1.0000
+[34][300/750]	Loss:0.09223	Lr:0.000100	Data:0032ms	Train:0176ms	Mem:1.25Gb	Prec@1:0.8999
+[34][600/750]	Loss:0.09962	Lr:0.000100	Data:0011ms	Train:0199ms	Mem:1.25Gb	Prec@1:0.8885
+[34][0/725]	Loss:0.97190	Lr:0.000000	Data:1495ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[34][300/725]	Loss:0.00911	Lr:0.000000	Data:0069ms	Train:0046ms	Mem:1.25Gb	Prec@1:0.8310
+[34][600/725]	Loss:0.89764	Lr:0.000000	Data:0016ms	Train:0025ms	Mem:1.25Gb	Prec@1:0.8295
+Train Prec@1:0.8849	Val Prec@1:0.8405
+BestV Prec@1:0.8405	Best Epoch:34
+[35][0/750]	Loss:0.77067	Lr:0.000100	Data:1758ms	Train:0247ms	Mem:1.25Gb	Prec@1:0.8750
+[35][300/750]	Loss:0.49144	Lr:0.000100	Data:0017ms	Train:0116ms	Mem:1.25Gb	Prec@1:0.8821
+[35][600/750]	Loss:0.07714	Lr:0.000100	Data:0009ms	Train:0162ms	Mem:1.25Gb	Prec@1:0.8839
+[35][0/725]	Loss:0.87896	Lr:0.000000	Data:1362ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.7500
+[35][300/725]	Loss:0.00631	Lr:0.000000	Data:0038ms	Train:0055ms	Mem:1.25Gb	Prec@1:0.8293
+[35][600/725]	Loss:0.81808	Lr:0.000000	Data:0042ms	Train:0068ms	Mem:1.25Gb	Prec@1:0.8295
+Train Prec@1:0.8847	Val Prec@1:0.8419
+BestV Prec@1:0.8419	Best Epoch:35
+[36][0/750]	Loss:0.25052	Lr:0.000010	Data:1522ms	Train:0173ms	Mem:1.25Gb	Prec@1:0.8750
+[36][300/750]	Loss:0.07625	Lr:0.000010	Data:0011ms	Train:0144ms	Mem:1.25Gb	Prec@1:0.8958
+[36][600/750]	Loss:0.87187	Lr:0.000010	Data:0004ms	Train:0201ms	Mem:1.25Gb	Prec@1:0.8900
+[36][0/725]	Loss:0.81817	Lr:0.000000	Data:1439ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[36][300/725]	Loss:0.00594	Lr:0.000000	Data:0056ms	Train:0147ms	Mem:1.25Gb	Prec@1:0.8293
+[36][600/725]	Loss:0.69722	Lr:0.000000	Data:0080ms	Train:0033ms	Mem:1.25Gb	Prec@1:0.8303
+Train Prec@1:0.8869	Val Prec@1:0.8407
+BestV Prec@1:0.8419	Best Epoch:35
+[37][0/750]	Loss:0.47275	Lr:0.000010	Data:1434ms	Train:0185ms	Mem:1.25Gb	Prec@1:0.8750
+[37][300/750]	Loss:0.57115	Lr:0.000010	Data:0021ms	Train:0190ms	Mem:1.25Gb	Prec@1:0.8762
+[37][600/750]	Loss:0.08693	Lr:0.000010	Data:0019ms	Train:0189ms	Mem:1.25Gb	Prec@1:0.8792
+[37][0/725]	Loss:1.11487	Lr:0.000000	Data:1497ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.7500
+[37][300/725]	Loss:0.00549	Lr:0.000000	Data:0084ms	Train:0054ms	Mem:1.25Gb	Prec@1:0.8297
+[37][600/725]	Loss:0.86934	Lr:0.000000	Data:0023ms	Train:0131ms	Mem:1.25Gb	Prec@1:0.8305
+Train Prec@1:0.8799	Val Prec@1:0.8417
+BestV Prec@1:0.8419	Best Epoch:35
+[38][0/750]	Loss:0.55661	Lr:0.000010	Data:1835ms	Train:0198ms	Mem:1.25Gb	Prec@1:0.7500
+[38][300/750]	Loss:0.79267	Lr:0.000010	Data:0028ms	Train:0131ms	Mem:1.25Gb	Prec@1:0.8825
+[38][600/750]	Loss:0.06378	Lr:0.000010	Data:0013ms	Train:0095ms	Mem:1.25Gb	Prec@1:0.8831
+[38][0/725]	Loss:1.00852	Lr:0.000000	Data:1502ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.7500
+[38][300/725]	Loss:0.00268	Lr:0.000000	Data:0043ms	Train:0061ms	Mem:1.25Gb	Prec@1:0.8206
+[38][600/725]	Loss:0.68358	Lr:0.000000	Data:0062ms	Train:0082ms	Mem:1.25Gb	Prec@1:0.8243
+Train Prec@1:0.8856	Val Prec@1:0.8366
+BestV Prec@1:0.8419	Best Epoch:35
+[39][0/750]	Loss:0.32482	Lr:0.000010	Data:1473ms	Train:0154ms	Mem:1.25Gb	Prec@1:0.8750
+[39][300/750]	Loss:1.17235	Lr:0.000010	Data:0016ms	Train:0166ms	Mem:1.25Gb	Prec@1:0.8945
+[39][600/750]	Loss:0.34094	Lr:0.000010	Data:0001ms	Train:0124ms	Mem:1.25Gb	Prec@1:0.8943
+[39][0/725]	Loss:0.94225	Lr:0.000000	Data:1267ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.7500
+[39][300/725]	Loss:0.00934	Lr:0.000000	Data:0048ms	Train:0009ms	Mem:1.25Gb	Prec@1:0.8326
+[39][600/725]	Loss:0.90061	Lr:0.000000	Data:0023ms	Train:0123ms	Mem:1.25Gb	Prec@1:0.8315
+Train Prec@1:0.8894	Val Prec@1:0.8431
+BestV Prec@1:0.8431	Best Epoch:39
+CONFIGDIR=/home/liuhaiyang/.config/matplotlib
+(private) matplotlib data path: /home/liuhaiyang/.conda/envs/ptnew/lib/python3.7/site-packages/matplotlib/mpl-data
+matplotlib data path: /home/liuhaiyang/.conda/envs/ptnew/lib/python3.7/site-packages/matplotlib/mpl-data
+loaded rc file /home/liuhaiyang/.conda/envs/ptnew/lib/python3.7/site-packages/matplotlib/mpl-data/matplotlibrc
+matplotlib version 3.2.1
+interactive is False
+platform is linux
+loaded modules: ['sys', 'builtins', '_frozen_importlib', '_imp', '_thread', '_warnings', '_weakref', 'zipimport', '_frozen_importlib_external', '_io', 'marshal', 'posix', 'encodings', 'codecs', '_codecs', 'encodings.aliases', 'encodings.utf_8', '_signal', '__main__', 'encodings.latin_1', 'io', 'abc', '_abc', 'site', 'os', 'stat', '_stat', '_collections_abc', 'posixpath', 'genericpath', 'os.path', '_sitebuiltins', '_bootlocale', '_locale', 'types', 'importlib', 'importlib._bootstrap', 'importlib._bootstrap_external', 'warnings', 'importlib.util', 'importlib.abc', 'importlib.machinery', 'contextlib', 'collections', 'operator', '_operator', 'keyword', 'heapq', '_heapq', 'itertools', 'reprlib', '_collections', 'functools', '_functools', 'mpl_toolkits', 'google', 'random', 'math', 'hashlib', '_hashlib', '_blake2', '_sha3', 'bisect', '_bisect', '_random', 'numpy', '__future__', 'numpy._globals', 'numpy.__config__', 'numpy.version', 'numpy._distributor_init', 'mkl', 'ctypes', '_ctypes', 'struct', '_struct', 'ctypes._endian', 'mkl._mklinit', 'mkl._py_mkl_service', 'cython_runtime', 'six', 'numpy.core', 'numpy.core.multiarray', 'numpy.core.overrides', 'textwrap', 're', 'enum', 'sre_compile', '_sre', 'sre_parse', 'sre_constants', 'copyreg', 'datetime', 'time', '_datetime', 'numpy.core._multiarray_umath', 'numpy.compat', 'numpy.compat._inspect', 'numpy.compat.py3k', 'pathlib', 'fnmatch', 'ntpath', 'errno', 'urllib', 'urllib.parse', 'pickle', '_compat_pickle', '_pickle', 'numpy.core.umath', 'numpy.core.numerictypes', 'numbers', 'numpy.core._string_helpers', 'numpy.core._type_aliases', 'numpy.core._dtype', 'numpy.core.numeric', 'numpy.core.shape_base', 'numpy.core._asarray', 'numpy.core.fromnumeric', 'numpy.core._methods', 'numpy.core._exceptions', 'numpy.core._ufunc_config', 'collections.abc', 'numpy.core.arrayprint', 'numpy.core.defchararray', 'numpy.core.records', 'numpy.core.memmap', 'numpy.core.function_base', 'numpy.core.machar', 'numpy.core.getlimits', 'numpy.core.einsumfunc', 'numpy.core._add_newdocs', 'numpy.core._multiarray_tests', 'numpy.core._dtype_ctypes', 'numpy.core._internal', 'platform', 'subprocess', 'signal', '_posixsubprocess', 'select', 'selectors', 'threading', 'traceback', 'linecache', 'tokenize', 'token', '_weakrefset', 'numpy._pytesttester', 'numpy.lib', 'numpy.lib.mixins', 'numpy.lib.scimath', 'numpy.lib.type_check', 'numpy.lib.ufunclike', 'numpy.lib.index_tricks', 'numpy.matrixlib', 'numpy.matrixlib.defmatrix', 'ast', '_ast', 'numpy.linalg', 'numpy.linalg.linalg', 'numpy.lib.twodim_base', 'numpy.linalg.lapack_lite', 'numpy.linalg._umath_linalg', 'numpy.lib.function_base', 'numpy.lib.histograms', 'numpy.lib.stride_tricks', 'numpy.lib.nanfunctions', 'numpy.lib.shape_base', 'numpy.lib.polynomial', 'numpy.lib.utils', 'numpy.lib.arraysetops', 'numpy.lib.npyio', 'weakref', 'numpy.lib.format', 'numpy.lib._datasource', 'shutil', 'zlib', 'bz2', '_compression', '_bz2', 'lzma', '_lzma', 'pwd', 'grp', 'numpy.lib._iotools', 'numpy.lib.financial', 'decimal', '_decimal', 'numpy.lib.arrayterator', 'numpy.lib.arraypad', 'numpy.lib._version', 'numpy.fft', 'numpy.fft._pocketfft', 'numpy.fft._pocketfft_internal', 'numpy.fft.helper', 'numpy.polynomial', 'numpy.polynomial.polynomial', 'numpy.polynomial.polyutils', 'numpy.polynomial._polybase', 'numpy.polynomial.chebyshev', 'numpy.polynomial.legendre', 'numpy.polynomial.hermite', 'numpy.polynomial.hermite_e', 'numpy.polynomial.laguerre', 'numpy.random', 'numpy.random._pickle', 'numpy.random.mtrand', 'numpy.random._bit_generator', '_cython_0_29_14', 'numpy.random._common', 'secrets', 'base64', 'binascii', 'hmac', 'numpy.random._bounded_integers', 'numpy.random._mt19937', 'numpy.random._philox', 'numpy.random._pcg64', 'numpy.random._sfc64', 'numpy.random._generator', 'numpy.ctypeslib', 'numpy.ma', 'numpy.ma.core', 'numpy.ma.extras', 'cv2', 'cv2.Error', 'cv2.aruco', 'cv2.bgsegm', 'cv2.bioinspired', 'cv2.cuda', 'cv2.datasets', 'cv2.detail', 'cv2.dnn', 'cv2.face', 'cv2.fisheye', 'cv2.flann', 'cv2.freetype', 'cv2.ft', 'cv2.hdf', 'cv2.hfs', 'cv2.img_hash', 'cv2.instr', 'cv2.ipp', 'cv2.line_descriptor', 'cv2.linemod', 'cv2.ml', 'cv2.motempl', 'cv2.multicalib', 'cv2.ocl', 'cv2.ogl', 'cv2.omnidir', 'cv2.optflow', 'cv2.plot', 'cv2.ppf_match_3d', 'cv2.reg', 'cv2.rgbd', 'cv2.saliency', 'cv2.structured_light', 'cv2.text', 'cv2.videostab', 'cv2.xfeatures2d', 'cv2.ximgproc', 'cv2.ximgproc.segmentation', 'cv2.xphoto', 'torch', 'torch._utils', 'torch._utils_internal', 'inspect', 'dis', 'opcode', '_opcode', 'torch.version', 'torch._six', 'queue', '_queue', 'torch._C._onnx', 'torch._C._jit_tree_views', 'torch._C.cpp', 'torch._C.cpp.nn', 'torch._C._cudart', 'torch._C._nvtx', 'torch._C._cudnn', 'torch._C', 'torch.random', 'torch.serialization', 'difflib', 'tarfile', 'copy', 'tempfile', 'torch._tensor_str', 'torch.tensor', 'torch._namedtensor_internals', 'torch.utils', 'torch.utils.throughput_benchmark', 'torch.utils.hooks', 'torch.storage', 'torch.cuda', 'torch.cuda._utils', 'torch.cuda.memory', 'torch.cuda.random', 'torch.cuda.sparse', 'torch.cuda.profiler', 'torch.cuda.nvtx', 'torch.cuda.streams', 'torch.cuda.amp', 'torch.cuda.amp.grad_scaler', 'torch.sparse', 'torch.functional', 'torch.nn', 'torch.nn.modules', 'torch.nn.modules.module', 'torch.nn.parameter', 'torch.nn.modules.linear', 'torch.nn.functional', 'torch.nn._reduction', 'torch.nn.modules.utils', 'torch.nn.grad', 'torch._VF', 'torch._jit_internal', 'typing', 'typing.io', 'typing.re', 'torch._overrides', 'torch.nn.init', 'torch.nn.modules.conv', 'torch.nn.modules.activation', 'torch.nn.modules.loss', 'torch.nn.modules.container', 'torch.nn.modules.pooling', 'torch.nn.modules.batchnorm', 'torch.nn.modules._functions', 'torch.autograd', 'torch.autograd.variable', 'torch.autograd.function', 'torch.autograd.gradcheck', 'torch.testing', 'torch.autograd.grad_mode', 'torch.autograd.anomaly_mode', 'torch.autograd.profiler', 'torch.autograd.functional', 'torch.nn.modules.instancenorm', 'torch.nn.modules.normalization', 'torch.nn.modules.dropout', 'torch.nn.modules.padding', 'torch.nn.modules.sparse', 'torch.nn.modules.rnn', 'torch.nn.utils', 'torch.nn.utils.rnn', 'torch.nn.utils.clip_grad', 'torch.nn.utils.weight_norm', 'torch.nn.utils.convert_parameters', 'torch.nn.utils.spectral_norm', 'torch.nn.utils.fusion', 'torch.nn.utils.memory_format', 'torch.nn.modules.pixelshuffle', 'torch.nn.modules.upsampling', 'torch.nn.modules.distance', 'torch.nn.modules.fold', 'torch.nn.modules.adaptive', 'torch.nn.modules.transformer', 'torch.nn.modules.flatten', 'torch.nn.parallel', 'torch.nn.parallel.parallel_apply', 'torch.nn.parallel.replicate', 'torch.cuda.comm', 'torch.cuda.nccl', 'torch.nn.parallel.data_parallel', 'torch.nn.parallel.scatter_gather', 'torch.nn.parallel._functions', 'torch.nn.parallel.distributed', 'torch.distributed', 'torch.distributed.distributed_c10d', 'torch.distributed.constants', 'torch.distributed.rendezvous', 'torch._lowrank', 'torch._linalg_utils', 'torch.nn.intrinsic', 'torch.nn.intrinsic.modules', 'torch.nn.intrinsic.modules.fused', 'torch.nn.quantized', 'torch.nn.quantized.modules', 'torch.nn.quantized.modules.activation', 'torch.nn.quantized.functional', 'torch.nn.quantized.modules.batchnorm', 'torch.nn.quantized.modules.conv', 'torch.nn.intrinsic.qat', 'torch.nn.intrinsic.qat.modules', 'torch.nn.intrinsic.qat.modules.linear_relu', 'torch.nn.qat', 'torch.nn.qat.modules', 'torch.nn.qat.modules.linear', 'torch.nn.qat.modules.conv', 'torch.nn.intrinsic.qat.modules.conv_fused', 'torch._ops', 'torch.jit', 'torch.jit.annotations', 'torch.jit._recursive', 'torch.jit.frontend', 'string', '_string', 'torch.jit._builtins', 'torch.backends', 'torch.backends.cudnn', 'torch.distributed.autograd', 'torch.nn.quantized.modules.utils', 'torch.nn.quantized.modules.linear', 'torch.nn.quantized.modules.functional_modules', 'torch.optim', 'torch.optim.adadelta', 'torch.optim.optimizer', 'torch.optim.adagrad', 'torch.optim.adam', 'torch.optim.adamw', 'torch.optim.sparse_adam', 'torch.optim.adamax', 'torch.optim.asgd', 'torch.optim.sgd', 'torch.optim.rprop', 'torch.optim.rmsprop', 'torch.optim.lbfgs', 'torch.optim.lr_scheduler', 'torch.multiprocessing', 'torch.multiprocessing.reductions', 'multiprocessing', 'multiprocessing.context', 'multiprocessing.process', 'multiprocessing.reduction', 'socket', '_socket', 'array', '__mp_main__', 'multiprocessing.util', 'atexit', 'multiprocessing.resource_sharer', 'torch.multiprocessing.spawn', 'multiprocessing.connection', '_multiprocessing', 'torch.utils.backcompat', 'torch.onnx', 'torch.hub', 'zipfile', 'urllib.request', 'email', 'http', 'http.client', 'email.parser', 'email.feedparser', 'email.errors', 'email._policybase', 'email.header', 'email.quoprimime', 'email.base64mime', 'email.charset', 'email.encoders', 'quopri', 'email.utils', 'email._parseaddr', 'calendar', 'locale', 'email.message', 'uu', 'email._encoded_words', 'email.iterators', 'ssl', '_ssl', 'urllib.error', 'urllib.response', 'torch.distributions', 'torch.distributions.bernoulli', 'torch.distributions.constraints', 'torch.distributions.exp_family', 'torch.distributions.distribution', 'torch.distributions.utils', 'torch.distributions.beta', 'torch.distributions.dirichlet', 'torch.distributions.binomial', 'torch.distributions.categorical', 'torch.distributions.cauchy', 'torch.distributions.chi2', 'torch.distributions.gamma', 'torch.distributions.constraint_registry', 'torch.distributions.transforms', 'torch.distributions.continuous_bernoulli', 'torch.distributions.exponential', 'torch.distributions.fishersnedecor', 'torch.distributions.geometric', 'torch.distributions.gumbel', 'torch.distributions.uniform', 'torch.distributions.transformed_distribution', 'torch.distributions.half_cauchy', 'torch.distributions.half_normal', 'torch.distributions.normal', 'torch.distributions.independent', 'torch.distributions.kl', 'torch.distributions.laplace', 'torch.distributions.lowrank_multivariate_normal', 'torch.distributions.multivariate_normal', 'torch.distributions.one_hot_categorical', 'torch.distributions.pareto', 'torch.distributions.poisson', 'torch.distributions.log_normal', 'torch.distributions.logistic_normal', 'torch.distributions.mixture_same_family', 'torch.distributions.multinomial', 'torch.distributions.negative_binomial', 'torch.distributions.relaxed_bernoulli', 'torch.distributions.relaxed_categorical', 'torch.distributions.studentT', 'torch.distributions.von_mises', 'torch.distributed.rpc', 'torch.distributed.rpc.api', 'logging', 'torch.distributed.rpc.backend_registry', 'torch.distributed.rpc.constants', 'torch.distributed.rpc.internal', 'torch.distributions.weibull', 'torch.backends.cuda', 'torch.backends.mkl', 'torch.backends.mkldnn', 'torch.backends.openmp', 'torch.backends.quantized', 'torch.quantization', 'torch.quantization.quantize', 'torch.quantization.default_mappings', 'torch.nn.intrinsic.quantized', 'torch.nn.intrinsic.quantized.modules', 'torch.nn.intrinsic.quantized.modules.linear_relu', 'torch.nn.intrinsic.quantized.modules.conv_relu', 'torch.nn.quantized.dynamic', 'torch.nn.quantized.dynamic.modules', 'torch.nn.quantized.dynamic.modules.linear', 'torch.nn.quantized.dynamic.modules.rnn', 'torch.quantization.stubs', 'torch.quantization.qconfig', 'torch.quantization.observer', 'torch.quantization.fake_quantize', 'torch.quantization.fuse_modules', 'torch.utils.data', 'torch.utils.data.sampler', 'torch.utils.data.distributed', 'torch.utils.data.dataset', 'torch.utils.data.dataloader', 'torch.utils.data._utils', 'torch.utils.data._utils.worker', 'torch.utils.data._utils.signal_handling', 'torch.utils.data._utils.pin_memory', 'torch.utils.data._utils.collate', 'torch.utils.data._utils.fetch', 'torch.__config__', 'torch.__future__', 'torch._torch_docs', 'torch._tensor_docs', 'torch._storage_docs', 'torch._classes', 'torch.quasirandom', 'torch.multiprocessing._atfork', 'torch._lobpcg', 'tensorboardX', 'tensorboardX.record_writer', 'tensorboardX.crc32c', 'tensorboardX.torchvis', 'gc', 'tensorboardX.writer', 'json', 'json.decoder', 'json.scanner', '_json', 'json.encoder', 'tensorboardX.embedding', 'tensorboardX.event_file_writer', 'tensorboardX.proto', 'tensorboardX.proto.event_pb2', 'google.protobuf', 'pkg_resources', 'pkgutil', 'plistlib', 'xml', 'xml.parsers', 'xml.parsers.expat', 'pyexpat.errors', 'pyexpat.model', 'pyexpat', 'xml.parsers.expat.model', 'xml.parsers.expat.errors', 'pkg_resources.extern', 'pkg_resources._vendor', 'pkg_resources._vendor.six', 'pkg_resources.extern.six', 'pkg_resources._vendor.six.moves', 'pkg_resources.extern.six.moves', 'pkg_resources._vendor.six.moves.urllib', 'pkg_resources.py31compat', 'pkg_resources._vendor.appdirs', 'pkg_resources.extern.appdirs', 'pkg_resources._vendor.packaging', 'pkg_resources._vendor.packaging.__about__', 'pkg_resources.extern.packaging', 'pkg_resources.extern.packaging.version', 'pkg_resources.extern.packaging._structures', 'pkg_resources.extern.packaging.specifiers', 'pkg_resources.extern.packaging._compat', 'pkg_resources.extern.packaging.requirements', 'pkg_resources._vendor.pyparsing', 'pprint', 'pkg_resources.extern.pyparsing', 'pkg_resources.extern.six.moves.urllib', 'pkg_resources.extern.packaging.markers', 'pkg_resources.py2_warn', 'sysconfig', 'google.protobuf.descriptor', 'google.protobuf.internal', 'google.protobuf.internal.api_implementation', 'google.protobuf.internal._api_implementation', 'google.protobuf.pyext', 'google.protobuf.internal.containers', 'google.protobuf.internal.enum_type_wrapper', 'google.protobuf.message', 'google.protobuf.pyext._message', 'google.protobuf.reflection', 'google.protobuf.message_factory', 'google.protobuf.descriptor_pool', 'google.protobuf.descriptor_database', 'google.protobuf.text_encoding', 'google.protobuf.pyext.cpp_message', 'google.protobuf.symbol_database', 'tensorboardX.proto.summary_pb2', 'tensorboardX.proto.tensor_pb2', 'tensorboardX.proto.resource_handle_pb2', 'google.protobuf.internal.well_known_types', 'tensorboardX.proto.tensor_shape_pb2', 'tensorboardX.proto.types_pb2', 'tensorboardX.onnx_graph', 'tensorboardX.proto.graph_pb2', 'tensorboardX.proto.node_def_pb2', 'tensorboardX.proto.attr_value_pb2', 'tensorboardX.proto.versions_pb2', 'tensorboardX.openvino_graph', 'tensorboardX.pytorch_graph', 'tensorboardX.proto.step_stats_pb2', 'tensorboardX.proto_graph', 'tensorboardX.utils', 'tensorboardX.summary', 'six.moves', 'tensorboardX.proto.plugin_pr_curve_pb2', 'tensorboardX.proto.plugin_text_pb2', 'tensorboardX.proto.plugin_mesh_pb2', 'tensorboardX.proto.layout_pb2', 'tensorboardX.x2num', 'tensorboardX.visdom_writer', 'easydict', 'torchvision', 'torchvision.models', 'torchvision.models.alexnet', 'torchvision.models.utils', 'torchvision.models.resnet', 'torchvision.models.vgg', 'torchvision.models.squeezenet', 'torchvision.models.inception', 'torchvision.models.densenet', 'torch.utils.checkpoint', 'torchvision.models.googlenet', 'torchvision.models.mobilenet', 'torchvision.models.mnasnet', 'torchvision.models.shufflenetv2', 'torchvision.models.segmentation', 'torchvision.models.segmentation.segmentation', 'torchvision.models._utils', 'torchvision.models.segmentation.deeplabv3', 'torchvision.models.segmentation._utils', 'torchvision.models.segmentation.fcn', 'torchvision.models.detection', 'torchvision.models.detection.faster_rcnn', 'torchvision.ops', 'torchvision.ops.boxes', 'torchvision.ops.new_empty_tensor', 'torchvision.ops.deform_conv', 'torchvision.ops.roi_align', 'torchvision.ops._utils', 'torchvision.ops.roi_pool', 'torchvision.ops.ps_roi_align', 'torchvision.ops.ps_roi_pool', 'torchvision.ops.poolers', 'torchvision.ops.feature_pyramid_network', 'torchvision.ops._register_onnx_ops', 'torch.onnx.symbolic_helper', 'torch.onnx.utils', 'torch.onnx.symbolic_opset9', 'torch.onnx.symbolic_registry', 'torch.onnx.symbolic_opset7', 'torch.onnx.symbolic_opset8', 'torch.onnx.symbolic_opset10', 'torch.onnx.symbolic_opset11', 'torch.onnx.symbolic_opset12', 'torchvision.ops.misc', 'torchvision.models.detection.generalized_rcnn', 'torchvision.models.detection.rpn', 'torchvision.models.detection._utils', 'torchvision.models.detection.image_list', 'torchvision.models.detection.roi_heads', 'torchvision.models.detection.transform', 'torchvision.models.detection.backbone_utils', 'torchvision.models.detection.mask_rcnn', 'torchvision.models.detection.keypoint_rcnn', 'torchvision.models.video', 'torchvision.models.video.resnet', 'torchvision.models.quantization', 'torchvision.models.quantization.mobilenet', 'torchvision.models.quantization.utils', 'torchvision.models.quantization.resnet', 'torchvision.models.quantization.googlenet', 'torchvision.models.quantization.inception', 'torchvision.models.quantization.shufflenetv2', 'torchvision.datasets', 'torchvision.datasets.lsun', 'torchvision.datasets.vision', 'PIL', 'PIL._version', 'PIL.Image', 'PIL.ImageMode', 'PIL.TiffTags', 'PIL._binary', 'PIL._util', 'PIL._imaging', 'torchvision.datasets.utils', 'gzip', 'torch.utils.model_zoo', 'torchvision.datasets.folder', 'torchvision.datasets.coco', 'torchvision.datasets.cifar', 'torchvision.datasets.stl10', 'torchvision.datasets.mnist', 'torchvision.datasets.svhn', 'torchvision.datasets.phototour', 'torchvision.datasets.fakedata', 'torchvision.transforms', 'torchvision.transforms.transforms', 'torchvision.transforms.functional', 'PIL.ImageOps', 'PIL.ImageEnhance', 'PIL.ImageFilter', 'PIL.ImageStat', 'torchvision.datasets.semeion', 'torchvision.datasets.omniglot', 'torchvision.datasets.sbu', 'torchvision.datasets.flickr', 'html', 'html.entities', 'html.parser', '_markupbase', 'glob', 'torchvision.datasets.voc', 'xml.etree', 'xml.etree.ElementTree', 'xml.etree.ElementPath', '_elementtree', 'torchvision.datasets.cityscapes', 'torchvision.datasets.imagenet', 'torchvision.datasets.caltech', 'torchvision.datasets.celeba', 'torchvision.datasets.sbd', 'torchvision.datasets.usps', 'torchvision.datasets.kinetics', 'torchvision.datasets.video_utils', 'fractions', 'torchvision.io', 'torchvision.io._video_opt', 'torchvision.io.video', 'torchvision.datasets.hmdb51', 'torchvision.datasets.ucf101', 'torchvision.utils', 'torchvision.extension', 'torchvision.version', 'network_factory', 'backbone', 'backbone.ResNet2015', 'opt_factory', 'loss_factory', 'datasets', 'datasets.loader_factory', 'datasets.cifar', 'datasets.cub200_2011', 'test', 'config', 'utils', 'yaml', 'yaml.error', 'yaml.tokens', 'yaml.events', 'yaml.nodes', 'yaml.loader', 'yaml.reader', 'yaml.scanner', 'yaml.parser', 'yaml.composer', 'yaml.constructor', 'yaml.resolver', 'yaml.dumper', 'yaml.emitter', 'yaml.serializer', 'yaml.representer', 'config_cub', 'backbone.RegNet2020', 'ptflops', 'ptflops.flops_counter', 'multiprocessing.queues', 'multiprocessing.synchronize', 'multiprocessing.popen_fork', 'matplotlib', 'distutils', 'distutils.version', 'matplotlib.cbook', 'shlex', 'matplotlib.cbook.deprecation', 'matplotlib.rcsetup', 'matplotlib.fontconfig_pattern', 'pyparsing', 'matplotlib.colors', 'matplotlib.docstring', 'matplotlib._color_data', 'cycler', 'matplotlib._version', 'matplotlib.ft2font', 'dateutil', 'dateutil._version', 'kiwisolver']
+CACHEDIR=/home/liuhaiyang/.cache/matplotlib
+Using fontManager instance from /home/liuhaiyang/.cache/matplotlib/fontlist-v310.json
+Loaded backend qt5agg version unknown.
+Loaded backend tkagg version unknown.
+Loaded backend agg version unknown.
+Loaded backend agg version unknown.
+findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal bold normal>) = 0.33499999999999996
+findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal bold normal>) = 1.335
+findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'STIXSizeThreeSym' (STIXSizeThreeSym-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Padauk' (Padauk-bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal light normal>) = 11.24
+findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Lato' (Lato-HairlineItalic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'Lato' (Lato-ThinItalic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'STIXGeneral' (STIXGeneral-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntegralsUpSm-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal bold condensed>) = 11.535
+findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal bold condensed>) = 10.535
+findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXSizeFourSym' (STIXSizeFourSym-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'STIXSizeFourSym' (STIXSizeFourSym-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIXNonUnicode' (STIXNonUnicode-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'NanumMyeongjo' (NanumMyeongjoBold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIX' (STIX-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal bold condensed>) = 11.535
+findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-DemiLight.ttc) normal normal light normal>) = 10.24
+findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'STIXSizeThreeSym' (STIXSizeThreeSym-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal medium normal>) = 11.145
+findfont: score(<Font 'STIXSizeOneSym' (STIXSizeOneSym-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIXIntegralsUp' (STIXIntegralsUp-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Padauk Book' (Padauk-book.ttf) normal normal book normal>) = 10.05
+findfont: score(<Font 'STIXGeneral' (STIXGeneral-BoldItalic.otf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Black.ttc) normal normal black normal>) = 10.525
+findfont: score(<Font 'NanumGothic' (NanumGothicBold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Padauk Book' (Padauk-bookbold.ttf) normal normal book normal>) = 10.05
+findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal light normal>) = 11.24
+findfont: score(<Font 'Lato' (Lato-SemiboldItalic.ttf) italic normal semibold normal>) = 11.24
+findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'STIXIntegralsUp' (STIXIntegralsUp-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal light normal>) = 10.24
+findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIX' (STIX-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal regular normal>) = 10.05
+findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXIntegralsSm' (STIXIntegralsSm-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'TakaoPGothic' (fonts-japanese-gothic.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXIntegralsD' (STIXIntegralsD-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntegralsUpSm-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'Lato' (Lato-Hairline.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Thin.ttc) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'STIX' (STIX-Italic.otf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'STIXVariants' (STIXVariants-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIXIntegralsSm' (STIXIntegralsSm-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Lato' (Lato-BoldItalic.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Lato' (Lato-MediumItalic.ttf) italic normal medium normal>) = 11.145
+findfont: score(<Font 'STIXGeneral' (STIXGeneral-Italic.otf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'STIXVariants' (STIXVariants-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal bold condensed>) = 1.535
+findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Medium.ttc) normal normal medium normal>) = 10.145
+findfont: score(<Font 'STIXSizeOneSym' (STIXSizeOneSym-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'Padauk' (Padauk.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'NanumBarunGothic' (NanumBarunGothic.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIX Math' (STIXMath-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal bold condensed>) = 0.5349999999999999
+findfont: score(<Font 'NanumGothic' (NanumGothic.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXIntegralsUpD' (STIXIntegralsUpD-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Lato' (Lato-Regular.ttf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Lato' (Lato-Light.ttf) normal normal light normal>) = 10.24
+findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'NanumMyeongjo' (NanumMyeongjo.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXNonUnicode' (STIXNonUnicode-Italic.otf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'Lato' (Lato-Thin.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+findfont: score(<Font 'STIXSizeFiveSym' (STIXSizeFiveSym-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Lohit Punjabi' (Lohit-Punjabi.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Lato' (Lato-Semibold.ttf) normal normal semibold normal>) = 10.24
+findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal bold condensed>) = 10.535
+findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Lato' (Lato-Italic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'STIXGeneral' (STIXGeneral-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'STIXIntegralsD' (STIXIntegralsD-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal light normal>) = 0.24
+findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-R.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'NanumBarunGothic' (NanumBarunGothicBold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Lato' (Lato-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'STIXNonUnicode' (STIXNonUnicode-BoldItalic.otf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal light normal>) = 10.24
+findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Symbola' (Symbola_hint.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Lato' (Lato-Black.ttf) normal normal black normal>) = 10.525
+findfont: score(<Font 'STIXSizeTwoSym' (STIXSizeTwoSym-Bold.otf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Lato' (Lato-Heavy.ttf) normal normal heavy normal>) = 10.43
+findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal book normal>) = 10.05
+findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Light.ttc) normal normal light normal>) = 10.24
+findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'STIXNonUnicode' (STIXNonUnicode-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal bold normal>) = 10.335
+findfont: score(<Font 'Lato' (Lato-HeavyItalic.ttf) italic normal heavy normal>) = 11.43
+findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+findfont: score(<Font 'STIX' (STIX-BoldItalic.otf) italic normal bold normal>) = 11.335
+findfont: score(<Font 'STIXIntegralsUpD' (STIXIntegralsUpD-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Lato' (Lato-BlackItalic.ttf) italic normal black normal>) = 11.525
+findfont: score(<Font 'Lato' (Lato-Medium.ttf) normal normal medium normal>) = 10.145
+findfont: score(<Font 'STIXSizeTwoSym' (STIXSizeTwoSym-Regular.otf) normal normal regular normal>) = 10.05
+findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal medium normal>) = 10.145
+findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+findfont: score(<Font 'Lato' (Lato-LightItalic.ttf) italic normal light normal>) = 11.24
+findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+findfont: score(<Font 'TakaoPGothic' (TakaoPGothic.ttf) normal normal 400 normal>) = 10.05
+findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/liuhaiyang/.conda/envs/ptnew/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.

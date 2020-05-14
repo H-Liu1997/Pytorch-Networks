@@ -1,0 +1,94 @@
+DATASET_TRPE: cub200_2011
+DETERMINISTIC:
+  CUDNN: true
+  SEED: 70
+GPUS:
+- 0
+MODEL:
+  BASE: 64
+  BLOCK: bottleneck
+  BLOCK_LIST:
+  - 3
+  - 4
+  - 6
+  - 3
+  CLASS_NUM: 200
+  CONV1:
+  - 7
+  - 2
+  - 3
+  DROPOUT: 0
+  IN_DIM: 3
+  LOSS: bce_only_g
+  MAX_POOL: true
+  NAME: resnet
+  OPERATION: B
+  PRETRAINED: false
+  REGNET: !!python/object/new:easydict.EasyDict
+    dictitems:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MUL: 1.0
+      DEPTH: 23
+      GROUP_W: 40
+      SE_ON: false
+      SE_R: 0.25
+      STEM_TYPE: simple_stem_in
+      STEM_W: 32
+      STRIDE: 2
+      W0: 96
+      WA: 38.65
+      WM: 2.43
+    state:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MUL: 1.0
+      DEPTH: 23
+      GROUP_W: 40
+      SE_ON: false
+      SE_R: 0.25
+      STEM_TYPE: simple_stem_in
+      STEM_W: 32
+      STRIDE: 2
+      W0: 96
+      WA: 38.65
+      WM: 2.43
+  STRIDE1: 1
+  USE_FC: true
+PATH:
+  BESTMODEL: /bestmodel.pth
+  DATA:
+  - /home/liuhaiyang/dataset/CUB_200_2011/images.txt
+  - /home/liuhaiyang/dataset/CUB_200_2011/train_test_split.txt
+  - /home/liuhaiyang/dataset/CUB_200_2011/images/
+  EVAL:
+  - /home/liuhaiyang/dataset/CUB_200_2011/images.txt
+  - /home/liuhaiyang/dataset/CUB_200_2011/train_test_split.txt
+  - /home/liuhaiyang/dataset/CUB_200_2011/images/
+  EXPS: ./exps/
+  LABEL: /home/liuhaiyang/dataset/CUB_200_2011/image_class_labels.txt
+  LOG: /log.txt
+  MODEL: /model.pth
+  NAME: res_50_cub_v17
+  RESULTS: /results/
+  RES_TEST: ./res_imgs/
+  TEST: /home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1
+PRINT_FRE: 150
+SHORT_TEST: false
+TRAIN:
+  BATCHSIZE: 8
+  BETA1: 0.9
+  BETA2: 0.999
+  CROP: 224
+  EPOCHS: 40
+  L1SCALING: 100
+  LR: 0.001
+  LR_FACTOR: 0.1
+  LR_REDUCE:
+  - 26
+  - 36
+  LR_TYPR: stone
+  NUM_WORKERS: 16
+  PAD: 0
+  RESIZE: 300
+  TYPE: sgd
+  USE_AUG: true
+  WEIGHT_DECAY: 0.0001

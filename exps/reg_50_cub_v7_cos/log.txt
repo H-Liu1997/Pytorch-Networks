@@ -1,0 +1,22 @@
+start creating config files...
+update config files success
+Computational complexity:       4.0 GMac
+Number of parameters:           21.03 M 
+no checkpoints
+[0][0/750]	Loss:5.34323	Lr:0.000002	Data:1745ms	Train:0457ms	Mem:1.19Gb	Prec@1:0.0000
+[0][300/750]	Loss:5.37059	Lr:0.000202	Data:0031ms	Train:0228ms	Mem:1.19Gb	Prec@1:0.0046
+[0][600/750]	Loss:5.14196	Lr:0.000402	Data:0007ms	Train:0117ms	Mem:1.19Gb	Prec@1:0.0067
+[0][0/725]	Loss:4.91147	Lr:0.000000	Data:1355ms	Train:0011ms	Mem:1.25Gb	Prec@1:0.0000
+[0][300/725]	Loss:4.93353	Lr:0.000000	Data:0067ms	Train:0029ms	Mem:1.25Gb	Prec@1:0.0395
+[0][600/725]	Loss:5.16680	Lr:0.000000	Data:0058ms	Train:0037ms	Mem:1.25Gb	Prec@1:0.0331
+Train Prec@1:0.0093	Val Prec@1:0.0287
+BestV Prec@1:0.0287	Best Epoch:0
+[1][0/750]	Loss:5.26169	Lr:0.000502	Data:1617ms	Train:0186ms	Mem:1.25Gb	Prec@1:0.0000
+[1][300/750]	Loss:5.02053	Lr:0.000702	Data:0009ms	Train:0156ms	Mem:1.25Gb	Prec@1:0.0395
+[1][600/750]	Loss:4.15812	Lr:0.000902	Data:0005ms	Train:0109ms	Mem:1.25Gb	Prec@1:0.0543
+[1][0/725]	Loss:2.63676	Lr:0.000000	Data:1340ms	Train:0010ms	Mem:1.25Gb	Prec@1:0.5000
+[1][300/725]	Loss:2.78093	Lr:0.000000	Data:0068ms	Train:0049ms	Mem:1.25Gb	Prec@1:0.2728
+[1][600/725]	Loss:3.64982	Lr:0.000000	Data:0047ms	Train:0113ms	Mem:1.25Gb	Prec@1:0.2598
+Train Prec@1:0.0662	Val Prec@1:0.2722
+BestV Prec@1:0.2722	Best Epoch:1
+[2][0/750]	Loss:4.50470	Lr:0.001000	Data:1313ms	Train:0198ms	Mem:1.25Gb	Prec@1:0.0000
