@@ -114,12 +114,12 @@ def trainer(cfg):
 if __name__ == "__main__":
     from config import cfg
     trainer(cfg)
-    from config1 import cfg
-    trainer(cfg)
-    from config2 import cfg
-    trainer(cfg)
-    from config3 import cfg
-    trainer(cfg)
+    # from config1 import cfg
+    # trainer(cfg)
+    # from config2 import cfg
+    # trainer(cfg)
+    # from config3 import cfg
+    # trainer(cfg)
 
     # from config2 import cfg
     # main(cfg)            
