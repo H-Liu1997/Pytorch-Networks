@@ -53,7 +53,7 @@ class BasicBlock(nn.Module):
 
 class BottleNeck(nn.Module):
     expansion = 4
-    def __init__(self,in_dim,out_dim,stride=1):
+    def __init__(self,in_dim,out_dim,stride=1,op="B"):
         super(BottleNeck,self).__init__()
         self.subconv_1 = nn.Sequential(
             nn.Conv2d(in_dim,int(out_dim/self.expansion),1,stride,0,bias=False),
@@ -68,7 +68,7 @@ class BottleNeck(nn.Module):
             nn.Conv2d(int(out_dim/self.expansion),out_dim,1,1,0,bias=False),
             nn.BatchNorm2d(out_dim),)
         if in_dim == out_dim and stride == 1:
-            self.downsample = None
+            self.downsample = nn.Sequential()
         else:
             self.downsample = nn.Sequential(
                 nn.Conv2d(in_dim,out_dim,1,stride,0,bias=False),
@@ -76,13 +76,10 @@ class BottleNeck(nn.Module):
             )
 
     def forward(self,input_):
-        x_input = input_
         x_0 = self.subconv_1(input_)
         x_1 = self.subconv_2(x_0)
         x_2 = self.subconv_3(x_1)
-        if self.downsample is not None:
-            x_input = self.downsample(input_)
-            print(x_input.shape)
+        x_input = self.downsample(input_)
         x_final = F.relu(x_input+x_2,inplace=True)
         return x_final
     
@@ -119,6 +116,10 @@ class ResNet(nn.Module):
         else:
             self.avgpool_1 = nn.Sequential()
             self.fc_1 = nn.Sequential()
+        if cfg.DROPOUT > 0: 
+            self.dropout = nn.Dropout(p=cfg.DROPOUT)
+        else:
+            self.dropout = nn.Sequential()
         self.logger = logger
         self.pretrained = cfg.PRETRAINED
         self._initialization()
@@ -167,6 +168,7 @@ class ResNet(nn.Module):
         x = self.layer_3(x)
         x = self.layer_4(x)
         x = self.avgpool_1(x)
+        x = self.dropout(x)
         x = self.fc_1(x)
         return x       
 

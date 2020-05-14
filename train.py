@@ -38,10 +38,37 @@ def trainer(cfg):
     logger = load_cfg(cfg) 
     fix_random_seed(cfg)    
    
-    train_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.DATA, 'train', cfg=cfg.TRAIN, logger=logger)
-    val_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.EVAL, 'eval', cfg=cfg.TRAIN, logger=logger)
+    train_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.DATA, 'train', label_path=cfg.PATH.LABEL, cfg=cfg.TRAIN, logger=logger)
+    val_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.EVAL, 'eval',label_path=cfg.PATH.LABEL, cfg=cfg.TRAIN, logger=logger)
     
-    model = get_network(cfg.MODEL.NAME, cfg=cfg.MODEL, logger=logger)
+    from torchvision import models
+    import torch.nn as nn
+    class ResNet(nn.Module):
+        def __init__(self, pre_trained=True, n_class=200, model_choice=50):
+            super(ResNet, self).__init__()
+            self.n_class = n_class
+            self.base_model = self._model_choice(pre_trained, model_choice)
+            self.base_model.avgpool = nn.AdaptiveAvgPool2d((1,1))
+            self.base_model.fc = nn.Linear(512*4, n_class)
+            #self.base_model.fc.apply(weight_init_kaiming)
+
+        def forward(self, x):
+            N = x.size(0)
+            assert x.size() == (N, 3, 448, 448)
+            x = self.base_model(x)
+            assert x.size() == (N, self.n_class)
+            return x
+
+        def _model_choice(self, pre_trained, model_choice):
+            if model_choice == 50:
+                return models.resnet50(pretrained=pre_trained)
+            elif model_choice == 101:
+                return models.resnet101(pretrained=pre_trained)
+            elif model_choice == 152:
+                return models.resnet152(pretrained=pre_trained)
+
+    model = ResNet()
+    #model = get_network(cfg.MODEL.NAME, cfg=cfg.MODEL, logger=logger)
     model = torch.nn.DataParallel(model, cfg.GPUS).cuda() if torch.cuda.is_available() else model
     model_complexity(model,cfg,logger)
 
@@ -112,14 +139,8 @@ def trainer(cfg):
 
 
 if __name__ == "__main__":
-    from config import cfg
+    from config_cub import cfg
     trainer(cfg)
-    # from config1 import cfg
-    # trainer(cfg)
-    # from config2 import cfg
-    # trainer(cfg)
-    # from config3 import cfg
-    # trainer(cfg)
-
+   
     # from config2 import cfg
     # main(cfg)            

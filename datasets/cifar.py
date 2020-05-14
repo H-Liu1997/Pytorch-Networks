@@ -14,7 +14,7 @@ def unpickle(file):
 
 
 class CIFARData(torch.utils.data.Dataset):
-    def __init__(self, img_path, dtype='train', label_path=None, aug=None):
+    def __init__(self, img_path, dtype='train', label_path=None, aug=None, cfg=None):
         self.data_full = unpickle(img_path[0])
         self.data = np.array(self.data_full[b'data'])
         self.label = np.array(self.data_full[b'labels'])
