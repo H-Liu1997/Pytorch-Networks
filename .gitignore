@@ -7,3 +7,13 @@ exps/res_50_cub_v15/model.pth
 exps/res_50_cub_v17/bestmodel.pth
 exps/res_50_cub_v17/model.pth
 exps/reg_50_cub_v7_cos/bestmodel.pth
+exps/eff_cub_v2_stone/model.pth
+exps/pretrain/effnet/EN-B2_dds_8gpu.pyth
+exps/pretrain/resnext/X-50-32x4d_dds_8gpu.pyth
+exps/pretrain/regnet/RegNetY-8.0GF_dds_8gpu.pyth
+exps/reg_50_cub_v8_cos/bestmodel.pth
+exps/reg_50_cub_v8_cos/model.pth
+exps/reg_y_cub_v10_stone/bestmodel.pth
+exps/reg_y_cub_v10_stone/model.pth
+exps/reg_y_cub_v9_cos/bestmodel.pth
+exps/reg_y_cub_v9_cos/model.pth

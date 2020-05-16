@@ -41,7 +41,6 @@ def trainer(cfg):
     train_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.DATA, 'train', label_path=cfg.PATH.LABEL, cfg=cfg.TRAIN, logger=logger)
     val_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.EVAL, 'eval',label_path=cfg.PATH.LABEL, cfg=cfg.TRAIN, logger=logger)
     its_num = len(train_loader)
-    from backbone.RegNet2020 import RegNet
     # from torchvision import models
     # import torch.nn as nn
     # class ResNet(nn.Module):
@@ -68,20 +67,11 @@ def trainer(cfg):
     #         elif model_choice == 152:
     #             return models.resnet152(pretrained=pre_trained)
 
-    model = RegNet()
-    checkpoints = torch.load('./RegNetX-4.0GF_dds_8gpu.pyth')
-    from collections import OrderedDict
-    states_no_module = OrderedDict()
-    for k, v in checkpoints['model_state'].items():
-        if k != 'head.fc.weight' and k!= 'head.fc.bias':
-            name_no_module = k
-            states_no_module[name_no_module] = v
-    model.load_state_dict(states_no_module,strict=False)
-    #model.load_state_dict(state,strict=False)
-    #model = get_network(cfg.MODEL.NAME, cfg=cfg.MODEL, logger=logger)
+    model = get_network(cfg.MODEL.NAME, cfg=cfg.MODEL, logger=logger)
     model = torch.nn.DataParallel(model, cfg.GPUS).cuda() if torch.cuda.is_available() else model
     model_complexity(model,cfg,logger)
 
+    cfg.TRAIN.LR_REDUCE = [int(its_num*x) for x in cfg.TRAIN.LR_REDUCE]
     opt_t,lr_scheduler_t = get_opt(model, cfg.TRAIN, logger, 
         its_total=(cfg.TRAIN.EPOCHS-cfg.TRAIN.WARMUP)*its_num)
     if cfg.TRAIN.WARMUP != 0:
@@ -98,7 +88,9 @@ def trainer(cfg):
     loss_total = []
     losss_val_total = []
     best_val = [0,0]
+   
     for epoch in range(current_epoch, cfg.TRAIN.EPOCHS):
+        start_time = time.time()
         if epoch < cfg.TRAIN.WARMUP:
             opt = warm_opt
             lr_scheduler = warm_scheduler
@@ -137,7 +129,7 @@ def trainer(cfg):
                     break
 
         save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.MODEL, model, opt, epoch,lr_scheduler)
-        acc_val, loss_val = val(val_loader, model, logger, loss_func, epoch, print_fre=cfg.PRINT_FRE)
+        acc_val, loss_val = val(val_loader, model, logger, loss_func, epoch, print_fre=cfg.PRINT_FRE,)
         log_writter.add_scalars("acc",{'acc_train':acc_train_class.print_(),
                                      'acc_val':acc_val,},
                                      epoch)
@@ -145,7 +137,8 @@ def trainer(cfg):
         acc_val_total.append(acc_val)
         loss_total.append(loss_train_calss.avg())
         losss_val_total.append(loss_val)
-        logger.info('Train Prec@1:%.4f\t'%(acc_train_class.print_())+'Val Prec@1:%.4f'%(acc_val))
+        end_time = time.time()-start_time
+        logger.info('Train Prec@1:%.4f\t'%(acc_train_class.print_())+'Val Prec@1:%.4f\t'%(acc_val)+'Epoch Time:%.2fmin'%(end_time/60))
         if best_val[0] < acc_val:
             best_val[0] = acc_val
             best_val[1] = epoch

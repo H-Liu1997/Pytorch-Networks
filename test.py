@@ -34,8 +34,8 @@ def test(test_loader, model, logger=None, Writer=None):
 
 
 def val(val_loader, model, logger=None, loss_function=None, epoch=0, print_fre=50):  
-    its_num = len(val_loader)
     model.eval()
+    its_num = len(val_loader)
     acc_single_val = CalculateAcc()
     loss_val = SelfData()
     data_begin = time.time()

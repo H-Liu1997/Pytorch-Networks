@@ -1,0 +1,203 @@
+DATASET_TRPE: cub200_2011
+DETERMINISTIC:
+  CUDNN: true
+  SEED: 60
+GPUS:
+- 0
+MODEL:
+  ANYNET: !!python/object/new:easydict.EasyDict
+    dictitems:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MULS: &id001
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.5
+      DEPTHS: &id002
+      - 3
+      - 4
+      - 6
+      - 3
+      GROUP_WS: &id003
+      - 4
+      - 8
+      - 16
+      - 32
+      SE_ON: false
+      SE_R: 0.25
+      STEM_TYPE: res_stem_in
+      STEM_W: 64
+      STRIDES: &id004
+      - 1
+      - 2
+      - 2
+      - 2
+      WIDTHS: &id005
+      - 256
+      - 512
+      - 1024
+      - 2048
+    state:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MULS: *id001
+      DEPTHS: *id002
+      GROUP_WS: *id003
+      SE_ON: false
+      SE_R: 0.25
+      STEM_TYPE: res_stem_in
+      STEM_W: 64
+      STRIDES: *id004
+      WIDTHS: *id005
+  BASE: 64
+  BLOCK: bottleneck
+  BLOCK_LIST:
+  - 3
+  - 4
+  - 6
+  - 3
+  CLASS_NUM: 200
+  CONV1:
+  - 7
+  - 2
+  - 3
+  DROPOUT: 0
+  EFFNET: !!python/object/new:easydict.EasyDict
+    dictitems:
+      DC_RATIO: 0.0
+      DEPTHS: &id006
+      - 2
+      - 3
+      - 3
+      - 4
+      - 4
+      - 5
+      - 2
+      EXP_RATIOS: &id007
+      - 1
+      - 6
+      - 6
+      - 6
+      - 6
+      - 6
+      - 6
+      GROUP_WS: &id008
+      - 4
+      - 8
+      - 16
+      - 32
+      HEAD_W: 1408
+      KERNELS: &id009
+      - 3
+      - 3
+      - 5
+      - 3
+      - 5
+      - 5
+      - 3
+      SE_R: 0.25
+      STEM_W: 32
+      STRIDES: &id010
+      - 1
+      - 2
+      - 2
+      - 2
+      - 1
+      - 2
+      - 1
+      WIDTHS: &id011
+      - 16
+      - 24
+      - 48
+      - 88
+      - 120
+      - 208
+      - 352
+    state:
+      DC_RATIO: 0.0
+      DEPTHS: *id006
+      EXP_RATIOS: *id007
+      GROUP_WS: *id008
+      HEAD_W: 1408
+      KERNELS: *id009
+      SE_R: 0.25
+      STEM_W: 32
+      STRIDES: *id010
+      WIDTHS: *id011
+  IN_DIM: 3
+  LOSS: bce_only_g
+  MAX_POOL: true
+  NAME: effnet
+  OPERATION: B
+  PRETRAIN: EfficientNet-B2
+  PRETRAIN_PATH: ./exps/pretrain/
+  REGNET: !!python/object/new:easydict.EasyDict
+    dictitems:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MUL: 1.0
+      DEPTH: 17
+      GROUP_W: 56
+      SE_ON: true
+      SE_R: 0.25
+      STEM_TYPE: simple_stem_in
+      STEM_W: 32
+      STRIDE: 2
+      W0: 192
+      WA: 76.82
+      WM: 2.19
+    state:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MUL: 1.0
+      DEPTH: 17
+      GROUP_W: 56
+      SE_ON: true
+      SE_R: 0.25
+      STEM_TYPE: simple_stem_in
+      STEM_W: 32
+      STRIDE: 2
+      W0: 192
+      WA: 76.82
+      WM: 2.19
+  STRIDE1: 1
+  USE_FC: true
+PATH:
+  BESTMODEL: /bestmodel.pth
+  DATA:
+  - /home/liuhaiyang/dataset/CUB_200_2011/images.txt
+  - /home/liuhaiyang/dataset/CUB_200_2011/train_test_split.txt
+  - /home/liuhaiyang/dataset/CUB_200_2011/images/
+  EVAL:
+  - /home/liuhaiyang/dataset/CUB_200_2011/images.txt
+  - /home/liuhaiyang/dataset/CUB_200_2011/train_test_split.txt
+  - /home/liuhaiyang/dataset/CUB_200_2011/images/
+  EXPS: ./exps/
+  LABEL: /home/liuhaiyang/dataset/CUB_200_2011/image_class_labels.txt
+  LOG: /log.txt
+  MODEL: /model.pth
+  NAME: eff_cub_v2_stone
+  RESULTS: /results/
+  RES_TEST: ./res_imgs/
+  TEST: /home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1
+PRINT_FRE: 300
+SHORT_TEST: false
+TRAIN:
+  BATCHSIZE: 8
+  BETA1: 0.9
+  BETA2: 0.999
+  CROP: 260
+  EPOCHS: 40
+  L1SCALING: 100
+  LR: 0.001
+  LR_FACTOR: 0.1
+  LR_REDUCE:
+  - 26
+  - 36
+  LR_TYPE: stone
+  LR_WARM: 1.0e-07
+  NUM_WORKERS: 16
+  PAD: 0
+  RESIZE: 300
+  ROATION: 30
+  TYPE: sgd
+  USE_AUG: true
+  WARMUP: 0
+  WEIGHT_DECAY: 0.0001

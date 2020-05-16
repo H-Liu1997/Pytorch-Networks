@@ -1,9 +1,6 @@
 #import pycls.core.net as net
 import torch.nn as nn
 import numpy as np
-from config_cub import cfg
-
-cfg = cfg.MODEL
 
 def get_stem_fun(stem_type):
     """Retrieves the stem function by name."""
@@ -336,7 +333,7 @@ class AnyNet(nn.Module):
     """AnyNet model."""
 
     @staticmethod
-    def get_args():
+    def get_args(cfg):
         return {
             "stem_type": cfg.ANYNET.STEM_TYPE,
             "stem_w": cfg.ANYNET.STEM_W,
@@ -347,13 +344,12 @@ class AnyNet(nn.Module):
             "bms": cfg.ANYNET.BOT_MULS,
             "gws": cfg.ANYNET.GROUP_WS,
             "se_r": cfg.ANYNET.SE_R if cfg.ANYNET.SE_ON else None,
-            "nc": 200,
+            "nc": cfg.CLASS_NUM,
         }
 
-    def __init__(self, **kwargs):
-        print(kwargs)
+    def __init__(self, cfg, logger, **kwargs):
         super(AnyNet, self).__init__()
-        #kwargs = self.get_args() if not kwargs else kwargs
+        kwargs = self.get_args(cfg) if not kwargs else kwargs
         self._construct(**kwargs)
         #self.apply(net.init_weights)
 
@@ -438,7 +434,7 @@ class RegNet(AnyNet):
     """RegNet model."""
 
     @staticmethod
-    def get_args():
+    def get_args(cfg):
         """Convert RegNet to AnyNet parameter format."""
         # Generate RegNet ws per block
         w_a, w_0, w_m, d = cfg.REGNET.WA, cfg.REGNET.W0, cfg.REGNET.WM, cfg.REGNET.DEPTH
@@ -462,12 +458,12 @@ class RegNet(AnyNet):
             "bms": s_bs,
             "gws": s_gs,
             "se_r": cfg.REGNET.SE_R if cfg.REGNET.SE_ON else None,
-            "nc": 200,
+            "nc": cfg.CLASS_NUM,
         }
 
-    def __init__(self):
-        kwargs = RegNet.get_args()
-        super(RegNet, self).__init__(**kwargs)
+    def __init__(self, cfg=None, logger=None):
+        kwargs = RegNet.get_args(cfg)
+        super(RegNet, self).__init__(cfg, logger, **kwargs)
 
     # @staticmethod
     # def complexity(cx, **kwargs):

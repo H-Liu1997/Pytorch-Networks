@@ -1,0 +1,15 @@
+start creating config files...
+update config files success
+load effnet pretrain weight success
+Computational complexity:       1.03 GMac
+Number of parameters:           7.98 M  
+no checkpoints
+[0][0/750]	Loss:5.12758	Lr:0.001000	Data:1455ms	Train:0663ms	Mem:2.17Gb	Prec@1:0.0000
+[0][300/750]	Loss:5.26990	Lr:0.001000	Data:0001ms	Train:0192ms	Mem:2.17Gb	Prec@1:0.0141
+[0][600/750]	Loss:4.93266	Lr:0.001000	Data:0044ms	Train:0166ms	Mem:2.17Gb	Prec@1:0.0341
+[0][0/725]	Loss:4.00672	Lr:0.000000	Data:1291ms	Train:0013ms	Mem:2.20Gb	Prec@1:0.1250
+[0][300/725]	Loss:4.86306	Lr:0.000000	Data:0006ms	Train:0171ms	Mem:2.20Gb	Prec@1:0.1968
+[0][600/725]	Loss:4.15941	Lr:0.000000	Data:0030ms	Train:0062ms	Mem:2.20Gb	Prec@1:0.1882
+Train Prec@1:0.0437	Val Prec@1:0.1771	Epoch Time:3.46min
+BestV Prec@1:0.1771	Best Epoch:0
+[1][0/750]	Loss:4.71530	Lr:0.001000	Data:1588ms	Train:0335ms	Mem:2.20Gb	Prec@1:0.2500
