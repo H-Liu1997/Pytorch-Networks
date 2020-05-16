@@ -17,3 +17,7 @@ exps/reg_y_cub_v10_stone/bestmodel.pth
 exps/reg_y_cub_v10_stone/model.pth
 exps/reg_y_cub_v9_cos/bestmodel.pth
 exps/reg_y_cub_v9_cos/model.pth
+exps/eff_cub_v2_stone/bestmodel.pth
+exps/rest_cub_v3_stone/bestmodel.pth
+exps/rest_cub_v3_stone/model.pth
+exps/eff_cub_v2_stone/bestmodel.pth

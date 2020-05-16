@@ -18,6 +18,12 @@
 |[ResNet-110](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_110_la)|  CIFAR-10  | 1.73M | 82,123,164 |**93.57%**  |  93.40%   |
 |[ResNet-18(A)](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_18_100_150)|  CIFAR-10  | 11.0M |100,150,200|- | **93.54%**   |
 |[ResNet-18(B)](https://github.com/HaiyangLiu1997/Pytorch-Networks/tree/master/exps/res_18_100_150_b)|  CIFAR-10  | 11.17M |80,110,120|- | **94.51%**  |
+|ResNet-50|  CUB-200  | 23.92M |26,36,40|- | **81.74%**  |
+|RegNetX-4.0|  CUB-200  | 21.03M |26,36,40|- | **84.31%**  |
+|RegNetY-8.0|  CUB-200  | 37.57M |26,36,40|- | **84.40%**  |
+|RegNetY-8.0|  CUB-200  | 37.57M |cos60+wp|- | **84.86%**  |
+|EfficientNet-B2|  CUB-200  | 7.98M |26,36,40|- | **82.60%**  |
+
 
 
 **For backbone networks**

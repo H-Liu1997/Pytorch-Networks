@@ -14,7 +14,7 @@ cfg.PATH.EVAL = ['/home/liuhaiyang/dataset/CUB_200_2011/images.txt',
 cfg.PATH.TEST = '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1'
 cfg.PATH.RES_TEST = './res_imgs/'
 cfg.PATH.EXPS = './exps/'
-cfg.PATH.NAME = 'eff_cub_v2_stone'
+cfg.PATH.NAME = 'rest_cub_v3_stone'
 cfg.PATH.MODEL = '/model.pth'
 cfg.PATH.BESTMODEL = '/bestmodel.pth'
 cfg.PATH.LOG = '/log.txt'
@@ -43,18 +43,18 @@ cfg.TRAIN.WARMUP = 0
 cfg.TRAIN.LR_WARM = 1e-7
 #-------- data aug --------#
 cfg.TRAIN.USE_AUG = True
-cfg.TRAIN.CROP = 260
+cfg.TRAIN.CROP = 224
 cfg.TRAIN.PAD = 0
 cfg.TRAIN.RESIZE = 300
 cfg.TRAIN.ROATION = 30
 
 
 cfg.MODEL = edict()
-cfg.MODEL.NAME = 'effnet'
+cfg.MODEL.NAME = 'resnext'
 cfg.MODEL.IN_DIM = 3
 cfg.MODEL.CLASS_NUM = 200 
 cfg.MODEL.USE_FC = True
-cfg.MODEL.PRETRAIN = 'EfficientNet-B2'
+cfg.MODEL.PRETRAIN = 'ResNeXt-50'
 cfg.MODEL.PRETRAIN_PATH = './exps/pretrain/'
 cfg.MODEL.DROPOUT = 0
 cfg.MODEL.LOSS = 'bce_only_g' 

@@ -1,0 +1,60 @@
+start creating config files...
+update config files success
+load resnext pretrain weight success
+Computational complexity:       4.27 GMac
+Number of parameters:           23.39 M 
+no checkpoints
+[0][0/750]	Loss:5.28249	Lr:0.001000	Data:1381ms	Train:0504ms	Mem:1.22Gb	Prec@1:0.0000
+[0][300/750]	Loss:4.71996	Lr:0.001000	Data:0015ms	Train:0247ms	Mem:1.31Gb	Prec@1:0.0237
+[0][600/750]	Loss:4.12792	Lr:0.001000	Data:0010ms	Train:0098ms	Mem:1.31Gb	Prec@1:0.0555
+[0][0/725]	Loss:2.06687	Lr:0.000000	Data:1401ms	Train:0009ms	Mem:1.32Gb	Prec@1:0.6250
+[0][300/725]	Loss:3.36311	Lr:0.000000	Data:0046ms	Train:0051ms	Mem:1.32Gb	Prec@1:0.3393
+[0][600/725]	Loss:3.40236	Lr:0.000000	Data:0032ms	Train:0052ms	Mem:1.32Gb	Prec@1:0.2768
+Train Prec@1:0.0687	Val Prec@1:0.2692	Epoch Time:3.31min
+BestV Prec@1:0.2692	Best Epoch:0
+[1][0/750]	Loss:3.30751	Lr:0.001000	Data:1570ms	Train:0128ms	Mem:1.32Gb	Prec@1:0.2500
+[1][300/750]	Loss:3.55681	Lr:0.001000	Data:0022ms	Train:0121ms	Mem:1.32Gb	Prec@1:0.2072
+[1][600/750]	Loss:2.65163	Lr:0.001000	Data:0014ms	Train:0189ms	Mem:1.32Gb	Prec@1:0.2365
+[1][0/725]	Loss:1.86041	Lr:0.000000	Data:1407ms	Train:0009ms	Mem:1.32Gb	Prec@1:0.5000
+[1][300/725]	Loss:0.72629	Lr:0.000000	Data:0036ms	Train:0049ms	Mem:1.32Gb	Prec@1:0.5523
+[1][600/725]	Loss:2.19499	Lr:0.000000	Data:0012ms	Train:0194ms	Mem:1.32Gb	Prec@1:0.4952
+Train Prec@1:0.2548	Val Prec@1:0.5007	Epoch Time:3.25min
+BestV Prec@1:0.5007	Best Epoch:1
+[2][0/750]	Loss:2.86959	Lr:0.001000	Data:1607ms	Train:0208ms	Mem:1.32Gb	Prec@1:0.5000
+[2][300/750]	Loss:2.60669	Lr:0.001000	Data:0017ms	Train:0114ms	Mem:1.32Gb	Prec@1:0.3667
+[2][600/750]	Loss:2.47824	Lr:0.001000	Data:0012ms	Train:0166ms	Mem:1.32Gb	Prec@1:0.3860
+[2][0/725]	Loss:1.28250	Lr:0.000000	Data:1336ms	Train:0009ms	Mem:1.32Gb	Prec@1:0.5000
+[2][300/725]	Loss:0.15683	Lr:0.000000	Data:0038ms	Train:0008ms	Mem:1.32Gb	Prec@1:0.6466
+[2][600/725]	Loss:0.62498	Lr:0.000000	Data:0054ms	Train:0077ms	Mem:1.32Gb	Prec@1:0.5909
+Train Prec@1:0.3889	Val Prec@1:0.5944	Epoch Time:3.24min
+BestV Prec@1:0.5944	Best Epoch:2
+[3][0/750]	Loss:1.76074	Lr:0.001000	Data:1589ms	Train:0136ms	Mem:1.32Gb	Prec@1:0.6250
+[3][300/750]	Loss:2.28540	Lr:0.001000	Data:0029ms	Train:0159ms	Mem:1.32Gb	Prec@1:0.4551
+[3][600/750]	Loss:1.98954	Lr:0.001000	Data:0008ms	Train:0107ms	Mem:1.32Gb	Prec@1:0.4642
+[3][0/725]	Loss:1.78151	Lr:0.000000	Data:1376ms	Train:0009ms	Mem:1.32Gb	Prec@1:0.6250
+[3][300/725]	Loss:0.05842	Lr:0.000000	Data:0072ms	Train:0041ms	Mem:1.32Gb	Prec@1:0.6495
+[3][600/725]	Loss:0.68931	Lr:0.000000	Data:0023ms	Train:0110ms	Mem:1.32Gb	Prec@1:0.6325
+Train Prec@1:0.4718	Val Prec@1:0.6464	Epoch Time:3.24min
+BestV Prec@1:0.6464	Best Epoch:3
+[4][0/750]	Loss:3.03962	Lr:0.001000	Data:1481ms	Train:0144ms	Mem:1.32Gb	Prec@1:0.5000
+[4][300/750]	Loss:2.85413	Lr:0.001000	Data:0035ms	Train:0155ms	Mem:1.32Gb	Prec@1:0.5374
+[4][600/750]	Loss:1.35011	Lr:0.001000	Data:0009ms	Train:0164ms	Mem:1.32Gb	Prec@1:0.5445
+[4][0/725]	Loss:0.94746	Lr:0.000000	Data:1436ms	Train:0009ms	Mem:1.32Gb	Prec@1:0.7500
+[4][300/725]	Loss:0.03322	Lr:0.000000	Data:0036ms	Train:0124ms	Mem:1.32Gb	Prec@1:0.7072
+[4][600/725]	Loss:0.49902	Lr:0.000000	Data:0038ms	Train:0008ms	Mem:1.32Gb	Prec@1:0.6855
+Train Prec@1:0.5430	Val Prec@1:0.6949	Epoch Time:3.29min
+BestV Prec@1:0.6949	Best Epoch:4
+[5][0/750]	Loss:1.71189	Lr:0.001000	Data:1259ms	Train:0159ms	Mem:1.32Gb	Prec@1:0.5000
+[5][300/750]	Loss:1.47901	Lr:0.001000	Data:0023ms	Train:0168ms	Mem:1.32Gb	Prec@1:0.5909
+[5][600/750]	Loss:2.26776	Lr:0.001000	Data:0011ms	Train:0129ms	Mem:1.32Gb	Prec@1:0.5809
+[5][0/725]	Loss:1.01196	Lr:0.000000	Data:1312ms	Train:0009ms	Mem:1.32Gb	Prec@1:0.7500
+[5][300/725]	Loss:0.01354	Lr:0.000000	Data:0044ms	Train:0095ms	Mem:1.32Gb	Prec@1:0.7097
+[5][600/725]	Loss:0.31897	Lr:0.000000	Data:0044ms	Train:0051ms	Mem:1.32Gb	Prec@1:0.7011
+Train Prec@1:0.5854	Val Prec@1:0.7132	Epoch Time:3.24min
+BestV Prec@1:0.7132	Best Epoch:5
+[6][0/750]	Loss:1.51510	Lr:0.001000	Data:1285ms	Train:0124ms	Mem:1.32Gb	Prec@1:0.6250
+[6][300/750]	Loss:1.29860	Lr:0.001000	Data:0011ms	Train:0160ms	Mem:1.32Gb	Prec@1:0.6258
+[6][600/750]	Loss:1.45618	Lr:0.001000	Data:0038ms	Train:0134ms	Mem:1.32Gb	Prec@1:0.6188
+[6][0/725]	Loss:1.36508	Lr:0.000000	Data:1407ms	Train:0009ms	Mem:1.32Gb	Prec@1:0.6250
+[6][300/725]	Loss:0.08553	Lr:0.000000	Data:0034ms	Train:0038ms	Mem:1.32Gb	Prec@1:0.7180
+[6][600/725]	Loss:0.32868	Lr:0.000000	Data:0043ms	Train:0075ms	Mem:1.32Gb	Prec@1:0.7138
