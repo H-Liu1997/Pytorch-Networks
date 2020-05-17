@@ -583,3 +583,19 @@ findfont: score(<Font 'Lato' (Lato-LightItalic.ttf) italic normal light normal>)
 findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
 findfont: score(<Font 'TakaoPGothic' (TakaoPGothic.ttf) normal normal 400 normal>) = 10.05
 findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/liuhaiyang/.conda/envs/ptnew/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+start loading config files...
+PRETRAINED not exist in config.py
+LR_TYPR not exist in config.py
+loading config files success
+change random seed success
+update config files success
+start loading config files...
+loading config files success
+change random seed success
+update config files success
+loading checkpoints success
+start loading config files...
+loading config files success
+change random seed success
+update config files success
+loading checkpoints success

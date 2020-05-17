@@ -1,7 +1,7 @@
 import os
 import numpy as np 
 import torch 
-import cv2
+from PIL import Image
 import math
 from random import randint
 import torchvision.transforms as transforms
@@ -54,8 +54,11 @@ class CUBData(torch.utils.data.Dataset):
 
 
     def __getitem__(self,index):
-        img_data = cv2.imread(self.data_list[self.train_or_test[index]-1][:-1])
-        img_data = cv2.cvtColor(img_data, cv2.COLOR_BGR2RGB)
+        image = Image.open(self.data_list[self.train_or_test[index]-1][:-1])
+        if image.getbands()[0] == 'L':
+            image = image.convert('RGB')
+        img_data = np.array(image)
+        image.close()
         img_data_resize = img_data#self._resize(img_data)
         if self.aug is not None:
             data_final = self.aug(img_data_resize.astype(np.uint8))

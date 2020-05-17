@@ -1,21 +1,42 @@
 DATASET_TRPE: cub200_2011
 DETERMINISTIC:
   CUDNN: true
-  SEED: 120
+  SEED: 380
 GPUS:
 - 0
 MODEL:
   ANYNET: !!python/object/new:easydict.EasyDict
     dictitems:
       BLOCK_TYPE: res_bottleneck_block
-      BOT_MULS: &id001 []
-      DEPTHS: &id002 []
-      GROUP_WS: &id003 []
+      BOT_MULS: &id001
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.5
+      DEPTHS: &id002
+      - 3
+      - 4
+      - 6
+      - 3
+      GROUP_WS: &id003
+      - 4
+      - 8
+      - 16
+      - 32
       SE_ON: false
       SE_R: 0.25
-      STEM_TYPE: simple_stem_in
-      STEM_W: 32
-      STRIDES: &id004 []
+      STEM_TYPE: res_stem_in
+      STEM_W: 64
+      STRIDES: &id004
+      - 1
+      - 2
+      - 2
+      - 2
+      WIDTHS: &id005
+      - 256
+      - 512
+      - 1024
+      - 2048
     state:
       BLOCK_TYPE: res_bottleneck_block
       BOT_MULS: *id001
@@ -23,9 +44,10 @@ MODEL:
       GROUP_WS: *id003
       SE_ON: false
       SE_R: 0.25
-      STEM_TYPE: simple_stem_in
-      STEM_W: 32
+      STEM_TYPE: res_stem_in
+      STEM_W: 64
       STRIDES: *id004
+      WIDTHS: *id005
   BASE: 64
   BLOCK: bottleneck
   BLOCK_LIST:
@@ -42,7 +64,7 @@ MODEL:
   EFFNET: !!python/object/new:easydict.EasyDict
     dictitems:
       DC_RATIO: 0.0
-      DEPTHS: &id005
+      DEPTHS: &id006
       - 2
       - 3
       - 3
@@ -50,7 +72,7 @@ MODEL:
       - 4
       - 5
       - 2
-      EXP_RATIOS: &id006
+      EXP_RATIOS: &id007
       - 1
       - 6
       - 6
@@ -58,13 +80,13 @@ MODEL:
       - 6
       - 6
       - 6
-      GROUP_WS: &id007
+      GROUP_WS: &id008
       - 4
       - 8
       - 16
       - 32
       HEAD_W: 1408
-      KERNELS: &id008
+      KERNELS: &id009
       - 3
       - 3
       - 5
@@ -74,7 +96,7 @@ MODEL:
       - 3
       SE_R: 0.25
       STEM_W: 32
-      STRIDES: &id009
+      STRIDES: &id010
       - 1
       - 2
       - 2
@@ -82,7 +104,7 @@ MODEL:
       - 1
       - 2
       - 1
-      WIDTHS: &id010
+      WIDTHS: &id011
       - 16
       - 24
       - 48
@@ -92,49 +114,49 @@ MODEL:
       - 352
     state:
       DC_RATIO: 0.0
-      DEPTHS: *id005
-      EXP_RATIOS: *id006
-      GROUP_WS: *id007
+      DEPTHS: *id006
+      EXP_RATIOS: *id007
+      GROUP_WS: *id008
       HEAD_W: 1408
-      KERNELS: *id008
+      KERNELS: *id009
       SE_R: 0.25
       STEM_W: 32
-      STRIDES: *id009
-      WIDTHS: *id010
+      STRIDES: *id010
+      WIDTHS: *id011
   IN_DIM: 3
   LOSS: bce_only_g
   MAX_POOL: true
   NAME: regnet
   OPERATION: B
-  PRETRAIN: null
+  PRETRAIN: RegNetY-32GF
   PRETRAIN_PATH: ./exps/pretrain/
   REGNET: !!python/object/new:easydict.EasyDict
     dictitems:
       BLOCK_TYPE: res_bottleneck_block
       BOT_MUL: 1.0
-      DEPTH: 23
-      GROUP_W: 40
-      SE_ON: false
+      DEPTH: 20
+      GROUP_W: 232
+      SE_ON: true
       SE_R: 0.25
       STEM_TYPE: simple_stem_in
       STEM_W: 32
       STRIDE: 2
-      W0: 96
-      WA: 38.65
-      WM: 2.43
+      W0: 232
+      WA: 115.89
+      WM: 2.53
     state:
       BLOCK_TYPE: res_bottleneck_block
       BOT_MUL: 1.0
-      DEPTH: 23
-      GROUP_W: 40
-      SE_ON: false
+      DEPTH: 20
+      GROUP_W: 232
+      SE_ON: true
       SE_R: 0.25
       STEM_TYPE: simple_stem_in
       STEM_W: 32
       STRIDE: 2
-      W0: 96
-      WA: 38.65
-      WM: 2.43
+      W0: 232
+      WA: 115.89
+      WM: 2.53
   STRIDE1: 1
   USE_FC: true
 PATH:
@@ -151,7 +173,7 @@ PATH:
   LABEL: /home/liuhaiyang/dataset/CUB_200_2011/image_class_labels.txt
   LOG: /log.txt
   MODEL: /model.pth
-  NAME: reg_50_cub_v4_r30
+  NAME: reg32_cub_v1_cos
   RESULTS: /results/
   RES_TEST: ./res_imgs/
   TEST: /home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1
@@ -162,7 +184,7 @@ TRAIN:
   BETA1: 0.9
   BETA2: 0.999
   CROP: 224
-  EPOCHS: 40
+  EPOCHS: 60
   L1SCALING: 100
   LR: 0.001
   LR_FACTOR: 0.1

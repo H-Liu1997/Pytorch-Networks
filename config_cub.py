@@ -14,7 +14,7 @@ cfg.PATH.EVAL = ['/home/liuhaiyang/dataset/CUB_200_2011/images.txt',
 cfg.PATH.TEST = '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1'
 cfg.PATH.RES_TEST = './res_imgs/'
 cfg.PATH.EXPS = './exps/'
-cfg.PATH.NAME = 'rest_cub_v3_stone'
+cfg.PATH.NAME = 'reg32_cub_v1_cos'
 cfg.PATH.MODEL = '/model.pth'
 cfg.PATH.BESTMODEL = '/bestmodel.pth'
 cfg.PATH.LOG = '/log.txt'
@@ -27,14 +27,14 @@ cfg.DETERMINISTIC.CUDNN = True
 
 
 cfg.TRAIN = edict()
-cfg.TRAIN.EPOCHS = 40
+cfg.TRAIN.EPOCHS = 60
 cfg.TRAIN.BATCHSIZE = 8
 cfg.TRAIN.L1SCALING = 100
 cfg.TRAIN.TYPE = 'sgd'
 cfg.TRAIN.LR = 1e-3
 cfg.TRAIN.BETA1 = 0.9
 cfg.TRAIN.BETA2 = 0.999
-cfg.TRAIN.LR_TYPE = 'stone'
+cfg.TRAIN.LR_TYPE = 'cos'
 cfg.TRAIN.LR_REDUCE = [26,36]
 cfg.TRAIN.LR_FACTOR = 0.1
 cfg.TRAIN.WEIGHT_DECAY = 1e-4
@@ -50,11 +50,11 @@ cfg.TRAIN.ROATION = 30
 
 
 cfg.MODEL = edict()
-cfg.MODEL.NAME = 'resnext'
+cfg.MODEL.NAME = 'regnet'
 cfg.MODEL.IN_DIM = 3
 cfg.MODEL.CLASS_NUM = 200 
 cfg.MODEL.USE_FC = True
-cfg.MODEL.PRETRAIN = 'ResNeXt-50'
+cfg.MODEL.PRETRAIN = 'RegNetY-32GF'
 cfg.MODEL.PRETRAIN_PATH = './exps/pretrain/'
 cfg.MODEL.DROPOUT = 0
 cfg.MODEL.LOSS = 'bce_only_g' 
@@ -75,11 +75,11 @@ cfg.MODEL.REGNET.STRIDE = 2
 cfg.MODEL.REGNET.SE_ON = True
 cfg.MODEL.REGNET.SE_R = 0.25
 cfg.MODEL.REGNET.BOT_MUL = 1.0
-cfg.MODEL.REGNET.DEPTH = 17
-cfg.MODEL.REGNET.W0 = 192
-cfg.MODEL.REGNET.WA = 76.82
-cfg.MODEL.REGNET.WM = 2.19
-cfg.MODEL.REGNET.GROUP_W = 56
+cfg.MODEL.REGNET.DEPTH = 20
+cfg.MODEL.REGNET.W0 = 232
+cfg.MODEL.REGNET.WA = 115.89
+cfg.MODEL.REGNET.WM = 2.53
+cfg.MODEL.REGNET.GROUP_W = 232
 #-------- for anynet -------#
 cfg.MODEL.ANYNET = edict()
 cfg.MODEL.ANYNET.STEM_TYPE = "res_stem_in"
@@ -105,8 +105,10 @@ cfg.MODEL.EFFNET.DEPTHS = [2, 3, 3, 4, 4, 5, 2]
 cfg.MODEL.EFFNET.GROUP_WS = [4,8,16,32]
 cfg.MODEL.EFFNET.WIDTHS = [16,24,48,88,120,208,352]
 
+
 cfg.GPUS = [0]
 cfg.PRINT_FRE = 300
+
 cfg.DATASET_TRPE = 'cub200_2011'
 cfg.SHORT_TEST = False
 

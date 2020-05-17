@@ -126,23 +126,28 @@ class CalculateAcc(object):
         return (self.count_success_a/self.count)
 
 
-def load_test_checkpoints(model, save_path, logger):
-    try:
-        #logger.debug(save_path.EXPS+save_path.NAME+save_path.GMODEL)
+def load_test_checkpoints(model, save_path, logger, use_best=False):
+    
+    #try:
+    if use_best:
+        print(save_path.EXPS+save_path.NAME+save_path.BESTMODEL)
+        states= torch.load(save_path.EXPS+save_path.NAME+save_path.BESTMODEL) if torch.cuda.is_available() \
+            else torch.load(save_path.EXPS+save_path.NAME+save_path.BESTMODEL, map_location=torch.device('cpu'))
+    else:   
         states= torch.load(save_path.EXPS+save_path.NAME+save_path.MODEL) if torch.cuda.is_available() \
             else torch.load(save_path.EXPS+save_path.NAME+save_path.MODEL, map_location=torch.device('cpu'))
-        #logger.debug("success")
-        try:
-            model.load_state_dict(states['model_state'])
-        except:
-            states_no_module = OrderedDict()
-            for k, v in states['model_state'].items():
-                name_no_module = k[7:]
-                states_no_module[name_no_module] = v
-            model.load_state_dict(states_no_module)
-        logger.info('loading checkpoints success')
-    except:
-        logger.error("no checkpoints")
+    #logger.debug("success")
+    #try:
+    model.load_state_dict(states['model_state'])
+    # except:
+    #     states_no_module = OrderedDict()
+    #     for k, v in states['model_state'].items():
+    #         name_no_module = k[7:]
+    #         states_no_module[name_no_module] = v
+    #     model.load_state_dict(states_no_module)
+    logger.info('loading checkpoints success')
+    # except:
+    #     logger.error("no checkpoints")
 
 
 def plot_result_data(acc_total, acc_val_total, loss_total, losss_val_total, cfg_path, epoch):

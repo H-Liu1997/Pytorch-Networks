@@ -21,3 +21,6 @@ exps/eff_cub_v2_stone/bestmodel.pth
 exps/rest_cub_v3_stone/bestmodel.pth
 exps/rest_cub_v3_stone/model.pth
 exps/eff_cub_v2_stone/bestmodel.pth
+exps/pretrain/regnet/RegNetY-32GF_dds_8gpu.pyth
+exps/reg32_cub_v1_cos/model.pth
+exps/reg32_cub_v1_cos/bestmodel.pth

@@ -31,6 +31,7 @@ LOAD_LUT = {
 WEIGHT_LUT = {
         'RegNetY-8.0GF': 'regnet/RegNetY-8.0GF_dds_8gpu.pyth',
         'RegNetX-4.0GF': 'regnet/RegNetX-4.0GF_dds_8gpu.pyth',
+        'RegNetY-32GF': 'regnet/RegNetY-32GF_dds_8gpu.pyth',
         'ResNeXt-50': 'resnext/X-50-32x4d_dds_8gpu.pyth',
         'EfficientNet-B2': 'effnet/EN-B2_dds_8gpu.pyth',
     }

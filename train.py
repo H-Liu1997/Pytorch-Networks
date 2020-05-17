@@ -82,7 +82,6 @@ def trainer(cfg):
     current_epoch = load_checkpoints(model, opt_t, cfg.PATH , logger, lr_scheduler_t)
     log_writter = SummaryWriter(cfg.PATH.EXPS+cfg.PATH.NAME)
     
-    #TODO(liu):add warm up
     acc_total = []
     acc_val_total = []
     loss_total = []
@@ -107,6 +106,7 @@ def trainer(cfg):
             imgs = imgs.cuda() if torch.cuda.is_available() else imgs
             targets = targets.cuda() if torch.cuda.is_available() else targets
            
+                      
             opt.zero_grad()
             outputs = model(imgs)
             loss = loss_func(outputs,targets)
@@ -152,7 +152,4 @@ def trainer(cfg):
 
 if __name__ == "__main__":
     from config_cub import cfg
-    trainer(cfg)
-   
-    # from config2 import cfg
-    # main(cfg)            
+    trainer(cfg)         
