@@ -15,7 +15,8 @@ def load_regnet_weight(model,pretrain_path,sub_name):
     checkpoints = torch.load(pretrain_path+WEIGHT_LUT[sub_name])
     states_no_module = OrderedDict()
     for k, v in checkpoints['model_state'].items():
-        if k != 'head.fc.weight' and k!= 'head.fc.bias':
+        if k != 'head.fc.weight' and k!= 'head.fc.bias' and k!= 'stem.conv.weight':
+            #print(k)
             name_no_module = k
             states_no_module[name_no_module] = v
     model.load_state_dict(states_no_module,strict=False)
@@ -31,6 +32,7 @@ LOAD_LUT = {
 WEIGHT_LUT = {
         'RegNetY-8.0GF': 'regnet/RegNetY-8.0GF_dds_8gpu.pyth',
         'RegNetX-4.0GF': 'regnet/RegNetX-4.0GF_dds_8gpu.pyth',
+        'RegNetY-3.2GF': 'regnet/RegNetY-3.2GF_dds_8gpu.pyth',
         'RegNetY-32GF': 'regnet/RegNetY-32GF_dds_8gpu.pyth',
         'ResNeXt-50': 'resnext/X-50-32x4d_dds_8gpu.pyth',
         'EfficientNet-B2': 'effnet/EN-B2_dds_8gpu.pyth',
@@ -52,12 +54,15 @@ def get_network(net_name, logger=None, cfg=None):
 
 if __name__ == "__main__":
     import logging
-    from config import cfg, load_cfg
+    from config_lyft import cfg
+    from utils import load_cfg
     from ptflops import get_model_complexity_info
-    logger = load_cfg() 
-    model = get_network('resnet', logger=logger, cfg=cfg.MODEL)
-    model = model.cuda()
-    flops, params = get_model_complexity_info(model,  (3, 224, 224), 
+    import torch
+
+    logger = load_cfg(cfg) 
+    model = get_network('regnet', logger=logger, cfg=cfg.MODEL)
+    model = model.cuda() if torch.cuda.is_available() else model
+    flops, params = get_model_complexity_info(model,  (25, 224, 224), 
         as_strings=True, print_per_layer_stat=True)
     print('{:<30}  {:<8}'.format('Computational complexity: ', flops))
     print('{:<30}  {:<8}'.format('Number of parameters: ', params))

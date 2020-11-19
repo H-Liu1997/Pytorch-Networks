@@ -1,0 +1,220 @@
+DATASET_TRPE: lyft
+DETERMINISTIC:
+  CUDNN: true
+  SEED: 80
+GPUS:
+- 0
+MODEL:
+  ANYNET: !!python/object/new:easydict.EasyDict
+    dictitems:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MULS: &id001
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.5
+      DEPTHS: &id002
+      - 3
+      - 4
+      - 6
+      - 3
+      GROUP_WS: &id003
+      - 4
+      - 8
+      - 16
+      - 32
+      SE_ON: false
+      SE_R: 0.25
+      STEM_TYPE: res_stem_in
+      STEM_W: 64
+      STRIDES: &id004
+      - 1
+      - 2
+      - 2
+      - 2
+      WIDTHS: &id005
+      - 256
+      - 512
+      - 1024
+      - 2048
+    state:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MULS: *id001
+      DEPTHS: *id002
+      GROUP_WS: *id003
+      SE_ON: false
+      SE_R: 0.25
+      STEM_TYPE: res_stem_in
+      STEM_W: 64
+      STRIDES: *id004
+      WIDTHS: *id005
+  BASE: 64
+  BLOCK: bottleneck
+  BLOCK_LIST:
+  - 3
+  - 4
+  - 6
+  - 3
+  CLASS_NUM: 200
+  CONV1:
+  - 7
+  - 2
+  - 3
+  DROPOUT: 0
+  EFFNET: !!python/object/new:easydict.EasyDict
+    dictitems:
+      DC_RATIO: 0.0
+      DEPTHS: &id006
+      - 2
+      - 3
+      - 3
+      - 4
+      - 4
+      - 5
+      - 2
+      EXP_RATIOS: &id007
+      - 1
+      - 6
+      - 6
+      - 6
+      - 6
+      - 6
+      - 6
+      GROUP_WS: &id008
+      - 4
+      - 8
+      - 16
+      - 32
+      HEAD_W: 1408
+      KERNELS: &id009
+      - 3
+      - 3
+      - 5
+      - 3
+      - 5
+      - 5
+      - 3
+      SE_R: 0.25
+      STEM_W: 32
+      STRIDES: &id010
+      - 1
+      - 2
+      - 2
+      - 2
+      - 1
+      - 2
+      - 1
+      WIDTHS: &id011
+      - 16
+      - 24
+      - 48
+      - 88
+      - 120
+      - 208
+      - 352
+    state:
+      DC_RATIO: 0.0
+      DEPTHS: *id006
+      EXP_RATIOS: *id007
+      GROUP_WS: *id008
+      HEAD_W: 1408
+      KERNELS: *id009
+      SE_R: 0.25
+      STEM_W: 32
+      STRIDES: *id010
+      WIDTHS: *id011
+  IN_DIM: 25
+  LOSS: nll_loss
+  MAX_POOL: true
+  NAME: regnet
+  OPERATION: B
+  PRETRAIN: RegNetY-3.2GF
+  PRETRAIN_PATH: C:/Users/l84179161/Desktop/intern/Datasets/Pretrain/
+  REGNET: !!python/object/new:easydict.EasyDict
+    dictitems:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MUL: 1.0
+      DEPTH: 21
+      GROUP_W: 24
+      SE_ON: true
+      SE_R: 0.25
+      STEM_TYPE: simple_stem_in
+      STEM_W: 32
+      STRIDE: 2
+      W0: 80
+      WA: 42.63
+      WM: 2.66
+    state:
+      BLOCK_TYPE: res_bottleneck_block
+      BOT_MUL: 1.0
+      DEPTH: 21
+      GROUP_W: 24
+      SE_ON: true
+      SE_R: 0.25
+      STEM_TYPE: simple_stem_in
+      STEM_W: 32
+      STRIDE: 2
+      W0: 80
+      WA: 42.63
+      WM: 2.66
+  STRIDE1: 1
+  USE_FC: true
+PATH:
+  BESTMODEL: /bestmodel.pth
+  DATA: C:/Users/l84179161/Desktop/intern/Datasets/lyft-motion-prediction-autonomous-vehicles
+  EXPS: ./exps/
+  LOG: /log.txt
+  MODEL: /model.pth
+  NAME: reg32_cos_lyft_test
+  RESULTS: /results/
+  RES_TEST: ./res_imgs/
+PRINT_FRE: 300
+SHORT_TEST: false
+TRAIN:
+  BETA1: 0.9
+  BETA2: 0.999
+  CROP: 224
+  EPOCHS: 60
+  L1SCALING: 100
+  LR: 0.001
+  LR_FACTOR: 0.1
+  LR_REDUCE:
+  - 26
+  - 36
+  LR_TYPE: cos
+  LR_WARM: 1.0e-07
+  NUM_WORKERS: 16
+  PAD: 0
+  RESIZE: 300
+  ROATION: 30
+  TYPE: sgd
+  USE_AUG: true
+  WARMUP: 0
+  WEIGHT_DECAY: 0.0001
+model_params:
+  future_delta_time: 0.1
+  future_num_frames: 50
+  future_step_size: 1
+  history_delta_time: 0.1
+  history_num_frames: 10
+  history_step_size: 1
+raster_params:
+  dataset_meta_key: meta.json
+  ego_center:
+  - 0.25
+  - 0.5
+  filter_agents_threshold: 0.5
+  map_type: py_semantic
+  pixel_size:
+  - 0.5
+  - 0.5
+  raster_size:
+  - 224
+  - 224
+  satellite_map_key: aerial_map/aerial_map.png
+  semantic_map_key: semantic_map/semantic_map.pb
+train_data_loader:
+  batch_size: 16
+  key: scenes/train.zarr
+  num_workers: 4
+  shuffle: true

@@ -1,5 +1,6 @@
 #import pycls.core.net as net
 import torch.nn as nn
+import torch
 import numpy as np
 
 def get_stem_fun(stem_type):
@@ -31,9 +32,10 @@ class AnyHead(nn.Module):
 
     def __init__(self, w_in, nc):
         super(AnyHead, self).__init__()
-        self.num_preds = 150
+        
         self.num_modes = 3
         self.future_len = 50
+        self.num_preds = 2*self.future_len*self.num_modes
         self.avg_pool = nn.AdaptiveAvgPool2d((1, 1))
         print("Warning, this fc layer is only for lyft")
         self.fc = nn.Sequential(
@@ -374,7 +376,7 @@ class AnyNet(nn.Module):
         gws = gws if gws else [None for _d in ds]
         stage_params = list(zip(ds, ws, ss, bms, gws))
         stem_fun = get_stem_fun(stem_type)
-        self.stem = stem_fun(3, stem_w)
+        self.stem = stem_fun(25, stem_w)
         block_fun = get_block_fun(block_type)
         prev_w = stem_w
         for i, (d, w, s, bm, gw) in enumerate(stage_params):

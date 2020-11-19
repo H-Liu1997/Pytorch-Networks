@@ -57,7 +57,7 @@ cfg.PATH = edict()
 cfg.PATH.DATA =  'C:/Users/l84179161/Desktop/intern/Datasets/lyft-motion-prediction-autonomous-vehicles'
 cfg.PATH.RES_TEST = './res_imgs/'
 cfg.PATH.EXPS = './exps/'
-cfg.PATH.NAME = 'reg32_cub_v1_cos'
+cfg.PATH.NAME = 'reg32_cos_lyft_test'
 cfg.PATH.MODEL = '/model.pth'
 cfg.PATH.BESTMODEL = '/bestmodel.pth'
 cfg.PATH.LOG = '/log.txt'
@@ -65,18 +65,12 @@ cfg.PATH.RESULTS = '/results/'
 
 
 cfg.model_params = {
-        #'model_architecture': 'resnet34',
         'history_num_frames': 10,
         'history_step_size': 1,
         'history_delta_time': 0.1,
         'future_num_frames': 50,
         'future_step_size': 1,
-        'future_delta_time': 0.1,
-        #'model_name': "model_resnet34_output",
-        'lr': 1e-3,
-        #'weight_path': "/kaggle/input/lyft-pretrained-model-hv/model_multi_update_lyft_public.pth",
-        'train': False,
-        'predict': True }
+        'future_delta_time': 0.1,}
 
 cfg.raster_params = {
         'raster_size': [224, 224],
@@ -102,7 +96,7 @@ cfg.DETERMINISTIC.CUDNN = True
 
 cfg.TRAIN = edict()
 cfg.TRAIN.EPOCHS = 60
-cfg.TRAIN.BATCHSIZE = 8
+#cfg.TRAIN.BATCHSIZE = 8
 cfg.TRAIN.L1SCALING = 100
 cfg.TRAIN.TYPE = 'sgd'
 cfg.TRAIN.LR = 1e-3
@@ -126,10 +120,10 @@ cfg.TRAIN.ROATION = 30
 cfg.MODEL = edict()
 cfg.MODEL.NAME = 'regnet'
 cfg.MODEL.IN_DIM = 25
-cfg.MODEL.CLASS_NUM = 200 
+cfg.MODEL.CLASS_NUM = 200 #this is meaningless
 cfg.MODEL.USE_FC = True
-cfg.MODEL.PRETRAIN = 'RegNetY-32GF'
-cfg.MODEL.PRETRAIN_PATH = './exps/pretrain/'
+cfg.MODEL.PRETRAIN = 'RegNetY-3.2GF'
+cfg.MODEL.PRETRAIN_PATH = 'C:/Users/l84179161/Desktop/intern/Datasets/Pretrain/'
 cfg.MODEL.DROPOUT = 0
 cfg.MODEL.LOSS = 'nll_loss' 
 #-------- for resnet --------#
@@ -149,11 +143,11 @@ cfg.MODEL.REGNET.STRIDE = 2
 cfg.MODEL.REGNET.SE_ON = True
 cfg.MODEL.REGNET.SE_R = 0.25
 cfg.MODEL.REGNET.BOT_MUL = 1.0
-cfg.MODEL.REGNET.DEPTH = 20
-cfg.MODEL.REGNET.W0 = 232
-cfg.MODEL.REGNET.WA = 115.89
-cfg.MODEL.REGNET.WM = 2.53
-cfg.MODEL.REGNET.GROUP_W = 232
+cfg.MODEL.REGNET.DEPTH = 21
+cfg.MODEL.REGNET.W0 = 80
+cfg.MODEL.REGNET.WA = 42.63
+cfg.MODEL.REGNET.WM = 2.66
+cfg.MODEL.REGNET.GROUP_W = 24
 #-------- for anynet -------#
 cfg.MODEL.ANYNET = edict()
 cfg.MODEL.ANYNET.STEM_TYPE = "res_stem_in"
