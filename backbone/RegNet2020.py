@@ -31,14 +31,29 @@ class AnyHead(nn.Module):
 
     def __init__(self, w_in, nc):
         super(AnyHead, self).__init__()
+        self.num_preds = 150
+        self.num_modes = 3
+        self.future_len = 50
         self.avg_pool = nn.AdaptiveAvgPool2d((1, 1))
-        self.fc = nn.Linear(w_in, nc, bias=True)
+        print("Warning, this fc layer is only for lyft")
+        self.fc = nn.Sequential(
+            # nn.Dropout(0.2),
+            nn.Linear(in_features=w_in, out_features=4096, bias=True),
+            # nn.ReLU(),
+            nn.Linear(4096, out_features=self.num_preds + self.num_modes)
+        )
 
     def forward(self, x):
         x = self.avg_pool(x)
-        x = x.view(x.size(0), -1)
+        x = x.view(x.size(0), -1)        
         x = self.fc(x)
-        return x
+
+        bs, _ = x.shape
+        pred, confidences = torch.split(x, self.num_preds, dim=1)
+        pred = pred.view(bs, self.num_modes, self.future_len, 2)
+        assert confidences.shape == (bs, self.num_modes)
+        confidences = torch.softmax(confidences, dim=1)
+        return pred, confidences
 
     # @staticmethod
     # def complexity(cx, w_in, nc):
