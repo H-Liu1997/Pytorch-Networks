@@ -75,7 +75,7 @@ def get_opt(model, cfg_train, logger=None, is_warm=False, its_total=0):
     if cfg_train.LR_TYPE == 'cos':
         lr_scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, its_total, eta_min=0, last_epoch=-1)
     else:
-        lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(opt,cfg_train.LR_REDUCE,
+        lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(opt, [int(k*its_total) for k in cfg_train.LR_REDUCE],
                                                         gamma=cfg_train.LR_FACTOR,
                                                         last_epoch=-1)
     return opt,lr_scheduler

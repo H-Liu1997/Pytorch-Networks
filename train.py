@@ -48,10 +48,10 @@ def trainer(cfg):
 
     cfg.TRAIN.LR_REDUCE = [int(its_num*x) for x in cfg.TRAIN.LR_REDUCE]
     opt_t,lr_scheduler_t = get_opt(model, cfg.TRAIN, logger, 
-        its_total=(cfg.TRAIN.EPOCHS-cfg.TRAIN.WARMUP)*its_num)
+        its_total=its_num)
     if cfg.TRAIN.WARMUP != 0:
         warm_opt, warm_scheduler = get_opt(model, cfg.TRAIN, logger, 
-            is_warm=True, its_total=cfg.TRAIN.WARMUP*its_num)
+            is_warm=True, its_total=cfg.TRAIN.WARMUP)
     loss_func = get_loss_func(cfg.MODEL.LOSS, logger=logger)
 
     current_epoch = load_checkpoints(model, opt_t, cfg.PATH , logger, lr_scheduler_t)
@@ -65,18 +65,19 @@ def trainer(cfg):
    
     for epoch in range(current_epoch, cfg.TRAIN.EPOCHS):
         start_time = time.time()
-        if epoch < cfg.TRAIN.WARMUP:
-            opt = warm_opt
-            lr_scheduler = warm_scheduler
-        else:
-            opt = opt_t
-            lr_scheduler = lr_scheduler_t
-
         #acc_train_class = CalculateAcc()
         loss_train_calss = SelfData()
         model.train()
         data_begin = time.time()
+
         for its, data in enumerate(train_loader):
+            if its < cfg.TRAIN.WARMUP:
+                opt = warm_opt
+                lr_scheduler = warm_scheduler
+            else:
+                opt = opt_t
+                lr_scheduler = lr_scheduler_t
+
             data_time = time.time()-data_begin
            
             inputs = data["image"].cuda() if torch.cuda.is_available() else data["image"]
@@ -100,15 +101,15 @@ def trainer(cfg):
             if its % cfg.PRINT_FRE == 0:
                 print_to_screen(loss, lr, its, epoch, its_num, logger, 
                     data_time,train_time,mem)
+            if its % cfg.SAVE_FRE == 0:
+                save_checkpoints(str(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.MODEL+f'{its}'), model, opt, epoch,lr_scheduler)
             
-            if cfg.SHORT_TEST == True:
-                if its == 20:
-                    break
+            
 
-            end_time = time.time()-start_time
+        end_time = time.time()-start_time
             #logger.info('Train Loss@abg:%.4f\t'%(loss_train_calss.avg()+'Iteration Time:%.2fmin'%(end_time/60))
 
-        save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.MODEL, model, opt, epoch,lr_scheduler)
+        
         #acc_val, loss_val = val(val_loader, model, logger, loss_func, epoch, print_fre=cfg.PRINT_FRE,)
         # log_writter.add_scalars("acc",{'acc_train':acc_train_class.print_(),
         #                              'acc_val':acc_val,},

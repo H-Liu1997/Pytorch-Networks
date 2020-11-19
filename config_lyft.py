@@ -57,7 +57,7 @@ cfg.PATH = edict()
 cfg.PATH.DATA =  'C:/Users/l84179161/Desktop/intern/Datasets/lyft-motion-prediction-autonomous-vehicles'
 cfg.PATH.RES_TEST = './res_imgs/'
 cfg.PATH.EXPS = './exps/'
-cfg.PATH.NAME = 'reg32_cos_lyft_test'
+cfg.PATH.NAME = 'reg32_cos_lyft_test1'
 cfg.PATH.MODEL = '/model.pth'
 cfg.PATH.BESTMODEL = '/bestmodel.pth'
 cfg.PATH.LOG = '/log.txt'
@@ -86,7 +86,7 @@ cfg.train_data_loader = {
         'key': 'scenes/train.zarr',
         'batch_size': 1,
         'shuffle': True,
-        'num_workers': 1}
+        'num_workers': 0}
 
 
 cfg.DETERMINISTIC = edict()
@@ -107,7 +107,7 @@ cfg.TRAIN.LR_REDUCE = [0.6,0.8]
 cfg.TRAIN.LR_FACTOR = 0.1
 cfg.TRAIN.WEIGHT_DECAY = 0
 #cfg.TRAIN.NUM_WORKERS = 16
-cfg.TRAIN.WARMUP = 0
+cfg.TRAIN.WARMUP = 50 # here is iterations
 cfg.TRAIN.LR_WARM = 1e-7
 #-------- data aug --------#
 cfg.TRAIN.USE_AUG = True
@@ -175,7 +175,8 @@ cfg.MODEL.EFFNET.WIDTHS = [16,24,48,88,120,208,352]
 
 
 cfg.GPUS = [0]
-cfg.PRINT_FRE = 300
+cfg.PRINT_FRE = 1
+cfg.SAVE_FRE = 50
 
 cfg.DATASET_TRPE = 'lyft'
 cfg.SHORT_TEST = False
