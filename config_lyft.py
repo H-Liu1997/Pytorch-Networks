@@ -2,16 +2,59 @@ import os
 from easydict import EasyDict as edict
 
 
+
+# 'data_path': "/kaggle/input/lyft-motion-prediction-autonomous-vehicles",
+#     'model_params': {
+#         'model_architecture': 'resnet34',
+#         'history_num_frames': 10,
+#         'history_step_size': 1,
+#         'history_delta_time': 0.1,
+#         'future_num_frames': 50,
+#         'future_step_size': 1,
+#         'future_delta_time': 0.1,
+#         'model_name': "model_resnet34_output",
+#         'lr': 1e-3,
+#         'weight_path': "/kaggle/input/lyft-pretrained-model-hv/model_multi_update_lyft_public.pth",
+#         'train': False,
+#         'predict': True
+#     },
+
+#     'raster_params': {
+#         'raster_size': [224, 224],
+#         'pixel_size': [0.5, 0.5],
+#         'ego_center': [0.25, 0.5],
+#         'map_type': 'py_semantic',
+#         'satellite_map_key': 'aerial_map/aerial_map.png',
+#         'semantic_map_key': 'semantic_map/semantic_map.pb',
+#         'dataset_meta_key': 'meta.json',
+#         'filter_agents_threshold': 0.5
+#     },
+
+#     'train_data_loader': {
+#         'key': 'scenes/train.zarr',
+#         'batch_size': 16,
+#         'shuffle': True,
+#         'num_workers': 4
+#     },
+    
+#     'test_data_loader': {
+#         'key': 'scenes/test.zarr',
+#         'batch_size': 32,
+#         'shuffle': False,
+#         'num_workers': 4
+#     },
+
+#     'train_params': {
+#         'max_num_steps': 101,
+#         'checkpoint_every_n_steps': 20,
+#     }
+# }
+
+
+
 cfg = edict()
 cfg.PATH = edict()
-cfg.PATH.DATA =  ['/home/liuhaiyang/dataset/CUB_200_2011/images.txt',
-       '/home/liuhaiyang/dataset/CUB_200_2011/train_test_split.txt',
-       '/home/liuhaiyang/dataset/CUB_200_2011/images/']
-cfg.PATH.LABEL = '/home/liuhaiyang/dataset/CUB_200_2011/image_class_labels.txt'
-cfg.PATH.EVAL = ['/home/liuhaiyang/dataset/CUB_200_2011/images.txt',
-       '/home/liuhaiyang/dataset/CUB_200_2011/train_test_split.txt',
-       '/home/liuhaiyang/dataset/CUB_200_2011/images/']
-cfg.PATH.TEST = '/home/liuhaiyang/liu_kaggle/cifar/dataset/cifar-10-batches-py/data_batch_1'
+cfg.PATH.DATA =  'C:/Users/l84179161/Desktop/intern/Datasets/lyft-motion-prediction-autonomous-vehicles'
 cfg.PATH.RES_TEST = './res_imgs/'
 cfg.PATH.EXPS = './exps/'
 cfg.PATH.NAME = 'reg32_cub_v1_cos'
@@ -19,6 +62,37 @@ cfg.PATH.MODEL = '/model.pth'
 cfg.PATH.BESTMODEL = '/bestmodel.pth'
 cfg.PATH.LOG = '/log.txt'
 cfg.PATH.RESULTS = '/results/'
+
+
+cfg.model_params = {
+        #'model_architecture': 'resnet34',
+        'history_num_frames': 10,
+        'history_step_size': 1,
+        'history_delta_time': 0.1,
+        'future_num_frames': 50,
+        'future_step_size': 1,
+        'future_delta_time': 0.1,
+        #'model_name': "model_resnet34_output",
+        'lr': 1e-3,
+        #'weight_path': "/kaggle/input/lyft-pretrained-model-hv/model_multi_update_lyft_public.pth",
+        'train': False,
+        'predict': True }
+
+cfg.raster_params = {
+        'raster_size': [224, 224],
+        'pixel_size': [0.5, 0.5],
+        'ego_center': [0.25, 0.5],
+        'map_type': 'py_semantic',
+        'satellite_map_key': 'aerial_map/aerial_map.png',
+        'semantic_map_key': 'semantic_map/semantic_map.pb',
+        'dataset_meta_key': 'meta.json',
+        'filter_agents_threshold': 0.5}
+
+cfg.train_data_loader = {
+        'key': 'scenes/train.zarr',
+        'batch_size': 16,
+        'shuffle': True,
+        'num_workers': 4}
 
 
 cfg.DETERMINISTIC = edict()
@@ -109,7 +183,7 @@ cfg.MODEL.EFFNET.WIDTHS = [16,24,48,88,120,208,352]
 cfg.GPUS = [0]
 cfg.PRINT_FRE = 300
 
-cfg.DATASET_TRPE = 'cub200_2011'
+cfg.DATASET_TRPE = 'lyft'
 cfg.SHORT_TEST = False
 
 

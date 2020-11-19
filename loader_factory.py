@@ -12,7 +12,7 @@ from l5kit.dataset import AgentDataset, EgoDataset
 from l5kit.rasterization import build_rasterizer
 from l5kit.evaluation import write_pred_csv, compute_metrics_csv, read_gt_csv, create_chopped_dataset
 from l5kit.evaluation.chop_dataset import MIN_FUTURE_STEPS
-from l5kit.evaluation.metrics import neg_multi_log_likelihood, time_displac
+from l5kit.evaluation.metrics import neg_multi_log_likelihood, time_displace
 
 
 def get_loader(dataset_type, data_path, loader_type, label_path=None, cfg=None, logger=None):
@@ -66,7 +66,6 @@ def get_loader(dataset_type, data_path, loader_type, label_path=None, cfg=None, 
         #                             num_workers=train_cfg["num_workers"])
         # logger.info(train_dataset)
         
-
     elif loader_type == 'self_test':
         pass
         # augmentation = transforms.Compose([
@@ -113,36 +112,10 @@ def inverse_preprocess(image):
 
 
 def test_():
-    import matplotlib.pyplot as plt 
-    import random
-    
-    
-    random.seed(0)
-    torch.manual_seed(0)
-    
-    train_loader = get_loader("cub200_2011", 
-      
-       ['/home/ikenaga/Public/CUB_200_2011/images.txt',
-       '/home/ikenaga/Public/CUB_200_2011/train_test_split.txt',
-       '/home/ikenaga/Public/CUB_200_2011/images/'],
-        'self_test',
-        '/home/ikenaga/Public/CUB_200_2011/image_class_labels.txt',
-        224)
-    for i, (img_ori_tensor, label) in enumerate(train_loader):
-        # img_ori_tensor_0 = img_ori_tensor[0].numpy().astype(np.uint8)
-        # img_ori_tensor_1 = img_ori_tensor[1].numpy().astype(np.uint8)
-        img_ori_tensor_0 = inverse_preprocess(img_ori_tensor[0])
-        img_ori_tensor_1 = inverse_preprocess(img_ori_tensor[1])
-       
-        fig = plt.figure()
-        a = fig.add_subplot(1,2,1)
-        a.set_title('img_ori_tensor_0%d'%label[0].numpy())
-        plt.imshow(img_ori_tensor_0)
-        a = fig.add_subplot(1,2,2)
-        a.set_title('img_ori_tensor_1%d'%label[1].numpy())
-        plt.imshow(img_ori_tensor_1)
-       
-        plt.show()
+   from config_lyft import cfg
+   train_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.DATA, 'train', label_path=None, cfg=cfg, logger=None)
+
+
 
 
 if __name__ == "__main__":

@@ -37,8 +37,8 @@ def fix_random_seed(cfg):
 def trainer(cfg):
     logger = load_cfg(cfg) 
     fix_random_seed(cfg)    
-   
-    train_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.DATA, 'train', label_path=cfg.PATH.LABEL, cfg=cfg.TRAIN, logger=logger)
+    
+    train_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.DATA, 'train', cfg=cfg, logger=logger)
     #val_loader = get_loader(cfg.DATASET_TRPE, cfg.PATH.EVAL, 'eval',label_path=cfg.PATH.LABEL, cfg=cfg.TRAIN, logger=logger)
     its_num = len(train_loader)
 
