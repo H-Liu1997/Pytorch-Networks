@@ -54,10 +54,10 @@ from easydict import EasyDict as edict
 
 cfg = edict()
 cfg.PATH = edict()
-cfg.PATH.DATA =  'C:/Users/l84179161/Desktop/intern/Datasets/lyft-motion-prediction-autonomous-vehicles'
+cfg.PATH.DATA =  './Datasets/lyft-motion-prediction-autonomous-vehicles'
 cfg.PATH.RES_TEST = './res_imgs/'
 cfg.PATH.EXPS = './exps/'
-cfg.PATH.NAME = 'reg32_cos_lyft_test1'
+cfg.PATH.NAME = 'reg3.2_cos_lyft_v1'
 cfg.PATH.MODEL = '/model.pth'
 cfg.PATH.BESTMODEL = '/bestmodel.pth'
 cfg.PATH.LOG = '/log.txt'
@@ -84,13 +84,13 @@ cfg.raster_params = {
 
 cfg.train_data_loader = {
         'key': 'scenes/train.zarr',
-        'batch_size': 1,
+        'batch_size': 16,
         'shuffle': True,
         'num_workers': 0}
 
 
 cfg.DETERMINISTIC = edict()
-cfg.DETERMINISTIC.SEED = 60
+cfg.DETERMINISTIC.SEED = 42
 cfg.DETERMINISTIC.CUDNN = True
 
 
@@ -123,7 +123,7 @@ cfg.MODEL.IN_DIM = 25
 cfg.MODEL.CLASS_NUM = 200 #this is meaningless
 cfg.MODEL.USE_FC = True
 cfg.MODEL.PRETRAIN = 'RegNetY-3.2GF'
-cfg.MODEL.PRETRAIN_PATH = 'C:/Users/l84179161/Desktop/intern/Datasets/Pretrain/'
+cfg.MODEL.PRETRAIN_PATH = './Datasets/Pretrain/'
 cfg.MODEL.DROPOUT = 0
 cfg.MODEL.LOSS = 'nll_loss' 
 #-------- for resnet --------#
@@ -175,8 +175,8 @@ cfg.MODEL.EFFNET.WIDTHS = [16,24,48,88,120,208,352]
 
 
 cfg.GPUS = [0]
-cfg.PRINT_FRE = 1
-cfg.SAVE_FRE = 50
+cfg.PRINT_FRE = 1000
+cfg.SAVE_FRE = 50000
 
 cfg.DATASET_TRPE = 'lyft'
 cfg.SHORT_TEST = False

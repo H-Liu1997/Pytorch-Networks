@@ -57,11 +57,7 @@ def trainer(cfg):
     current_epoch = load_checkpoints(model, opt_t, cfg.PATH , logger, lr_scheduler_t)
     log_writter = SummaryWriter(cfg.PATH.EXPS+cfg.PATH.NAME)
     
-    #acc_total = []
-    #acc_val_total = []
     loss_total = []
-    #losss_val_total = []
-    #best_val = [0,0]
    
     for epoch in range(current_epoch, cfg.TRAIN.EPOCHS):
         start_time = time.time()
