@@ -9,7 +9,7 @@ import time
 
 
 from network_factory import get_network
-from datasets.loader_factory import get_loader
+from loader_factory import get_loader
 from utils import load_test_checkpoints, CalculateAcc, \
     SelfData, load_cfg, print_to_screen
 

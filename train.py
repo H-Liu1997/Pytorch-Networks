@@ -20,7 +20,7 @@ import time
 from network_factory import get_network
 from opt_factory import get_opt
 from loss_factory import get_loss_func
-from datasets.loader_factory import get_loader
+from loader_factory import get_loader
 from test import val
 from utils import CalculateAcc,SelfData,load_cfg,model_complexity,plot_result_data,\
     load_checkpoints,print_to_screen,save_checkpoints
@@ -57,11 +57,11 @@ def trainer(cfg):
     current_epoch = load_checkpoints(model, opt_t, cfg.PATH , logger, lr_scheduler_t)
     log_writter = SummaryWriter(cfg.PATH.EXPS+cfg.PATH.NAME)
     
-    acc_total = []
-    acc_val_total = []
+    #acc_total = []
+    #acc_val_total = []
     loss_total = []
-    losss_val_total = []
-    best_val = [0,0]
+    #losss_val_total = []
+    #best_val = [0,0]
    
     for epoch in range(current_epoch, cfg.TRAIN.EPOCHS):
         start_time = time.time()
@@ -72,19 +72,21 @@ def trainer(cfg):
             opt = opt_t
             lr_scheduler = lr_scheduler_t
 
-        acc_train_class = CalculateAcc()
+        #acc_train_class = CalculateAcc()
         loss_train_calss = SelfData()
         model.train()
         data_begin = time.time()
-        for its, (imgs, targets)in enumerate(train_loader):
+        for its, data in enumerate(train_loader):
             data_time = time.time()-data_begin
-            imgs = imgs.cuda() if torch.cuda.is_available() else imgs
-            targets = targets.cuda() if torch.cuda.is_available() else targets
            
-                      
+            inputs = data["image"].cuda() if torch.cuda.is_available() else data["image"]
+            target_availabilities = data["target_availabilities"].cuda() if torch.cuda.is_available() else data["target_availabilities"]
+            targets = data["target_positions"].cuda() if torch.cuda.is_available() else data["target_positions"]
+            # Forward pass
+            preds, confidences = model(inputs)
+            loss = loss_func(targets, preds, confidences, target_availabilities)
+
             opt.zero_grad()
-            outputs = model(imgs)
-            loss = loss_func(outputs,targets)
             loss.backward()
             opt.step()
             lr_scheduler.step()
@@ -94,37 +96,38 @@ def trainer(cfg):
             data_begin = time.time()
             lr = opt.param_groups[0]['lr']
             mem = torch.cuda.memory_cached() / 1E9 if torch.cuda.is_available() else 0
-            acc_train_class.add_value(outputs.cpu(), targets.cpu())
+            #acc_train_class.add_value(outputs.cpu(), targets.cpu())
             if its % cfg.PRINT_FRE == 0:
                 print_to_screen(loss, lr, its, epoch, its_num, logger, 
-                    data_time,train_time,mem,acc_train_class.print_())
+                    data_time,train_time,mem)
             
             if cfg.SHORT_TEST == True:
                 if its == 20:
                     break
 
-        save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.MODEL, model, opt, epoch,lr_scheduler)
-        acc_val, loss_val = val(val_loader, model, logger, loss_func, epoch, print_fre=cfg.PRINT_FRE,)
-        log_writter.add_scalars("acc",{'acc_train':acc_train_class.print_(),
-                                     'acc_val':acc_val,},
-                                     epoch)
-        acc_total.append(acc_train_class.print_())
-        acc_val_total.append(acc_val)
-        loss_total.append(loss_train_calss.avg())
-        losss_val_total.append(loss_val)
-        end_time = time.time()-start_time
-        logger.info('Train Prec@1:%.4f\t'%(acc_train_class.print_())+'Val Prec@1:%.4f\t'%(acc_val)+'Epoch Time:%.2fmin'%(end_time/60))
-        if best_val[0] < acc_val:
-            best_val[0] = acc_val
-            best_val[1] = epoch
-            save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.BESTMODEL, model, opt, epoch,lr_scheduler)
-        logger.info('BestV Prec@1:%.4f\t'%(best_val[0])+"Best Epoch:%d"%(best_val[1]))
+            end_time = time.time()-start_time
+            #logger.info('Train Loss@abg:%.4f\t'%(loss_train_calss.avg()+'Iteration Time:%.2fmin'%(end_time/60))
 
-    plot_result_data(acc_total,acc_val_total,loss_total,
-        losss_val_total,cfg.PATH.EXPS+cfg.PATH.NAME, cfg.TRAIN.EPOCHS)
+        save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.MODEL, model, opt, epoch,lr_scheduler)
+        #acc_val, loss_val = val(val_loader, model, logger, loss_func, epoch, print_fre=cfg.PRINT_FRE,)
+        # log_writter.add_scalars("acc",{'acc_train':acc_train_class.print_(),
+        #                              'acc_val':acc_val,},
+        #                              epoch)
+        # acc_total.append(acc_train_class.print_())
+        # acc_val_total.append(acc_val)
+        loss_total.append(loss_train_calss.avg())
+        #losss_val_total.append(loss_val)
+        # if best_val[0] < acc_val:
+        #     best_val[0] = acc_val
+        #     best_val[1] = epoch
+        #     save_checkpoints(cfg.PATH.EXPS+cfg.PATH.NAME+cfg.PATH.BESTMODEL, model, opt, epoch,lr_scheduler)
+        # logger.info('BestV Prec@1:%.4f\t'%(best_val[0])+"Best Epoch:%d"%(best_val[1]))
+
+    # plot_result_data(acc_total,acc_val_total,loss_total,
+    #     losss_val_total,cfg.PATH.EXPS+cfg.PATH.NAME, cfg.TRAIN.EPOCHS)
     log_writter.close()
 
 
 if __name__ == "__main__":
-    from config_cub import cfg
+    from config_lyft import cfg
     trainer(cfg)         

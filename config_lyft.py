@@ -84,9 +84,9 @@ cfg.raster_params = {
 
 cfg.train_data_loader = {
         'key': 'scenes/train.zarr',
-        'batch_size': 16,
+        'batch_size': 1,
         'shuffle': True,
-        'num_workers': 4}
+        'num_workers': 1}
 
 
 cfg.DETERMINISTIC = edict()
@@ -95,18 +95,18 @@ cfg.DETERMINISTIC.CUDNN = True
 
 
 cfg.TRAIN = edict()
-cfg.TRAIN.EPOCHS = 60
+cfg.TRAIN.EPOCHS = 1
 #cfg.TRAIN.BATCHSIZE = 8
-cfg.TRAIN.L1SCALING = 100
-cfg.TRAIN.TYPE = 'sgd'
-cfg.TRAIN.LR = 1e-3
+#cfg.TRAIN.L1SCALING = 100
+cfg.TRAIN.TYPE = 'adam'
+cfg.TRAIN.LR = 3e-4
 cfg.TRAIN.BETA1 = 0.9
 cfg.TRAIN.BETA2 = 0.999
-cfg.TRAIN.LR_TYPE = 'cos'
-cfg.TRAIN.LR_REDUCE = [26,36]
+cfg.TRAIN.LR_TYPE = 'stone'
+cfg.TRAIN.LR_REDUCE = [0.6,0.8]
 cfg.TRAIN.LR_FACTOR = 0.1
-cfg.TRAIN.WEIGHT_DECAY = 1e-4
-cfg.TRAIN.NUM_WORKERS = 16
+cfg.TRAIN.WEIGHT_DECAY = 0
+#cfg.TRAIN.NUM_WORKERS = 16
 cfg.TRAIN.WARMUP = 0
 cfg.TRAIN.LR_WARM = 1e-7
 #-------- data aug --------#
