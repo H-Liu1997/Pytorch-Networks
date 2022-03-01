@@ -83,9 +83,9 @@ Other:
 - [x] Darknet-53              2018 
 
 ## Future Work: Pytorch loss
-Will release a new repertory in the future(not in current repertory)
+Will release a new repertory in the future (not in current repertory)
 - [ ] Centerloss              2015
 - [x] Focusloss               2016 
 - [x] labelsmooth
-...
+
 
