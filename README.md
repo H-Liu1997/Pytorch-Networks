@@ -47,15 +47,11 @@ Common Type:
 - [x] Inception/GoogLeNet     2014
 - [x] InceptionV2/V3          2015
 - [x] InceptionV4/Res         2016
-- [ ] Xception                2016
 - [x] ResNet                  2015
 - [x] ResNetV2                2016
 - [x] ResNeXt                 2016
-- [ ] Res2Net                 2019
 - [x] DenseNet                2016
 - [x] SENet                   2017
-- [ ] NASNet                  2017
-- [ ] AmoebaNet               2018
 - [x] MnasNet                 2018
 - [x] EfficientNet            2019
 
@@ -74,9 +70,7 @@ Other:
 - [x] CPN                     2017
 - [x] OpenPose                2017
 - [x] FPNPoseNet              2017
-- [ ] HRNet                   2018
 - [x] CPN+GNN                 2018
-- [ ] Multi-CPN               2019
 
 ### Detection
 - [x] Darknet-19              2016
@@ -84,7 +78,6 @@ Other:
 
 ## Future Work: Pytorch loss
 Will release a new repertory in the future (not in current repertory)
-- [ ] Centerloss              2015
 - [x] Focusloss               2016 
 - [x] labelsmooth
 
